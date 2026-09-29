@@ -1,14 +1,11 @@
 using MicrogameCourse.Framework;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-
 namespace MicrogameCourse.Microgames
 {
- /// <summary>Week 2 practice microgame: tap the shrinking target quickly to score points.</summary>
+    /// <summary>Week 2 practice microgame: tap the shrinking target quickly to score points.</summary>
     public sealed class TargetTapGame : MicrogameBehaviour
     {
         [Header("Scene references")]
@@ -21,81 +18,89 @@ namespace MicrogameCourse.Microgames
         [Header("Rules")]
         [Tooltip("Points needed to win before the timer runs out.")]
         [SerializeField, Min(1)] private int scoreToWin = 10;
-        [SerializeField, Min(1)] private int tapsToWin = 5;
 
-        [Header("Shrinking target")]    
-        [SerializeField] private float startSize = 240f;
-        [SerializeField] private float minimumSize = 100f;
+        [Header("Shrinking target")]
+        [SerializeField, Min(10f)] private float startSize = 240f;
+        [SerializeField, Min(10f)] private float minimumSize = 100f;
         [Tooltip("How many pixels the target loses from its width and height every second.")]
-        [SerializeField, Range(0f, 300f)] private float shrinkPerSecond  = 80f;
+        [SerializeField, Range(0f, 300f)] private float shrinkPerSecond = 80f;
 
         [Header("Presentation")]
         [SerializeField] private Color safeColour = new Color(0.20f, 0.80f, 0.40f);
         [SerializeField] private bool showReactionTime = true;
 
-
         private int score;
         private float reactionTimer;
-        private int tapsRemaining;
         private float currentSize;
 
         public override void Begin(MicrogameSession session)
         {
             base.Begin(session);
             score = 0;
-            targetImage.color = safeColour;
-            //tapsRemaining = tapsToWin;
-            feedbackText.text = "Go!";
+            SetTargetColour(safeColour);
+            ShowFeedback("Go!");
             UpdateProgress();
-            MoveTarget();
+            ShowNextTarget();
         }
 
         private void Update()
         {
-            if (!IsRunning)
-            {
-                return;
-            }
+            if (!IsRunning) return;
 
             reactionTimer += Time.deltaTime;
-            currentSize -= shrinkPerSecond * Time.deltaTime;
-            target.sizeDelta = new Vector2(currentSize, currentSize);
+            SetTargetSize(currentSize - shrinkPerSecond * Time.deltaTime);
 
-            if(currentSize <= minimumSize)
+            if (IsTargetTooSmall())
             {
-                feedbackText.text = "Too slow";
-                MoveTarget();
+                ShowFeedback("Too slow!");
+                ShowNextTarget();
             }
-
         }
-
 
         public void TapTarget()
         {
-            if (!IsRunning)
-            {
-                return;
-            }
+            if (!IsRunning) return;
 
-            score = score + 1;
-            //tapsRemaining--;
-            UpdateProgress();
-
-
+            AddScore(1);
 
             if (showReactionTime)
-                feedbackText.text = $"Hit! {reactionTimer:0.00}s";
+                ShowFeedback($"Hit! {reactionTimer:0.00}s");
             else
-                feedbackText.text = "Hit!";
+                ShowFeedback("Hit!");
 
             if (score >= scoreToWin)
-            {
                 Win();
-            }
             else
-            {
-                MoveTarget();
-            }
+                ShowNextTarget();
+        }
+
+        private void ShowNextTarget()
+        {
+            SetTargetSize(startSize);
+            target.anchoredPosition = GetRandomPosition(playArea, startSize);
+            reactionTimer = 0f;
+        }
+
+        private void AddScore(int amount)
+        {
+            score += amount;
+            UpdateProgress();
+        }
+
+        private void SetTargetSize(float size)
+        {
+            currentSize = size;
+            target.sizeDelta = new Vector2(size, size);
+        }
+
+        private void SetTargetColour(Color colour)
+        {
+            targetImage.color = colour;
+        }
+
+        private void ShowFeedback(string message)
+        {
+            feedbackText.text = message;
         }
 
         private void UpdateProgress()
@@ -103,20 +108,18 @@ namespace MicrogameCourse.Microgames
             progressText.text = $"Score: {score} / {scoreToWin}";
         }
 
-        private void MoveTarget()
+        private bool IsTargetTooSmall()
         {
-            currentSize = startSize;
-            target.sizeDelta = new Vector2(currentSize, currentSize);
-            reactionTimer = 0f;
-
-            float maxX = (playArea.rect.width - target.rect.width) * 0.5f;
-            float maxY = (playArea.rect.height - target.rect.height) * 0.5f;
-            float x = Random.Range(-maxX, maxX);
-            float y = Random.Range(-maxY, maxY);
-            target.anchoredPosition = new Vector2(x,y);
+            return currentSize <= minimumSize;
         }
 
-
+        private Vector2 GetRandomPosition(RectTransform area, float itemSize)
+        {
+            float maxX = (area.rect.width - itemSize) * 0.5f;
+            float maxY = (area.rect.height - itemSize) * 0.5f;
+            float x = Random.Range(-maxX, maxX);
+            float y = Random.Range(-maxY, maxY);
+            return new Vector2(x, y);
+        }
     }
-
 }
