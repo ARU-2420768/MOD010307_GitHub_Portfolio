@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 namespace MicrogameCourse.Framework
@@ -14,8 +15,8 @@ namespace MicrogameCourse.Framework
         [SerializeField] private GameObject readyPanel;
         [SerializeField] private GameObject playArea;
         [SerializeField] private GameObject resultPanel;
-        [SerializeField] private Text timerText;
-        [SerializeField] private Text resultText;
+        [SerializeField] private TextMeshProUGUI timerText;
+        [SerializeField] private TextMeshProUGUI resultText;
         [SerializeField, Min(1f)] private float durationSeconds = 10f;
 
         private Phase currentPhase;
