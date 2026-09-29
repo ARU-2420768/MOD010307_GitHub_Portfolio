@@ -76,14 +76,14 @@
 
 **/Assets/AssetStoreTools*
 
-
-# --------------------------------------------
-# TextMeshPro generated assets
-# --------------------------------------------
-
-[Tt]ext[Mm]esh[Pp]ro/
-**/[Tt]ext[Mm]esh[Pp]ro/
-**/[Tt]ext[Mm]esh[Pp]ro*/
+# TextMeshPro generated files
+**/TextMesh Pro/
+**/TextMeshPro/
+**/*.tmp
+**/*.mat
+**/*.meta
+**/*TextMeshPro*.asset
+**/*TextMeshPro*.prefab
 
 
 # --------------------------------------------
