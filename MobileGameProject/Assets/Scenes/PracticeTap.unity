@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 79063120}
   - component: {fileID: 79063122}
   - component: {fileID: 79063121}
-  - component: {fileID: 79063123}
   m_Layer: 5
   m_Name: PlayArea
   m_TagString: Untagged
@@ -197,18 +196,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79063119}
   m_CullTransparentMesh: 1
---- !u!114 &79063123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79063119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 015a2bfe6d4834e44b4bd8d616fcef11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Learning.LifeCycleProbe
 --- !u!1 &247607192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1671,6 @@ GameObject:
   - component: {fileID: 1240542782}
   - component: {fileID: 1240542784}
   - component: {fileID: 1240542783}
-  - component: {fileID: 1240542785}
   m_Layer: 5
   m_Name: ResultPanel
   m_TagString: Untagged
@@ -1752,18 +1738,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240542781}
   m_CullTransparentMesh: 1
---- !u!114 &1240542785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240542781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 015a2bfe6d4834e44b4bd8d616fcef11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Learning.LifeCycleProbe
 --- !u!1 &1317524604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,7 +2492,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2009581443}
   - component: {fileID: 2009581444}
-  - component: {fileID: 2009581445}
   m_Layer: 0
   m_Name: MicrogameSession
   m_TagString: Untagged
@@ -2560,18 +2533,6 @@ MonoBehaviour:
   timerText: {fileID: 322746950}
   resultText: {fileID: 1456502162}
   durationSeconds: 10
---- !u!114 &2009581445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009581442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 015a2bfe6d4834e44b4bd8d616fcef11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Learning.LifeCycleProbe
 --- !u!1 &2024412217
 GameObject:
   m_ObjectHideFlags: 0
