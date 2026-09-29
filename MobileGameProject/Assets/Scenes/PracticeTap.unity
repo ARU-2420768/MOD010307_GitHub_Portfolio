@@ -517,7 +517,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317524604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79f5fb78004aaca4ab3dc793ba7b6605, type: 3}
+  m_Script: {fileID: 11500000, guid: 90fad535ccc9f684caeed1abb94d7787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Framework.SceneNavigator
 --- !u!4 &1317524606
