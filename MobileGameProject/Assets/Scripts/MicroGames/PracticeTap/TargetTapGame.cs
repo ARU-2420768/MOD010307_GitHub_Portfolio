@@ -1,3 +1,4 @@
+using System.Collections;
 using MicrogameCourse.Framework;
 using TMPro;
 using UnityEngine;
@@ -14,10 +15,12 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private Image targetImage;
         [SerializeField] private TextMeshProUGUI progressText;
         [SerializeField] private TextMeshProUGUI feedbackText;
+        [SerializeField] private bool decoy = false;
 
         [Header("Rules")]
         [Tooltip("Points needed to win before the timer runs out.")]
         [SerializeField, Min(1)] private int scoreToWin = 10;
+        
 
         [Header("Shrinking target")]
         [SerializeField, Min(10f)] private float startSize = 240f;
@@ -27,7 +30,9 @@ namespace MicrogameCourse.Microgames
 
         [Header("Presentation")]
         [SerializeField] private Color safeColour = new Color(0.20f, 0.80f, 0.40f);
+        [SerializeField] private Color decoyColour = Color.red;
         [SerializeField] private bool showReactionTime = true;
+        [SerializeField] private int decoyPenalty = -2;
 
         private int score;
         private float reactionTimer;
@@ -38,7 +43,7 @@ namespace MicrogameCourse.Microgames
             base.Begin(session);
             score = 0;
             SetTargetColour(safeColour);
-            ShowFeedback("Go!");
+            ShowFeedback("Go!", safeColour);
             UpdateProgress();
             ShowNextTarget();
         }
@@ -52,7 +57,7 @@ namespace MicrogameCourse.Microgames
 
             if (IsTargetTooSmall())
             {
-                ShowFeedback("Too slow!");
+                ShowFeedback("Too slow!", Color.red);
                 ShowNextTarget();
             }
         }
@@ -61,12 +66,14 @@ namespace MicrogameCourse.Microgames
         {
             if (!IsRunning) return;
 
-            AddScore(1);
+            int adjustScore = (decoy)? decoyPenalty: CalculatePoints(reactionTimer);
+
+            AddScore(adjustScore);
 
             if (showReactionTime)
-                ShowFeedback($"Hit! {reactionTimer:0.00}s");
+                ShowFeedback($"{GetRating(adjustScore)} - {reactionTimer:0.00}s score adjusted: {adjustScore:+#;-#;0}", Color.cadetBlue);
             else
-                ShowFeedback("Hit!");
+                ShowFeedback("Hit!", Color.cadetBlue);
 
             if (score >= scoreToWin)
                 Win();
@@ -74,16 +81,59 @@ namespace MicrogameCourse.Microgames
                 ShowNextTarget();
         }
 
+
+
         private void ShowNextTarget()
         {
             SetTargetSize(startSize);
             target.anchoredPosition = GetRandomPosition(playArea, startSize);
+
+            decoy = !decoy ? Random.value < 0.5f: decoy = false; 
+
+            if (decoy)
+            {
+                SetTargetColour(decoyColour);
+            }
+            else
+            {
+                SetTargetColour(safeColour);
+            }
             reactionTimer = 0f;
+        }
+
+        private int CalculatePoints(float reactionTime)
+        {
+            switch (reactionTimer)
+            {
+                case <= 0.5f:
+                    return 3;
+                case <= 1f:
+                    return 2;
+                default:                    
+                    return 1;
+            }
+        }
+
+        private string GetRating(int points)
+        {
+            switch (points)
+            {
+                case 3:
+                    return "Perfect!";
+                case 2:
+                    return "Great!";
+                case 1:
+                    return "Good!";
+                default:                    
+                    return "You Hit The Decoy!";
+            }
         }
 
         private void AddScore(int amount)
         {
             score += amount;
+            score = (score> 0) ? score : 0 ;
+
             UpdateProgress();
         }
 
@@ -98,8 +148,9 @@ namespace MicrogameCourse.Microgames
             targetImage.color = colour;
         }
 
-        private void ShowFeedback(string message)
+        private void ShowFeedback(string message, Color? colour = null)
         {
+            feedbackText.color = colour ?? Color.white;
             feedbackText.text = message;
         }
 
