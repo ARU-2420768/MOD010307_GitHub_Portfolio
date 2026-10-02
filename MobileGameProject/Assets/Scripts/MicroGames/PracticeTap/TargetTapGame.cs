@@ -17,6 +17,7 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private TextMeshProUGUI feedbackText;
         [SerializeField] private bool decoy = false;
 
+
         [Header("Rules")]
         [Tooltip("Points needed to win before the timer runs out.")]
         [SerializeField, Min(1)] private int scoreToWin = 10;
@@ -37,6 +38,7 @@ namespace MicrogameCourse.Microgames
         private int score;
         private float reactionTimer;
         private float currentSize;
+        private bool firstGame = true;
 
         public override void Begin(MicrogameSession session)
         {
@@ -48,6 +50,11 @@ namespace MicrogameCourse.Microgames
             ShowNextTarget();
         }
 
+        private void ShowNextFirstTarget()
+        {
+            //731529
+            ShowNextTarget();
+        }
         private void Update()
         {
             if (!IsRunning) return;
@@ -88,7 +95,10 @@ namespace MicrogameCourse.Microgames
             SetTargetSize(startSize);
             target.anchoredPosition = GetRandomPosition(playArea, startSize);
 
-            decoy = !decoy ? Random.value < 0.5f: decoy = false; 
+            if (!firstGame)
+            {
+                decoy = !decoy ? Random.value < 0.5f: decoy = false; 
+            }
 
             if (decoy)
             {
@@ -99,6 +109,7 @@ namespace MicrogameCourse.Microgames
                 SetTargetColour(safeColour);
             }
             reactionTimer = 0f;
+            firstGame = false;
         }
 
         private int CalculatePoints(float reactionTime)
@@ -124,6 +135,8 @@ namespace MicrogameCourse.Microgames
                     return "Great!";
                 case 1:
                     return "Good!";
+                case -2: 
+                    return "Good dodge!";
                 default:                    
                     return "You Hit The Decoy!";
             }

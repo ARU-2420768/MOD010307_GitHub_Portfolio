@@ -70,7 +70,7 @@ namespace MicrogameCourse.Framework
             game.End();
             playArea.SetActive(false);
             resultPanel.SetActive(true);
-            resultText.text = "You" + (won ? " Win!" : "'re time is up!");
+            resultText.text = "You" + (won ? " Win!" : "r time is up!");
         }
 
         private void ShowTime()
