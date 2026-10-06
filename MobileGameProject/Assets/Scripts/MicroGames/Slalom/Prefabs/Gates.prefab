@@ -200,3 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8935e2402a84e54498ccc135d5dd75d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveGates
+  startGatesPrefab: {fileID: 355486241688857300, guid: bcf320db7b1d64f4196596b8b67aa7a7, type: 3}
+  gatesPrefab: {fileID: 6251127103745215781}
+  session: {fileID: 0}

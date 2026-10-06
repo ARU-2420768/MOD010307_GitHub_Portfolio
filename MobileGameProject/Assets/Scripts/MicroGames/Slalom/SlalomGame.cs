@@ -14,7 +14,11 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private Image targetImage;
         [SerializeField] private TextMeshProUGUI progressText;
         [SerializeField] private TextMeshProUGUI feedbackText;
-        [SerializeField] private bool firstGate = true;
+
+
+        [Header("Gates Prefabs")]
+        [SerializeField] private GameObject startGatesPrefab;
+        [SerializeField] private GameObject gatesPrefab;
 
 
         private Camera mainCamera;
@@ -29,9 +33,29 @@ namespace MicrogameCourse.Microgames
             base.Begin(session);
         }
 
+        private void Start()
+        {
+            Debug.Log("Slalom Start");
+            InitialiseFirstNewGates();
+        }
+
         private void Update()
         {
             if (!IsRunning) return;
+
+        }
+
+        private void InitialiseFirstNewGates()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                GameObject gate = Instantiate(gatesPrefab, playArea);
+
+                float x = (i % 2 == 0) ? -1f : 1f;
+
+                gate.transform.localPosition = new Vector3(-200 * x, 600 - (i * 400), 0);
+            }
+
         }
 
     }

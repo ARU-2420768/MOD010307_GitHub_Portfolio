@@ -38,7 +38,6 @@ namespace MicrogameCourse.Framework
 
         public void StartGame()
         {
-            Debug.Log("Start Game");
             if(currentPhase != Phase.Ready || game == null)
             {
                 return;
@@ -56,16 +55,12 @@ namespace MicrogameCourse.Framework
 
         public void StartTimer()
         {
-            Debug.Log("Start Timer");
-            
-            //countdownText.text = "Start Timer";
             if(countdownText == null)
             {
                 Debug.Log("No countdown text set in scene");
                 return;    
             } 
             StartCoroutine(CountdownCoroutine());
-            
         }
 
         private IEnumerator CountdownCoroutine()

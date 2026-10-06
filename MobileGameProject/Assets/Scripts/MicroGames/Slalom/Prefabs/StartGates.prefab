@@ -83,6 +83,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 414744529533560715, guid: 51df6313910dd9048b1d70812fdf4112, type: 3}
+      propertyPath: startGatesPrefab
+      value: 
+      objectReference: {fileID: 355486241688857300}
     - target: {fileID: 6251127103745215781, guid: 51df6313910dd9048b1d70812fdf4112, type: 3}
       propertyPath: m_Name
       value: StartGates Variant
@@ -175,6 +179,11 @@ PrefabInstance:
       addedObject: {fileID: 523700544241845611}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51df6313910dd9048b1d70812fdf4112, type: 3}
+--- !u!1 &355486241688857300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6251127103745215781, guid: 51df6313910dd9048b1d70812fdf4112, type: 3}
+  m_PrefabInstance: {fileID: 5921818037789124593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2489501682120541019 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8116325139414754474, guid: 51df6313910dd9048b1d70812fdf4112, type: 3}

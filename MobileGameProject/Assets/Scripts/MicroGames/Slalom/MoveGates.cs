@@ -6,9 +6,13 @@ namespace MicrogameCourse.Framework
     public class MoveGates : MicrogameBehaviour
     {
 
-
         private float moveSpeed = 100f;
-        [SerializeField] private MicrogameSession session;
+        private MicrogameSession session;
+
+        private void Awake()
+        {
+            session = FindFirstObjectByType<MicrogameSession>();
+        }
 
         private void Update()
         {
@@ -16,9 +20,6 @@ namespace MicrogameCourse.Framework
             transform.position += moveSpeed * Time.deltaTime * Vector3.down;
         }
 
-        private void CreateNewGate()
-        {
-            
-        }
+
     }
 }

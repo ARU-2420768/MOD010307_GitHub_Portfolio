@@ -2354,7 +2354,8 @@ MonoBehaviour:
   targetImage: {fileID: 0}
   progressText: {fileID: 0}
   feedbackText: {fileID: 0}
-  firstGate: 1
+  startGatesPrefab: {fileID: 355486241688857300, guid: bcf320db7b1d64f4196596b8b67aa7a7, type: 3}
+  gatesPrefab: {fileID: 6251127103745215781, guid: 51df6313910dd9048b1d70812fdf4112, type: 3}
 --- !u!1 &1549625782
 GameObject:
   m_ObjectHideFlags: 0
