@@ -48,7 +48,7 @@ namespace MicrogameCourse.Microgames
 
         private void InitialiseFirstNewGates()
         {
-            for (int i = 1; i < 6; i++)
+            for (int i = 1; i < 1; i++)
             {
                 GameObject gate = Random.value < 0.5f ? Instantiate(gatesPrefab, playArea):Instantiate(fastGatesPrefab, playArea);
 

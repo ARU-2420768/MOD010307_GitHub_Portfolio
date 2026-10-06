@@ -16,6 +16,8 @@ namespace MicrogameCourse.Framework
         [SerializeField] private MicrogameBehaviour game;
         [SerializeField] private GameObject readyPanel;
         [SerializeField] private GameObject playArea;
+
+        [SerializeField] private GameObject playArea3D;
         [SerializeField] private GameObject resultPanel;
         [SerializeField] private TextMeshProUGUI timerText;
         [SerializeField] private TextMeshProUGUI resultText;
@@ -32,6 +34,7 @@ namespace MicrogameCourse.Framework
             currentPhase = Phase.Ready;
             readyPanel.SetActive(true);
             playArea.SetActive(false);
+            playArea3D.SetActive(false);
             resultPanel.SetActive(false);
             timerText.text = string.Empty;
         }
@@ -45,6 +48,7 @@ namespace MicrogameCourse.Framework
             remainingSeconds = durationSeconds;
             readyPanel.SetActive(false);
             playArea.SetActive(true);
+            playArea3D.SetActive(true);
             resultPanel.SetActive(false);
             
             StartTimer();
@@ -70,7 +74,7 @@ namespace MicrogameCourse.Framework
             foreach(string item in countdown)
             {
                 countdownText.text = item;
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(durationCountdownStep);
             }
             countdownText.text = "";
             currentPhase = Phase.Playing;
