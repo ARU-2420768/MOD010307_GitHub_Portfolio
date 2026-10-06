@@ -46,16 +46,25 @@ namespace MicrogameCourse.Microgames
 
         private void InitialiseFirstNewGates()
         {
-            for (int i = 0; i < 1; i++)
+            for (int i = 1; i < 6; i++)
             {
                 GameObject gate = Instantiate(gatesPrefab, playArea);
 
-                float x = (i % 2 == 0) ? -1f : 1f;
+                float x = Random.value < 0.5f ? -1f : 1f;
 
-                gate.transform.localPosition = new Vector3(-200 * x, 0, 0);
+                gate.transform.localPosition = new Vector3(-200 * x, -500 + (i * 250), 0);
             }
 
         }
+
+        public void CreateNewGate()
+        {
+            GameObject gate = Instantiate(gatesPrefab, playArea);
+            float x = Random.value < 0.5f ? -1f : 1f;
+            gate.transform.localPosition = new Vector3(-200 * x, 750, 0);
+        }
+
+
 
     }
 }

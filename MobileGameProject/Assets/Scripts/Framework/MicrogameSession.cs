@@ -21,7 +21,7 @@ namespace MicrogameCourse.Framework
         [SerializeField] private TextMeshProUGUI resultText;
         [SerializeField] private TextMeshProUGUI countdownText;
         [SerializeField, Min(1f)] private float durationSeconds = 10f;
-        [SerializeField] private float durationCountdownStep = 1f;
+        [SerializeField] private float durationCountdownStep = 0.1f;
         [SerializeField] public bool isTimerStarted = false;
 
         private Phase currentPhase;
@@ -70,7 +70,7 @@ namespace MicrogameCourse.Framework
             foreach(string item in countdown)
             {
                 countdownText.text = item;
-                yield return new WaitForSeconds(durationCountdownStep);
+                yield return new WaitForSeconds(0.1f);
             }
             countdownText.text = "";
             currentPhase = Phase.Playing;
