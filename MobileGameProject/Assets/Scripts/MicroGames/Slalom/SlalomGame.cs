@@ -19,9 +19,11 @@ namespace MicrogameCourse.Microgames
         [Header("Gates Prefabs")]
         [SerializeField] private GameObject startGatesPrefab;
         [SerializeField] private GameObject gatesPrefab;
+        [SerializeField] private GameObject fastGatesPrefab;
 
 
         private Camera mainCamera;
+        private GameObject newPrefab;
 
         private void Awake()
         {
@@ -48,7 +50,7 @@ namespace MicrogameCourse.Microgames
         {
             for (int i = 1; i < 6; i++)
             {
-                GameObject gate = Instantiate(gatesPrefab, playArea);
+                GameObject gate = Random.value < 0.5f ? Instantiate(gatesPrefab, playArea):Instantiate(fastGatesPrefab, playArea);
 
                 float x = Random.value < 0.5f ? -1f : 1f;
 
@@ -63,8 +65,6 @@ namespace MicrogameCourse.Microgames
             float x = Random.value < 0.5f ? -1f : 1f;
             gate.transform.localPosition = new Vector3(-200 * x, 750, 0);
         }
-
-
 
     }
 }
