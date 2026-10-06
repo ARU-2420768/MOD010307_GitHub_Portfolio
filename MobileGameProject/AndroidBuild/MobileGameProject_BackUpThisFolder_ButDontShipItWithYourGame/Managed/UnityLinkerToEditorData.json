@@ -51,8 +51,12 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -66,8 +70,12 @@
           {
             "name": "AudioListener",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -110,8 +118,12 @@
           {
             "name": "Camera",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -131,8 +143,12 @@
           {
             "name": "Cubemap",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -152,8 +168,12 @@
           {
             "name": "EditorExtension",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -167,8 +187,12 @@
           {
             "name": "GameObject",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -200,8 +224,12 @@
           {
             "name": "LevelGameManager",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -233,8 +261,12 @@
           {
             "name": "LightmapSettings",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -248,8 +280,12 @@
           {
             "name": "Material",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -275,8 +311,12 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -290,8 +330,12 @@
           {
             "name": "MonoScript",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -299,8 +343,12 @@
           {
             "name": "NamedObject",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -338,8 +386,12 @@
           {
             "name": "RectTransform",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -353,8 +405,12 @@
           {
             "name": "RenderSettings",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -386,8 +442,12 @@
           {
             "name": "Shader",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -413,8 +473,12 @@
           {
             "name": "Sprite",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1471,8 +1535,12 @@
           {
             "name": "Font",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1538,8 +1606,12 @@
           {
             "name": "Canvas",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1553,8 +1625,12 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
+              "Assets/Scenes/FourthGame.unity",
               "Assets/Scenes/MainMenu.unity",
-              "Assets/Scenes/PracticeTap.unity"
+              "Assets/Scenes/Minotaur.unity",
+              "Assets/Scenes/PracticeTap.unity",
+              "Assets/Scenes/SecondGame.unity",
+              "Assets/Scenes/ThirdGame.unity"
             ],
             "dependencyType": 0,
             "icon": null

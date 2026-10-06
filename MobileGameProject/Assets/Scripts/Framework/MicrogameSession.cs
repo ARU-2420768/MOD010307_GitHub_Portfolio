@@ -3,6 +3,8 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
+using JetBrains.Annotations;
 
 
 namespace MicrogameCourse.Framework
@@ -17,11 +19,13 @@ namespace MicrogameCourse.Framework
         [SerializeField] private GameObject resultPanel;
         [SerializeField] private TextMeshProUGUI timerText;
         [SerializeField] private TextMeshProUGUI resultText;
+        [SerializeField] private TextMeshProUGUI countdownText;
         [SerializeField, Min(1f)] private float durationSeconds = 10f;
+        [SerializeField] private float durationCountdownStep = 1f;
+        [SerializeField] public bool isTimerStarted = false;
 
         private Phase currentPhase;
         private float remainingSeconds;
-
 
         private void Awake()
         {
@@ -34,6 +38,7 @@ namespace MicrogameCourse.Framework
 
         public void StartGame()
         {
+            Debug.Log("Start Game");
             if(currentPhase != Phase.Ready || game == null)
             {
                 return;
@@ -42,9 +47,39 @@ namespace MicrogameCourse.Framework
             readyPanel.SetActive(false);
             playArea.SetActive(true);
             resultPanel.SetActive(false);
-            currentPhase = Phase.Playing;
-            ShowTime();
+            
+            StartTimer();
+            
             game.Begin(this);
+        }
+
+
+        public void StartTimer()
+        {
+            Debug.Log("Start Timer");
+            
+            //countdownText.text = "Start Timer";
+            if(countdownText == null)
+            {
+                Debug.Log("No countdown text set in scene");
+                return;    
+            } 
+            StartCoroutine(CountdownCoroutine());
+            
+        }
+
+        private IEnumerator CountdownCoroutine()
+        {
+            string[] countdown = {"3", "2", "1", "GO!!!"};
+
+            foreach(string item in countdown)
+            {
+                countdownText.text = item;
+                yield return new WaitForSeconds(durationCountdownStep);
+            }
+            countdownText.text = "";
+            currentPhase = Phase.Playing;
+            isTimerStarted = true;
         }
 
         private void Update()

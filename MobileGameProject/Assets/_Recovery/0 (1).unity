@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 61324242}
   - component: {fileID: 61324241}
   m_Layer: 5
-  m_Name: Slalom
+  m_Name: Minotaur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1784093031}
         m_TargetAssemblyTypeName: MicrogameCourse.Framework.SceneNavigator, Assembly-CSharp
-        m_MethodName: OpenSlalom
+        m_MethodName: OpenMinotaur
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -423,8 +423,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 700}
-  m_SizeDelta: {x: 900, y: 280}
+  m_AnchoredPosition: {x: 0, y: 650}
+  m_SizeDelta: {x: 900, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746971293
 MonoBehaviour:
@@ -446,8 +446,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Winter Olympics:\n1 - Slalom\t\t\t\tBronze\n2 - Ski Jump\t\t\tBronze\n3
-    - Shooting\t\t\t\tBronze\n4 - Curling\t\t\t\tBronze\nOveralll\t\t\t\tBronze Medal\n"
+  m_text: 'Choose Your Game:
+
+    1 - Practice Tap
+
+    2 - Minotaur
+
+    3 - Second
+    Game
+
+    4 -Thrid Game
+
+    5 - Fourth Game'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1261,7 +1271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Slalom
+  m_text: Minotaur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1638,7 +1648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1745993702
 RectTransform:
   m_ObjectHideFlags: 0

@@ -63,12 +63,16 @@ extern void MicrogameSession_Update_m31EFB4AFDBECE3CB240D3C52CFD299EB716E5BDC (v
 extern void MicrogameSession_Finish_m5D31A6F613AC7DDB1D2D093A1C0C6C7CFDDF589D (void);
 extern void MicrogameSession_ShowTime_m7845CCF77EE25309E022F8602DE3DCD9C4F58271 (void);
 extern void MicrogameSession__ctor_m884F5194977B6C7ECF3F145370FDE3D65B23B128 (void);
+extern void SceneNavigator_OpenMinotaur_m65768B7A0EB386BCE4BBA9F4F2D0B0AA2723E967 (void);
+extern void SceneNavigator_OpenSecondGame_m0644442180BB20793E608D5D97BB4684F60CC1CE (void);
+extern void SceneNavigator_OpenThirdGame_m9FAF2FFF22B3FAA33024BFEE72A94DCFE2E85C3E (void);
+extern void SceneNavigator_OpenFourthGame_mE2F1F80EDB180B7AD5505824735E49736F53C225 (void);
 extern void SceneNavigator_OpenPractice_m850644DD409568FF32B6C30188683EE538975817 (void);
 extern void SceneNavigator_OpenMenu_m2893083B8A46D2517E1B66C66004031DB8198456 (void);
 extern void SceneNavigator_Replay_m9A7A64566798642D5966EC9660D2AC75BA95AAFA (void);
 extern void SceneNavigator_Load_m443DD04640AACCD43C8A995136D930681FB5D74D (void);
 extern void SceneNavigator__ctor_m54ABACD6A104F5DACB62A871842676DD62DBA4FF (void);
-static Il2CppMethodPointer s_methodPointers[61] = 
+static Il2CppMethodPointer s_methodPointers[65] = 
 {
 	PlayerAnalytics_Awake_mA8D6D18A8C77B56E49AB4EEE2A28617FA5ACE47C,
 	PlayerAnalytics_SendPlayerStartEvent_m48C38E48E29F749C669E2DF668CF3BB4EE751429,
@@ -126,6 +130,10 @@ static Il2CppMethodPointer s_methodPointers[61] =
 	MicrogameSession_Finish_m5D31A6F613AC7DDB1D2D093A1C0C6C7CFDDF589D,
 	MicrogameSession_ShowTime_m7845CCF77EE25309E022F8602DE3DCD9C4F58271,
 	MicrogameSession__ctor_m884F5194977B6C7ECF3F145370FDE3D65B23B128,
+	SceneNavigator_OpenMinotaur_m65768B7A0EB386BCE4BBA9F4F2D0B0AA2723E967,
+	SceneNavigator_OpenSecondGame_m0644442180BB20793E608D5D97BB4684F60CC1CE,
+	SceneNavigator_OpenThirdGame_m9FAF2FFF22B3FAA33024BFEE72A94DCFE2E85C3E,
+	SceneNavigator_OpenFourthGame_mE2F1F80EDB180B7AD5505824735E49736F53C225,
 	SceneNavigator_OpenPractice_m850644DD409568FF32B6C30188683EE538975817,
 	SceneNavigator_OpenMenu_m2893083B8A46D2517E1B66C66004031DB8198456,
 	SceneNavigator_Replay_m9A7A64566798642D5966EC9660D2AC75BA95AAFA,
@@ -139,7 +147,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] =
 	{ 0x06000006, U3CAwakeU3Ed__0_MoveNext_m3BEA8839D57FACB4EF2D96F539F2BBE6493C94E4_AdjustorThunk },
 	{ 0x06000007, U3CAwakeU3Ed__0_SetStateMachine_m09D237EEA7DBBFDBEE366194DC92EACA1D856725_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[61] = 
+static const int32_t s_InvokerIndices[65] = 
 {
 	16608,
 	12520,
@@ -200,6 +208,10 @@ static const int32_t s_InvokerIndices[61] =
 	16608,
 	16608,
 	16608,
+	16608,
+	16608,
+	16608,
+	16608,
 	12590,
 	16608,
 };
@@ -207,7 +219,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	61,
+	65,
 	s_methodPointers,
 	2,
 	s_adjustorThunks,
