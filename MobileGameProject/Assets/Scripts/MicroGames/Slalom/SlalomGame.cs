@@ -35,7 +35,6 @@ namespace MicrogameCourse.Microgames
 
         private void Start()
         {
-            Debug.Log("Slalom Start");
             InitialiseFirstNewGates();
         }
 
@@ -47,13 +46,13 @@ namespace MicrogameCourse.Microgames
 
         private void InitialiseFirstNewGates()
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 1; i++)
             {
                 GameObject gate = Instantiate(gatesPrefab, playArea);
 
                 float x = (i % 2 == 0) ? -1f : 1f;
 
-                gate.transform.localPosition = new Vector3(-200 * x, 600 - (i * 400), 0);
+                gate.transform.localPosition = new Vector3(-200 * x, 0, 0);
             }
 
         }
