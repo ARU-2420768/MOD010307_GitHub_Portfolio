@@ -14,6 +14,7 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private Image targetImage;
         [SerializeField] private TextMeshProUGUI progressText;
         [SerializeField] private TextMeshProUGUI feedbackText;
+        [SerializeField] private GameObject playArea3D;
 
 
         [Header("Gates Prefabs")]
@@ -48,22 +49,29 @@ namespace MicrogameCourse.Microgames
 
         private void InitialiseFirstNewGates()
         {
+            Instantiate(startGatesPrefab, new Vector3(0, -2, 0), Quaternion.identity);
+
             for (int i = 1; i < 1; i++)
             {
-                GameObject gate = Random.value < 0.5f ? Instantiate(gatesPrefab, playArea):Instantiate(fastGatesPrefab, playArea);
-
                 float x = Random.value < 0.5f ? -1f : 1f;
+//                Instantiate(gatesPrefab, new Vector3(1 * x, i, 0), Quaternion.identity);
+                Instantiate(gatesPrefab, new Vector3(-1, i, 0), Quaternion.identity);
+                //GameObject gate = Random.value < 0.5f ? Instantiate(gatesPrefab, playArea):Instantiate(fastGatesPrefab, playArea);
 
-                gate.transform.localPosition = new Vector3(-200 * x, -500 + (i * 250), 0);
+                //float x = Random.value < 0.5f ? -1f : 1f;
+
+                //gate.transform.localPosition = new Vector3(-200 * x, -500 + (i * 250), 0);
             }
 
         }
 
         public void CreateNewGate()
         {
-            GameObject gate = Instantiate(gatesPrefab, playArea);
             float x = Random.value < 0.5f ? -1f : 1f;
-            gate.transform.localPosition = new Vector3(-200 * x, 750, 0);
+            Instantiate(gatesPrefab, new Vector3(1 * x, 1, 0), Quaternion.identity);
+            //GameObject gate = Instantiate(gatesPrefab, playArea);
+            
+            //gate.transform.localPosition = new Vector3(-200 * x, 750, 0);
         }
 
     }
