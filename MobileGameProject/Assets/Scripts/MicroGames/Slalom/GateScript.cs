@@ -7,55 +7,50 @@ using Unity.VisualScripting;
 namespace MicrogameCourse.Framework
 {
 
-public class GateScript : MicrogameBehaviour
+public sealed class GateScript : MicrogameBehaviour
     {
 
         private enum GateSide {Left, Right, Centre};
 
-        [SerializeField] private GateSide position;
+        [SerializeField] private GateSide positionOfGate;
 
+        private SlalomGame game;
 
         private SpriteRenderer spriteRenderer;
 
         private void Awake()
         {
-            Debug.Log("Gate Script Awake");
             spriteRenderer = GetComponent<SpriteRenderer>();
+            game = FindFirstObjectByType<SlalomGame>();
         }
 
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Debug.Log("Gate Script Trigger");
-            switch (position)
+
+            //if (collision.gameObject.name != "Bottom")
+            //    return;
+
+            switch (positionOfGate)
             {
                 case GateSide.Left:
-                    Debug.Log("Missed Gate Left");
-                    SetGateColour(Color.red);
-                    break;
-
                 case GateSide.Right:
-                    Debug.Log("Missed Gate Right");
                     SetGateColour(Color.red);
                     break;
 
                 case GateSide.Centre:
-                    Debug.Log("Successfully through date");
                     SetGateColour(Color.green);
                     break;
 
                 default:
-                    Debug.Log($"Unknown gate: {gameObject.name}");
+                    Debug.Log($"Unknown gate: {gameObject.name}, Position Of Gate: {positionOfGate}.");
                     break;
             }
         }
 
         public void SetGateColour(Color colour)
         {
-            spriteRenderer.color = colour;
+                spriteRenderer.color = colour;
         }
-
     }
-
-
 }

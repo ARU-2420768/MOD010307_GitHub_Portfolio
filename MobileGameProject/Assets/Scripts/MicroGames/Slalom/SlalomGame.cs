@@ -26,6 +26,9 @@ namespace MicrogameCourse.Microgames
         private Camera mainCamera;
         private GameObject newPrefab;
 
+        private readonly float[] Kitzbuhel = { 0f, -1f, 0f, -1f, 1f, 1f, 0f, 1f, -1, 0 };
+        private int gateNumber = 0;
+
         private void Awake()
         {
             mainCamera = Camera.main;
@@ -44,34 +47,24 @@ namespace MicrogameCourse.Microgames
         private void Update()
         {
             if (!IsRunning) return;
-
         }
 
         private void InitialiseFirstNewGates()
         {
-            Instantiate(startGatesPrefab, new Vector3(0, -2, 0), Quaternion.identity);
-
-            for (int i = 1; i < 1; i++)
+            Instantiate(startGatesPrefab, new Vector3(Kitzbuhel[gateNumber], -2.5f + gateNumber, 0), Quaternion.identity);
+            gateNumber++;
+            for (int i = 1; i < 4; i++)
             {
-                float x = Random.value < 0.5f ? -1f : 1f;
-//                Instantiate(gatesPrefab, new Vector3(1 * x, i, 0), Quaternion.identity);
-                Instantiate(gatesPrefab, new Vector3(-1, i, 0), Quaternion.identity);
-                //GameObject gate = Random.value < 0.5f ? Instantiate(gatesPrefab, playArea):Instantiate(fastGatesPrefab, playArea);
-
-                //float x = Random.value < 0.5f ? -1f : 1f;
-
-                //gate.transform.localPosition = new Vector3(-200 * x, -500 + (i * 250), 0);
+                Instantiate(startGatesPrefab, new Vector3(Kitzbuhel[gateNumber], -2.5f + (2 * gateNumber), 0), Quaternion.identity);
+                gateNumber++;
             }
-
         }
 
         public void CreateNewGate()
         {
-            float x = Random.value < 0.5f ? -1f : 1f;
-            Instantiate(gatesPrefab, new Vector3(1 * x, 1, 0), Quaternion.identity);
-            //GameObject gate = Instantiate(gatesPrefab, playArea);
-            
-            //gate.transform.localPosition = new Vector3(-200 * x, 750, 0);
+            if (!IsRunning) return;
+            Instantiate(startGatesPrefab, new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity);
+            gateNumber++;
         }
 
     }
