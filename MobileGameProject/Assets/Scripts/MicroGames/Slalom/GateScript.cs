@@ -9,6 +9,7 @@ namespace MicrogameCourse.Framework
 
 public sealed class GateScript : MicrogameBehaviour
     {
+        [SerializeField] float gateSpeedReset = 1f;
 
         private enum GateSide {Left, Right, Centre};
 
@@ -36,6 +37,8 @@ public sealed class GateScript : MicrogameBehaviour
                 case GateSide.Left:
                 case GateSide.Right:
                     SetGateColour(Color.red);
+                    game.gateMoveSpeed = gateSpeedReset;
+                    Debug.Log("Speed Reset");
                     break;
 
                 case GateSide.Centre:

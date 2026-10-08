@@ -707,6 +707,7 @@ GameObject:
   - component: {fileID: 371785271}
   - component: {fileID: 371785273}
   - component: {fileID: 371785274}
+  - component: {fileID: 371785275}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -804,6 +805,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &371785275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371785270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08fba4fe5caba124581a180d3b845a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Framework.PlayerController
+  maxSpeed: 3
+  acceleration: 5
+  minX: -2.3
+  maxX: 2.3
 --- !u!1 &386668241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,9 +2758,9 @@ MonoBehaviour:
   progressText: {fileID: 1961679114}
   feedbackText: {fileID: 46696581}
   playArea3D: {fileID: 1898913606}
-  startGatesPrefab: {fileID: 8624420955184723030, guid: 3325aa8b910f84044ba1c729a3b287dc, type: 3}
-  gatesPrefab: {fileID: 3950149773298531598, guid: 84562f2a048cadb4e9678a3e9a811e32, type: 3}
-  fastGatesPrefab: {fileID: 7835460704745918030, guid: 984d02a0e76352c44b60fe9726aefafd, type: 3}
+  startGatesPrefab: {fileID: 1787718849970169396, guid: 2fe9e8ea51e0b5b42a550d96a9ea0fa3, type: 3}
+  gatesPrefab: {fileID: 318863479658321324, guid: 74696cec7fdd71e4389b9db5ca758482, type: 3}
+  fastGatesPrefab: {fileID: 8485023169877269221, guid: 7a398c4c7a053cf4ea7c84691cfbadf6, type: 3}
 --- !u!1 &1549625782
 GameObject:
   m_ObjectHideFlags: 0

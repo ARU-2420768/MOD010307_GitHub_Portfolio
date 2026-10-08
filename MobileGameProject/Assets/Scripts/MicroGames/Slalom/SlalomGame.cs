@@ -21,10 +21,14 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private GameObject startGatesPrefab;
         [SerializeField] private GameObject gatesPrefab;
         [SerializeField] private GameObject fastGatesPrefab;
+        [SerializeField] public float gateMoveSpeed = 1f;
 
 
         private Camera mainCamera;
         private GameObject newPrefab;
+
+        private GameObject[] Kitzbuhel_Gates;
+
 
         private readonly float[] Kitzbuhel = { 0f, -1f, 0f, -1f, 1f, 1f, 0f, 1f, -1, 0 };
         private int gateNumber = 0;
@@ -32,6 +36,8 @@ namespace MicrogameCourse.Microgames
         private void Awake()
         {
             mainCamera = Camera.main;
+
+                Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab};
         }
 
         public override void Begin(MicrogameSession session)
@@ -55,7 +61,7 @@ namespace MicrogameCourse.Microgames
             gateNumber++;
             for (int i = 1; i < 4; i++)
             {
-                Instantiate(startGatesPrefab, new Vector3(Kitzbuhel[gateNumber], -2.5f + (2 * gateNumber), 0), Quaternion.identity);
+                Instantiate(Kitzbuhel_Gates[gateNumber], new Vector3(Kitzbuhel[gateNumber], -2.5f + (2 * gateNumber), 0), Quaternion.identity);
                 gateNumber++;
             }
         }
@@ -63,7 +69,7 @@ namespace MicrogameCourse.Microgames
         public void CreateNewGate()
         {
             if (!IsRunning) return;
-            Instantiate(startGatesPrefab, new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity);
+            Instantiate(Kitzbuhel_Gates[gateNumber % Kitzbuhel_Gates.Length], new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity);
             gateNumber++;
         }
 
