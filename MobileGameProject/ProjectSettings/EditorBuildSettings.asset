@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 22af209a7b268dd4fb5be2bcf837250a
+  - enabled: 1
+    path: Assets/Scenes/PracticeTap.unity
+    guid: 83e1cfe0847b3184dbba392b8c7abf0d
+  - enabled: 1
+    path: Assets/Scenes/Slalom.unity
+    guid: 5af3a04a0cfbe4c4da275678ab018f8c
+  - enabled: 1
+    path: Assets/Scenes/SecondGame.unity
+    guid: 4c2576578e2f11c459d77d91b50ba593
+  - enabled: 1
+    path: Assets/Scenes/ThirdGame.unity
+    guid: e0cad6ab9258f2f4d913ec90c6cf4bf7
+  - enabled: 1
+    path: Assets/Scenes/FourthGame.unity
+    guid: 425bbb0380a2478458971a4b44307d2a
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6b09368462af5f24cb6252f9f170bdce, type: 2}
+  m_UseUCBPForAssetBundles: 0
