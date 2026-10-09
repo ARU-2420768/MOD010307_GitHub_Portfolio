@@ -12,8 +12,8 @@ namespace MicrogameCourse.Framework
     {
 
         [Header("Player Controls")]
-        [SerializeField, Min(0.1f)] private float maxSpeed = 3f;
-        [SerializeField, Min(0f)] private float acceleration = 5f;
+        [SerializeField, Min(0.1f)] private float maxSpeed = 5f;
+        [SerializeField, Min(0f)] private float acceleration = 7f;
         [SerializeField] private float minX = -2.3f;
         [SerializeField] private float maxX = 2.3f;
 

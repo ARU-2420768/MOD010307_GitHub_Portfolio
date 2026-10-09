@@ -383,6 +383,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+    - target: {fileID: 7497065286303858591, guid: 84562f2a048cadb4e9678a3e9a811e32, type: 3}
+      propertyPath: gateSpeedIncrease
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497065286303858591, guid: 84562f2a048cadb4e9678a3e9a811e32, type: 3}
+      propertyPath: fastGateSpeedIncrease
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7740501595670851638, guid: 84562f2a048cadb4e9678a3e9a811e32, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.99121

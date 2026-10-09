@@ -61,54 +61,78 @@ struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83;
 struct Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1;
 struct Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C;
 struct Func_3_t6F6D9932638EA1A5A45303C6626C818C25D164E5;
+struct HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2;
+struct InputControl_1_tC164085710F2FAA9161295C9B7FE273AF893CF66;
+struct InputProcessor_1_tD1A40E0E5825AAABC3416EC96E087FF6E6351DD2;
+struct List_1_tFED1C27AA4B8AC9813FF4858B3ABB1B3F74558EF;
 struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
 struct List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607;
 struct Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12;
 struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
 struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
+struct UnityEvent_1_t8ABE5544759145B8D7A09F1C54FFCB6907EDD56E;
+struct InputProcessor_1U5BU5D_t5083205703ED9D1A4B8037E3BBE765389957231A;
 struct TMP_TextProcessingStack_1U5BU5D_t08293E0BB072311BB96170F351D1083BCA97B9B2;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
 struct DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615;
 struct FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA;
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 struct HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622;
 struct HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658;
+struct InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+struct InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5;
 struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
 struct MaterialReferenceU5BU5D_t7491D335AB3E3E13CE9C0F5E931F396F6A02E1F2;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct RichTextTagAttributeU5BU5D_t5816316EFD8F59DBC30B9F88E15828C564E47B6D;
 struct SecondarySpriteTextureU5BU5D_tC322D73EA4B9A8B747013A3584DEFEAFC0D87192;
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+struct SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28;
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99;
 struct TMP_ColorGradientU5BU5D_t2F65E8C42F268DFF33BB1392D94BCF5B5087308A;
 struct TMP_SubMeshUIU5BU5D_tC77B263183A59A75345C26152457207EAC3BBF29;
+struct UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83;
 struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
 struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
 struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
+struct ControlBitRangeNodeU5BU5D_t912A404149DE6D350D1735A026182C409C510F27;
 struct TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113;
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 struct AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C;
+struct AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7;
+struct BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA;
+struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF;
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
 struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
 struct CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860;
+struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 struct ConsentManager_t71D0B1D68F0F4ADE51AB52E4CC63F1EED44606D4;
 struct ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007;
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
 struct CustomEvent_t130A97FF5D53CE5F20F70F3522408431F884B660;
 struct Delegate_t;
+struct DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B;
 struct Exception_t;
 struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct GateScript_tEBF091DB35268FB98010EC50086A4E56ED820F03;
 struct IAnalyticsService_t131A8925CF4FBBB151AB85D6BE6D07785E210DC0;
 struct IAsyncStateMachine_t0680C7F905C553076B552D5A1A6E39E2F0F36AA2;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct ITextPreprocessor_tDBB49C8B68D7B80E8D233B9D9666C43981EFAAB9;
 struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
+struct InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B;
+struct IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB;
 struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
 struct LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599;
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
@@ -116,13 +140,21 @@ struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 struct MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699;
 struct MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E;
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+struct MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E;
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 struct PlayerAnalytics_t6FE5F604CDCE5F73B986B01A65A23A5A3C9BB056;
+struct PlayerController_tEB2A5985CAD0F60644E5ECCEADEAD402F7CF20EC;
+struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A;
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
+struct RemoveGate_t1E88B46D1D196EEEEF887247B3AE2476A89236BD;
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43;
+struct SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733;
+struct SlalomPlayer_tFD0D85F1F1C532C5938FB04BBF5783E0EC48AA3A;
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B;
 struct StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352;
 struct String_t;
 struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0;
@@ -145,9 +177,13 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E;
 struct Utility_t229A905233923073FC38E05AC74BBCB12DF3CA7B;
+struct Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432;
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
+struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
+struct U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA;
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
 struct ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540;
@@ -158,60 +194,96 @@ IL2CPP_EXTERN_C RuntimeClass* CustomEvent_t130A97FF5D53CE5F20F70F3522408431F884B
 IL2CPP_EXTERN_C RuntimeClass* DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GateSide_t12BD05E5F27545F7C2BDC22FF5E04E3B3652AFC6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IAnalyticsService_t131A8925CF4FBBB151AB85D6BE6D07785E210DC0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityServices_t4749F0FB88F542DAC1E287ACFFAB146EF9759317_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B34E0A2BA983304C33E73AB120997B4E3DB8D9160F0BEC18DE073994DD4FD292_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____F111FA1505EC7EF11EAF6F8DC8091D18DC1CDD5433FD193D0E4D17FDE9CA39C3_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____0C56CE3359108323BC031C61A3506863EB783F29EA1BB72BC880B6056F19884D_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5683C33B078A90B432A16B792229A5F47B30DB3896C91776C0758B78A05499C7_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____DB96AACB681C1DB4E1A28BBB2D02C88A39DE8F5DE249848132A3BA779FCA03EC_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral000E6F488C4BFBAD929A9ED558662797D830E719;
 IL2CPP_EXTERN_C String_t* _stringLiteral05E5095C794F029CD455976EDBCD820EE32A5AF3;
 IL2CPP_EXTERN_C String_t* _stringLiteral10682F3387EA548C626C08591967BD5D821B3ACA;
 IL2CPP_EXTERN_C String_t* _stringLiteral13337B7510150B3315E35A17130C09893A3F49C5;
 IL2CPP_EXTERN_C String_t* _stringLiteral1B2C5496A46B099F4A0A24ECEA0AB96752299264;
+IL2CPP_EXTERN_C String_t* _stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE;
+IL2CPP_EXTERN_C String_t* _stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2;
 IL2CPP_EXTERN_C String_t* _stringLiteral273FD99BAE89E79AD6A28AB5F14A4D0C89787A43;
 IL2CPP_EXTERN_C String_t* _stringLiteral2B3618452C41B1780E222CBD76533AD4272BD668;
 IL2CPP_EXTERN_C String_t* _stringLiteral2EC8CD042752D7946E3FF2C96AE1C94A02B99F99;
 IL2CPP_EXTERN_C String_t* _stringLiteral3402514A6504EAC3116A2358CD364CE6A2409455;
+IL2CPP_EXTERN_C String_t* _stringLiteral344F0DD69F417D7BCB8B983DB833F9837777057C;
+IL2CPP_EXTERN_C String_t* _stringLiteral38930E55588C14500EC6DAA1E909EC49C3F46D15;
 IL2CPP_EXTERN_C String_t* _stringLiteral40CAF78E6863B8928F80D8AEB83B64B0CD3CEE7C;
 IL2CPP_EXTERN_C String_t* _stringLiteral427AF35A25E69CCE07D05410B5E61EDCBAF3F518;
-IL2CPP_EXTERN_C String_t* _stringLiteral42D6729507CCE3A852BCFBE66A83354929A1C601;
 IL2CPP_EXTERN_C String_t* _stringLiteral4A667C49AA367BEAC2C09CF577CC18EFBB9CBC42;
 IL2CPP_EXTERN_C String_t* _stringLiteral51C6279E31F7483126B79E3000116001A915B690;
+IL2CPP_EXTERN_C String_t* _stringLiteral539A836FA3CBD104C959AAA7AE9AF83282BEEFF4;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D36C5A55B8CB52FA5FA06F75ECEA12FCF33DE27;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D77AEF547BDB572EB4319F23FAF6548F8255A6C;
 IL2CPP_EXTERN_C String_t* _stringLiteral68C8D68388E6CB8F34BD8ADFAE9759408CA6E16A;
 IL2CPP_EXTERN_C String_t* _stringLiteral6EDB28C4FCDBC0658271A6224287F44C8F5F0AC6;
+IL2CPP_EXTERN_C String_t* _stringLiteral766A55EDA30FDBC60D0AA9FBC64C6BA23BA6FB68;
 IL2CPP_EXTERN_C String_t* _stringLiteral78D958E853E9A979645D55A90BE243CCAC59E1B6;
 IL2CPP_EXTERN_C String_t* _stringLiteral7BFFA3EB445CCBB7B84D7DEED36C6753FF0B1B08;
 IL2CPP_EXTERN_C String_t* _stringLiteral7DE18B9B94414FE9BDBA0668D8B260329D4DF2AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral8243A16D425F93AF62CAAB2BFAE01A2D6246A5FE;
+IL2CPP_EXTERN_C String_t* _stringLiteral95B7AC2E876BCDD8DDDD0B00B2E6B82C57FE8613;
 IL2CPP_EXTERN_C String_t* _stringLiteral97D7F698D96CEF33225DED9E5AD4A663471B7238;
 IL2CPP_EXTERN_C String_t* _stringLiteral9B5D93EBDD41E0250436B5C2FA8A1004ADC41CB9;
+IL2CPP_EXTERN_C String_t* _stringLiteral9BEE6F60FD2DE2ED0B3410B4DE2071B53D4204B0;
 IL2CPP_EXTERN_C String_t* _stringLiteral9CB459ADC305561267AD22C5CC73F6F88CA38134;
 IL2CPP_EXTERN_C String_t* _stringLiteralA189EA65F59B7B1290A95DB589D32EDED5ED3458;
+IL2CPP_EXTERN_C String_t* _stringLiteralA4D4B3F5FED054BBDF9BC6034E88412C3DC4A346;
 IL2CPP_EXTERN_C String_t* _stringLiteralB88D3A6C88412160B22438F8A9AC6CF1A67727EF;
 IL2CPP_EXTERN_C String_t* _stringLiteralB9C24020A8D7AC3B2CE0D2E1CFBBB689548A090F;
+IL2CPP_EXTERN_C String_t* _stringLiteralD7376B9CF389CD3751FAAA7405ADBCB2B0AC7DB3;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralDC30B4E5A618BB553B18DD16CB9D3C41ECCC316B;
 IL2CPP_EXTERN_C String_t* _stringLiteralDDDF369AEED5BCD9E39D88A6620F003C3B30DD80;
 IL2CPP_EXTERN_C String_t* _stringLiteralDE463601953DBC33B2C1379C69D2099FE68A31A1;
 IL2CPP_EXTERN_C String_t* _stringLiteralDFCF5C8693CD5D607CE4AF43C48DAA6C9B24A959;
 IL2CPP_EXTERN_C String_t* _stringLiteralE18D2631F37ADDD1F10F58D0F72B01D83CF78C61;
+IL2CPP_EXTERN_C String_t* _stringLiteralE6CF30736E465BDC39884082916F384C1026BE7D;
+IL2CPP_EXTERN_C String_t* _stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3;
 IL2CPP_EXTERN_C String_t* _stringLiteralE923599FE9E7CF6C2BCE27EFB535A9EF238627CA;
 IL2CPP_EXTERN_C String_t* _stringLiteralED7D35FEBB73649EDBEB919E688E7BDAF884AACA;
 IL2CPP_EXTERN_C String_t* _stringLiteralFB09F4F6FD141DB42F8BFBE4FF2AF999807F95F3;
+IL2CPP_EXTERN_C String_t* _stringLiteralFDC060A93580729ABD58693281838FD8871BC3BE;
 IL2CPP_EXTERN_C String_t* _stringLiteralFDE82C8ECD0CB1865F4FA3CA86C388B7AB153953;
 IL2CPP_EXTERN_C String_t* _stringLiteralFFB86641798338BBA437748CD5A4389A546F3B98;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31_mA65278526A0A6AC9C98CD67B50FD79CDD9F4CB4B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31_mD3FFA8C376EC7E673776F8E83DBB17D1107C967F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m8E881B105EA2AA2D9E3CFB68EE0924719FA96813_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m5A53DBBEC351F939C04CB60CF7CD9C7E0E5A65AB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_m9A7869C021F041D45F2A851F70F97F8114AC99E4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m1479132C827AFD1E484F6E6D749F74E90BB687D3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_HasValue_mFAF0B4EEA878E596C80258FE3BDA57CEF40C8D7F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_FindFirstObjectByType_TisMicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E_m87F80D1CAE7B12B20476A036197D388CCF55D04A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CCountdownCoroutineU3Ed__17_System_Collections_IEnumerator_Reset_mF3E454F39E3B14A814854E45CF0E5963C060DE02_RuntimeMethod_var;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+struct SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -274,6 +346,20 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinv
 };
 struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
+};
+struct U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* ___U3CU3E4__this;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___U3CU3E7__wrap1;
+	int32_t ___U3CU3E7__wrap2;
+};
+struct InlinedArray_1_tE5F1062E65707D24360CEAC52E03D32C6E5BA8BB 
+{
+	int32_t ___length;
+	InputProcessor_1_tD1A40E0E5825AAABC3416EC96E087FF6E6351DD2* ___firstValue;
+	InputProcessor_1U5BU5D_t5083205703ED9D1A4B8037E3BBE765389957231A* ___additionalValues;
 };
 struct TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C 
 {
@@ -421,6 +507,40 @@ struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
 {
 };
+struct FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED 
+{
+	int32_t ___m_Code;
+};
+struct InputDeviceDescription_tE86DD77422AAF60ADDAC788B31E5A05E739B708F 
+{
+	String_t* ___m_InterfaceName;
+	String_t* ___m_DeviceClass;
+	String_t* ___m_Manufacturer;
+	String_t* ___m_Product;
+	String_t* ___m_Serial;
+	String_t* ___m_Version;
+	String_t* ___m_Capabilities;
+};
+struct InputDeviceDescription_tE86DD77422AAF60ADDAC788B31E5A05E739B708F_marshaled_pinvoke
+{
+	char* ___m_InterfaceName;
+	char* ___m_DeviceClass;
+	char* ___m_Manufacturer;
+	char* ___m_Product;
+	char* ___m_Serial;
+	char* ___m_Version;
+	char* ___m_Capabilities;
+};
+struct InputDeviceDescription_tE86DD77422AAF60ADDAC788B31E5A05E739B708F_marshaled_com
+{
+	Il2CppChar* ___m_InterfaceName;
+	Il2CppChar* ___m_DeviceClass;
+	Il2CppChar* ___m_Manufacturer;
+	Il2CppChar* ___m_Product;
+	Il2CppChar* ___m_Serial;
+	Il2CppChar* ___m_Version;
+	Il2CppChar* ___m_Capabilities;
+};
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
 {
 	int32_t ___m_value;
@@ -428,6 +548,21 @@ struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C
 struct IntPtr_t 
 {
 	void* ___m_value;
+};
+struct InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 
+{
+	String_t* ___m_StringOriginalCase;
+	String_t* ___m_StringLowerCase;
+};
+struct InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735_marshaled_pinvoke
+{
+	char* ___m_StringOriginalCase;
+	char* ___m_StringLowerCase;
+};
+struct InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735_marshaled_com
+{
+	Il2CppChar* ___m_StringOriginalCase;
+	Il2CppChar* ___m_StringLowerCase;
 };
 struct MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B 
 {
@@ -562,8 +697,20 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
 };
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	float ___m_Seconds;
+};
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	float ___m_Seconds;
+};
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D301_t29DFF154E720A8E73E0E63747720BD970759FF9F 
+struct __StaticArrayInitTypeSizeU3D40_t68A41E1D2BAA1C55857C26F7E0C26D1CFDB100B3 
 {
 	union
 	{
@@ -573,12 +720,12 @@ struct __StaticArrayInitTypeSizeU3D301_t29DFF154E720A8E73E0E63747720BD970759FF9F
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D301_t29DFF154E720A8E73E0E63747720BD970759FF9F__padding[301];
+		uint8_t __StaticArrayInitTypeSizeU3D40_t68A41E1D2BAA1C55857C26F7E0C26D1CFDB100B3__padding[40];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D460_t2D3689A0D6FDD207FDDFB53298E06852A475DBE0 
+struct __StaticArrayInitTypeSizeU3D556_tA038E205469A543381A07C10AD6F2CB29D7FBD84 
 {
 	union
 	{
@@ -588,7 +735,22 @@ struct __StaticArrayInitTypeSizeU3D460_t2D3689A0D6FDD207FDDFB53298E06852A475DBE0
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D460_t2D3689A0D6FDD207FDDFB53298E06852A475DBE0__padding[460];
+		uint8_t __StaticArrayInitTypeSizeU3D556_tA038E205469A543381A07C10AD6F2CB29D7FBD84__padding[556];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D797_tAEE68F8A649CBAFAECED47AB46D58F42D76996FF 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D797_tAEE68F8A649CBAFAECED47AB46D58F42D76996FF__padding[797];
 	};
 };
 #pragma pack(pop, tp)
@@ -712,6 +874,18 @@ struct ColorMode_tA7A815AAB9F175EFBA0AE0814E55728432A880BF
 {
 	int32_t ___value__;
 };
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
 struct Exception_t  : public RuntimeObject
 {
 	String_t* ____className;
@@ -791,6 +965,13 @@ struct HorizontalAlignmentOptions_tCC21260E9FBEC656BA7783643ED5F44AFF7955A1
 {
 	int32_t ___value__;
 };
+struct InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 
+{
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___U3CformatU3Ek__BackingField;
+	uint32_t ___m_ByteOffset;
+	uint32_t ___U3CbitOffsetU3Ek__BackingField;
+	uint32_t ___U3CsizeInBitsU3Ek__BackingField;
+};
 struct LoadSceneMode_t3E17ADA25A3C4F14ECF6026741219437DA054963 
 {
 	int32_t ___value__;
@@ -843,6 +1024,10 @@ struct TextureMappingOptions_t0E1A47C529DEB45A875486256E7026E97C940DAE
 {
 	int32_t ___value__;
 };
+struct TypeCode_tBEF9BE86C8BCF5A6B82F3381219738D27804EF79 
+{
+	int32_t ___value__;
+};
 struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topLeft;
@@ -858,11 +1043,23 @@ struct VerticalAlignmentOptions_tCEF70AF60282B71AEEE14D51253CE6A61E72D855
 {
 	int32_t ___value__;
 };
+struct GateSide_t12BD05E5F27545F7C2BDC22FF5E04E3B3652AFC6 
+{
+	int32_t ___value__;
+};
 struct FillMethod_t36837ED12068DF1582CC20489D571B0BCAA7AD19 
 {
 	int32_t ___value__;
 };
 struct Type_t81D6F138C2FC745112D5247CD91BD483EDFFC041 
+{
+	int32_t ___value__;
+};
+struct ControlFlags_t9C297F208DE19CEB00A0560F7FDE59F6A2004132 
+{
+	int32_t ___value__;
+};
+struct DeviceFlags_tF02F85DA24FF16879A67B540FCA560EC955CE728 
 {
 	int32_t ___value__;
 };
@@ -907,9 +1104,492 @@ struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
+struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___m_Type;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___m_Type_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding[4];
+			bool ___m_BoolValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding_forAlignmentOnly[4];
+			bool ___m_BoolValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding[4];
+			Il2CppChar ___m_CharValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding_forAlignmentOnly[4];
+			Il2CppChar ___m_CharValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding[4];
+			uint8_t ___m_ByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_ByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding[4];
+			int8_t ___m_SByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding_forAlignmentOnly[4];
+			int8_t ___m_SByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding[4];
+			int16_t ___m_ShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding_forAlignmentOnly[4];
+			int16_t ___m_ShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding[4];
+			uint16_t ___m_UShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding_forAlignmentOnly[4];
+			uint16_t ___m_UShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding[4];
+			int32_t ___m_IntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_IntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding[4];
+			uint32_t ___m_UIntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding_forAlignmentOnly[4];
+			uint32_t ___m_UIntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding[4];
+			int64_t ___m_LongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding_forAlignmentOnly[4];
+			int64_t ___m_LongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding[4];
+			uint64_t ___m_ULongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding_forAlignmentOnly[4];
+			uint64_t ___m_ULongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding[4];
+			float ___m_FloatValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding_forAlignmentOnly[4];
+			float ___m_FloatValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding[4];
+			double ___m_DoubleValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding_forAlignmentOnly[4];
+			double ___m_DoubleValue_forAlignmentOnly;
+		};
+	};
+};
+struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4_marshaled_pinvoke
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___m_Type;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___m_Type_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding[4];
+			int32_t ___m_BoolValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_BoolValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding[4];
+			uint8_t ___m_CharValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_CharValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding[4];
+			uint8_t ___m_ByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_ByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding[4];
+			int8_t ___m_SByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding_forAlignmentOnly[4];
+			int8_t ___m_SByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding[4];
+			int16_t ___m_ShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding_forAlignmentOnly[4];
+			int16_t ___m_ShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding[4];
+			uint16_t ___m_UShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding_forAlignmentOnly[4];
+			uint16_t ___m_UShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding[4];
+			int32_t ___m_IntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_IntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding[4];
+			uint32_t ___m_UIntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding_forAlignmentOnly[4];
+			uint32_t ___m_UIntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding[4];
+			int64_t ___m_LongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding_forAlignmentOnly[4];
+			int64_t ___m_LongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding[4];
+			uint64_t ___m_ULongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding_forAlignmentOnly[4];
+			uint64_t ___m_ULongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding[4];
+			float ___m_FloatValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding_forAlignmentOnly[4];
+			float ___m_FloatValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding[4];
+			double ___m_DoubleValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding_forAlignmentOnly[4];
+			double ___m_DoubleValue_forAlignmentOnly;
+		};
+	};
+};
+struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4_marshaled_com
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___m_Type;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___m_Type_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding[4];
+			int32_t ___m_BoolValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_BoolValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding[4];
+			uint8_t ___m_CharValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_CharValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding[4];
+			uint8_t ___m_ByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_ByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding[4];
+			int8_t ___m_SByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding_forAlignmentOnly[4];
+			int8_t ___m_SByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding[4];
+			int16_t ___m_ShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding_forAlignmentOnly[4];
+			int16_t ___m_ShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding[4];
+			uint16_t ___m_UShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding_forAlignmentOnly[4];
+			uint16_t ___m_UShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding[4];
+			int32_t ___m_IntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_IntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding[4];
+			uint32_t ___m_UIntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding_forAlignmentOnly[4];
+			uint32_t ___m_UIntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding[4];
+			int64_t ___m_LongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding_forAlignmentOnly[4];
+			int64_t ___m_LongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding[4];
+			uint64_t ___m_ULongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding_forAlignmentOnly[4];
+			uint64_t ___m_ULongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding[4];
+			float ___m_FloatValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding_forAlignmentOnly[4];
+			float ___m_FloatValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding[4];
+			double ___m_DoubleValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding_forAlignmentOnly[4];
+			double ___m_DoubleValue_forAlignmentOnly;
+		};
+	};
+};
 struct Scene_tA1DC762B79745EB5140F054C884855B922318356 
 {
 	SceneHandle_t4C3B517546B91EF78A6ED15DDC6C54AB5E03D8A3 ___m_Handle;
+};
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
 };
 struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 
 {
@@ -943,6 +1623,39 @@ struct U3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31
 	TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 ___U3CU3Eu__1;
 };
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E  : public RuntimeObject
+{
+	InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___m_StateBlock;
+	InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___m_Name;
+	String_t* ___m_Path;
+	String_t* ___m_DisplayName;
+	String_t* ___m_DisplayNameFromLayout;
+	String_t* ___m_ShortDisplayName;
+	String_t* ___m_ShortDisplayNameFromLayout;
+	InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___m_Layout;
+	InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___m_Variants;
+	InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___m_Device;
+	InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___m_Parent;
+	int32_t ___m_UsageCount;
+	int32_t ___m_UsageStartIndex;
+	int32_t ___m_AliasCount;
+	int32_t ___m_AliasStartIndex;
+	int32_t ___m_ChildCount;
+	int32_t ___m_ChildStartIndex;
+	int32_t ___m_ControlFlags;
+	bool ___m_CachedValueIsStale;
+	bool ___m_UnprocessedCachedValueIsStale;
+	PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___m_DefaultState;
+	PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___m_MinValue;
+	PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___m_MaxValue;
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___m_OptimizedControlDataType;
+};
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
 };
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
@@ -1167,6 +1880,13 @@ struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A_marshaled_com
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fxRotation;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fxScale;
 };
+struct InputControl_1_tC164085710F2FAA9161295C9B7FE273AF893CF66  : public InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E
+{
+	InlinedArray_1_tE5F1062E65707D24360CEAC52E03D32C6E5BA8BB ___m_ProcessorStack;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_CachedValue;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_UnprocessedCachedValue;
+	bool ___evaluateProcessorsEveryRead;
+};
 struct TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F 
 {
 	WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9* ___itemStack;
@@ -1176,11 +1896,46 @@ struct TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F
 	int32_t ___m_RolloverSize;
 	int32_t ___m_Count;
 };
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	uint32_t ___m_NonSerializedVersion;
+};
+struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+struct InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B  : public InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E
+{
+	int32_t ___m_DeviceFlags;
+	int32_t ___m_DeviceId;
+	int32_t ___m_ParticipantId;
+	int32_t ___m_DeviceIndex;
+	uint32_t ___m_CurrentProcessedEventBytesOnUpdate;
+	InputDeviceDescription_tE86DD77422AAF60ADDAC788B31E5A05E739B708F ___m_Description;
+	double ___m_LastUpdateTimeInternal;
+	uint32_t ___m_CurrentUpdateStepCount;
+	InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5* ___m_AliasesForEachControl;
+	InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5* ___m_UsagesForEachControl;
+	InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17* ___m_UsageToControl;
+	InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17* ___m_ChildrenForEachControl;
+	HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* ___m_UpdatedButtons;
+	List_1_tFED1C27AA4B8AC9813FF4858B3ABB1B3F74558EF* ___m_ButtonControlsCheckingPressState;
+	bool ___m_UseCachePathForButtonPresses;
+	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___m_StateOffsetToControlMap;
+	ControlBitRangeNodeU5BU5D_t912A404149DE6D350D1735A026182C409C510F27* ___m_ControlTreeNodes;
+	UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83* ___m_ControlTreeIndices;
+};
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
 	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
 };
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5  : public Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1
+{
+};
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
+	UnityEvent_1_t8ABE5544759145B8D7A09F1C54FFCB6907EDD56E* ___m_SpriteChangeEvent;
+};
+struct BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA  : public Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52
 {
 };
 struct ConsentManager_t71D0B1D68F0F4ADE51AB52E4CC63F1EED44606D4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -1203,25 +1958,56 @@ struct MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E  : public Mono
 	MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* ___game;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___readyPanel;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___playArea;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___playArea3D;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___resultPanel;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___timerText;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___resultText;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___countdownText;
 	float ___durationSeconds;
+	float ___durationCountdownStep;
+	bool ___isTimerStarted;
 	int32_t ___currentPhase;
 	float ___remainingSeconds;
 };
 struct PlayerAnalytics_t6FE5F604CDCE5F73B986B01A65A23A5A3C9BB056  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 };
+struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A  : public InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B
+{
+	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CpositionU3Ek__BackingField;
+	DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___U3CdeltaU3Ek__BackingField;
+	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CradiusU3Ek__BackingField;
+	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CpressureU3Ek__BackingField;
+	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CpressU3Ek__BackingField;
+	IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___U3CdisplayIndexU3Ek__BackingField;
+};
 struct SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	bool ___isLoading;
+};
+struct SlalomPlayer_tFD0D85F1F1C532C5938FB04BBF5783E0EC48AA3A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___left;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___right;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___colour;
 };
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 };
 struct Utility_t229A905233923073FC38E05AC74BBCB12DF3CA7B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+};
+struct Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432  : public InputControl_1_tC164085710F2FAA9161295C9B7FE273AF893CF66
+{
+	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CxU3Ek__BackingField;
+	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CyU3Ek__BackingField;
+};
+struct GateScript_tEBF091DB35268FB98010EC50086A4E56ED820F03  : public MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699
+{
+	float ___gateSpeedReset;
+	int32_t ___positionOfGate;
+	SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* ___game;
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___spriteRenderer;
 };
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
 {
@@ -1244,6 +2030,45 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_t
 	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___m_CachedUvs;
 	TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4* ___m_ColorTweenRunner;
 	bool ___U3CuseLegacyMeshGenerationU3Ek__BackingField;
+};
+struct MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E  : public MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699
+{
+	float ___gateSpeedIncrease;
+	float ___fastGateSpeedIncrease;
+	MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* ___session;
+	SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* ___game;
+};
+struct PlayerController_tEB2A5985CAD0F60644E5ECCEADEAD402F7CF20EC  : public MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699
+{
+	float ___maxSpeed;
+	float ___acceleration;
+	float ___minX;
+	float ___maxX;
+	MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* ___session;
+	float ___currentSpeed;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___mainCamera;
+};
+struct RemoveGate_t1E88B46D1D196EEEEF887247B3AE2476A89236BD  : public MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699
+{
+	SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* ___game;
+};
+struct SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733  : public MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699
+{
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___playArea;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___target;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___targetImage;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___progressText;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___feedbackText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___playArea3D;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___startGatesPrefab;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gatesPrefab;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___fastGatesPrefab;
+	float ___gateMoveSpeed;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___mainCamera;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___newPrefab;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___Kitzbuhel_Gates;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___Kitzbuhel;
+	int32_t ___gateNumber;
 };
 struct TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7  : public MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699
 {
@@ -1542,8 +2367,9 @@ struct TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957  : public TMP_T
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D301_t29DFF154E720A8E73E0E63747720BD970759FF9F ___B34E0A2BA983304C33E73AB120997B4E3DB8D9160F0BEC18DE073994DD4FD292;
-	__StaticArrayInitTypeSizeU3D460_t2D3689A0D6FDD207FDDFB53298E06852A475DBE0 ___F111FA1505EC7EF11EAF6F8DC8091D18DC1CDD5433FD193D0E4D17FDE9CA39C3;
+	__StaticArrayInitTypeSizeU3D40_t68A41E1D2BAA1C55857C26F7E0C26D1CFDB100B3 ___0C56CE3359108323BC031C61A3506863EB783F29EA1BB72BC880B6056F19884D;
+	__StaticArrayInitTypeSizeU3D797_tAEE68F8A649CBAFAECED47AB46D58F42D76996FF ___5683C33B078A90B432A16B792229A5F47B30DB3896C91776C0758B78A05499C7;
+	__StaticArrayInitTypeSizeU3D556_tA038E205469A543381A07C10AD6F2CB29D7FBD84 ___DB96AACB681C1DB4E1A28BBB2D02C88A39DE8F5DE249848132A3BA779FCA03EC;
 };
 struct String_t_StaticFields
 {
@@ -1582,6 +2408,10 @@ struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
 	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue;
 	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch;
 };
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
+};
 struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_StaticFields
 {
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___kZero;
@@ -1597,6 +2427,19 @@ struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector;
 };
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector;
+};
 struct Exception_t_StaticFields
 {
 	RuntimeObject* ___s_EDILock;
@@ -1605,9 +2448,19 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 {
 	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
 };
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
+{
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreCull;
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreRender;
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPostRender;
+};
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_StaticFields
 {
 	ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24* ___reapplyDrivenProperties;
+};
+struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_StaticFields
+{
+	Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___U3CcurrentU3Ek__BackingField;
 };
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 {
@@ -1713,6 +2566,140 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 		m_Items[index] = value;
 	}
 };
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF  : public RuntimeArray
+{
+	ALIGN_FIELD (8) GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* m_Items[1];
+
+	inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) float m_Items[1];
+
+	inline float GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline float* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, float value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline float GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline float* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, float value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
+{
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28  : public RuntimeArray
+{
+	ALIGN_FIELD (8) SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* m_Items[1];
+
+	inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31_mD3FFA8C376EC7E673776F8E83DBB17D1107C967F_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, U3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31* ___0_stateMachine, const RuntimeMethod* method) ;
@@ -1720,6 +2707,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnComp
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m1479132C827AFD1E484F6E6D749F74E90BB687D3_gshared (Nullable_1_tEE83D90B507D40B6C58B5EEF5B9D44D377B44F11* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_mFAF0B4EEA878E596C80258FE3BDA57CEF40C8D7F_gshared_inline (Nullable_1_tEE83D90B507D40B6C58B5EEF5B9D44D377B44F11* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Nullable_1_GetValueOrDefault_m9A7869C021F041D45F2A851F70F97F8114AC99E4_gshared_inline (Nullable_1_tEE83D90B507D40B6C58B5EEF5B9D44D377B44F11* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared (RuntimeObject* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_FindFirstObjectByType_TisRuntimeObject_mC5927319EB5B80095EFBA653D414D6F8AA87DC0A_gshared (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Component_GetComponentsInChildren_TisRuntimeObject_m1F5B6FC0689B07D4FAAC0C605D9B2933A9B32543_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_gshared (InputControl_1_tC164085710F2FAA9161295C9B7FE273AF893CF66* __this, const RuntimeMethod* method) ;
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D AsyncVoidMethodBuilder_Create_m13D0B23DD350C14035918384E10AF641E6B9EE67 (const RuntimeMethod* method) ;
 inline void AsyncVoidMethodBuilder_Start_TisU3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31_mD3FFA8C376EC7E673776F8E83DBB17D1107C967F (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, U3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31* ___0_stateMachine, const RuntimeMethod* method)
@@ -1792,6 +2784,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_height_mE1AA6C6C72
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour__ctor_m671FCA7B08665CDB66B46610A082353370FC2BC4 (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame_InitialiseFirstNewGates_mF128467E5AE0E8BAD4CF86C171C6A9AA32EE592A (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
+inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, const RuntimeMethod* method)
+{
+	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared)(___0_original, ___1_position, ___2_rotation, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_Log_m1BEC9FFDE3A036B5F8D3E7CEFF1B47D46CB2F528 (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, String_t* ___0_eventName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Time_get_frameCount_m4A42E558A71301A216BDC49EC402D62F19C79667 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
@@ -1801,17 +2801,72 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_IsRun
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* MicrogameBehaviour_get_Session_m13A10D4A61D40532A16D9EB00142B6A643F89A63_inline (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_Finish_m5D31A6F613AC7DDB1D2D093A1C0C6C7CFDDF589D (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, bool ___0_won, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_ShowTime_m7845CCF77EE25309E022F8602DE3DCD9C4F58271 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_StartTimer_mD7E4EB8BF7988325DC7999A0B980A01DEEAB36E2 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MicrogameSession_CountdownCoroutine_m0638BAF7C0AA428789115522DE60B7E0B4054557 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCountdownCoroutineU3Ed__17__ctor_mD2E5F9F0241FD1EA8DB3905C08BDAB3A424C1BD7 (U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_ShowTime_m7845CCF77EE25309E022F8602DE3DCD9C4F58271 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___0_sceneName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_tA1DC762B79745EB5140F054C884855B922318356 SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_CanStreamedLevelBeLoaded_mC3B7683DBAB183CFBEEDB2025580E1754B920BD4 (String_t* ___0_levelName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* SceneManager_LoadSceneAsync_m29D55D2C6CB7A019B26DA3F44C0881FF6AC491EC (String_t* ___0_sceneName, int32_t ___1_mode, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, const RuntimeMethod* method) ;
+inline SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+inline SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188 (const RuntimeMethod* method)
+{
+	return ((  SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* (*) (const RuntimeMethod*))Object_FindFirstObjectByType_TisRuntimeObject_mC5927319EB5B80095EFBA653D414D6F8AA87DC0A_gshared)(method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GateScript_SetGateColour_mE710321CC1D200110CFCAA84188ABC5C4E84E916 (GateScript_tEBF091DB35268FB98010EC50086A4E56ED820F03* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_colour, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546 (SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
+inline MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* Object_FindFirstObjectByType_TisMicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E_m87F80D1CAE7B12B20476A036197D388CCF55D04A (const RuntimeMethod* method)
+{
+	return ((  MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* (*) (const RuntimeMethod*))Object_FindFirstObjectByType_TisRuntimeObject_mC5927319EB5B80095EFBA653D414D6F8AA87DC0A_gshared)(method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveGates_SetGateColour_mD9AF526A853A1535DBCAA55B7F86EAADB8B491CC (MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_colour, const RuntimeMethod* method) ;
+inline SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m5A53DBBEC351F939C04CB60CF7CD9C7E0E5A65AB (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentsInChildren_TisRuntimeObject_m1F5B6FC0689B07D4FAAC0C605D9B2933A9B32543_gshared)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_MoveTowards_m69751B5EC50D8E7127D4BB2C8D908E38808AF45D_inline (float ___0_current, float ___1_target, float ___2_maxDelta, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* Pointer_get_position_m4286004169788483EEDA6AF833CEFDB04FEDF3D8_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, const RuntimeMethod* method) ;
+inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541 (InputControl_1_tC164085710F2FAA9161295C9B7FE273AF893CF66* __this, const RuntimeMethod* method)
+{
+	return ((  Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 (*) (InputControl_1_tC164085710F2FAA9161295C9B7FE273AF893CF66*, const RuntimeMethod*))InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Camera_ScreenToWorldPoint_m5EA3148F070985EC72127AAC3448D8D6ABE6E7E5 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline (float ___0_a, float ___1_b, float ___2_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_SetSteering_mB84725788DDD7D5BDCB9194AC6E11E3D6B6EA6A1 (PlayerController_tEB2A5985CAD0F60644E5ECCEADEAD402F7CF20EC* __this, float ___0_input, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
+inline BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* Component_GetComponent_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m8E881B105EA2AA2D9E3CFB68EE0924719FA96813 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, String_t* ___0_tag, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame_CreateNewGate_m9F76D4B73E9F49185DF6BAFE3F74055B5C1EC5BB (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Sign_m42EE1F0BC041AF14F89DED7F762BE996E2C50D8A_inline (float ___0_f, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1825,7 +2880,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97787
+// Method Definition Index: 97313
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics_Awake_mA8D6D18A8C77B56E49AB4EEE2A28617FA5ACE47C (PlayerAnalytics_t6FE5F604CDCE5F73B986B01A65A23A5A3C9BB056* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1858,7 +2913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics_Awake_mA8D6D18A8C77B56E4
 		return;
 	}
 }
-// Method Definition Index: 97788
+// Method Definition Index: 97314
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics_SendPlayerStartEvent_m48C38E48E29F749C669E2DF668CF3BB4EE751429 (PlayerAnalytics_t6FE5F604CDCE5F73B986B01A65A23A5A3C9BB056* __this, int32_t ___0_level, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1915,7 +2970,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics_SendPlayerStartEvent_m48
 		return;
 	}
 }
-// Method Definition Index: 97789
+// Method Definition Index: 97315
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics_Start_mEF7CEF469323B45BDA70A1858F73D05CBC76FA7C (PlayerAnalytics_t6FE5F604CDCE5F73B986B01A65A23A5A3C9BB056* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1923,7 +2978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics_Start_mEF7CEF469323B45BD
 		return;
 	}
 }
-// Method Definition Index: 97790
+// Method Definition Index: 97316
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics_Update_m330CE28F6F94D69CA4BF49A42755E537F6CD5876 (PlayerAnalytics_t6FE5F604CDCE5F73B986B01A65A23A5A3C9BB056* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1931,7 +2986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics_Update_m330CE28F6F94D69C
 		return;
 	}
 }
-// Method Definition Index: 97791
+// Method Definition Index: 97317
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics__ctor_mEE0B3BBCB03F40571B4A8D481FF054DA53FA92C0 (PlayerAnalytics_t6FE5F604CDCE5F73B986B01A65A23A5A3C9BB056* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1947,7 +3002,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnalytics__ctor_mEE0B3BBCB03F40571
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97792
+// Method Definition Index: 97318
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAwakeU3Ed__0_MoveNext_m3BEA8839D57FACB4EF2D96F539F2BBE6493C94E4 (U3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2132,7 +3187,7 @@ IL2CPP_EXTERN_C  void U3CAwakeU3Ed__0_MoveNext_m3BEA8839D57FACB4EF2D96F539F2BBE6
 	_thisAdjusted = reinterpret_cast<U3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31*>(__this + _offset);
 	U3CAwakeU3Ed__0_MoveNext_m3BEA8839D57FACB4EF2D96F539F2BBE6493C94E4(_thisAdjusted, method);
 }
-// Method Definition Index: 97793
+// Method Definition Index: 97319
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAwakeU3Ed__0_SetStateMachine_m09D237EEA7DBBFDBEE366194DC92EACA1D856725 (U3CAwakeU3Ed__0_tBCA954755E775968C6F4628C96B4CD99A4F4AD31* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	{
@@ -2157,7 +3212,7 @@ IL2CPP_EXTERN_C  void U3CAwakeU3Ed__0_SetStateMachine_m09D237EEA7DBBFDBEE366194D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97794
+// Method Definition Index: 97320
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConsentManager_Start_mC5175AA6706A8272B81829AD523984B62AE9DA7F (ConsentManager_t71D0B1D68F0F4ADE51AB52E4CC63F1EED44606D4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2165,7 +3220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConsentManager_Start_mC5175AA6706A8272B8
 		return;
 	}
 }
-// Method Definition Index: 97795
+// Method Definition Index: 97321
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConsentManager_Update_mB063E7E4734066E05D92A6295228E0EA437C3B7E (ConsentManager_t71D0B1D68F0F4ADE51AB52E4CC63F1EED44606D4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2173,7 +3228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConsentManager_Update_mB063E7E4734066E05
 		return;
 	}
 }
-// Method Definition Index: 97796
+// Method Definition Index: 97322
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConsentManager__ctor_m646A1F7DC0F2FB25E8093398B4D458F01E1748B8 (ConsentManager_t71D0B1D68F0F4ADE51AB52E4CC63F1EED44606D4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2189,7 +3244,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConsentManager__ctor_m646A1F7DC0F2FB25E8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97797
+// Method Definition Index: 97323
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2197,7 +3252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Start_m87A71D65F3171A58DBDDB
 		return;
 	}
 }
-// Method Definition Index: 97798
+// Method Definition Index: 97324
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Update_m7F29D8E933B8D21D2E67507979C0F12ACF87BB41 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2205,7 +3260,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Update_m7F29D8E933B8D21D2E67
 		return;
 	}
 }
-// Method Definition Index: 97799
+// Method Definition Index: 97325
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2221,7 +3276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager__ctor_mF453CED520617BFB65C52
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97800
+// Method Definition Index: 97326
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_Start_mEC1218FD7EC782C2E0A0EE0BFDD5596349309136 (Utility_t229A905233923073FC38E05AC74BBCB12DF3CA7B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2229,7 +3284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_Start_mEC1218FD7EC782C2E0A0EE0BF
 		return;
 	}
 }
-// Method Definition Index: 97801
+// Method Definition Index: 97327
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_Update_m4335F5C41F510E7680496B842D5BA6B87E01809D (Utility_t229A905233923073FC38E05AC74BBCB12DF3CA7B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2237,7 +3292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_Update_m4335F5C41F510E7680496B84
 		return;
 	}
 }
-// Method Definition Index: 97802
+// Method Definition Index: 97328
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility__ctor_mDE968B2BF99D305E4E010E70EBD998699B0C7410 (Utility_t229A905233923073FC38E05AC74BBCB12DF3CA7B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2253,41 +3308,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility__ctor_mDE968B2BF99D305E4E010E70E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97803
+// Method Definition Index: 97329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B34E0A2BA983304C33E73AB120997B4E3DB8D9160F0BEC18DE073994DD4FD292_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____F111FA1505EC7EF11EAF6F8DC8091D18DC1CDD5433FD193D0E4D17FDE9CA39C3_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5683C33B078A90B432A16B792229A5F47B30DB3896C91776C0758B78A05499C7_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____DB96AACB681C1DB4E1A28BBB2D02C88A39DE8F5DE249848132A3BA779FCA03EC_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)460));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)797));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____F111FA1505EC7EF11EAF6F8DC8091D18DC1CDD5433FD193D0E4D17FDE9CA39C3_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5683C33B078A90B432A16B792229A5F47B30DB3896C91776C0758B78A05499C7_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)301));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)556));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____B34E0A2BA983304C33E73AB120997B4E3DB8D9160F0BEC18DE073994DD4FD292_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____DB96AACB681C1DB4E1A28BBB2D02C88A39DE8F5DE249848132A3BA779FCA03EC_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = ((int32_t)9);
-		(&V_0)->___TotalTypes = ((int32_t)9);
+		(&V_0)->___TotalFiles = ((int32_t)15);
+		(&V_0)->___TotalTypes = ((int32_t)15);
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 97804
+// Method Definition Index: 97330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2373,7 +3428,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97805
+// Method Definition Index: 97331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_Begin_mDEED99BC59124C35E01CE717E765CDE6F3322A0A (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* ___0_session, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2406,7 +3461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_Begin_mDEED99BC59124C35E01
 		return;
 	}
 }
-// Method Definition Index: 97806
+// Method Definition Index: 97332
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_ShowNextFirstTarget_m500EDE6C6F303D53D9CDF761C58E7463A4C94B9D (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2416,7 +3471,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_ShowNextFirstTarget_m500ED
 		return;
 	}
 }
-// Method Definition Index: 97807
+// Method Definition Index: 97333
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_Update_m370073984F5EEFF48635EEE26BDBCAA78DF414D9 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2479,7 +3534,7 @@ IL_0057:
 		return;
 	}
 }
-// Method Definition Index: 97808
+// Method Definition Index: 97334
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_TapTarget_m6172AAE55CD5F3AAD0084D0288CAA544C112630C (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2599,7 +3654,7 @@ IL_0093:
 		return;
 	}
 }
-// Method Definition Index: 97809
+// Method Definition Index: 97335
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_ShowNextTarget_m071735F0696E92CD51C772F00F6105A6EE13192D (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -2693,7 +3748,7 @@ IL_0079:
 		return;
 	}
 }
-// Method Definition Index: 97810
+// Method Definition Index: 97336
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TargetTapGame_CalculatePoints_m3C40F9A007D69B05CC2E592C1B0D8161E1A93DC9 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, float ___0_reactionTime, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -2736,7 +3791,7 @@ IL_001d:
 		return 1;
 	}
 }
-// Method Definition Index: 97811
+// Method Definition Index: 97337
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TargetTapGame_GetRating_mE1C950F55B59609A7EC65A648B408F7CB8C6E951 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, int32_t ___0_points, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2813,7 +3868,7 @@ IL_003b:
 		return _stringLiteral5D36C5A55B8CB52FA5FA06F75ECEA12FCF33DE27;
 	}
 }
-// Method Definition Index: 97812
+// Method Definition Index: 97338
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_AddScore_mAB6FEC28B22715894D1F48BBD8A45E8A8968C260 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, int32_t ___0_amount, const RuntimeMethod* method) 
 {
 	TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* G_B2_0 = NULL;
@@ -2857,7 +3912,7 @@ IL_0021:
 		return;
 	}
 }
-// Method Definition Index: 97813
+// Method Definition Index: 97339
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_SetTargetSize_m708DDF88CA37C0D989AFA2F58869C56621A892CE (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, float ___0_size, const RuntimeMethod* method) 
 {
 	{
@@ -2877,7 +3932,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_SetTargetSize_m708DDF88CA3
 		return;
 	}
 }
-// Method Definition Index: 97814
+// Method Definition Index: 97340
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_SetTargetColour_m58C2E6FD1F0CA4958568965F63CA17BB803B0F64 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_colour, const RuntimeMethod* method) 
 {
 	{
@@ -2890,7 +3945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_SetTargetColour_m58C2E6FD1
 		return;
 	}
 }
-// Method Definition Index: 97815
+// Method Definition Index: 97341
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_ShowFeedback_mC513441A1838818CD2352206FDB6E78F6C79F419 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, String_t* ___0_message, Nullable_1_tEE83D90B507D40B6C58B5EEF5B9D44D377B44F11 ___1_colour, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2950,7 +4005,7 @@ IL_001f:
 		return;
 	}
 }
-// Method Definition Index: 97816
+// Method Definition Index: 97342
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_UpdateProgress_m2566EA4EE1A2AAB152E1B3FAB4ACED0895D770E2 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2976,7 +4031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame_UpdateProgress_m2566EA4EE1
 		return;
 	}
 }
-// Method Definition Index: 97817
+// Method Definition Index: 97343
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetTapGame_IsTargetTooSmall_mF178819F45092BAC97E1E42466B97F7A762BA042 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2986,7 +4041,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetTapGame_IsTargetTooSmall_mF178819F
 		return (bool)((((int32_t)((!(((float)L_0) <= ((float)L_1)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 97818
+// Method Definition Index: 97344
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 TargetTapGame_GetRandomPosition_mC151519622B2C2E3B663DCB83F6F55E913DBF2B7 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___0_area, float ___1_itemSize, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3041,7 +4096,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 		return L_15;
 	}
 }
-// Method Definition Index: 97819
+// Method Definition Index: 97345
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame__ctor_mC67AC6F00ECDF8E6EAF34EF76EEB6C8AD01E77A0 (TargetTapGame_tA3A9DF0C7EE9983B7F34F96FAA50B6FCD2FC2BE7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3080,7 +4135,307 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetTapGame__ctor_mC67AC6F00ECDF8E6EAF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97820
+// Method Definition Index: 97346
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame_Awake_m1081B655BA3C555D0E53EB67F3845AACF1199B88 (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:38>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0;
+		L_0 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
+		__this->___mainCamera = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___mainCamera), (void*)L_0);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:40>
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = (GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF*)SZArrayNew(GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10));
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___gatesPrefab;
+		NullCheck(L_2);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_3);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_4 = L_2;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___gatesPrefab;
+		NullCheck(L_4);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_5);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_6 = L_4;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___gatesPrefab;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_7);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_8 = L_6;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___fastGatesPrefab;
+		NullCheck(L_8);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(3), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_9);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_10 = L_8;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___gatesPrefab;
+		NullCheck(L_10);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(4), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_11);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_12 = L_10;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = __this->___fastGatesPrefab;
+		NullCheck(L_12);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(5), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_13);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_14 = L_12;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___gatesPrefab;
+		NullCheck(L_14);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(6), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_15);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_16 = L_14;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___fastGatesPrefab;
+		NullCheck(L_16);
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(7), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_17);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_18 = L_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___gatesPrefab;
+		NullCheck(L_18);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(8), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_19);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_20 = L_18;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = __this->___fastGatesPrefab;
+		NullCheck(L_20);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_21);
+		__this->___Kitzbuhel_Gates = L_20;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Kitzbuhel_Gates), (void*)L_20);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:41>
+		return;
+	}
+}
+// Method Definition Index: 97347
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame_Begin_m373311E9D85A5C4B8FA8313F6E70E561FC5F85F9 (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* ___0_session, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:45>
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_0 = ___0_session;
+		MicrogameBehaviour_Begin_mF6EDFB02B6074627F4A901D6B5B0C6FC1DAE4D04(__this, L_0, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:46>
+		return;
+	}
+}
+// Method Definition Index: 97348
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame_Start_mF29AA254690D800E4EF154B5403556CA8B36EE17 (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:50>
+		SlalomGame_InitialiseFirstNewGates_mF128467E5AE0E8BAD4CF86C171C6A9AA32EE592A(__this, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:51>
+		return;
+	}
+}
+// Method Definition Index: 97349
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame_Update_mB9A4C645EB2493A08B2C2E11E72D5EFFDE9887FB (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:55>
+		bool L_0;
+		L_0 = MicrogameBehaviour_get_IsRunning_m343F1D2A2875B0969B9A9930F1C8C672E1635E6D_inline(__this, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:55>
+		return;
+	}
+}
+// Method Definition Index: 97350
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame_InitialiseFirstNewGates_mF128467E5AE0E8BAD4CF86C171C6A9AA32EE592A (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:60>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___startGatesPrefab;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = __this->___Kitzbuhel;
+		int32_t L_2 = __this->___gateNumber;
+		NullCheck(L_1);
+		int32_t L_3 = L_2;
+		float L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		int32_t L_5 = __this->___gateNumber;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		memset((&L_6), 0, sizeof(L_6));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_6), L_4, ((float)il2cpp_codegen_add((-2.5f), ((float)L_5))), (0.0f), NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_7;
+		L_7 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_0, L_6, L_7, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:61>
+		int32_t L_9 = __this->___gateNumber;
+		__this->___gateNumber = ((int32_t)il2cpp_codegen_add(L_9, 1));
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:62>
+		V_0 = 1;
+		goto IL_0097;
+	}
+
+IL_0047:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:64>
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_10 = __this->___Kitzbuhel_Gates;
+		int32_t L_11 = __this->___gateNumber;
+		NullCheck(L_10);
+		int32_t L_12 = L_11;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_14 = __this->___Kitzbuhel;
+		int32_t L_15 = __this->___gateNumber;
+		NullCheck(L_14);
+		int32_t L_16 = L_15;
+		float L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
+		int32_t L_18 = __this->___gateNumber;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		memset((&L_19), 0, sizeof(L_19));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_19), L_17, ((float)il2cpp_codegen_add((-2.5f), ((float)((int32_t)il2cpp_codegen_multiply(2, L_18))))), (0.0f), NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_20;
+		L_20 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21;
+		L_21 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_13, L_19, L_20, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:65>
+		int32_t L_22 = __this->___gateNumber;
+		__this->___gateNumber = ((int32_t)il2cpp_codegen_add(L_22, 1));
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:62>
+		int32_t L_23 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_23, 1));
+	}
+
+IL_0097:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:62>
+		int32_t L_24 = V_0;
+		if ((((int32_t)L_24) < ((int32_t)4)))
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:67>
+		return;
+	}
+}
+// Method Definition Index: 97351
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame_CreateNewGate_m9F76D4B73E9F49185DF6BAFE3F74055B5C1EC5BB (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:71>
+		bool L_0;
+		L_0 = MicrogameBehaviour_get_IsRunning_m343F1D2A2875B0969B9A9930F1C8C672E1635E6D_inline(__this, NULL);
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:71>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:72>
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1 = __this->___Kitzbuhel_Gates;
+		int32_t L_2 = __this->___gateNumber;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_3 = __this->___Kitzbuhel_Gates;
+		NullCheck(L_3);
+		NullCheck(L_1);
+		int32_t L_4 = ((int32_t)(L_2%((int32_t)(((RuntimeArray*)L_3)->max_length))));
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = __this->___Kitzbuhel;
+		int32_t L_7 = __this->___gateNumber;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_8 = __this->___Kitzbuhel;
+		NullCheck(L_8);
+		NullCheck(L_6);
+		int32_t L_9 = ((int32_t)(L_7%((int32_t)(((RuntimeArray*)L_8)->max_length))));
+		float L_10 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		memset((&L_11), 0, sizeof(L_11));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_11), L_10, (3.5f), (0.0f), NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_12;
+		L_12 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
+		L_13 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_5, L_11, L_12, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:73>
+		int32_t L_14 = __this->___gateNumber;
+		__this->___gateNumber = ((int32_t)il2cpp_codegen_add(L_14, 1));
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:74>
+		return;
+	}
+}
+// Method Definition Index: 97352
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomGame__ctor_m23CDB7DB72CBD599ED8ECB7C3D714E6B59F2626F (SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____0C56CE3359108323BC031C61A3506863EB783F29EA1BB72BC880B6056F19884D_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:24>
+		__this->___gateMoveSpeed = (1.0f);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomGame.cs:33>
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = L_0;
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____0C56CE3359108323BC031C61A3506863EB783F29EA1BB72BC880B6056F19884D_FieldInfo_var) };
+		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
+		__this->___Kitzbuhel = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Kitzbuhel), (void*)L_1);
+		MicrogameBehaviour__ctor_m671FCA7B08665CDB66B46610A082353370FC2BC4(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 97353
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomPlayer_OnValidate_mF8B93F8E5A7A655327A5384C38C6E8F31DD59690 (SlalomPlayer_tFD0D85F1F1C532C5938FB04BBF5783E0EC48AA3A* __this, const RuntimeMethod* method) 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomPlayer.cs:14>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_0 = __this->___left;
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_1 = __this->___right;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = __this->___colour;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = L_2;
+		V_0 = L_3;
+		NullCheck(L_1);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_1, L_3);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = V_0;
+		NullCheck(L_0);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_0, L_4);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/SlalomPlayer.cs:15>
+		return;
+	}
+}
+// Method Definition Index: 97354
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SlalomPlayer__ctor_m0791E6A0C95DFC24FDA67FE533816D30B52CD40F (SlalomPlayer_tFD0D85F1F1C532C5938FB04BBF5783E0EC48AA3A* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 97355
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_Awake_m72BE5947CA439C650A37E4A9EF1D0699215C71F8 (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3096,7 +4451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_Awake_m72BE5947CA439C650A
 		return;
 	}
 }
-// Method Definition Index: 97821
+// Method Definition Index: 97356
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_OnEnable_m13909615434BD6445555287AA95EEE2B8EF8E458 (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3112,7 +4467,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_OnEnable_m13909615434BD64
 		return;
 	}
 }
-// Method Definition Index: 97822
+// Method Definition Index: 97357
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_Log_m1BEC9FFDE3A036B5F8D3E7CEFF1B47D46CB2F528 (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, String_t* ___0_eventName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3142,7 +4497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_Log_m1BEC9FFDE3A036B5F8D3
 		return;
 	}
 }
-// Method Definition Index: 97823
+// Method Definition Index: 97358
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_Start_mC8D860A6E7F2728278F4D4C525D31255B8195804 (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3158,7 +4513,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_Start_mC8D860A6E7F2728278
 		return;
 	}
 }
-// Method Definition Index: 97824
+// Method Definition Index: 97359
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_Update_mD46904733491B1EEC4290A932A7AB6338394A32D (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3188,7 +4543,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 97825
+// Method Definition Index: 97360
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_OnDisable_m32F88B9C49E9B73594A076D61F33F84F5EC406D3 (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3204,7 +4559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_OnDisable_m32F88B9C49E9B7
 		return;
 	}
 }
-// Method Definition Index: 97826
+// Method Definition Index: 97361
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_OnDestroy_mF3398BD8DDD473389E2B2D04A7EEEEC7A9C5C3BA (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3220,7 +4575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe_OnDestroy_mF3398BD8DDD473
 		return;
 	}
 }
-// Method Definition Index: 97827
+// Method Definition Index: 97362
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe__ctor_mB56F0482C480CC52ADCC3ACAF7FFB23A8A415005 (LifeCycleProbe_t99CC7DCF734034FA041BA36CF86032B7C832D599* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3236,7 +4591,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LifeCycleProbe__ctor_mB56F0482C480CC52AD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97828
+// Method Definition Index: 97363
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MicrogameBehaviour_get_IsRunning_m343F1D2A2875B0969B9A9930F1C8C672E1635E6D (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3245,7 +4600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MicrogameBehaviour_get_IsRunning_m343F1D
 		return L_0;
 	}
 }
-// Method Definition Index: 97829
+// Method Definition Index: 97364
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_IsRunning_m912E2F035D117B078F0163037F4D7328EB8DCC04 (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3255,7 +4610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_IsRunning_m912E2F
 		return;
 	}
 }
-// Method Definition Index: 97830
+// Method Definition Index: 97365
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* MicrogameBehaviour_get_Session_m13A10D4A61D40532A16D9EB00142B6A643F89A63 (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3264,7 +4619,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MicrogameSession_t822B12AF27BADFB7760700DCF27
 		return L_0;
 	}
 }
-// Method Definition Index: 97831
+// Method Definition Index: 97366
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_Session_mCA803009F83BC24E3426D447CEDE7DF5F6506E61 (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3275,7 +4630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_Session_mCA803009
 		return;
 	}
 }
-// Method Definition Index: 97832
+// Method Definition Index: 97367
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_Begin_mF6EDFB02B6074627F4A901D6B5B0C6FC1DAE4D04 (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* ___0_session, const RuntimeMethod* method) 
 {
 	{
@@ -3288,7 +4643,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_Begin_mF6EDFB02B60746
 		return;
 	}
 }
-// Method Definition Index: 97833
+// Method Definition Index: 97368
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_End_mC2D76908DCC75BAC75492D706EF977C574247CB0 (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3298,7 +4653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_End_mC2D76908DCC75BAC
 		return;
 	}
 }
-// Method Definition Index: 97834
+// Method Definition Index: 97369
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_Win_mC2AB5E806DCBA27684F4095AFF05A8DD17C8DCF7 (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3324,7 +4679,7 @@ IL_0014:
 		return;
 	}
 }
-// Method Definition Index: 97835
+// Method Definition Index: 97370
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour_Lose_mA2EE084FB5FF3621A87DE4F11F39B9AA6517071B (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3350,7 +4705,7 @@ IL_0014:
 		return;
 	}
 }
-// Method Definition Index: 97836
+// Method Definition Index: 97371
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour__ctor_m671FCA7B08665CDB66B46610A082353370FC2BC4 (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3366,34 +4721,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameBehaviour__ctor_m671FCA7B08665C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97837
+// Method Definition Index: 97372
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_Awake_mD678CA22C0E508505C0A131D82C430DD4EDF014F (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:28>
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:34>
 		__this->___currentPhase = 0;
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:29>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:35>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___readyPanel;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:30>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:36>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___playArea;
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:31>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___resultPanel;
-		NullCheck(L_2);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:32>
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_3 = __this->___timerText;
-		String_t* L_4 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_defaults.string_class))->___Empty;
-		NullCheck(L_3);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_3, L_4);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:33>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:37>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___playArea3D;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:38>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___playArea3D;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
+	}
+
+IL_0039:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:39>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___resultPanel;
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:40>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___timerText;
+		String_t* L_7 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_defaults.string_class))->___Empty;
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_6, L_7);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:41>
 		return;
 	}
 }
-// Method Definition Index: 97838
+// Method Definition Index: 97373
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_StartGame_m5628895291A06FADD330731B37D0FB021210B703 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3403,7 +4783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_StartGame_m5628895291A0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:37>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:45>
 		int32_t L_0 = __this->___currentPhase;
 		if (L_0)
 		{
@@ -3423,44 +4803,121 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_StartGame_m5628895291A0
 
 IL_0016:
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:39>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:47>
 		return;
 	}
 
 IL_0017:
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:41>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:49>
 		float L_3 = __this->___durationSeconds;
 		__this->___remainingSeconds = L_3;
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:42>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:50>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___readyPanel;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:43>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:51>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___playArea;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:44>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___resultPanel;
-		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:45>
-		__this->___currentPhase = 1;
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:46>
-		MicrogameSession_ShowTime_m7845CCF77EE25309E022F8602DE3DCD9C4F58271(__this, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:47>
-		MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* L_7 = __this->___game;
-		NullCheck(L_7);
-		VirtualActionInvoker1< MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* >::Invoke(4, L_7, __this);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:48>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:52>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___playArea3D;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_7;
+		L_7 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_7)
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:53>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___playArea3D;
+		NullCheck(L_8);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)1, NULL);
+	}
+
+IL_0055:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:54>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___resultPanel;
+		NullCheck(L_9);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:56>
+		MicrogameSession_StartTimer_mD7E4EB8BF7988325DC7999A0B980A01DEEAB36E2(__this, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:58>
+		MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* L_10 = __this->___game;
+		NullCheck(L_10);
+		VirtualActionInvoker1< MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* >::Invoke(4, L_10, __this);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:59>
 		return;
 	}
 }
-// Method Definition Index: 97839
+// Method Definition Index: 97374
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_StartTimer_mD7E4EB8BF7988325DC7999A0B980A01DEEAB36E2 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6CF30736E465BDC39884082916F384C1026BE7D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:64>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___countdownText;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:66>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralE6CF30736E465BDC39884082916F384C1026BE7D, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:67>
+		return;
+	}
+
+IL_0019:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:69>
+		RuntimeObject* L_2;
+		L_2 = MicrogameSession_CountdownCoroutine_m0638BAF7C0AA428789115522DE60B7E0B4054557(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
+		L_3 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_2, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:70>
+		return;
+	}
+}
+// Method Definition Index: 97375
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MicrogameSession_CountdownCoroutine_m0638BAF7C0AA428789115522DE60B7E0B4054557 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* L_0 = (U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA*)il2cpp_codegen_object_new(U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA_il2cpp_TypeInfo_var);
+		U3CCountdownCoroutineU3Ed__17__ctor_mD2E5F9F0241FD1EA8DB3905C08BDAB3A424C1BD7(L_0, 0, NULL);
+		U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 97376
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_Update_m31EFB4AFDBECE3CB240D3C52CFD299EB716E5BDC (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:52>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:88>
 		int32_t L_0 = __this->___currentPhase;
 		if ((((int32_t)L_0) == ((int32_t)1)))
 		{
@@ -3468,22 +4925,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_Update_m31EFB4AFDBECE3C
 		}
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:54>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:90>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:56>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:92>
 		float L_1 = __this->___remainingSeconds;
 		float L_2;
 		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		float L_3;
 		L_3 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.0f), ((float)il2cpp_codegen_subtract(L_1, L_2)), NULL);
 		__this->___remainingSeconds = L_3;
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:57>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:93>
 		MicrogameSession_ShowTime_m7845CCF77EE25309E022F8602DE3DCD9C4F58271(__this, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:58>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:94>
 		float L_4 = __this->___remainingSeconds;
 		if ((!(((float)L_4) <= ((float)(0.0f)))))
 		{
@@ -3491,17 +4948,17 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:58>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:94>
 		MicrogameSession_Finish_m5D31A6F613AC7DDB1D2D093A1C0C6C7CFDDF589D(__this, (bool)0, NULL);
 	}
 
 IL_0040:
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:60>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:96>
 		return;
 	}
 }
-// Method Definition Index: 97840
+// Method Definition Index: 97377
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_Finish_m5D31A6F613AC7DDB1D2D093A1C0C6C7CFDDF589D (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, bool ___0_won, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3520,7 +4977,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_Finish_m5D31A6F613AC7DD
 	String_t* G_B5_1 = NULL;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* G_B5_2 = NULL;
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:64>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:100>
 		int32_t L_0 = __this->___currentPhase;
 		if ((((int32_t)L_0) == ((int32_t)1)))
 		{
@@ -3528,27 +4985,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_Finish_m5D31A6F613AC7DD
 		}
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:66>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:102>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:69>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:105>
 		__this->___currentPhase = 2;
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:70>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:106>
 		MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* L_1 = __this->___game;
 		NullCheck(L_1);
 		VirtualActionInvoker0::Invoke(5, L_1);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:71>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:107>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___playArea;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:72>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:108>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___resultPanel;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:73>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:109>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_4 = __this->___resultText;
 		bool L_5 = ___0_won;
 		if (L_5)
@@ -3580,11 +5037,11 @@ IL_004e:
 		L_6 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B5_1, G_B5_0, NULL);
 		NullCheck(G_B5_2);
 		VirtualActionInvoker1< String_t* >::Invoke(66, G_B5_2, L_6);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:74>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:110>
 		return;
 	}
 }
-// Method Definition Index: 97841
+// Method Definition Index: 97378
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_ShowTime_m7845CCF77EE25309E022F8602DE3DCD9C4F58271 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3594,7 +5051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_ShowTime_m7845CCF77EE25
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:78>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:114>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_0 = __this->___timerText;
 		float L_1 = __this->___remainingSeconds;
 		float L_2 = L_1;
@@ -3603,16 +5060,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession_ShowTime_m7845CCF77EE25
 		L_4 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral7BFFA3EB445CCBB7B84D7DEED36C6753FF0B1B08, L_3, NULL);
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, L_4);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:79>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:115>
 		return;
 	}
 }
-// Method Definition Index: 97842
+// Method Definition Index: 97379
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession__ctor_m884F5194977B6C7ECF3F145370FDE3D65B23B128 (MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:20>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:25>
 		__this->___durationSeconds = (10.0f);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:26>
+		__this->___durationCountdownStep = (0.100000001f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -3633,25 +5092,209 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession__ctor_m884F5194977B6C7E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97843
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenMinotaur_m65768B7A0EB386BCE4BBA9F4F2D0B0AA2723E967 (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
+// Method Definition Index: 97380
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCountdownCoroutineU3Ed__17__ctor_mD2E5F9F0241FD1EA8DB3905C08BDAB3A424C1BD7 (U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 97381
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCountdownCoroutineU3Ed__17_System_IDisposable_Dispose_m1E0407DA9D9D404F4A7017C1DBD6F9A6C5FF22EA (U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 97382
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CCountdownCoroutineU3Ed__17_MoveNext_mA21969EAFF34D01FC37DF6FD597C5CB055BC94A8 (U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFDC060A93580729ABD58693281838FD8871BC3BE);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* V_1 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_2 = NULL;
+	String_t* V_3 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0089;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:74>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)4);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_4;
+		NullCheck(L_5);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_5;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_6;
+		NullCheck(L_7);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_7;
+		NullCheck(L_8);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteralFDC060A93580729ABD58693281838FD8871BC3BE);
+		V_2 = L_8;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:76>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = V_2;
+		__this->___U3CU3E7__wrap1 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E7__wrap1), (void*)L_9);
+		__this->___U3CU3E7__wrap2 = 0;
+		goto IL_009e;
+	}
+
+IL_0055:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:76>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = __this->___U3CU3E7__wrap1;
+		int32_t L_11 = __this->___U3CU3E7__wrap2;
+		NullCheck(L_10);
+		int32_t L_12 = L_11;
+		String_t* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
+		V_3 = L_13;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:78>
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_14 = V_1;
+		NullCheck(L_14);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_15 = L_14->___countdownText;
+		String_t* L_16 = V_3;
+		NullCheck(L_15);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_15, L_16);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:79>
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_17 = V_1;
+		NullCheck(L_17);
+		float L_18 = L_17->___durationCountdownStep;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_19 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_19, L_18, NULL);
+		__this->___U3CU3E2__current = L_19;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_19);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0089:
+	{
+		__this->___U3CU3E1__state = (-1);
+		int32_t L_20 = __this->___U3CU3E7__wrap2;
+		__this->___U3CU3E7__wrap2 = ((int32_t)il2cpp_codegen_add(L_20, 1));
+	}
+
+IL_009e:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:76>
+		int32_t L_21 = __this->___U3CU3E7__wrap2;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = __this->___U3CU3E7__wrap1;
+		NullCheck(L_22);
+		if ((((int32_t)L_21) < ((int32_t)((int32_t)(((RuntimeArray*)L_22)->max_length)))))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		__this->___U3CU3E7__wrap1 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E7__wrap1), (void*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:81>
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_23 = V_1;
+		NullCheck(L_23);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_24 = L_23->___countdownText;
+		NullCheck(L_24);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_24, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:82>
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_25 = V_1;
+		NullCheck(L_25);
+		L_25->___currentPhase = 1;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:83>
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_26 = V_1;
+		NullCheck(L_26);
+		L_26->___isTimerStarted = (bool)1;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/MicrogameSession.cs:84>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 97383
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCountdownCoroutineU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mAFF2C7DE8786D080AFECB05BF31E7953C42F6435 (U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 97384
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCountdownCoroutineU3Ed__17_System_Collections_IEnumerator_Reset_mF3E454F39E3B14A814854E45CF0E5963C060DE02 (U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CCountdownCoroutineU3Ed__17_System_Collections_IEnumerator_Reset_mF3E454F39E3B14A814854E45CF0E5963C060DE02_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 97385
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCountdownCoroutineU3Ed__17_System_Collections_IEnumerator_get_Current_mB08C63A9A4AD0ACFBC644CAAAE8598D50688DA1F (U3CCountdownCoroutineU3Ed__17_tB9A2FBFFDE3605D930F2000E369F9CAB62D4FCBA* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 97386
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenSlalom_m4A9399C75C2CEE00F9E36FFFB565F01E3225FC0B (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral42D6729507CCE3A852BCFBE66A83354929A1C601);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA4D4B3F5FED054BBDF9BC6034E88412C3DC4A346);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:24>
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral42D6729507CCE3A852BCFBE66A83354929A1C601, NULL);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteralA4D4B3F5FED054BBDF9BC6034E88412C3DC4A346, NULL);
 		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:25>
 		return;
 	}
 }
-// Method Definition Index: 97844
+// Method Definition Index: 97387
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenSecondGame_m0644442180BB20793E608D5D97BB4684F60CC1CE (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3669,7 +5312,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenSecondGame_m064444218
 		return;
 	}
 }
-// Method Definition Index: 97845
+// Method Definition Index: 97388
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenThirdGame_m9FAF2FFF22B3FAA33024BFEE72A94DCFE2E85C3E (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3687,7 +5330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenThirdGame_m9FAF2FFF22
 		return;
 	}
 }
-// Method Definition Index: 97846
+// Method Definition Index: 97389
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenFourthGame_mE2F1F80EDB180B7AD5505824735E49736F53C225 (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3705,7 +5348,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenFourthGame_mE2F1F80ED
 		return;
 	}
 }
-// Method Definition Index: 97847
+// Method Definition Index: 97390
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenPractice_m850644DD409568FF32B6C30188683EE538975817 (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3723,7 +5366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenPractice_m850644DD409
 		return;
 	}
 }
-// Method Definition Index: 97848
+// Method Definition Index: 97391
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenMenu_m2893083B8A46D2517E1B66C66004031DB8198456 (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3741,7 +5384,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenMenu_m2893083B8A46D25
 		return;
 	}
 }
-// Method Definition Index: 97849
+// Method Definition Index: 97392
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Replay_m9A7A64566798642D5966EC9660D2AC75BA95AAFA (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3765,7 +5408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Replay_m9A7A64566798642D5
 		return;
 	}
 }
-// Method Definition Index: 97850
+// Method Definition Index: 97393
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Load_m443DD04640AACCD43C8A995136D930681FB5D74D (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, String_t* ___0_sceneName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3840,7 +5483,7 @@ IL_0037:
 		return;
 	}
 }
-// Method Definition Index: 97851
+// Method Definition Index: 97394
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator__ctor_m54ABACD6A104F5DACB62A871842676DD62DBA4FF (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3856,6 +5499,701 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator__ctor_m54ABACD6A104F5DACB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 97395
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GateScript_Awake_m879AFEB74AAB680BCA40E469631F9A4C7EBC82B7 (GateScript_tEBF091DB35268FB98010EC50086A4E56ED820F03* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:24>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_0;
+		L_0 = Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45(__this, Component_GetComponent_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m6181F10C09FC1650DAE0EF2308D344A2F170AA45_RuntimeMethod_var);
+		__this->___spriteRenderer = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___spriteRenderer), (void*)L_0);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:25>
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_1;
+		L_1 = Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188(Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188_RuntimeMethod_var);
+		__this->___game = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___game), (void*)L_1);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:26>
+		return;
+	}
+}
+// Method Definition Index: 97396
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GateScript_OnTriggerEnter2D_m137B047C01DF875CE98FD69239D61136B9050A9E (GateScript_tEBF091DB35268FB98010EC50086A4E56ED820F03* __this, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___0_collision, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GateSide_t12BD05E5F27545F7C2BDC22FF5E04E3B3652AFC6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral344F0DD69F417D7BCB8B983DB833F9837777057C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral766A55EDA30FDBC60D0AA9FBC64C6BA23BA6FB68);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:35>
+		int32_t L_0 = __this->___positionOfGate;
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		if ((!(((uint32_t)L_1) > ((uint32_t)1))))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_2) == ((int32_t)2)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		goto IL_0044;
+	}
+
+IL_0011:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:39>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3;
+		L_3 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
+		GateScript_SetGateColour_mE710321CC1D200110CFCAA84188ABC5C4E84E916(__this, L_3, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:40>
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_4 = __this->___game;
+		float L_5 = __this->___gateSpeedReset;
+		NullCheck(L_4);
+		L_4->___gateMoveSpeed = L_5;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:41>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral344F0DD69F417D7BCB8B983DB833F9837777057C, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:42>
+		return;
+	}
+
+IL_0038:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:45>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6;
+		L_6 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		GateScript_SetGateColour_mE710321CC1D200110CFCAA84188ABC5C4E84E916(__this, L_6, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:46>
+		return;
+	}
+
+IL_0044:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:49>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		int32_t L_9 = __this->___positionOfGate;
+		int32_t L_10 = L_9;
+		RuntimeObject* L_11 = Box(GateSide_t12BD05E5F27545F7C2BDC22FF5E04E3B3652AFC6_il2cpp_TypeInfo_var, &L_10);
+		String_t* L_12;
+		L_12 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral766A55EDA30FDBC60D0AA9FBC64C6BA23BA6FB68, L_8, L_11, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_12, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:52>
+		return;
+	}
+}
+// Method Definition Index: 97397
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GateScript_SetGateColour_mE710321CC1D200110CFCAA84188ABC5C4E84E916 (GateScript_tEBF091DB35268FB98010EC50086A4E56ED820F03* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_colour, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:56>
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_0 = __this->___spriteRenderer;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = ___0_colour;
+		NullCheck(L_0);
+		SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546(L_0, L_1, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:57>
+		return;
+	}
+}
+// Method Definition Index: 97398
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GateScript__ctor_mC3DB3B3F07BE803016B4FA02FBA582632C8A970F (GateScript_tEBF091DB35268FB98010EC50086A4E56ED820F03* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/GateScript.cs:12>
+		__this->___gateSpeedReset = (1.0f);
+		MicrogameBehaviour__ctor_m671FCA7B08665CDB66B46610A082353370FC2BC4(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 97399
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveGates_Awake_m49F7C05E4DEF7CB340673BC71C6C759780D4DC44 (MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindFirstObjectByType_TisMicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E_m87F80D1CAE7B12B20476A036197D388CCF55D04A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:22>
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_0;
+		L_0 = Object_FindFirstObjectByType_TisMicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E_m87F80D1CAE7B12B20476A036197D388CCF55D04A(Object_FindFirstObjectByType_TisMicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E_m87F80D1CAE7B12B20476A036197D388CCF55D04A_RuntimeMethod_var);
+		__this->___session = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___session), (void*)L_0);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:23>
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_1;
+		L_1 = Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188(Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188_RuntimeMethod_var);
+		__this->___game = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___game), (void*)L_1);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:24>
+		return;
+	}
+}
+// Method Definition Index: 97400
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveGates_Update_m085C40A44299FF6DAC6D36F93FB7A8B5FE9F8C78 (MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:28>
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_0 = __this->___session;
+		NullCheck(L_0);
+		bool L_1 = L_0->___isTimerStarted;
+		if (L_1)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:28>
+		return;
+	}
+
+IL_000e:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:29>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = L_2;
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_5 = __this->___game;
+		NullCheck(L_5);
+		float L_6 = L_5->___gateMoveSpeed;
+		float L_7;
+		L_7 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(((float)il2cpp_codegen_multiply(L_6, L_7)), L_8, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_4, L_9, NULL);
+		NullCheck(L_3);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_3, L_10, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:30>
+		return;
+	}
+}
+// Method Definition Index: 97401
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveGates_OnTriggerEnter2D_m4EC332847CA259FF9CD57512B93E14B4FC28BE68 (MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E* __this, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___0_collision, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral38930E55588C14500EC6DAA1E909EC49C3F46D15);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral539A836FA3CBD104C959AAA7AE9AF83282BEEFF4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral95B7AC2E876BCDD8DDDD0B00B2E6B82C57FE8613);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9BEE6F60FD2DE2ED0B3410B4DE2071B53D4204B0);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:35>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_0, NULL);
+		V_0 = L_1;
+		String_t* L_2 = V_0;
+		bool L_3;
+		L_3 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_2, _stringLiteral95B7AC2E876BCDD8DDDD0B00B2E6B82C57FE8613, NULL);
+		if (L_3)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		String_t* L_4 = V_0;
+		bool L_5;
+		L_5 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_4, _stringLiteral539A836FA3CBD104C959AAA7AE9AF83282BEEFF4, NULL);
+		if (L_5)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		String_t* L_6 = V_0;
+		bool L_7;
+		L_7 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_6, _stringLiteral9BEE6F60FD2DE2ED0B3410B4DE2071B53D4204B0, NULL);
+		if (L_7)
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		goto IL_007d;
+	}
+
+IL_0035:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:39>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8;
+		L_8 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		MoveGates_SetGateColour_mD9AF526A853A1535DBCAA55B7F86EAADB8B491CC(__this, L_8, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:40>
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_9 = __this->___game;
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_10 = L_9;
+		NullCheck(L_10);
+		float L_11 = L_10->___gateMoveSpeed;
+		float L_12 = __this->___gateSpeedIncrease;
+		NullCheck(L_10);
+		L_10->___gateMoveSpeed = ((float)il2cpp_codegen_multiply(L_11, L_12));
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:41>
+		return;
+	}
+
+IL_0059:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:44>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13;
+		L_13 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		MoveGates_SetGateColour_mD9AF526A853A1535DBCAA55B7F86EAADB8B491CC(__this, L_13, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:45>
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_14 = __this->___game;
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_15 = L_14;
+		NullCheck(L_15);
+		float L_16 = L_15->___gateMoveSpeed;
+		float L_17 = __this->___fastGateSpeedIncrease;
+		NullCheck(L_15);
+		L_15->___gateMoveSpeed = ((float)il2cpp_codegen_multiply(L_16, L_17));
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:46>
+		return;
+	}
+
+IL_007d:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:49>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18;
+		L_18 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_18);
+		String_t* L_19;
+		L_19 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_18, NULL);
+		String_t* L_20;
+		L_20 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral38930E55588C14500EC6DAA1E909EC49C3F46D15, L_19, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_20, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:52>
+		return;
+	}
+}
+// Method Definition Index: 97402
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveGates_GateSuccess_m5B4DE0C7823651B7877B5E678713157376DA5EAC (MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_colour, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:56>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		L_0 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		MoveGates_SetGateColour_mD9AF526A853A1535DBCAA55B7F86EAADB8B491CC(__this, L_0, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:57>
+		return;
+	}
+}
+// Method Definition Index: 97403
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveGates_GateFailed_m364F206DFB4D8FA22CF8E35F67AB7408A16B99E8 (MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_colour, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:60>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		L_0 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
+		MoveGates_SetGateColour_mD9AF526A853A1535DBCAA55B7F86EAADB8B491CC(__this, L_0, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:61>
+		return;
+	}
+}
+// Method Definition Index: 97404
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveGates_SetGateColour_mD9AF526A853A1535DBCAA55B7F86EAADB8B491CC (MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_colour, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m5A53DBBEC351F939C04CB60CF7CD9C7E0E5A65AB_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:65>
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_0;
+		L_0 = Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m5A53DBBEC351F939C04CB60CF7CD9C7E0E5A65AB(__this, Component_GetComponentsInChildren_TisSpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B_m5A53DBBEC351F939C04CB60CF7CD9C7E0E5A65AB_RuntimeMethod_var);
+		V_0 = L_0;
+		V_1 = 0;
+		goto IL_0018;
+	}
+
+IL_000b:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:65>
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_1 = V_0;
+		int32_t L_2 = V_1;
+		NullCheck(L_1);
+		int32_t L_3 = L_2;
+		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:67>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_5 = ___0_colour;
+		NullCheck(L_4);
+		SpriteRenderer_set_color_mB0EEC2845A0347E296C01C831F967731D2804546(L_4, L_5, NULL);
+		int32_t L_6 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_6, 1));
+	}
+
+IL_0018:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:65>
+		int32_t L_7 = V_1;
+		SpriteRendererU5BU5D_t0DEDE77D607814DC56F5AC6D7D80AA5A342ABF28* L_8 = V_0;
+		NullCheck(L_8);
+		if ((((int32_t)L_7) < ((int32_t)((int32_t)(((RuntimeArray*)L_8)->max_length)))))
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:69>
+		return;
+	}
+}
+// Method Definition Index: 97405
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveGates__ctor_m4B6F36448AD0DF587429AF504B153F6813DF95BE (MoveGates_tD449572E10655AE0C98FCF842861EC97C5021F4E* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:11>
+		__this->___gateSpeedIncrease = (2.0f);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/MoveGates.cs:12>
+		__this->___fastGateSpeedIncrease = (4.0f);
+		MicrogameBehaviour__ctor_m671FCA7B08665CDB66B46610A082353370FC2BC4(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 97406
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Awake_mF2D3138091E272EC3D39B4025AEBF2108E6B4D79 (PlayerController_tEB2A5985CAD0F60644E5ECCEADEAD402F7CF20EC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindFirstObjectByType_TisMicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E_m87F80D1CAE7B12B20476A036197D388CCF55D04A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:26>
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_0;
+		L_0 = Object_FindFirstObjectByType_TisMicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E_m87F80D1CAE7B12B20476A036197D388CCF55D04A(Object_FindFirstObjectByType_TisMicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E_m87F80D1CAE7B12B20476A036197D388CCF55D04A_RuntimeMethod_var);
+		__this->___session = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___session), (void*)L_0);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:27>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_1;
+		L_1 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
+		__this->___mainCamera = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___mainCamera), (void*)L_1);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:28>
+		return;
+	}
+}
+// Method Definition Index: 97407
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_SetSteering_mB84725788DDD7D5BDCB9194AC6E11E3D6B6EA6A1 (PlayerController_tEB2A5985CAD0F60644E5ECCEADEAD402F7CF20EC* __this, float ___0_input, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:32>
+		float L_0 = __this->___currentSpeed;
+		float L_1 = ___0_input;
+		float L_2 = __this->___maxSpeed;
+		float L_3 = __this->___acceleration;
+		float L_4;
+		L_4 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		float L_5;
+		L_5 = Mathf_MoveTowards_m69751B5EC50D8E7127D4BB2C8D908E38808AF45D_inline(L_0, ((float)il2cpp_codegen_multiply(L_1, L_2)), ((float)il2cpp_codegen_multiply(L_3, L_4)), NULL);
+		__this->___currentSpeed = L_5;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:33>
+		return;
+	}
+}
+// Method Definition Index: 97408
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Update_mCCA40D7AE9A4827C3D381D71CA41DB302EE28494 (PlayerController_tEB2A5985CAD0F60644E5ECCEADEAD402F7CF20EC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	float V_3 = 0.0f;
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:39>
+		MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* L_0 = __this->___session;
+		NullCheck(L_0);
+		bool L_1 = L_0->___isTimerStarted;
+		if (L_1)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:39>
+		return;
+	}
+
+IL_000e:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:41>
+		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_2;
+		L_2 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
+		if (!L_2)
+		{
+			goto IL_008d;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:43>
+		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_3;
+		L_3 = Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline(NULL);
+		NullCheck(L_3);
+		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_4;
+		L_4 = Pointer_get_position_m4286004169788483EEDA6AF833CEFDB04FEDF3D8_inline(L_3, NULL);
+		NullCheck(L_4);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
+		L_5 = InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541(L_4, InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_RuntimeMethod_var);
+		float L_6 = L_5.___x;
+		V_1 = L_6;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:45>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_7 = __this->___mainCamera;
+		float L_8 = V_1;
+		int32_t L_9;
+		L_9 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_10 = __this->___mainCamera;
+		NullCheck(L_10);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
+		L_11 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_10, NULL);
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		float L_13 = L_12.___z;
+		float L_14;
+		L_14 = fabsf(L_13);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		memset((&L_15), 0, sizeof(L_15));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_15), L_8, ((float)il2cpp_codegen_multiply(((float)L_9), (0.5f))), L_14, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Camera_ScreenToWorldPoint_m5EA3148F070985EC72127AAC3448D8D6ABE6E7E5(L_7, L_15, NULL);
+		V_2 = L_16;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:47>
+		float L_17 = __this->___minX;
+		float L_18 = __this->___maxX;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = V_2;
+		float L_20 = L_19.___x;
+		float L_21;
+		L_21 = Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline(L_17, L_18, L_20, NULL);
+		V_3 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(L_21, (2.0f))), (1.0f)));
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:49>
+		float L_22 = V_3;
+		PlayerController_SetSteering_mB84725788DDD7D5BDCB9194AC6E11E3D6B6EA6A1(__this, L_22, NULL);
+	}
+
+IL_008d:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:52>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
+		L_23 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_23, NULL);
+		V_0 = L_24;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:54>
+		float* L_25 = (float*)(&(&V_0)->___x);
+		float* L_26 = L_25;
+		float L_27 = *((float*)L_26);
+		float L_28 = __this->___currentSpeed;
+		float L_29;
+		L_29 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		*((float*)L_26) = (float)((float)il2cpp_codegen_add(L_27, ((float)il2cpp_codegen_multiply(L_28, L_29))));
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:55>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = V_0;
+		float L_31 = L_30.___x;
+		float L_32 = __this->___minX;
+		float L_33 = __this->___maxX;
+		float L_34;
+		L_34 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(L_31, L_32, L_33, NULL);
+		(&V_0)->___x = L_34;
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:57>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
+		L_35 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_0;
+		NullCheck(L_35);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_35, L_36, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:60>
+		return;
+	}
+}
+// Method Definition Index: 97409
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController__ctor_m0820A2AAF82902662D1706C0A02C312C97631117 (PlayerController_tEB2A5985CAD0F60644E5ECCEADEAD402F7CF20EC* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:15>
+		__this->___maxSpeed = (3.0f);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:16>
+		__this->___acceleration = (5.0f);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:17>
+		__this->___minX = (-2.29999995f);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/PlayerController.cs:18>
+		__this->___maxX = (2.29999995f);
+		MicrogameBehaviour__ctor_m671FCA7B08665CDB66B46610A082353370FC2BC4(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 97410
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveGate_Awake_m17B8B9BC2C69EF6AF6AF8F6305EA4289B62F0E7B (RemoveGate_t1E88B46D1D196EEEEF887247B3AE2476A89236BD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/RemoveGate.cs:18>
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_0;
+		L_0 = Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188(Object_FindFirstObjectByType_TisSlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733_m0D3A6BA54F63D25F7AFE7FE66D4CC68348A70188_RuntimeMethod_var);
+		__this->___game = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___game), (void*)L_0);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/RemoveGate.cs:19>
+		return;
+	}
+}
+// Method Definition Index: 97411
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveGate_Start_mE740BC78875D6A7CC648149CC26B799A44B4451C (RemoveGate_t1E88B46D1D196EEEEF887247B3AE2476A89236BD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m8E881B105EA2AA2D9E3CFB68EE0924719FA96813_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/RemoveGate.cs:23>
+		BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* L_0;
+		L_0 = Component_GetComponent_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m8E881B105EA2AA2D9E3CFB68EE0924719FA96813(__this, Component_GetComponent_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m8E881B105EA2AA2D9E3CFB68EE0924719FA96813_RuntimeMethod_var);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/RemoveGate.cs:24>
+		return;
+	}
+}
+// Method Definition Index: 97412
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveGate_OnTriggerEnter2D_mCC62FFF3FFB0C844206376B822895D7351155BDA (RemoveGate_t1E88B46D1D196EEEEF887247B3AE2476A89236BD* __this, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___0_collision, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD7376B9CF389CD3751FAAA7405ADBCB2B0AC7DB3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/RemoveGate.cs:28>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_0 = ___0_collision;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_0, _stringLiteralD7376B9CF389CD3751FAAA7405ADBCB2B0AC7DB3, NULL);
+		if (!L_1)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/RemoveGate.cs:30>
+		SlalomGame_tC0A47E96B8D4BB4F96917017F4933BD6844DF733* L_2 = __this->___game;
+		NullCheck(L_2);
+		SlalomGame_CreateNewGate_m9F76D4B73E9F49185DF6BAFE3F74055B5C1EC5BB(L_2, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/RemoveGate.cs:31>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_3 = ___0_collision;
+		NullCheck(L_3);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_4, NULL);
+	}
+
+IL_0023:
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/MicroGames/Slalom/RemoveGate.cs:33>
+		return;
+	}
+}
+// Method Definition Index: 97413
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoveGate__ctor_m1BAF231BA792A5999392F480F17508BF359CC0F8 (RemoveGate_t1E88B46D1D196EEEEF887247B3AE2476A89236BD* __this, const RuntimeMethod* method) 
+{
+	{
+		MicrogameBehaviour__ctor_m671FCA7B08665CDB66B46610A082353370FC2BC4(__this, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -3875,7 +6213,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator__ctor_m54ABACD6A104F5DACB
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 97828
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Method Definition Index: 97363
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MicrogameBehaviour_get_IsRunning_m343F1D2A2875B0969B9A9930F1C8C672E1635E6D_inline (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3884,7 +6238,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MicrogameBehaviour_get_IsRun
 		return L_0;
 	}
 }
-// Method Definition Index: 44587
+// Method Definition Index: 44592
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) 
 {
 	{
@@ -3894,7 +6248,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 44580
+// Method Definition Index: 44585
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_cadetBlue_m71E53767CB619C13CDFCD6C0FB4CC976184549F0_inline (const RuntimeMethod* method) 
 {
 	{
@@ -3904,7 +6258,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 44842
+// Method Definition Index: 44848
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -3915,7 +6269,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		return;
 	}
 }
-// Method Definition Index: 44588
+// Method Definition Index: 44593
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
 {
 	{
@@ -3925,7 +6279,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 43270
+// Method Definition Index: 43275
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3933,7 +6287,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_width_m620D6755137
 		return L_0;
 	}
 }
-// Method Definition Index: 43272
+// Method Definition Index: 43277
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3941,7 +6295,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_height_mE1AA6C6C72
 		return L_0;
 	}
 }
-// Method Definition Index: 44558
+// Method Definition Index: 44563
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) 
 {
 	{
@@ -3955,7 +6309,34 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F187
 		return;
 	}
 }
-// Method Definition Index: 97831
+// Method Definition Index: 44707
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		return;
+	}
+}
+// Method Definition Index: 44768
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = ((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields*)il2cpp_codegen_static_fields_for(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var))->___identityQuaternion;
+		return L_0;
+	}
+}
+// Method Definition Index: 97366
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_Session_mCA803009F83BC24E3426D447CEDE7DF5F6506E61_inline (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3966,7 +6347,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_Sessi
 		return;
 	}
 }
-// Method Definition Index: 97829
+// Method Definition Index: 97364
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_IsRunning_m912E2F035D117B078F0163037F4D7328EB8DCC04_inline (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -3976,7 +6357,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MicrogameBehaviour_set_IsRun
 		return;
 	}
 }
-// Method Definition Index: 97830
+// Method Definition Index: 97365
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E* MicrogameBehaviour_get_Session_m13A10D4A61D40532A16D9EB00142B6A643F89A63_inline (MicrogameBehaviour_t8DB66B07BB8B4669128DA59E16D762716A5F0699* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3985,7 +6366,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MicrogameSession_t822B12AF27BADFB
 		return L_0;
 	}
 }
-// Method Definition Index: 44807
+// Method Definition Index: 44812
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -4022,6 +6403,234 @@ IL_000c:
 		return L_4;
 	}
 }
+// Method Definition Index: 44590
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) 
+{
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (0.0f), (1.0f), (0.0f), (1.0f), NULL);
+		return L_0;
+	}
+}
+// Method Definition Index: 44739
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_down_mF62B2AE7C5AC31EAC9CB62797C7190C90A7A8599_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___downVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 44746
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___0_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___0_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___0_d;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 44742
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_add(L_9, L_11));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		return L_12;
+	}
+}
+// Method Definition Index: 44831
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_MoveTowards_m69751B5EC50D8E7127D4BB2C8D908E38808AF45D_inline (float ___0_current, float ___1_target, float ___2_maxDelta, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	{
+		float L_0 = ___1_target;
+		float L_1 = ___0_current;
+		float L_2;
+		L_2 = fabsf(((float)il2cpp_codegen_subtract(L_0, L_1)));
+		float L_3 = ___2_maxDelta;
+		V_0 = (bool)((((int32_t)((!(((float)L_2) <= ((float)L_3)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_4 = V_0;
+		if (!L_4)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		float L_5 = ___1_target;
+		V_1 = L_5;
+		goto IL_0026;
+	}
+
+IL_0017:
+	{
+		float L_6 = ___0_current;
+		float L_7 = ___1_target;
+		float L_8 = ___0_current;
+		float L_9;
+		L_9 = Mathf_Sign_m42EE1F0BC041AF14F89DED7F762BE996E2C50D8A_inline(((float)il2cpp_codegen_subtract(L_7, L_8)), NULL);
+		float L_10 = ___2_maxDelta;
+		V_1 = ((float)il2cpp_codegen_add(L_6, ((float)il2cpp_codegen_multiply(L_9, L_10))));
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		float L_11 = V_1;
+		return L_11;
+	}
+}
+// Method Definition Index: 31832
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/InputSystem/Devices/Pointer.cs:178>
+		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_0 = ((Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_StaticFields*)il2cpp_codegen_static_fields_for(Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 31820
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* Pointer_get_position_m4286004169788483EEDA6AF833CEFDB04FEDF3D8_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/InputSystem/Devices/Pointer.cs:84>
+		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = __this->___U3CpositionU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 44835
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_InverseLerp_mBD7EC6A7173CE082226077E1557D5BC2D2AE0D9D_inline (float ___0_a, float ___1_b, float ___2_value, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	{
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		V_0 = (bool)((((int32_t)((((float)L_0) == ((float)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		float L_3 = ___2_value;
+		float L_4 = ___0_a;
+		float L_5 = ___1_b;
+		float L_6 = ___0_a;
+		float L_7;
+		L_7 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(((float)(((float)il2cpp_codegen_subtract(L_3, L_4))/((float)il2cpp_codegen_subtract(L_5, L_6)))), NULL);
+		V_1 = L_7;
+		goto IL_0023;
+	}
+
+IL_001b:
+	{
+		V_1 = (0.0f);
+		goto IL_0023;
+	}
+
+IL_0023:
+	{
+		float L_8 = V_1;
+		return L_8;
+	}
+}
+// Method Definition Index: 44826
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___0_value;
+		float L_1 = ___1_min;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		float L_3 = ___1_min;
+		___0_value = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		float L_4 = ___0_value;
+		float L_5 = ___2_max;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		float L_7 = ___2_max;
+		___0_value = L_7;
+	}
+
+IL_0019:
+	{
+		float L_8 = ___0_value;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		float L_9 = V_2;
+		return L_9;
+	}
+}
 // Method Definition Index: 2182
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_mFAF0B4EEA878E596C80258FE3BDA57CEF40C8D7F_gshared_inline (Nullable_1_tEE83D90B507D40B6C58B5EEF5B9D44D377B44F11* __this, const RuntimeMethod* method) 
 {
@@ -4038,7 +6647,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 44557
+// Method Definition Index: 44562
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{
@@ -4051,5 +6660,87 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 		float L_3 = ___3_a;
 		__this->___a = L_3;
 		return;
+	}
+}
+// Method Definition Index: 44825
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Sign_m42EE1F0BC041AF14F89DED7F762BE996E2C50D8A_inline (float ___0_f, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float G_B3_0 = 0.0f;
+	{
+		float L_0 = ___0_f;
+		if ((((float)L_0) >= ((float)(0.0f))))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		G_B3_0 = (-1.0f);
+		goto IL_0015;
+	}
+
+IL_0010:
+	{
+		G_B3_0 = (1.0f);
+	}
+
+IL_0015:
+	{
+		V_0 = G_B3_0;
+		goto IL_0018;
+	}
+
+IL_0018:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 44828
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	{
+		float L_0 = ___0_value;
+		V_0 = (bool)((((float)L_0) < ((float)(0.0f)))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		V_1 = (0.0f);
+		goto IL_002d;
+	}
+
+IL_0015:
+	{
+		float L_2 = ___0_value;
+		V_2 = (bool)((((float)L_2) > ((float)(1.0f)))? 1 : 0);
+		bool L_3 = V_2;
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		V_1 = (1.0f);
+		goto IL_002d;
+	}
+
+IL_0029:
+	{
+		float L_4 = ___0_value;
+		V_1 = L_4;
+		goto IL_002d;
+	}
+
+IL_002d:
+	{
+		float L_5 = V_1;
+		return L_5;
 	}
 }

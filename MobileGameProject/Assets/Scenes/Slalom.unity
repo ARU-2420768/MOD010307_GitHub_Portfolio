@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &46696580
 RectTransform:
   m_ObjectHideFlags: 0
@@ -646,9 +646,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 90fad535ccc9f684caeed1abb94d7787, type: 3}
+      - m_Target: {fileID: 1320675863}
         m_TargetAssemblyTypeName: MicrogameCourse.Framework.SceneNavigator, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OpenMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -817,8 +817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fba4fe5caba124581a180d3b845a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Framework.PlayerController
-  maxSpeed: 3
-  acceleration: 5
+  maxSpeed: 4
+  acceleration: 7
   minX: -2.3
   maxX: 2.3
 --- !u!1 &386668241
@@ -2477,7 +2477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1370345695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2761,6 +2761,10 @@ MonoBehaviour:
   startGatesPrefab: {fileID: 1787718849970169396, guid: 2fe9e8ea51e0b5b42a550d96a9ea0fa3, type: 3}
   gatesPrefab: {fileID: 318863479658321324, guid: 74696cec7fdd71e4389b9db5ca758482, type: 3}
   fastGatesPrefab: {fileID: 8485023169877269221, guid: 7a398c4c7a053cf4ea7c84691cfbadf6, type: 3}
+  gateMoveSpeed: 1
+  gateMaxMoveSpeed: 3
+  gateMinMoveSpeed: 1
+  score: 0
 --- !u!1 &1549625782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,7 +3817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1961679113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3853,7 +3857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: 0 / 10'
+  m_text: Gates
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

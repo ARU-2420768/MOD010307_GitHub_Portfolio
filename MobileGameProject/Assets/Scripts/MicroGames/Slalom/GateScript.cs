@@ -11,6 +11,7 @@ public sealed class GateScript : MicrogameBehaviour
     {
         [SerializeField] float gateSpeedReset = 1f;
 
+
         private enum GateSide {Left, Right, Centre};
 
         [SerializeField] private GateSide positionOfGate;
@@ -37,8 +38,8 @@ public sealed class GateScript : MicrogameBehaviour
                 case GateSide.Left:
                 case GateSide.Right:
                     SetGateColour(Color.red);
-                    game.gateMoveSpeed = gateSpeedReset;
-                    Debug.Log("Speed Reset");
+                    game.ShowFeedback("Gate Missed !", Color.red);
+                    game.gateMoveSpeed = game.gateMinMoveSpeed;
                     break;
 
                 case GateSide.Centre:
