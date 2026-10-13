@@ -17,6 +17,9 @@ namespace MicrogameCourse.Framework
         [SerializeField] private float minX = -2.3f;
         [SerializeField] private float maxX = 2.3f;
 
+        [Header("Game Reference")]
+        [SerializeField] private MicrogameBehaviour game;
+
         private MicrogameSession session;
         private float currentSpeed;
         private Camera mainCamera;
@@ -40,6 +43,13 @@ namespace MicrogameCourse.Framework
 
             if (Pointer.current != null)
             {
+
+
+                if (Pointer.current.press.wasPressedThisFrame)
+                {
+                    game.OnPointerPressed();
+                }
+
                 float screenX = Pointer.current.position.ReadValue().x;
 
                 Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenX,Screen.height * 0.5f, Mathf.Abs(mainCamera.transform.position.z)));

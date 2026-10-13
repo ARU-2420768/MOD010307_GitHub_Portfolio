@@ -10,6 +10,10 @@ namespace MicrogameCourse.Framework
         protected bool IsRunning {get; private set;}
         protected MicrogameSession Session {get; private set;}
 
+        public virtual void OnPointerPressed()
+        {
+        }
+
         public virtual void Begin(MicrogameSession session)
         {
             Session = session;

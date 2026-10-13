@@ -821,6 +821,7 @@ MonoBehaviour:
   acceleration: 7
   minX: -2.3
   maxX: 2.3
+  game: {fileID: 1527547277}
 --- !u!1 &386668241
 GameObject:
   m_ObjectHideFlags: 0
