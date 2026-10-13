@@ -70,7 +70,11 @@ namespace MicrogameCourse.Microgames
 
         private void CheckForCompletion()
         {
+            if(MedalManager.Instance == null)
+                Debug.Log($"Medal Manager is created from the main menu - start from there first");
+
             MedalType medal = CalculateMedal();
+
             MedalManager.Instance.AwardMedal(gameName, medal);
             Win();
         }
