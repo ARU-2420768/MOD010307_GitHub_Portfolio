@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6dbc5ff9449c947b26a2ab4ccd1c06, type: 3}
   m_Name: SlalomThresholds
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.ProgressionFramework.MedalThresholdsData
-  bronze: 8
-  silver: 10
-  gold: 15
+  bronze: 2
+  silver: 4
+  gold: 6

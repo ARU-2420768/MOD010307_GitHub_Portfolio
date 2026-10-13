@@ -2752,6 +2752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48db28f8ae141364d82c8ef95b98f47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Microgames.SlalomGame
+  gameName: Slalom
+  thresholds: {fileID: 11400000, guid: f9c13414ad2dc424e94b7b3b8864228b, type: 2}
   playArea: {fileID: 1914787618}
   target: {fileID: 0}
   targetImage: {fileID: 0}
@@ -2765,6 +2767,7 @@ MonoBehaviour:
   gateMaxMoveSpeed: 3
   gateMinMoveSpeed: 1
   score: 0
+  gatesCleared: 0
 --- !u!1 &1549625782
 GameObject:
   m_ObjectHideFlags: 0

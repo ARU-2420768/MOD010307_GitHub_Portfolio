@@ -4,6 +4,7 @@ using TMPro;
 using MicrogameCourse.Framework;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using MicrogameCourse.ProgressionFramework;
+using System;
 
 namespace MicrogameCourse.Microgames
 {
@@ -12,8 +13,9 @@ namespace MicrogameCourse.Microgames
     {
 
         [Header("Medal Success Levels - Thresholds")]
+        [SerializeField] private string gameName = "Slalom";
         [SerializeField] private MedalThresholdsData thresholds;
-
+        
 
         [Header("Scene References")]
         [SerializeField] private RectTransform playArea;
@@ -32,10 +34,12 @@ namespace MicrogameCourse.Microgames
         [SerializeField] public float gateMaxMoveSpeed = 3f;
         [SerializeField] public float gateMinMoveSpeed = 1f;
         
-        //private enum 
+      
 
         private Camera mainCamera;
-        public int score;
+        public int score,gatesCleared;
+        
+        
 
         private GameObject[] Kitzbuhel_Gates;
 
@@ -46,7 +50,20 @@ namespace MicrogameCourse.Microgames
         private void Awake()
         {
             mainCamera = Camera.main;
-            Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab};
+            //Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab};
+            Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab};
+            
+        }
+
+        private MedalType CalculateMedal()
+        {
+            if(score >= thresholds.gold)
+                return MedalType.Gold;
+            if(score >= thresholds.silver)
+                return MedalType.Silver;
+            if(score >= thresholds.bronze)
+                return MedalType.Bronze;
+            return MedalType.Unranked;
         }
 
         public override void Begin(MicrogameSession session)
@@ -64,11 +81,31 @@ namespace MicrogameCourse.Microgames
             if (!IsRunning) return;
         }
 
+        public void GatePassed()
+        {
+            //Debug.Log("Gate Passed");
+            ShowFeedback("Gate Passed !", Color.green);
+            gatesCleared++;
+            score++;
+            UpdateProgress();
+            CheckForCompletion();
+        }
+
+        private void CheckForCompletion()
+        {
+            if(gatesCleared >= Kitzbuhel_Gates.Length)
+            {
+                MedalType medal = CalculateMedal();
+                MedalManager.Instance.AwardMedal(gameName, medal);
+                Win();
+            }
+        }
+
         private void InitialiseFirstNewGates()
         {
             Instantiate(startGatesPrefab, new Vector3(Kitzbuhel[gateNumber], -2.5f + gateNumber, 0), Quaternion.identity, playArea);
             gateNumber++;
-            for (int i = 1; i < 4; i++)
+            for (int i = 1; i < 2; i++)
             {
                 Instantiate(Kitzbuhel_Gates[gateNumber], new Vector3(Kitzbuhel[gateNumber], -2.5f + (2 * gateNumber), 0), Quaternion.identity, playArea);
                 gateNumber++;
@@ -78,8 +115,8 @@ namespace MicrogameCourse.Microgames
         public void CreateNewGate()
         {
             if (!IsRunning) return;
-            Instantiate(Kitzbuhel_Gates[gateNumber % Kitzbuhel_Gates.Length], new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity, playArea);
-            gateNumber++;
+            //Instantiate(Kitzbuhel_Gates[gateNumber % Kitzbuhel_Gates.Length], new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity, playArea);
+            //gateNumber++;
         }
 
         public void ShowFeedback(string message, Color? colour = null)

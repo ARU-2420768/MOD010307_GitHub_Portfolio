@@ -8,6 +8,19 @@ namespace MicrogameCourse.ProgressionFramework
         private Dictionary<string, MedalType> medals = new Dictionary<string, MedalType>();
 
         //private List<EventResult> medalsList;
+        public static MedalManager Instance { get; private set; }
+
+        private void Awake()
+        {
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
 
         public void AwardMedal(string eventName, MedalType medal)
         {
