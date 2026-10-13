@@ -3,12 +3,18 @@ using UnityEngine.UI;
 using TMPro;
 using MicrogameCourse.Framework;
 using Unity.VisualScripting.Dependencies.Sqlite;
+using MicrogameCourse.ProgressionFramework;
 
 namespace MicrogameCourse.Microgames
 {
 
     public sealed class SlalomGame : MicrogameBehaviour
     {
+
+        [Header("Medal Success Levels - Thresholds")]
+        [SerializeField] private MedalThresholdsData thresholds;
+
+
         [Header("Scene References")]
         [SerializeField] private RectTransform playArea;
         [SerializeField] private RectTransform target;
@@ -16,7 +22,7 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private TextMeshProUGUI progressText;
         [SerializeField] private TextMeshProUGUI feedbackText;
         [SerializeField] private GameObject playArea3D;
-
+        
 
         [Header("Gates Prefabs")]
         [SerializeField] private GameObject startGatesPrefab;
@@ -26,12 +32,10 @@ namespace MicrogameCourse.Microgames
         [SerializeField] public float gateMaxMoveSpeed = 3f;
         [SerializeField] public float gateMinMoveSpeed = 1f;
         
-
+        //private enum 
 
         private Camera mainCamera;
         public int score;
-
-
 
         private GameObject[] Kitzbuhel_Gates;
 
