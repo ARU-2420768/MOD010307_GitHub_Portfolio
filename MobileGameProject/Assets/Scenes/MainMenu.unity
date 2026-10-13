@@ -583,7 +583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Third Game
+  m_text: Ski Jump
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1056,7 +1056,6 @@ MonoBehaviour:
   - eventName: Curling
     medalImage: {fileID: 1529843245}
     medalText: {fileID: 1008252819}
-  medalManager: {fileID: 1828837776}
 --- !u!4 &877401056
 Transform:
   m_ObjectHideFlags: 0
@@ -1540,7 +1539,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Second Game
+  m_text: Shooting
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1814,7 +1813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fourth Game
+  m_text: Curling
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1907,7 +1906,7 @@ GameObject:
   - component: {fileID: 1309897818}
   - component: {fileID: 1309897817}
   m_Layer: 5
-  m_Name: Third Game
+  m_Name: SkiJump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1979,7 +1978,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1784093031}
         m_TargetAssemblyTypeName: MicrogameCourse.Framework.SceneNavigator, Assembly-CSharp
-        m_MethodName: OpenThirdGame
+        m_MethodName: OpenSkiJumpGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2040,7 +2039,7 @@ GameObject:
   - component: {fileID: 1435667652}
   - component: {fileID: 1435667651}
   m_Layer: 5
-  m_Name: Fourth Game
+  m_Name: Curling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2112,7 +2111,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1784093031}
         m_TargetAssemblyTypeName: MicrogameCourse.Framework.SceneNavigator, Assembly-CSharp
-        m_MethodName: OpenFourthGame
+        m_MethodName: OpenCurlingGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3100,7 +3099,7 @@ GameObject:
   - component: {fileID: 2091743023}
   - component: {fileID: 2091743022}
   m_Layer: 5
-  m_Name: Second Game
+  m_Name: Shooting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3172,7 +3171,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1784093031}
         m_TargetAssemblyTypeName: MicrogameCourse.Framework.SceneNavigator, Assembly-CSharp
-        m_MethodName: OpenSecondGame
+        m_MethodName: OpenShootingGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
