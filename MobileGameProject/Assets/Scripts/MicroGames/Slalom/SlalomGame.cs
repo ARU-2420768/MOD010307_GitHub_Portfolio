@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using MicrogameCourse.Framework;
-using Unity.VisualScripting.Dependencies.Sqlite;
 using MicrogameCourse.ProgressionFramework;
 using System;
 

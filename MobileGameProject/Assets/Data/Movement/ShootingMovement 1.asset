@@ -18,5 +18,5 @@ MonoBehaviour:
   useSmoothing: 1
   minX: -2.3
   maxX: 2.3
-  minY: 4
+  minY: -4
   maxY: 4
