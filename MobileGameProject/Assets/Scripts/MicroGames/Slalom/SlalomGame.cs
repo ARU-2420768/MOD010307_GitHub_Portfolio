@@ -19,8 +19,6 @@ namespace MicrogameCourse.Microgames
 
         [Header("Scene References")]
         [SerializeField] private RectTransform playArea;
-        [SerializeField] private RectTransform target;
-        [SerializeField] private Image targetImage;
         [SerializeField] private TextMeshProUGUI progressText;
         [SerializeField] private TextMeshProUGUI feedbackText;
         [SerializeField] private GameObject playArea3D;

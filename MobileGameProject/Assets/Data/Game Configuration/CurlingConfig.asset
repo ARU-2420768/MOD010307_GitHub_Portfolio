@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a18c12f60f0fb148b67f9f89b29bea7, type: 3}
+  m_Name: CurlingConfig
+  m_EditorClassIdentifier: Assembly-CSharp::GameConfigurationData
+  gameName: Curling
+  description: Double Drag to aim and release
+  inputProfile: {fileID: 11400000, guid: 9d8d9b6636c3c99418c57960fffa02cd, type: 2}
+  movementProfile: {fileID: 11400000, guid: e995bd724dcd4954ab3601256177720f, type: 2}
+  medalThresholds: {fileID: 11400000, guid: f9c13414ad2dc424e94b7b3b8864228b, type: 2}

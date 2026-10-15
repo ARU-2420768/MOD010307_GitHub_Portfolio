@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 namespace MicrogameCourse.Framework
 {
 
-    public sealed class PlayerController : MicrogameBehaviour
+    public sealed class PlayerController1 : MicrogameBehaviour
     {
 
         [Header("Player Controls")]

@@ -54,6 +54,11 @@
 
 .vs/
 
+# --------------------------------------------
+# Temporary files
+# --------------------------------------------
+.utmp/
+
 
 # --------------------------------------------
 # Visual Studio Code
@@ -76,14 +81,18 @@
 
 **/Assets/AssetStoreTools*
 
-# TextMeshPro generated files
+
+# --------------------------------------------
+# TextMesh Pro generated assets
+# --------------------------------------------
+
 **/TextMesh Pro/
+**/TextMesh Pro.meta
 **/TextMeshPro/
 **/*.tmp
-**/*.mat
-**/*.meta
 **/*TextMeshPro*.asset
 **/*TextMeshPro*.prefab
+
 
 
 # --------------------------------------------
