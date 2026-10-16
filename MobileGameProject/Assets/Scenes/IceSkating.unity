@@ -9433,7 +9433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1043011593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9481,7 +9481,11 @@ MonoBehaviour:
     marks depending on your routine -\n\nMake the player have 10 seconds to construct
     the best routine from 6 available tricks.\n\nExample flow:\n\n\"Head Judge: Anna\"\nPlayer
     picks 3 tricks.\nRoutine submitted.\nAll judges score it.\nRoutine passes if
-    average score > threshold."
+    average score > threshold.\n\nChange button sizes - on click shows the difficulty
+    and and mini graph for how it will be recieved - you have 10 seconds to choose
+    the routine - then 15 seonds to perform it - countdown timer for each part of
+    the routine - must complete what yu choose or docked points. Difficulty determines
+    whether the part can be completed successfully - using a meter timer."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9969,7 +9973,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 720}
+  m_AnchoredPosition: {x: 0, y: 800}
   m_SizeDelta: {x: 850, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1070205501
@@ -11048,7 +11052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 610}
+  m_AnchoredPosition: {x: 0, y: 700}
   m_SizeDelta: {x: 700, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1210557118

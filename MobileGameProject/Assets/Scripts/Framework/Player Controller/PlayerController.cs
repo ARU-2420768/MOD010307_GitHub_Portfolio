@@ -2,7 +2,6 @@ using UnityEngine;
 using MicrogameCourse.Framework;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
-using Unity.Android.Gradle.Manifest;
 
 namespace MicrogameCourse.Framework
 {

@@ -51,12 +51,13 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -70,12 +71,13 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -118,12 +120,13 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -143,12 +146,13 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -168,12 +172,13 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -187,12 +192,13 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -224,12 +230,13 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -261,12 +268,13 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -280,43 +288,51 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "Mesh",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/IceSkating.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MeshFilter",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/IceSkating.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MeshRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/IceSkating.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -330,12 +346,13 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -343,12 +360,13 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -386,12 +404,13 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -405,12 +424,13 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -423,10 +443,8 @@
           },
           {
             "name": "Renderer",
-            "scenes": [
-              "Assets/Scenes/Slalom.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -444,12 +462,13 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -475,12 +494,13 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -494,6 +514,8 @@
           {
             "name": "SpriteRenderer",
             "scenes": [
+              "Assets/Scenes/IceSkating.unity",
+              "Assets/Scenes/Shooting.unity",
               "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
@@ -1038,7 +1060,17 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/IceSkating.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "CapsuleCollider",
+            "scenes": [
+              "Assets/Scenes/IceSkating.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1052,6 +1084,14 @@
             "name": "PhysicsManager",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "SphereCollider",
+            "scenes": [
+              "Assets/Scenes/IceSkating.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -1086,6 +1126,8 @@
           {
             "name": "BoxCollider2D",
             "scenes": [
+              "Assets/Scenes/IceSkating.unity",
+              "Assets/Scenes/Shooting.unity",
               "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
@@ -1118,6 +1160,8 @@
           {
             "name": "Rigidbody2D",
             "scenes": [
+              "Assets/Scenes/IceSkating.unity",
+              "Assets/Scenes/Shooting.unity",
               "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
@@ -1549,12 +1593,13 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1620,12 +1665,13 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1639,12 +1685,13 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/FourthGame.unity",
+              "Assets/Scenes/Curling.unity",
+              "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/MainMenu.unity",
               "Assets/Scenes/PracticeTap.unity",
-              "Assets/Scenes/SecondGame.unity",
-              "Assets/Scenes/Slalom.unity",
-              "Assets/Scenes/ThirdGame.unity"
+              "Assets/Scenes/Shooting.unity",
+              "Assets/Scenes/SkiJump.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
