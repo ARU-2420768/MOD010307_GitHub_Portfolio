@@ -16,10 +16,16 @@ namespace MicrogameCourse.Framework
         private const string ShootingScene = "Shooting";
         private const string SkiJumpScene = "SkiJump";
         private const string CurlingScene = "Curling";
+        private const string IceSkatingScene  = "IceSkating";
 
         private bool isLoading;
 
-        public void OpenSlalom()
+        public void OpenIceSkatingGame()
+        {
+            Debug.Log($"Attempting to load: {IceSkatingScene}");
+            SceneManager.LoadScene(IceSkatingScene);                
+        }
+        public void OpenSlalomGame()
         {
             SceneManager.LoadScene(SlalomScene);                
         }
@@ -39,7 +45,7 @@ namespace MicrogameCourse.Framework
             SceneManager.LoadScene(CurlingScene);                
         }
 
-        public void OpenPractice()
+        public void OpenPracticeGame()
         {
             SceneManager.LoadScene(PracticeScene);                
         }

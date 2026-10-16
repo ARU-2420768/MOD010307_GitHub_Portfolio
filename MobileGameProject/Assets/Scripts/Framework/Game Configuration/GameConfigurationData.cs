@@ -10,5 +10,6 @@ public class GameConfigurationData : ScriptableObject
     public InputProfileData inputProfile;
     public MovementProfileData  movementProfile;
     public MedalThresholdsData medalThresholds;
+    public GameFeedbackData gameFeedbackData;
     
 }

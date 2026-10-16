@@ -12,12 +12,24 @@ namespace MicrogameCourse.Framework.UI
         [SerializeField] private GameConfigurationData gameConfig;
         [SerializeField] private TextMeshProUGUI gameHeadingText;
         [SerializeField] private TextMeshProUGUI gameReadyText;
+        [SerializeField] private TextMeshProUGUI feedbackText;
 
         private void Start()
         {
             gameHeadingText.text = gameConfig.gameName;
             gameReadyText.text = gameConfig.description;
         }
+
+        public void SuccessFeedback()
+        {
+            feedbackText.text = gameConfig.gameFeedbackData.success;
+        }
+
+        public void FailureFeedback()
+        {
+            feedbackText.text = gameConfig.gameFeedbackData.failure;
+        }
+
     }
 
 }
