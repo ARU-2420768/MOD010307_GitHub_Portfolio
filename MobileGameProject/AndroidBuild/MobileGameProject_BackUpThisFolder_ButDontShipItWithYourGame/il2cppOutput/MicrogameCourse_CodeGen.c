@@ -21,6 +21,11 @@ extern void GameConfigurationData__ctor_mA27550987E304740CBF13F315E04E18B08EA1A8
 extern void InputProfileData__ctor_m3A080BB4E7FFCDCD3E0A88BBE8E006EF235A086A (void);
 extern void MovementProfileData__ctor_mBE010F437338B6EFD91F05146F145819ED6EE1ED (void);
 extern void GameFeedbackData__ctor_m567EB5B056E8C467D115C6BADDF8B1B48B9852EE (void);
+extern void DifficultyColours__cctor_m0383E0AC93BAAC414D86A2B85ED79AB129D24312 (void);
+extern void SkatingSkill__ctor_mC3FB45CD8EDA84CD6472D77CB039655EA4229809 (void);
+extern void SkillManager_Awake_m839EC0CEA0011B3CF0AA8E45CCFF09F905899C60 (void);
+extern void SkillManager_Start_m2B2CB6C4FF065C4116C50B78947E0F2AAF40D10A (void);
+extern void SkillManager__ctor_mBA9EBC6BCC9E5798C959E888A9C0D84E23F02249 (void);
 extern void MainMenuController_Start_m56412B404C7EF8A65C102A14AEEA74A0BF8D526B (void);
 extern void MainMenuController_RefreshMedals_m2098251BED367239F62601B1C7D984B5B2DD28B2 (void);
 extern void MainMenuController__ctor_mE61300344CC9DBD03451FFDC8320FF027CAA96BF (void);
@@ -164,7 +169,7 @@ extern void GameInformationDisplay_SuccessFeedback_mB1DFC4AF4B8BED621FC8D2C2E1C2
 extern void GameInformationDisplay_FailureFeedback_m69B66109166D0A00ACD648A0D55BB5AA6799B464 (void);
 extern void GameInformationDisplay__ctor_m742FABBDCCBD88A88C996DA187CF5E5D90810064 (void);
 extern void MedalDisplay__ctor_m1575C605877D78F56D6B8DE09485EC9AD48331EE (void);
-static Il2CppMethodPointer s_methodPointers[157] = 
+static Il2CppMethodPointer s_methodPointers[162] = 
 {
 	PlayerAnalytics_Awake_m74DF8F21479C139290578DF094001647DD495AF8,
 	PlayerAnalytics_SendPlayerStartEvent_m09FAED4FC77686990D3DD7308F27D74CCD40997E,
@@ -180,6 +185,11 @@ static Il2CppMethodPointer s_methodPointers[157] =
 	InputProfileData__ctor_m3A080BB4E7FFCDCD3E0A88BBE8E006EF235A086A,
 	MovementProfileData__ctor_mBE010F437338B6EFD91F05146F145819ED6EE1ED,
 	GameFeedbackData__ctor_m567EB5B056E8C467D115C6BADDF8B1B48B9852EE,
+	DifficultyColours__cctor_m0383E0AC93BAAC414D86A2B85ED79AB129D24312,
+	SkatingSkill__ctor_mC3FB45CD8EDA84CD6472D77CB039655EA4229809,
+	SkillManager_Awake_m839EC0CEA0011B3CF0AA8E45CCFF09F905899C60,
+	SkillManager_Start_m2B2CB6C4FF065C4116C50B78947E0F2AAF40D10A,
+	SkillManager__ctor_mBA9EBC6BCC9E5798C959E888A9C0D84E23F02249,
 	MainMenuController_Start_m56412B404C7EF8A65C102A14AEEA74A0BF8D526B,
 	MainMenuController_RefreshMedals_m2098251BED367239F62601B1C7D984B5B2DD28B2,
 	MainMenuController__ctor_mE61300344CC9DBD03451FFDC8320FF027CAA96BF,
@@ -331,7 +341,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] =
 	{ 0x06000006, U3CAwakeU3Ed__0_MoveNext_m2F9462ACFA14FCE1E7D15F9BE3F50402A6C824C9_AdjustorThunk },
 	{ 0x06000007, U3CAwakeU3Ed__0_SetStateMachine_mA64F892D190EAA2CB7539BC83E12E29368E8B42A_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[157] = 
+static const int32_t s_InvokerIndices[162] = 
 {
 	16608,
 	12520,
@@ -343,6 +353,11 @@ static const int32_t s_InvokerIndices[157] =
 	16608,
 	16608,
 	16608,
+	16608,
+	16608,
+	16608,
+	16608,
+	28839,
 	16608,
 	16608,
 	16608,
@@ -495,7 +510,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_MicrogameCourse_CodeGenModule;
 const Il2CppCodeGenModule g_MicrogameCourse_CodeGenModule = 
 {
 	"MicrogameCourse.dll",
-	157,
+	162,
 	s_methodPointers,
 	2,
 	s_adjustorThunks,

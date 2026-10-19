@@ -367,6 +367,7 @@ UnityEngine.Camera::ScreenToWorldPoint_Injected
 UnityEngine.Camera::SetStereoProjectionMatrix_Injected
 UnityEngine.Camera::SetStereoViewMatrix_Injected
 UnityEngine.Camera::SetupCurrent_Injected
+UnityEngine.Camera::ViewportToWorldPoint_Injected
 UnityEngine.Camera::WorldToScreenPoint_Injected
 UnityEngine.Camera::get_backgroundColor_Injected
 UnityEngine.Camera::get_cameraToWorldMatrix_Injected

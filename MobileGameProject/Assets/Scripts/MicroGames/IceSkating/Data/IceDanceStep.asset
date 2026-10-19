@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3c90c4ae8b6b84ba8279948f54f614, type: 3}
+  m_Name: IceDanceStep
+  m_EditorClassIdentifier: MicrogameCourse::SkatingSkill
+  skillName: Ice Dance Step
+  skillDifficulty: 5
+  jumpSkill: 0.1
+  spinSkill: 0.2
+  twistSkill: 0.1
+  artisticSkill: 0.6

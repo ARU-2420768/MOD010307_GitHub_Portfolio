@@ -47,8 +47,8 @@ namespace MicrogameCourse.Microgames
         private void Awake()
         {
             mainCamera = Camera.main;
-            //Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab};
-            Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab};
+            Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab};
+            //Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab};
             
         }
 
@@ -90,6 +90,7 @@ namespace MicrogameCourse.Microgames
 
         private void CheckForCompletion()
         {
+            //Debug.Log($"Score: {score},Gates Cleared: {gatesCleared}, Kitzbuhel Length: {Kitzbuhel_Gates.Length}");
             if(gatesCleared >= Kitzbuhel_Gates.Length)
             {
                 MedalType medal = CalculateMedal();
@@ -102,7 +103,7 @@ namespace MicrogameCourse.Microgames
         {
             Instantiate(startGatesPrefab, new Vector3(Kitzbuhel[gateNumber], -2.5f + gateNumber, 0), Quaternion.identity, playArea);
             gateNumber++;
-            for (int i = 1; i < 2; i++)
+            for (int i = 1; i < 6; i++)
             {
                 Instantiate(Kitzbuhel_Gates[gateNumber], new Vector3(Kitzbuhel[gateNumber], -2.5f + (2 * gateNumber), 0), Quaternion.identity, playArea);
                 gateNumber++;
@@ -112,8 +113,8 @@ namespace MicrogameCourse.Microgames
         public void CreateNewGate()
         {
             if (!IsRunning) return;
-            //Instantiate(Kitzbuhel_Gates[gateNumber % Kitzbuhel_Gates.Length], new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity, playArea);
-            //gateNumber++;
+            Instantiate(Kitzbuhel_Gates[gateNumber % Kitzbuhel_Gates.Length], new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity, playArea);
+            gateNumber++;
         }
 
         public void ShowFeedback(string message, Color? colour = null)
