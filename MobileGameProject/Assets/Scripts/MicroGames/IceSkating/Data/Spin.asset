@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Spin
   m_EditorClassIdentifier: MicrogameCourse::SkatingSkill
   skillName: Spin
-  skillDifficulty: 5
+  skillDifficulty: 1
   jumpSkill: 0.1
   spinSkill: 0.7
   twistSkill: 0

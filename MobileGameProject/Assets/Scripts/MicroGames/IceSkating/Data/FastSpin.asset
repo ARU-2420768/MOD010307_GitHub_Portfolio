@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FastSpin
   m_EditorClassIdentifier: MicrogameCourse::SkatingSkill
   skillName: Fast Spin
-  skillDifficulty: 6
+  skillDifficulty: 3
   jumpSkill: 0.05
   spinSkill: 0.85
   twistSkill: 0

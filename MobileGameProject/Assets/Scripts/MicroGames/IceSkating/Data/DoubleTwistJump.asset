@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoubleTwistJump
   m_EditorClassIdentifier: MicrogameCourse::SkatingSkill
   skillName: Double Twist Jump
-  skillDifficulty: 8
+  skillDifficulty: 3
   jumpSkill: 0.5
   spinSkill: 0.05
   twistSkill: 0.5

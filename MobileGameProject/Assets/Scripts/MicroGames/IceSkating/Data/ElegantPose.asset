@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ElegantPose
   m_EditorClassIdentifier: MicrogameCourse::SkatingSkill
   skillName: Elegant Pose
-  skillDifficulty: 2
+  skillDifficulty: 1
   jumpSkill: 0
   spinSkill: 0
   twistSkill: 0

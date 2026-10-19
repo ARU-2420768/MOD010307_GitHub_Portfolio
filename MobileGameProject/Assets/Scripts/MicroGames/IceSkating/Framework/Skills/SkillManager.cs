@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -51,16 +52,31 @@ public class SkillManager : MonoBehaviour
 
             Transform backGround = skill.transform.Find("Background");
 
-
             Transform jump = skill.transform.Find("Background/Jump");
+            Transform spin = skill.transform.Find("Background/Spin");
+            Transform twist = skill.transform.Find("Background/Twist");
+            Transform artistic = skill.transform.Find("Background/Artistic");
 
             RectTransform backGroundRect = backGround.GetComponent<RectTransform>();
 
             RectTransform jumpRect = jump.GetComponent<RectTransform>();
+            RectTransform spinRect = spin.GetComponent<RectTransform>();
+            RectTransform twistRect = twist.GetComponent<RectTransform>();
+            RectTransform artisticRect = artistic.GetComponent<RectTransform>();
 
             jumpRect.sizeDelta = new Vector2(jumpRect.sizeDelta.x, skills[i].jumpSkill * rect.transform.localScale.y);
+            spinRect.sizeDelta = new Vector2(spinRect.sizeDelta.x, skills[i].spinSkill * rect.transform.localScale.y);
+            twistRect.sizeDelta = new Vector2(twistRect.sizeDelta.x, skills[i].twistSkill * rect.transform.localScale.y);
+            artisticRect.sizeDelta = new Vector2(artisticRect.sizeDelta.x, skills[i].artisticSkill * rect.transform.localScale.y);
 
             jumpRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, backGroundRect.rect.height * skills[i].jumpSkill);
+            spinRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, backGroundRect.rect.height * skills[i].spinSkill);
+            twistRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, backGroundRect.rect.height * skills[i].twistSkill);
+            artisticRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, backGroundRect.rect.height * skills[i].artisticSkill);
+
+            Transform name = skill.transform.Find("SkillName");
+            name.GetComponent<TextMeshProUGUI>().text = skills[i].skillName;
+
         }
     }
 }
