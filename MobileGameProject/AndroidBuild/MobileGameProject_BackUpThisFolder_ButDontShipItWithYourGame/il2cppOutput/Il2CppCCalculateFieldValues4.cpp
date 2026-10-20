@@ -2761,9 +2761,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12183[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12184[9] = 
 {
 	static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___game)),static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___readyPanel)),static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___playArea)),static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___resultPanel)),static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___timerText)),static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___resultText)),static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___durationSeconds)),static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___currentPhase)),static_cast<int32_t>(offsetof(MicrogameSession_t822B12AF27BADFB7760700DCF27983E1B8FC080E, ___remainingSeconds)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12185[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12185[7] = 
 {
-	0,0,static_cast<int32_t>(offsetof(SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43, ___isLoading)),};
+	0,0,0,0,0,0,static_cast<int32_t>(offsetof(SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43, ___isLoading)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable12188[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___B34E0A2BA983304C33E73AB120997B4E3DB8D9160F0BEC18DE073994DD4FD292)),static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___F111FA1505EC7EF11EAF6F8DC8091D18DC1CDD5433FD193D0E4D17FDE9CA39C3)),};

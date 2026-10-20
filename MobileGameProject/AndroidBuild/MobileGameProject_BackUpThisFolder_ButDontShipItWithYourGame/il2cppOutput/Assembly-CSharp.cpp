@@ -172,13 +172,16 @@ IL2CPP_EXTERN_C String_t* _stringLiteral13337B7510150B3315E35A17130C09893A3F49C5
 IL2CPP_EXTERN_C String_t* _stringLiteral1B2C5496A46B099F4A0A24ECEA0AB96752299264;
 IL2CPP_EXTERN_C String_t* _stringLiteral273FD99BAE89E79AD6A28AB5F14A4D0C89787A43;
 IL2CPP_EXTERN_C String_t* _stringLiteral2B3618452C41B1780E222CBD76533AD4272BD668;
+IL2CPP_EXTERN_C String_t* _stringLiteral2EC8CD042752D7946E3FF2C96AE1C94A02B99F99;
 IL2CPP_EXTERN_C String_t* _stringLiteral3402514A6504EAC3116A2358CD364CE6A2409455;
 IL2CPP_EXTERN_C String_t* _stringLiteral40CAF78E6863B8928F80D8AEB83B64B0CD3CEE7C;
 IL2CPP_EXTERN_C String_t* _stringLiteral427AF35A25E69CCE07D05410B5E61EDCBAF3F518;
+IL2CPP_EXTERN_C String_t* _stringLiteral42D6729507CCE3A852BCFBE66A83354929A1C601;
 IL2CPP_EXTERN_C String_t* _stringLiteral4A667C49AA367BEAC2C09CF577CC18EFBB9CBC42;
 IL2CPP_EXTERN_C String_t* _stringLiteral51C6279E31F7483126B79E3000116001A915B690;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D36C5A55B8CB52FA5FA06F75ECEA12FCF33DE27;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D77AEF547BDB572EB4319F23FAF6548F8255A6C;
+IL2CPP_EXTERN_C String_t* _stringLiteral68C8D68388E6CB8F34BD8ADFAE9759408CA6E16A;
 IL2CPP_EXTERN_C String_t* _stringLiteral6EDB28C4FCDBC0658271A6224287F44C8F5F0AC6;
 IL2CPP_EXTERN_C String_t* _stringLiteral78D958E853E9A979645D55A90BE243CCAC59E1B6;
 IL2CPP_EXTERN_C String_t* _stringLiteral7BFFA3EB445CCBB7B84D7DEED36C6753FF0B1B08;
@@ -192,6 +195,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB88D3A6C88412160B22438F8A9AC6CF1A67727EF
 IL2CPP_EXTERN_C String_t* _stringLiteralB9C24020A8D7AC3B2CE0D2E1CFBBB689548A090F;
 IL2CPP_EXTERN_C String_t* _stringLiteralDC30B4E5A618BB553B18DD16CB9D3C41ECCC316B;
 IL2CPP_EXTERN_C String_t* _stringLiteralDDDF369AEED5BCD9E39D88A6620F003C3B30DD80;
+IL2CPP_EXTERN_C String_t* _stringLiteralDE463601953DBC33B2C1379C69D2099FE68A31A1;
 IL2CPP_EXTERN_C String_t* _stringLiteralDFCF5C8693CD5D607CE4AF43C48DAA6C9B24A959;
 IL2CPP_EXTERN_C String_t* _stringLiteralE18D2631F37ADDD1F10F58D0F72B01D83CF78C61;
 IL2CPP_EXTERN_C String_t* _stringLiteralE923599FE9E7CF6C2BCE27EFB535A9EF238627CA;
@@ -3630,6 +3634,78 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrogameSession__ctor_m884F5194977B6C7E
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 97843
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenMinotaur_m65768B7A0EB386BCE4BBA9F4F2D0B0AA2723E967 (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral42D6729507CCE3A852BCFBE66A83354929A1C601);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:24>
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral42D6729507CCE3A852BCFBE66A83354929A1C601, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:25>
+		return;
+	}
+}
+// Method Definition Index: 97844
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenSecondGame_m0644442180BB20793E608D5D97BB4684F60CC1CE (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral68C8D68388E6CB8F34BD8ADFAE9759408CA6E16A);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:29>
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral68C8D68388E6CB8F34BD8ADFAE9759408CA6E16A, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:30>
+		return;
+	}
+}
+// Method Definition Index: 97845
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenThirdGame_m9FAF2FFF22B3FAA33024BFEE72A94DCFE2E85C3E (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDE463601953DBC33B2C1379C69D2099FE68A31A1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:34>
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteralDE463601953DBC33B2C1379C69D2099FE68A31A1, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:35>
+		return;
+	}
+}
+// Method Definition Index: 97846
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenFourthGame_mE2F1F80EDB180B7AD5505824735E49736F53C225 (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2EC8CD042752D7946E3FF2C96AE1C94A02B99F99);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:39>
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral2EC8CD042752D7946E3FF2C96AE1C94A02B99F99, NULL);
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:40>
+		return;
+	}
+}
+// Method Definition Index: 97847
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenPractice_m850644DD409568FF32B6C30188683EE538975817 (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3640,14 +3716,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenPractice_m850644DD409
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:17>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:44>
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteralFFB86641798338BBA437748CD5A4389A546F3B98, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:18>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:45>
 		return;
 	}
 }
-// Method Definition Index: 97844
+// Method Definition Index: 97848
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenMenu_m2893083B8A46D2517E1B66C66004031DB8198456 (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3658,14 +3734,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_OpenMenu_m2893083B8A46D25
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:22>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:49>
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral000E6F488C4BFBAD929A9ED558662797D830E719, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:23>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:50>
 		return;
 	}
 }
-// Method Definition Index: 97845
+// Method Definition Index: 97849
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Replay_m9A7A64566798642D5966EC9660D2AC75BA95AAFA (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3677,7 +3753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Replay_m9A7A64566798642D5
 	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:27>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:54>
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_0;
 		L_0 = SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8(NULL);
@@ -3685,11 +3761,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Replay_m9A7A64566798642D5
 		String_t* L_1;
 		L_1 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C((&V_0), NULL);
 		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(L_1, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:29>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:56>
 		return;
 	}
 }
-// Method Definition Index: 97846
+// Method Definition Index: 97850
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Load_m443DD04640AACCD43C8A995136D930681FB5D74D (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, String_t* ___0_sceneName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3703,7 +3779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Load_m443DD04640AACCD43C8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:34>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:61>
 		bool L_0 = __this->___isLoading;
 		if (!L_0)
 		{
@@ -3711,13 +3787,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator_Load_m443DD04640AACCD43C8
 		}
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:36>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:63>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:39>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:66>
 		String_t* L_1 = ___0_sceneName;
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -3728,9 +3804,9 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:42>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:69>
 		__this->___isLoading = (bool)1;
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:43>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:70>
 		String_t* L_3 = ___0_sceneName;
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_4;
@@ -3740,7 +3816,7 @@ IL_0009:
 
 IL_0022:
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:47>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:74>
 		String_t* L_5 = ___0_sceneName;
 		String_t* L_6;
 		L_6 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral4A667C49AA367BEAC2C09CF577CC18EFBB9CBC42, L_5, _stringLiteral05E5095C794F029CD455976EDBCD820EE32A5AF3, NULL);
@@ -3750,9 +3826,9 @@ IL_0022:
 
 IL_0037:
 	{
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:50>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:77>
 		__this->___isLoading = (bool)1;
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:51>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:78>
 		String_t* L_7 = ___0_sceneName;
 		NullCheck(L_7);
 		String_t* L_8;
@@ -3760,11 +3836,11 @@ IL_0037:
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_9;
 		L_9 = SceneManager_LoadSceneAsync_m29D55D2C6CB7A019B26DA3F44C0881FF6AC491EC(L_8, 0, NULL);
-		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:52>
+		//<source_info:C:/Users/sc2038/AppData/Local/Development/Unity/MOD010307_GitHub_Portfolio/MobileGameProject/Assets/Scripts/Framework/SceneNavigator.cs:79>
 		return;
 	}
 }
-// Method Definition Index: 97847
+// Method Definition Index: 97851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneNavigator__ctor_m54ABACD6A104F5DACB62A871842676DD62DBA4FF (SceneNavigator_t1CD34ECF1E09D4FA06CDA9114B03622636919B43* __this, const RuntimeMethod* method) 
 {
 	{
