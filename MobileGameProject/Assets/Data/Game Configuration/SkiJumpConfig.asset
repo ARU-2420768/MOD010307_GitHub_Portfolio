@@ -17,3 +17,4 @@ MonoBehaviour:
   inputProfile: {fileID: 11400000, guid: fa915fccd84084f41b9b08ed56908340, type: 2}
   movementProfile: {fileID: 11400000, guid: 742747e8b9059c54f9c57335020b1e93, type: 2}
   medalThresholds: {fileID: 11400000, guid: c0333ed8f005b0e409cba8d56879f33a, type: 2}
+  gameFeedbackData: {fileID: 11400000, guid: 087e3fca0e0b5324ab23071c9a913d36, type: 2}
