@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: IceSkatingConfig
   m_EditorClassIdentifier: Assembly-CSharp::GameConfigurationData
   gameName: Ice Skating
-  description: Impress the judges
+  description: Choose your skills to impress the judges.\nEach Judge is biased towards
+    a certain discipline.\nHarder skill reward better.\nMake sure you finish your
+    routine before the timer runs out.
   inputProfile: {fileID: 11400000, guid: 641857b39307afc488263ebe7695810c, type: 2}
   movementProfile: {fileID: 11400000, guid: eaa2208963893664f886318962959901, type: 2}
   medalThresholds: {fileID: 11400000, guid: 0d1e4551d0dc6a24dafc912d303647e6, type: 2}
