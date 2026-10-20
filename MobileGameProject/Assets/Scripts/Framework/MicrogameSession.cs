@@ -34,7 +34,8 @@ namespace MicrogameCourse.Framework
             currentPhase = Phase.Ready;
             readyPanel.SetActive(true);
             playArea.SetActive(false);
-            playArea3D.SetActive(false);
+            if(playArea3D!=null)
+                playArea3D.SetActive(false);
             resultPanel.SetActive(false);
             timerText.text = string.Empty;
         }
@@ -48,7 +49,8 @@ namespace MicrogameCourse.Framework
             remainingSeconds = durationSeconds;
             readyPanel.SetActive(false);
             playArea.SetActive(true);
-            playArea3D.SetActive(true);
+            if(playArea3D!=null)
+                playArea3D.SetActive(true);
             resultPanel.SetActive(false);
             
             StartTimer();

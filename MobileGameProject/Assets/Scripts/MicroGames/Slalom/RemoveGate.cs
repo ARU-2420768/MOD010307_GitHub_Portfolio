@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 namespace MicrogameCourse.Framework
 {
 
-public sealed class RemoveGate : MonoBehaviour
+public sealed class RemoveGate : MicrogameBehaviour
 
     {
 
