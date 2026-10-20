@@ -74,8 +74,6 @@ namespace MicrogameCourse.Framework
         {
             if(!Supports(InputMode.Click)) return;
 
-            Debug.Log("Click");
-
             if (Pointer.current.press.wasPressedThisFrame)
             {
                 game?.OnPointerPressed();
