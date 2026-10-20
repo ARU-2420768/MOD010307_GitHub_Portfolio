@@ -35,7 +35,7 @@ namespace MicrogameCourse.Framework
         {
             //if (!collision.CompareTag("Gate")) return;
 
-            Debug.Log(collision.tag);
+            //Debug.Log(collision.tag);
             
             switch (gameObject.name)
             {
@@ -43,9 +43,7 @@ namespace MicrogameCourse.Framework
                 case "SGate_Standard(Clone)":
                     SetGateColour(Color.green);
                     game.gateMoveSpeed *= gateSpeedIncrease; 
-                    game.ShowFeedback("Gate Passed !", Color.green);
-                    game.score ++;
-                    game.UpdateProgress();
+                    game.GatePassed();
                     break;
 
                 case "SGate_Fast(Clone)":                                      

@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+using MicrogameCourse.Framework;
 
 namespace MicrogameCourse.Microgames
 {
-    public class SlalomPlayer : MonoBehaviour
+    public class SlalomPlayer : MicrogameBehaviour
     {
         [SerializeField] private Image left;
         [SerializeField] private Image right;

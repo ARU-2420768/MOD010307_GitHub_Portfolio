@@ -15,13 +15,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Slalom.unity
     guid: 5af3a04a0cfbe4c4da275678ab018f8c
   - enabled: 1
-    path: Assets/Scenes/SecondGame.unity
+    path: Assets/Scenes/Shooting.unity
     guid: 4c2576578e2f11c459d77d91b50ba593
   - enabled: 1
-    path: Assets/Scenes/ThirdGame.unity
+    path: Assets/Scenes/SkiJump.unity
     guid: e0cad6ab9258f2f4d913ec90c6cf4bf7
   - enabled: 1
-    path: Assets/Scenes/FourthGame.unity
+    path: Assets/Scenes/Curling.unity
     guid: 425bbb0380a2478458971a4b44307d2a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

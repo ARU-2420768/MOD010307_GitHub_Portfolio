@@ -821,6 +821,7 @@ MonoBehaviour:
   acceleration: 7
   minX: -2.3
   maxX: 2.3
+  game: {fileID: 1527547277}
 --- !u!1 &386668241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,7 +2478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1370345695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2752,6 +2753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48db28f8ae141364d82c8ef95b98f47c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Microgames.SlalomGame
+  gameName: Slalom
+  thresholds: {fileID: 11400000, guid: f9c13414ad2dc424e94b7b3b8864228b, type: 2}
   playArea: {fileID: 1914787618}
   target: {fileID: 0}
   targetImage: {fileID: 0}
@@ -2765,6 +2768,7 @@ MonoBehaviour:
   gateMaxMoveSpeed: 3
   gateMinMoveSpeed: 1
   score: 0
+  gatesCleared: 0
 --- !u!1 &1549625782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,7 +3174,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Complete the downhill slalom
+  m_text: Succesfully omplete the downhill slalom - clear all gates before the timer
+    runs out.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3817,7 +3822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1961679113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3835,7 +3840,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 700, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1961679114
 MonoBehaviour:
@@ -3857,7 +3862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gates
+  m_text: Gates 0 / 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3866,8 +3871,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293254715
+  m_fontColor: {r: 0.2325116, g: 0.87101436, b: 0.8962264, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3884,12 +3889,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.15
-  m_fontSizeBase: 36
+  m_fontSize: 128.05
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 60
+  m_fontSizeMax: 300
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256

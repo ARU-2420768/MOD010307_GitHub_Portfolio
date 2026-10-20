@@ -13,9 +13,9 @@ namespace MicrogameCourse.Framework
         private const string PracticeScene = "PracticeTap";
 
         private const string SlalomScene = "Slalom";
-        private const string SecondGameScene = "SecondGame";
-        private const string ThirdGameScene = "ThirdGame";
-        private const string FourthGameScene = "FourthGame";
+        private const string ShootingScene = "Shooting";
+        private const string SkiJumpScene = "SkiJump";
+        private const string CurlingScene = "Curling";
 
         private bool isLoading;
 
@@ -24,19 +24,19 @@ namespace MicrogameCourse.Framework
             SceneManager.LoadScene(SlalomScene);                
         }
 
-        public void OpenSecondGame()
+        public void OpenShootingGame()
         {
-            SceneManager.LoadScene(SecondGameScene);                
+            SceneManager.LoadScene(ShootingScene);                
         }
 
-        public void OpenThirdGame()
+        public void OpenSkiJumpGame()
         {
-            SceneManager.LoadScene(ThirdGameScene);                
+            SceneManager.LoadScene(SkiJumpScene);                
         }
 
-        public void OpenFourthGame()
+        public void OpenCurlingGame()
         {
-            SceneManager.LoadScene(FourthGameScene);                
+            SceneManager.LoadScene(CurlingScene);                
         }
 
         public void OpenPractice()
