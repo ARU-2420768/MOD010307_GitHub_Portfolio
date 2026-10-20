@@ -16,8 +16,7 @@ MonoBehaviour:
   acceleration: 7
   deceleration: 7
   useSmoothing: 1
-  minX: -2.3
-  maxX: 2.3
+  minX: -1.95
+  maxX: 1.95
   minY: 0
   maxY: 0
-  movementAxis: 0

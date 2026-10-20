@@ -3690,6 +3690,7 @@ MonoBehaviour:
   gameConfig: {fileID: 11400000, guid: f1b5b3a3fe805c14c8f2122653cfe0db, type: 2}
   gameHeadingText: {fileID: 1070205501}
   gameReadyText: {fileID: 1667648672}
+  feedbackText: {fileID: 46696581}
 --- !u!1 &1895932082
 GameObject:
   m_ObjectHideFlags: 0
