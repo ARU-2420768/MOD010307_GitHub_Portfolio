@@ -1691,7 +1691,8 @@ Transform:
   m_LocalPosition: {x: 1201.1185, y: 688.67285, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1806437678}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &456275899
@@ -2397,7 +2398,7 @@ GameObject:
   - component: {fileID: 1031584876}
   - component: {fileID: 1031584879}
   - component: {fileID: 1031584878}
-  - component: {fileID: 1031584877}
+  - component: {fileID: 1031584880}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2421,23 +2422,6 @@ Transform:
   - {fileID: 751471037}
   m_Father: {fileID: 1617815241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1031584877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1031584875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08fba4fe5caba124581a180d3b845a66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Framework.PlayerController
-  maxSpeed: 4
-  acceleration: 3
-  minX: -1
-  maxX: 1
-  game: {fileID: 456275899}
 --- !u!50 &1031584878
 Rigidbody2D:
   serializedVersion: 5
@@ -2511,6 +2495,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.57464206, y: 0.5245998}
   m_EdgeRadius: 0
+--- !u!114 &1031584880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031584875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e3f844a0641014a8dc7608bf5000f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Framework.PlayerController
+  gameConfigData: {fileID: 11400000, guid: f1b5b3a3fe805c14c8f2122653cfe0db, type: 2}
+  game: {fileID: 456275899}
 --- !u!1 &1070205499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,7 +2566,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Biathlon
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2595,7 +2593,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3459,7 +3457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shoot the target - adjust for the wind
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3645,6 +3643,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1806437677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806437678}
+  - component: {fileID: 1806437679}
+  m_Layer: 0
+  m_Name: GameInfoDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1806437678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806437677}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1158.523, y: 763.9458, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 456275898}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1806437679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806437677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0650ebc9dbb80c4394a66b33e339fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Framework.UI.GameInformationDisplay
+  gameConfig: {fileID: 11400000, guid: f1b5b3a3fe805c14c8f2122653cfe0db, type: 2}
+  gameHeadingText: {fileID: 1070205501}
+  gameReadyText: {fileID: 1667648672}
 --- !u!1 &1895932082
 GameObject:
   m_ObjectHideFlags: 0
