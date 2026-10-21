@@ -13010,7 +13010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 384705360354263950, guid: 978b8010926cbf64bbcafe6a4bbdf874, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7798948014869723484, guid: 978b8010926cbf64bbcafe6a4bbdf874, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14796,11 +14796,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: MicrogameCourse::MicrogameCourse.Microgames.GatesPrefabManager
   gatesPrefabs:
-  - {fileID: 7123706040500450566, guid: cee461244d35c4d46a94ff3070e63ff2, type: 3}
-  - {fileID: 2074656702631092455, guid: e84198cb87903c347a9727f877f3eea3, type: 3}
-  - {fileID: 384705360354263950, guid: 978b8010926cbf64bbcafe6a4bbdf874, type: 3}
-  - {fileID: 5318971156661730332, guid: c6e1918beda708e4385eff3751dd1d71, type: 3}
-  - {fileID: 2771171242732062602, guid: 0d250b22daa72d94fb415282d508654f, type: 3}
+  - {fileID: 11400000, guid: b488c374c838a014b8decb85a08a00e3, type: 2}
+  - {fileID: 11400000, guid: 885d95fdb8feea640ae726128d2e71eb, type: 2}
+  - {fileID: 11400000, guid: dea3ee6da91ce3f46b5cb8c0d818f4e7, type: 2}
+  - {fileID: 11400000, guid: d9b2521b1e4f0d547b37c70e9d437caf, type: 2}
+  - {fileID: 11400000, guid: 10d0159591bb4944d8f47e5521662f17, type: 2}
+  location: 7
+  playArea: {fileID: 1898913607}
+  lastGateSpawnLocation: {x: 0, y: 0.45, z: 0}
+  newGateSpawnLocation: {x: 0, y: 0, z: 0}
 --- !u!1 &1474529144
 GameObject:
   m_ObjectHideFlags: 0
@@ -16488,8 +16492,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1320675863}
-        m_TargetAssemblyTypeName: MicrogameCourse.Framework.SceneNavigator, Assembly-CSharp
-        m_MethodName: OpenSlalom
+        m_TargetAssemblyTypeName: MicrogameCourse.Framework.SceneNavigator, MicrogameCourse
+        m_MethodName: OpenSlalomGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21237,6 +21241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate_Turn_SlowTurn_Cross
       objectReference: {fileID: 0}
+    - target: {fileID: 5318971156661730332, guid: c6e1918beda708e4385eff3751dd1d71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21256,7 +21264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7123706040500450566, guid: cee461244d35c4d46a94ff3070e63ff2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9041764360272395350, guid: cee461244d35c4d46a94ff3070e63ff2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21317,7 +21325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 384705360354263950, guid: 978b8010926cbf64bbcafe6a4bbdf874, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7798948014869723484, guid: 978b8010926cbf64bbcafe6a4bbdf874, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21416,6 +21424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate_Straight_Straight_Start
       objectReference: {fileID: 0}
+    - target: {fileID: 6532977235089498923, guid: bf900e84aa950ce4dab2831011f53926, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21437,6 +21449,10 @@ PrefabInstance:
     - target: {fileID: 2074656702631092455, guid: e84198cb87903c347a9727f877f3eea3, type: 3}
       propertyPath: m_Name
       value: Gate_Straight_Straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2074656702631092455, guid: e84198cb87903c347a9727f877f3eea3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4827799188738434219, guid: e84198cb87903c347a9727f877f3eea3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21494,6 +21510,10 @@ PrefabInstance:
     - target: {fileID: 2771171242732062602, guid: 0d250b22daa72d94fb415282d508654f, type: 3}
       propertyPath: m_Name
       value: Gate_Turn_SlowTurn_Straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771171242732062602, guid: 0d250b22daa72d94fb415282d508654f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2918793091125410410, guid: 0d250b22daa72d94fb415282d508654f, type: 3}
       propertyPath: m_LocalPosition.x

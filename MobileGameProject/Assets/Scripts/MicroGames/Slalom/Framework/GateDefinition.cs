@@ -5,6 +5,8 @@ public class GateDefinition : ScriptableObject
 {
     public GameObject prefab;
     public GateConnection allowedLocations;
-    [Range(0,2)]
+    [Range(-1,1)]
+    public int preOffset;
+    [Range(0,1)]
     public int nextOffset;
 }
