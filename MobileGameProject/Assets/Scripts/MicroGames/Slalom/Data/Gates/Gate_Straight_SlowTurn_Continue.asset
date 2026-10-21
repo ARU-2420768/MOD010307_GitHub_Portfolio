@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c519b02b54d1f4b94743fce781f1e5, type: 3}
+  m_Name: Gate_Straight_SlowTurn_Continue
+  m_EditorClassIdentifier: MicrogameCourse::GateDefinition
+  prefab: {fileID: 7123706040500450566, guid: cee461244d35c4d46a94ff3070e63ff2, type: 3}
+  allowedLocations: 4094
+  nextOffset: 1

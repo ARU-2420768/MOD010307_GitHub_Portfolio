@@ -70,7 +70,7 @@ namespace MicrogameCourse.Microgames
 
         private void Start()
         {
-            InitialiseFirstNewGates();
+            //InitialiseFirstNewGates();
         }
 
         private void Update()
@@ -113,8 +113,8 @@ namespace MicrogameCourse.Microgames
         public void CreateNewGate()
         {
             if (!IsRunning) return;
-            Instantiate(Kitzbuhel_Gates[gateNumber % Kitzbuhel_Gates.Length], new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity, playArea);
-            gateNumber++;
+            //Instantiate(Kitzbuhel_Gates[gateNumber % Kitzbuhel_Gates.Length], new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity, playArea);
+            //gateNumber++;
         }
 
         public void ShowFeedback(string message, Color? colour = null)

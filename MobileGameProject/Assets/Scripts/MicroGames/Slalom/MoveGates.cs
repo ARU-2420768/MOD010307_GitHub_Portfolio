@@ -27,7 +27,7 @@ namespace MicrogameCourse.Framework
         private void Update()
         {
             if (!session.isTimerStarted) return;
-            transform.position += Mathf.Clamp(game.gateMoveSpeed,game.gateMinMoveSpeed, game.gateMaxMoveSpeed) * Time.deltaTime * Vector3.down;
+            transform.position += Mathf.Clamp(game.gateMoveSpeed,game.gateMinMoveSpeed, game.gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
         }
 
 
@@ -35,7 +35,7 @@ namespace MicrogameCourse.Framework
         {
             //if (!collision.CompareTag("Gate")) return;
 
-            //Debug.Log(collision.tag);
+            Debug.Log(collision.tag);
             
             switch (gameObject.name)
             {

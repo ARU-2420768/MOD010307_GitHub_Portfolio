@@ -30,6 +30,9 @@ public sealed class GateScript : MicrogameBehaviour
         private void OnTriggerEnter2D(Collider2D collision)
         {
 
+            Debug.Log("TRIGGER ENTERED");
+            Debug.Log(collision.tag);
+
             //if (collision.gameObject.name != "Bottom")
             //    return;
 
@@ -54,7 +57,7 @@ public sealed class GateScript : MicrogameBehaviour
 
         public void SetGateColour(Color colour)
         {
-                spriteRenderer.color = colour;
+            //spriteRenderer.color = colour;
         }
     }
 }
