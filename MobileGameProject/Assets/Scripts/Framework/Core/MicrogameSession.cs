@@ -105,6 +105,7 @@ namespace MicrogameCourse.Framework
             currentPhase = Phase.Result;
             game.End();
             playArea.SetActive(false);
+            playArea3D.SetActive(false);
             resultPanel.SetActive(true);
             resultText.text = "You" + (won ? " Win!" : "r time is up!");
         }

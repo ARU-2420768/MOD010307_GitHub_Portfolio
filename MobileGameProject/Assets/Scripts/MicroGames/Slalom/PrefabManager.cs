@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 
 namespace MicrogameCourse.Framework
 {
-    public class PrefabManager : MonoBehaviour
+    public class PrefabManager : MicrogameBehaviour
     {
         [SerializeField] float gateSpeedReset = 1f;
         [SerializeField] bool showGates = true;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c519b02b54d1f4b94743fce781f1e5, type: 3}
   m_Name: Gate_Straight_Straight_Start
   m_EditorClassIdentifier: MicrogameCourse::GateDefinition
-  prefab: {fileID: 6532977235089498923, guid: bf900e84aa950ce4dab2831011f53926, type: 3}
+  prefab: {fileID: 7186329943716196725, guid: bf900e84aa950ce4dab2831011f53926, type: 3}
   allowedLocations: -1
   nextOffset: 0
   offsetAmount: 0

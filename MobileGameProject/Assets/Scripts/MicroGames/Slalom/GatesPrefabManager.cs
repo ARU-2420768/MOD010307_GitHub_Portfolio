@@ -26,6 +26,7 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private float laneWidth = 0.06f;
 
         private SlalomGame game;
+        private int biasDirection = 1;
 
         private void Awake()
         {
@@ -38,7 +39,7 @@ namespace MicrogameCourse.Microgames
             // Create Start Game
             CreateSpecificGateFromPrefab(gatesPrefabsSSS);
 
-            for(int i = 0; i < 11; i++){
+            for(int i = 0; i < 30; i++){
                 CreateNewGateFromPrefab();
             }
 
@@ -47,6 +48,7 @@ namespace MicrogameCourse.Microgames
         private void CreateSpecificGateFromPrefab(GateDefinition gatePrefabDefinition)
         {
             GameObject gate = Instantiate(gatePrefabDefinition.prefab, playArea);
+            Debug.Log($"Spawned: {gatePrefabDefinition.prefab.name}");
 
             int direction = Random.value < 0.5f ? -1 : 1;
             float yRotation = direction == 1 ? 0f : 180f;
@@ -57,7 +59,6 @@ namespace MicrogameCourse.Microgames
             gate.transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
 
             float horizontalShift = (gatePrefabDefinition.nextOffset * laneWidth * direction);
-
             game.lastGateSpawnLocation += new Vector3(horizontalShift,-0.1f,0f);
         }
 
@@ -88,16 +89,32 @@ namespace MicrogameCourse.Microgames
             if (matchedConnections.Count > 0)
             {
                 GateDefinition selectedGate = matchedConnections[Random.Range(0, matchedConnections.Count)];
-                int direction = Random.value < 0.5f ? -1 : 1;
+
+                //int biasDirection = Random.value < 0.5f ? -1 : 1;
+                float biasStrength = Mathf.Lerp(0.6f, 0.95f, Mathf.Abs(location - 7f) / 6f);
+
+                if (location >= 12)
+                {
+                    biasDirection = -1;
+                }
+                else if (location <= 2)
+                {
+                    biasDirection = 1;
+                }
+
+                int direction = Random.value < biasStrength ? biasDirection : -biasDirection;
+                //int direction = Random.value < 0.5f ? -1 : 1;
                 
+
+
                 float yRotation = direction == 1 ? 0f : 180f;
 
                 GameObject gate = Instantiate(selectedGate.prefab, playArea);
                 gate.transform.localPosition = game.lastGateSpawnLocation;
                 gate.transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
 
-                Debug.Log($"Spawned: {selectedGate.prefab.name}");
-
+                //Debug.Log($"Spawned: {selectedGate.prefab.name}");
+                location += selectedGate.nextOffset * direction;
                 game.lastGateSpawnLocation += new Vector3(0.06f * (selectedGate.nextOffset) * direction, -0.1f, 0f);
 
             }

@@ -7,7 +7,7 @@ namespace MicrogameCourse.Framework
     {
         // microgame session
         
-        protected bool IsRunning {get; private set;}
+        protected bool IsRunning {get; set;}
         protected MicrogameSession Session {get; private set;}
 
         public virtual void OnPointerPressed()

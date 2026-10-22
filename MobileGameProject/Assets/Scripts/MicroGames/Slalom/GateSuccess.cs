@@ -22,20 +22,17 @@ public sealed class GateSuccess : MicrogameBehaviour
         private void OnTriggerEnter2D(Collider2D collision)
         {
 
+            if(collision.tag != "Player") return;
+            
+
             switch (this.tag)
             {
                 case "GateSuccess":
-                    Debug.Log("Gate Successfull - GateSuccess.cs - calling game.GatePassed");
                     game.GatePassed();
-                    //game.ShowFeedback("Gate Success !", Color.green);
-                    //game.gateMoveSpeed = game.gateMinMoveSpeed;
                     break;
 
                 case "GateFailure":
-                    Debug.Log("Gate Failed");
-                    SetGateColour(Color.red);
-                    game.ShowFeedback("Gate Missed !", Color.red);
-                    game.gateMoveSpeed = game.gateMinMoveSpeed;
+                    game.GateMissed();
                     break;
 
                 default:
