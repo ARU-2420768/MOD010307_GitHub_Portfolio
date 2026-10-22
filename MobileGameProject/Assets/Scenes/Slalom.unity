@@ -15339,15 +15339,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Microgames.SlalomGame
   gameName: Slalom
-  thresholds: {fileID: 11400000, guid: f9c13414ad2dc424e94b7b3b8864228b, type: 2}
+  gameConfig: {fileID: 11400000, guid: b4477009c6f274c45a6ed4d8ebd583cf, type: 2}
   playArea: {fileID: 1914787618}
   progressText: {fileID: 1961679114}
   feedbackText: {fileID: 46696581}
   playArea3D: {fileID: 1898913606}
   lastGateSpawnLocation: {x: 0, y: 0.45, z: 0}
-  startGatesPrefab: {fileID: 1787718849970169396, guid: 2fe9e8ea51e0b5b42a550d96a9ea0fa3, type: 3}
-  gatesPrefab: {fileID: 318863479658321324, guid: 74696cec7fdd71e4389b9db5ca758482, type: 3}
-  fastGatesPrefab: {fileID: 8485023169877269221, guid: 7a398c4c7a053cf4ea7c84691cfbadf6, type: 3}
   gateMoveSpeed: 1
   gateMaxMoveSpeed: 3
   gateMinMoveSpeed: 1
@@ -21123,7 +21120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4197531643438288825, guid: c6e1918beda708e4385eff3751dd1d71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4197531643438288825, guid: c6e1918beda708e4385eff3751dd1d71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21255,7 +21252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2581091652073228304, guid: 24c5c4a3db75be3419137a407eb800d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 2581091652073228304, guid: 24c5c4a3db75be3419137a407eb800d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21466,7 +21463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2918793091125410410, guid: 0d250b22daa72d94fb415282d508654f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 2918793091125410410, guid: 0d250b22daa72d94fb415282d508654f, type: 3}
       propertyPath: m_LocalPosition.z

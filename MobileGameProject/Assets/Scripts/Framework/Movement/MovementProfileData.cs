@@ -17,6 +17,7 @@ public class MovementProfileData : ScriptableObject
     public float maxY;
 
     [Header("Rotation")]
+    public bool rotateWithMovement;
     public float maxRotationAngle;
     public float rotationSpeed;
 

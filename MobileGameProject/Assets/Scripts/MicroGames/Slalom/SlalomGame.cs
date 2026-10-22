@@ -13,7 +13,9 @@ namespace MicrogameCourse.Microgames
 
         [Header("Medal Success Levels - Thresholds")]
         [SerializeField] private string gameName = "Slalom";
-        [SerializeField] private MedalThresholdsData thresholds;
+        [SerializeField] private GameConfigurationData gameConfig;
+        
+
         
 
         [Header("Scene References")]
@@ -25,9 +27,6 @@ namespace MicrogameCourse.Microgames
 
         [Header("Gates Prefabs")]
         [SerializeField] public Vector3 lastGateSpawnLocation = new Vector3(0f,0.45f,0f);
-        [SerializeField] private GameObject startGatesPrefab;
-        [SerializeField] private GameObject gatesPrefab;
-        [SerializeField] private GameObject fastGatesPrefab;
         [SerializeField] public float gateMoveSpeed = 1f;
         [SerializeField] public float gateMaxMoveSpeed = 3f;
         [SerializeField] public float gateMinMoveSpeed = 1f;
@@ -36,21 +35,51 @@ namespace MicrogameCourse.Microgames
 
         private Camera mainCamera;
         public int score,gatesCleared;
+        private MedalThresholdsData thresholds;
         
-        
 
-        private GameObject[] Kitzbuhel_Gates;
-
-
-        private readonly float[] Kitzbuhel = { 0f, -1f, 0f, -1f, 1f, 1f, 0f, 1f, -1, 0, 0f, -1f, 0f, -1f, 1f, 1f, 0f, 1f, -1, 0 };
         private int gateNumber = 0;
 
         private void Awake()
         {
             mainCamera = Camera.main;
-            Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab,fastGatesPrefab,gatesPrefab};
-            //Kitzbuhel_Gates = new GameObject[]{gatesPrefab,gatesPrefab,gatesPrefab};
-            
+            thresholds = gameConfig.medalThresholds;
+        }
+
+        public override void Begin(MicrogameSession session)
+        {
+            base.Begin(session);
+        }
+
+        private void Start()
+        {
+        }
+
+        private void Update()
+        {
+            if (!IsRunning) return;
+            lastGateSpawnLocation += Mathf.Clamp(gateMoveSpeed,gateMinMoveSpeed,gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
+        }
+
+        public void GatePassed()
+        {
+            Debug.Log("Game.GatePassed");
+            ShowFeedback("Gate Passed !", Color.green);
+            gatesCleared++;
+            score++;
+            UpdateProgress();
+            CheckForCompletion();
+        }
+
+        private void CheckForCompletion()
+        {
+            //Debug.Log($"Score: {score},Gates Cleared: {gatesCleared}, Kitzbuhel Length: {Kitzbuhel_Gates.Length}");
+            if (!IsRunning) 
+            {
+                MedalType medal = CalculateMedal();
+                MedalManager.Instance.AwardMedal(gameName, medal);
+                Win();
+            }
         }
 
         private MedalType CalculateMedal()
@@ -64,61 +93,9 @@ namespace MicrogameCourse.Microgames
             return MedalType.Unranked;
         }
 
-        public override void Begin(MicrogameSession session)
-        {
-            base.Begin(session);
-        }
-
-        private void Start()
-        {
-            //InitialiseFirstNewGates();
-        }
-
-        private void Update()
-        {
-            if (!IsRunning) return;
-
-            lastGateSpawnLocation += Mathf.Clamp(gateMoveSpeed,gateMinMoveSpeed,gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
-
-        }
-
-        public void GatePassed()
-        {
-            //Debug.Log("Gate Passed");
-            ShowFeedback("Gate Passed !", Color.green);
-            gatesCleared++;
-            score++;
-            UpdateProgress();
-            CheckForCompletion();
-        }
-
-        private void CheckForCompletion()
-        {
-            //Debug.Log($"Score: {score},Gates Cleared: {gatesCleared}, Kitzbuhel Length: {Kitzbuhel_Gates.Length}");
-            if(gatesCleared >= Kitzbuhel_Gates.Length)
-            {
-                MedalType medal = CalculateMedal();
-                MedalManager.Instance.AwardMedal(gameName, medal);
-                Win();
-            }
-        }
-
-        private void InitialiseFirstNewGates()
-        {
-            Instantiate(startGatesPrefab, new Vector3(Kitzbuhel[gateNumber], -2.5f + gateNumber, 0), Quaternion.identity, playArea);
-            gateNumber++;
-            for (int i = 1; i < 6; i++)
-            {
-                Instantiate(Kitzbuhel_Gates[gateNumber], new Vector3(Kitzbuhel[gateNumber], -2.5f + (2 * gateNumber), 0), Quaternion.identity, playArea);
-                gateNumber++;
-            }
-        }
-
         public void CreateNewGate()
         {
             if (!IsRunning) return;
-            //Instantiate(Kitzbuhel_Gates[gateNumber % Kitzbuhel_Gates.Length], new Vector3(Kitzbuhel[gateNumber % Kitzbuhel.Length] , 3.5f, 0), Quaternion.identity, playArea);
-            //gateNumber++;
         }
 
         public void ShowFeedback(string message, Color? colour = null)
@@ -130,7 +107,7 @@ namespace MicrogameCourse.Microgames
         public void UpdateProgress()
         {
             progressText.gameObject.SetActive(true);
-            progressText.text = $"Gates Success: {score} / {Kitzbuhel_Gates.Length}";
+            progressText.text = $"Gates Success: {score} / {gameConfig.medalThresholds.gold}";
         }
 
     }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SlalomThresholds
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.ProgressionFramework.MedalThresholdsData
   bronze: 2
-  silver: 4
-  gold: 6
+  silver: 6
+  gold: 20
