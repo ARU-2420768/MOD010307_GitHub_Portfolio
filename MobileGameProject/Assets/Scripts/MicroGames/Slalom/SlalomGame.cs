@@ -24,6 +24,7 @@ namespace MicrogameCourse.Microgames
         
 
         [Header("Gates Prefabs")]
+        [SerializeField] public Vector3 lastGateSpawnLocation = new Vector3(0f,0.45f,0f);
         [SerializeField] private GameObject startGatesPrefab;
         [SerializeField] private GameObject gatesPrefab;
         [SerializeField] private GameObject fastGatesPrefab;
@@ -76,6 +77,9 @@ namespace MicrogameCourse.Microgames
         private void Update()
         {
             if (!IsRunning) return;
+
+            lastGateSpawnLocation += Mathf.Clamp(gateMoveSpeed,gateMinMoveSpeed,gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
+
         }
 
         public void GatePassed()

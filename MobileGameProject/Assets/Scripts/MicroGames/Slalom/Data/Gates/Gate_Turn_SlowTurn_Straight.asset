@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: MicrogameCourse::GateDefinition
   prefab: {fileID: 2771171242732062602, guid: 0d250b22daa72d94fb415282d508654f, type: 3}
   allowedLocations: -1
-  preOffset: -1
-  nextOffset: 0
+  nextOffset: 1
+  offsetAmount: 0.06

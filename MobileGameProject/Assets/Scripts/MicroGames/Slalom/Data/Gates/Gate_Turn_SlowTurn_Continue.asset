@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c519b02b54d1f4b94743fce781f1e5, type: 3}
   m_Name: Gate_Turn_SlowTurn_Continue
   m_EditorClassIdentifier: MicrogameCourse::GateDefinition
-  prefab: {fileID: 384705360354263950, guid: 978b8010926cbf64bbcafe6a4bbdf874, type: 3}
+  prefab: {fileID: 3084424517187471758, guid: 24c5c4a3db75be3419137a407eb800d7, type: 3}
   allowedLocations: 2044
-  preOffset: -1
-  nextOffset: 1
+  nextOffset: 2
+  offsetAmount: 0.6

@@ -12,18 +12,53 @@ namespace MicrogameCourse.Microgames
     public class GatesPrefabManager : MonoBehaviour
     {
         [SerializeField] private GateDefinition[] gatesPrefabs;
+        [SerializeField] private GateDefinition gatesPrefabsSSS;
+        [SerializeField] private GateDefinition gatesPrefabsSS;
+        [SerializeField] private GateDefinition gatesPrefabsSC;
+        [SerializeField] private GateDefinition gatesPrefabsTC;
+        [SerializeField] private GateDefinition gatesPrefabsTCR;
+        [SerializeField] private GateDefinition gatesPrefabsTS;
+
         [SerializeField] private int location = 7;
         [SerializeField] private Transform playArea;
-        [SerializeField] private Vector3 lastGateSpawnLocation = new Vector3(0f,0.45f,0f);
+        //[SerializeField] private Vector3 lastGateSpawnLocation = new Vector3(0f,0.45f,0f);
         [SerializeField] private Vector3 newGateSpawnLocation;
+        [SerializeField] private float laneWidth = 0.06f;
 
+        private SlalomGame game;
 
+        private void Awake()
+        {
+            game = FindFirstObjectByType<SlalomGame>();
+        }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        private void Start()
         {
-            CreateNewGateFromPrefab();
-            //CreateNewGateFromPrefab();
+            // Create Start Game
+            CreateSpecificGateFromPrefab(gatesPrefabsSSS);
+
+            for(int i = 0; i < 11; i++){
+                CreateNewGateFromPrefab();
+            }
+
+        }
+
+        private void CreateSpecificGateFromPrefab(GateDefinition gatePrefabDefinition)
+        {
+            GameObject gate = Instantiate(gatePrefabDefinition.prefab, playArea);
+
+            int direction = Random.value < 0.5f ? -1 : 1;
+            float yRotation = direction == 1 ? 0f : 180f;
+
+            location += direction;
+
+            gate.transform.localPosition = game.lastGateSpawnLocation;
+            gate.transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
+
+            float horizontalShift = (gatePrefabDefinition.nextOffset * laneWidth * direction);
+
+            game.lastGateSpawnLocation += new Vector3(horizontalShift,-0.1f,0f);
         }
 
         // Update is called once per frame
@@ -45,24 +80,12 @@ namespace MicrogameCourse.Microgames
                 if (gatePrefab.allowedLocations.HasFlag(requiredConnection))
                 {
                     matchedConnections.Add(gatePrefab);
-                    Debug.Log($"Matched Gate: {gatePrefab.prefab.name} ({gatePrefab.allowedLocations})");
-
-                    GameObject gate = Instantiate(gatePrefab.prefab, playArea);
-
-                    int direction = Random.value < 0.5f ? -1 : 1;
-                    float yRotation = direction == 1 ? 0f : 180f;
-                    gate.transform.localPosition = lastGateSpawnLocation;
-                    gate.transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
-
-                    lastGateSpawnLocation += new Vector3(0.06f * (gatePrefab.nextOffset + gatePrefab.preOffset) * direction, -0.1f, 0f);
-
-
                 }
             }
 
 
 
-            if (matchedConnections.Count > 0 && false)
+            if (matchedConnections.Count > 0)
             {
                 GateDefinition selectedGate = matchedConnections[Random.Range(0, matchedConnections.Count)];
                 int direction = Random.value < 0.5f ? -1 : 1;
@@ -70,17 +93,14 @@ namespace MicrogameCourse.Microgames
                 float yRotation = direction == 1 ? 0f : 180f;
 
                 GameObject gate = Instantiate(selectedGate.prefab, playArea);
-                gate.transform.localPosition = lastGateSpawnLocation;
+                gate.transform.localPosition = game.lastGateSpawnLocation;
                 gate.transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
 
                 Debug.Log($"Spawned: {selectedGate.prefab.name}");
 
-                lastGateSpawnLocation += new Vector3(0.06f * (selectedGate.nextOffset + selectedGate.preOffset) * direction, -0.1f, 0f);
+                game.lastGateSpawnLocation += new Vector3(0.06f * (selectedGate.nextOffset) * direction, -0.1f, 0f);
 
             }
-
-            
-            Debug.Log($"Matched Connections: {string.Join(", ", matchedConnections)}");
         }
 
     }
