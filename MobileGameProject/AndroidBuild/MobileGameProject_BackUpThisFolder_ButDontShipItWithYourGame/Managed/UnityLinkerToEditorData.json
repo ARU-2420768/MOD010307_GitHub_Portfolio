@@ -302,7 +302,8 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/IceSkating.unity"
+              "Assets/Scenes/IceSkating.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -310,7 +311,8 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/IceSkating.unity"
+              "Assets/Scenes/IceSkating.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -318,7 +320,8 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/IceSkating.unity"
+              "Assets/Scenes/IceSkating.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1061,7 +1064,8 @@
           {
             "name": "BoxCollider",
             "scenes": [
-              "Assets/Scenes/IceSkating.unity"
+              "Assets/Scenes/IceSkating.unity",
+              "Assets/Scenes/Slalom.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1477,7 +1481,16 @@
       },
       {
         "name": "SpriteMask",
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "SpriteMask",
+            "scenes": [
+              "Assets/Scenes/Slalom.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
       },
       {
         "name": "SpriteShape",

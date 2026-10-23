@@ -585,7 +585,6 @@ UnityEngine.Font::Internal_CreateFont_Injected
 UnityEngine.FrameTimingManager::GetLatestTimings_Injected
 UnityEngine.FrameTimingManager::CaptureFrameTimings
 UnityEngine.GameObject::GetComponentsInternal_Injected
-UnityEngine.GameObject::CompareTag_Internal_Injected
 UnityEngine.GameObject::get_activeInHierarchy_Injected
 UnityEngine.GameObject::get_activeSelf_Injected
 UnityEngine.GameObject::get_layer_Injected
@@ -602,6 +601,7 @@ UnityEngine.GameObject::SendMessage_Injected
 UnityEngine.GameObject::SetActive_Injected
 UnityEngine.GameObject::TryGetComponentFastPath_Injected
 UnityEngine.GameObject::get_scene_Injected
+UnityEngine.GameObject::get_tag_Injected
 UnityEngine.GameObject::set_layer_Injected
 UnityEngine.GeometryUtility::Internal_TestPlanesAABB_Injected
 UnityEngine.GeometryUtility::Internal_ExtractPlanes_Injected
@@ -1040,8 +1040,6 @@ UnityEngine.Object::FindObjectFromInstanceID_Injected
 UnityEngine.Object::ForceLoadFromInstanceID_Injected
 UnityEngine.Object::Internal_CloneSingleWithParent_Injected
 UnityEngine.Object::Internal_CloneSingle_Injected
-UnityEngine.Object::Internal_InstantiateSingleWithParent_Injected
-UnityEngine.Object::Internal_InstantiateSingle_Injected
 UnityEngine.Object::DestroyImmediate_Injected
 UnityEngine.Object::Destroy_Injected
 UnityEngine.Object::DontDestroyOnLoad_Injected

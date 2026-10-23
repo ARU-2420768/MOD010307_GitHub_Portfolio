@@ -7,6 +7,7 @@ using System;
 
 namespace MicrogameCourse.Microgames
 {
+    // Created using SPT - 
 
     public sealed class SlalomGame : MicrogameBehaviour
     {
@@ -67,6 +68,12 @@ namespace MicrogameCourse.Microgames
             lastGateSpawnLocation += Mathf.Clamp(gateMoveSpeed,gateMinMoveSpeed,gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
         }
 
+        public void GateTriggered(string gateState)
+        {
+            if(gateState=="GateSuccess") GatePassed();
+            if(gateState=="GateFailure") GateMissed();
+
+        }
 
         public void GateMissed()
         {

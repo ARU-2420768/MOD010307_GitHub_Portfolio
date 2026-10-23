@@ -39,6 +39,8 @@ namespace MicrogameCourse.Microgames
         {
             // Create Start Game
             CreateSpecificGateFromPrefab(gatesPrefabsSSS);
+            CreateSpecificGateFromPrefab(gatesPrefabsSSS);
+            //CreateSpecificGateFromPrefab(gatesPrefabsSSS);
             //CreateSpecificGateFromPrefab(gatesPrefabsSFS);
             //CreateSpecificGateFromPrefab(gatesPrefabsSFS);
 
@@ -46,6 +48,8 @@ namespace MicrogameCourse.Microgames
             for(int i = 0; i < 30; i++){
                 CreateNewGateFromPrefab();
             }
+
+
 
         }
 
@@ -117,6 +121,8 @@ namespace MicrogameCourse.Microgames
                 GameObject gate = Instantiate(selectedGate.prefab, playArea);
                 gate.transform.localPosition = game.lastGateSpawnLocation;
                 gate.transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
+                foreach(var g in gate.GetComponentsInChildren<GateSuccess>())
+                    g.onGateTriggered.AddListener(game.GateTriggered);
 
                 //Debug.Log($"Spawned: {selectedGate.prefab.name}");
                 location += selectedGate.nextOffset * direction;

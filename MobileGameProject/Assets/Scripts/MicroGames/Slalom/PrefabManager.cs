@@ -17,6 +17,12 @@ namespace MicrogameCourse.Framework
         {
             session = FindFirstObjectByType<MicrogameSession>();
             game = FindFirstObjectByType<SlalomGame>();
+            //GateSuccess[] gates = GetComponentsInChildren<GateSuccess>();
+
+            //foreach (GateSuccess gate in gates)
+            //{
+                //gate.onGateTriggered.AddListener(game.GateTriggered);
+            //}
         }
 
         private void Update()

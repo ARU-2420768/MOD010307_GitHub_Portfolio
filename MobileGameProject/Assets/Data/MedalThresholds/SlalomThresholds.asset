@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.ProgressionFramework.MedalThresholdsData
   bronze: 2
   silver: 6
-  gold: 20
+  gold: 16
