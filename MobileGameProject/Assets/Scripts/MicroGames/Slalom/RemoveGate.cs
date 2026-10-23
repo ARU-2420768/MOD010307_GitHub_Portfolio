@@ -23,14 +23,6 @@ public sealed class RemoveGate : MicrogameBehaviour
             BoxCollider2D bc = GetComponent<BoxCollider2D>();
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (collision.CompareTag("Gate"))
-            {
-                game.CreateNewGate();
-                Destroy(collision.gameObject);
-            }
-        }
 
     }
 }

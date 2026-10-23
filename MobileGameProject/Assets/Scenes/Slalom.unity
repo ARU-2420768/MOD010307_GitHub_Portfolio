@@ -3439,12 +3439,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: feb7af08237601a4abd6276ade5497f2, type: 2}
   - {fileID: 11400000, guid: 4a953e53e2a80f14eb3d516ff2e46442, type: 2}
   - {fileID: 11400000, guid: df04536b9dba4e34088d4428a9f462bf, type: 2}
+  - {fileID: 11400000, guid: 54147b34f0ae1314f88444f1cc6ea244, type: 2}
   gatesPrefabsSSS: {fileID: 11400000, guid: 7435d3c5a10f39a4db1b7df2e061e524, type: 2}
   gatesPrefabsSS: {fileID: 11400000, guid: 4851803f2ebead340a3a39381b7706d0, type: 2}
   gatesPrefabsSC: {fileID: 11400000, guid: a7a1e4c0da404934682c8ed4dff3cd96, type: 2}
   gatesPrefabsTC: {fileID: 11400000, guid: feb7af08237601a4abd6276ade5497f2, type: 2}
   gatesPrefabsTCR: {fileID: 11400000, guid: 4a953e53e2a80f14eb3d516ff2e46442, type: 2}
   gatesPrefabsTS: {fileID: 11400000, guid: df04536b9dba4e34088d4428a9f462bf, type: 2}
+  gatesPrefabsSFS: {fileID: 11400000, guid: 54147b34f0ae1314f88444f1cc6ea244, type: 2}
   location: 7
   playArea: {fileID: 1898913607}
   newGateSpawnLocation: {x: 0, y: 0, z: 0}
@@ -3619,6 +3621,7 @@ MonoBehaviour:
   gateMinMoveSpeed: 1
   score: 0
   gatesCleared: 0
+  IsGameRunning: 0
 --- !u!1 &1549625782
 GameObject:
   m_ObjectHideFlags: 0
@@ -4024,7 +4027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Suggested improvement - create tree "lanes" that shortcut the game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

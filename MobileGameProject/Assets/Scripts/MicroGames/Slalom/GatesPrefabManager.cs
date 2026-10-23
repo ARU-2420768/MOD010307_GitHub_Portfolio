@@ -18,6 +18,7 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private GateDefinition gatesPrefabsTC;
         [SerializeField] private GateDefinition gatesPrefabsTCR;
         [SerializeField] private GateDefinition gatesPrefabsTS;
+        [SerializeField] private GateDefinition gatesPrefabsSFS;
 
         [SerializeField] private int location = 7;
         [SerializeField] private Transform playArea;
@@ -38,6 +39,9 @@ namespace MicrogameCourse.Microgames
         {
             // Create Start Game
             CreateSpecificGateFromPrefab(gatesPrefabsSSS);
+            //CreateSpecificGateFromPrefab(gatesPrefabsSFS);
+            //CreateSpecificGateFromPrefab(gatesPrefabsSFS);
+
 
             for(int i = 0; i < 30; i++){
                 CreateNewGateFromPrefab();
@@ -74,6 +78,7 @@ namespace MicrogameCourse.Microgames
             string enumName = $"Position{location}";
             List<GateDefinition> matchedConnections = new();
 
+            // Convert location to binary
             GateConnection requiredConnection = (GateConnection)(1 << (location - 1));
 
             foreach(var gatePrefab in gatesPrefabs)
