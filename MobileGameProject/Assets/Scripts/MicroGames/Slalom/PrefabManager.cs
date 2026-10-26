@@ -8,8 +8,6 @@ namespace MicrogameCourse.Framework
 {
     public class PrefabManager : MicrogameBehaviour
     {
-        [SerializeField] float gateSpeedReset = 1f;
-        [SerializeField] bool showGates = true;
         private SlalomGame game;
         private MicrogameSession session;
 
@@ -28,6 +26,7 @@ namespace MicrogameCourse.Framework
         private void Update()
         {
             if (!session.isTimerStarted) return;
+            //transform.position += game.gateMoveSpeed * Time.deltaTime * Vector3.up;
             transform.position += Mathf.Clamp(game.gateMoveSpeed,game.gateMinMoveSpeed, game.gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
         }
 

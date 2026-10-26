@@ -40,10 +40,6 @@ namespace MicrogameCourse.Microgames
             // Create Start Game
             CreateSpecificGateFromPrefab(gatesPrefabsSSS);
             CreateSpecificGateFromPrefab(gatesPrefabsSSS);
-            //CreateSpecificGateFromPrefab(gatesPrefabsSSS);
-            //CreateSpecificGateFromPrefab(gatesPrefabsSFS);
-            //CreateSpecificGateFromPrefab(gatesPrefabsSFS);
-
 
             for(int i = 0; i < 30; i++){
                 CreateNewGateFromPrefab();
@@ -56,7 +52,6 @@ namespace MicrogameCourse.Microgames
         private void CreateSpecificGateFromPrefab(GateDefinition gatePrefabDefinition)
         {
             GameObject gate = Instantiate(gatePrefabDefinition.prefab, playArea);
-            Debug.Log($"Spawned: {gatePrefabDefinition.prefab.name}");
 
             int direction = Random.value < 0.5f ? -1 : 1;
             float yRotation = direction == 1 ? 0f : 180f;
@@ -123,6 +118,9 @@ namespace MicrogameCourse.Microgames
                 gate.transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
                 foreach(var g in gate.GetComponentsInChildren<GateSuccess>())
                     g.onGateTriggered.AddListener(game.GateTriggered);
+
+                foreach(var slowdownTrigger in gate.GetComponentsInChildren<SlowdownTriggerManager>())
+                    slowdownTrigger.onSlowdownTriggerEntered.AddListener(game.SlowdownTriggered);
 
                 //Debug.Log($"Spawned: {selectedGate.prefab.name}");
                 location += selectedGate.nextOffset * direction;

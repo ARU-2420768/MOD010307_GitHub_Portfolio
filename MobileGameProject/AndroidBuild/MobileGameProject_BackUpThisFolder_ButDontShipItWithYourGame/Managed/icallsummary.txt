@@ -741,6 +741,7 @@ UnityEngine.GUIUtility::set_compositionCursorPos_Injected
 UnityEngine.GUIUtility::set_imeCompositionMode
 UnityEngine.GUIUtility::set_pixelsPerPoint
 UnityEngine.GUIUtility::set_systemCopyBuffer_Injected
+UnityEngine.Handheld::Vibrate
 UnityEngine.Hash128::ComputeFromPtr
 UnityEngine.Hash128::Hash128ToStringImpl_Injected
 UnityEngine.Hash128::Parse_Injected
@@ -1040,6 +1041,7 @@ UnityEngine.Object::FindObjectFromInstanceID_Injected
 UnityEngine.Object::ForceLoadFromInstanceID_Injected
 UnityEngine.Object::Internal_CloneSingleWithParent_Injected
 UnityEngine.Object::Internal_CloneSingle_Injected
+UnityEngine.Object::Internal_InstantiateSingle_Injected
 UnityEngine.Object::DestroyImmediate_Injected
 UnityEngine.Object::Destroy_Injected
 UnityEngine.Object::DontDestroyOnLoad_Injected
@@ -1059,6 +1061,12 @@ UnityEngine.ObjectDispatcher::EnableTransformTracking
 UnityEngine.ObjectDispatcher::EnableTypeTracking
 UnityEngine.ObjectGUIState::Internal_Create
 UnityEngine.ObjectGUIState::Internal_Destroy
+UnityEngine.ParticleSystem::EmitOld_Internal_Injected
+UnityEngine.ParticleSystem::Emit_Injected
+UnityEngine.ParticleSystem::Emit_Internal_Injected
+UnityEngine.ParticleSystem/MainModule::get_duration
+UnityEngine.ParticleSystem/MainModule::get_startLifetimeBlittable_Injected
+UnityEngine.ParticleSystemRenderer::GetMeshes_Injected
 UnityEngine.Physics::get_invokeCollisionCallbacks
 UnityEngine.Physics::get_reuseCollisionCallbacks
 UnityEngine.Physics::GetBodyByInstanceID_Injected

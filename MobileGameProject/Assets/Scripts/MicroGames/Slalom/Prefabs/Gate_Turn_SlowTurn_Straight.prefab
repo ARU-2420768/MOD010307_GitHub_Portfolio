@@ -1276,6 +1276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab6051a581869c49b1a65b9b7352700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MicrogameCourse::MicrogameCourse.Framework.GateSuccess
+  onGateTriggered:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2565532184388481822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +1461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab6051a581869c49b1a65b9b7352700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MicrogameCourse::MicrogameCourse.Framework.GateSuccess
+  onGateTriggered:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2679893771751155621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,6 +1819,107 @@ Transform:
   - {fileID: 2014164781958330927}
   m_Father: {fileID: 2918793091125410410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3623932155264180502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4988367741813202369}
+  - component: {fileID: 9204521645011317467}
+  - component: {fileID: 3933193767321056482}
+  m_Layer: 0
+  m_Name: SlowdownTrigger
+  m_TagString: Piste
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4988367741813202369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3623932155264180502}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 12.5, y: 50, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406758168239049315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &9204521645011317467
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3623932155264180502}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.0992946, y: 0.052779153}
+      - {x: -0.038247615, y: 0.017579392}
+      - {x: -0.041328155, y: -0.049854938}
+      - {x: 0.16246867, y: -0.05007884}
+      - {x: 0.1616013, y: 0.017569292}
+      - {x: 0.10249458, y: 0.049260844}
+  m_UseDelaunayMesh: 1
+--- !u!114 &3933193767321056482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3623932155264180502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756998c0a00efe043940eaddbcca3531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MicrogameCourse::SlowdownTriggerManager
+  onSlowdownTriggerEntered:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3979870970966641532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,6 +2586,8 @@ Transform:
   - {fileID: 6460626574709174290}
   - {fileID: 2340730572400487405}
   - {fileID: 1763203612477545702}
+  - {fileID: 7031040163935959050}
+  - {fileID: 4988367741813202369}
   m_Father: {fileID: 3910332253528263978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1576424726758123631
@@ -2697,6 +2806,111 @@ Transform:
   - {fileID: 1784356823617613719}
   m_Father: {fileID: 406758168239049315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5633328353668907113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7031040163935959050}
+  - component: {fileID: 5635428200286359728}
+  - component: {fileID: 6381420811454650137}
+  m_Layer: 0
+  m_Name: SlowdownTrigger
+  m_TagString: OffPiste
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7031040163935959050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5633328353668907113}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -7.1671247, y: 7.7425003, z: 0}
+  m_LocalScale: {x: 12.5, y: 50, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406758168239049315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &5635428200286359728
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5633328353668907113}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.41326752, y: -0.13521695}
+      - {x: -0.41281796, y: -0.20396137}
+      - {x: 1.0836351, y: -0.20080297}
+      - {x: 1.0843303, y: -0.1053059}
+      - {x: -0.47617054, y: -0.105045505}
+    - - {x: -0.6713526, y: -0.10442258}
+      - {x: -0.6134832, y: -0.13510689}
+      - {x: -0.6148522, y: -0.20484222}
+      - {x: -1.7524738, y: -0.20357011}
+      - {x: -1.7510397, y: -0.10460033}
+  m_UseDelaunayMesh: 1
+--- !u!114 &6381420811454650137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5633328353668907113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756998c0a00efe043940eaddbcca3531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MicrogameCourse::SlowdownTriggerManager
+  onSlowdownTriggerEntered:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5691463004794341402
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,6 +3459,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ab6051a581869c49b1a65b9b7352700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MicrogameCourse::MicrogameCourse.Framework.GateSuccess
+  onGateTriggered:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6453091803793333214
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public sealed class GateSuccess : MicrogameBehaviour
 
         private SpriteRenderer spriteRenderer;
 
-        public UnityEvent<string> onGateTriggered;
+        public UnityEvent<GameObject, string> onGateTriggered;
 
         private void Awake()
         {
@@ -27,25 +27,7 @@ public sealed class GateSuccess : MicrogameBehaviour
 
             if(collision.tag != "Player") return;
             
-            onGateTriggered?.Invoke(this.tag);
-            Debug.Log(this.tag);
-/*
-            switch (this.tag)
-            {
-                case "GateSuccess":
-                    game.GatePassed();
-                    break;
-
-                case "GateFailure":
-                    game.GateMissed();
-                    break;
-
-                default:
-                    Debug.Log($"Unknown gate: {gameObject.name}, This Tag: {this.tag}, Collision Tag: {collision.tag}.");
-                    break;
-            }
-  
-  */
+            onGateTriggered?.Invoke(this.gameObject, this.tag);
         }
 
         public void SetGateColour(Color colour)

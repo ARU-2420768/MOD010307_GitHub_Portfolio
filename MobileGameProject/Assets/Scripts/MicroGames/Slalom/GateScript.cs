@@ -9,8 +9,6 @@ namespace MicrogameCourse.Framework
 
 public sealed class GateScript : MicrogameBehaviour
     {
-        [SerializeField] float gateSpeedReset = 1f;
-
 
         private enum GateSide {Left, Right, Centre};
 

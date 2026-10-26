@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GateSuccess
   - GateFailure
+  - OffPiste
+  - Piste
   layers:
   - Default
   - TransparentFX

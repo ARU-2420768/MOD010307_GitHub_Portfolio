@@ -4,6 +4,8 @@ using TMPro;
 using MicrogameCourse.Framework;
 using MicrogameCourse.ProgressionFramework;
 using System;
+using UnityEngine.InputSystem;
+using System.Collections;
 
 namespace MicrogameCourse.Microgames
 {
@@ -25,14 +27,17 @@ namespace MicrogameCourse.Microgames
         [Header("Gates Prefabs")]
         [SerializeField] public Vector3 lastGateSpawnLocation = new Vector3(0f,0.45f,0f);
         [SerializeField] public float gateMoveSpeed = 1f;
-        [SerializeField] public float gateMaxMoveSpeed = 3f;
-        [SerializeField] public float gateMinMoveSpeed = 1f;
+        [SerializeField] public float gateDefaultMoveSpeed = 1f;
+        [SerializeField] public float gateMaxMoveSpeed = 1.5f;
+        [SerializeField] public float gateMinMoveSpeed = 0.5f;
+        [SerializeField] private ParticleSystem gatePassEffect;
         
         private Camera mainCamera;
         public int score,gatesCleared;
         private MedalThresholdsData thresholds;
         public bool IsGameRunning;
-        
+        private bool isOffPiste;
+        private Coroutine vibrationCoroutine;
 
         private void Awake()
         {
@@ -68,25 +73,63 @@ namespace MicrogameCourse.Microgames
             lastGateSpawnLocation += Mathf.Clamp(gateMoveSpeed,gateMinMoveSpeed,gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
         }
 
-        public void GateTriggered(string gateState)
+        public void GateTriggered(GameObject gate, string gateState)
         {
-            if(gateState=="GateSuccess") GatePassed();
+            if(gateState=="GateSuccess") GatePassed(gate);
             if(gateState=="GateFailure") GateMissed();
 
         }
 
-        public void GateMissed()
+        public void SlowdownTriggered(string areaState)
         {
-            ShowFeedback("Gate Missed !", Color.red);
-            Debug.Log($"Score: {score}");
+            if(areaState=="Piste") Piste();
+            if(areaState=="OffPiste") OffPiste();
+        }
+        public void Piste()
+        {
+            isOffPiste = false;
+            gateMoveSpeed = gateDefaultMoveSpeed;
+            if (vibrationCoroutine != null)
+            {
+                StopCoroutine(vibrationCoroutine);
+                vibrationCoroutine = null;
+            }
+        }
+
+        public void OffPiste()
+        {
+
+            if (isOffPiste) return;
+            isOffPiste = true;
+            gateMoveSpeed = gateMinMoveSpeed;
+            vibrationCoroutine = StartCoroutine(VibrateWhileOffPiste());
+
+        }
+
+        private IEnumerator VibrateWhileOffPiste()
+        {
+            while (isOffPiste)
+            {
+                Handheld.Vibrate();
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+
+        public void GateMissed()
+        {            
             UpdateProgress();
             CheckForCompletion();
         }
-        public void GatePassed()
+        public void GatePassed(GameObject gate)
         {
-            ShowFeedback("Gate Passed !", Color.green);
+            
             gatesCleared++;
-            Debug.Log($"Score: {score}");
+
+            if (gatePassEffect != null)
+            {
+                ParticleSystem effect = Instantiate(gatePassEffect, gate.transform.position, Quaternion.identity);
+                Destroy(effect.gameObject, effect.main.duration + effect.main.startLifetime.constantMax);
+            }
 
             score++;
             UpdateProgress();
@@ -95,11 +138,9 @@ namespace MicrogameCourse.Microgames
 
         private void CheckForCompletion()
         {
-            Debug.Log($"CheckForCompletion score:{score}");
             if (score > gameConfig.medalThresholds.gold) 
             {
                 MedalType medal = CalculateMedal();
-                Debug.Log($"MedalManager.Instance = {MedalManager.Instance}");
                 MedalManager.Instance.AwardMedal(gameName, medal);
                 Win();
             }
@@ -116,6 +157,24 @@ namespace MicrogameCourse.Microgames
             return MedalType.Unranked;
         }
 
+        private int CalculateTargetMedal()
+        {
+            if(score >= thresholds.silver)
+                return thresholds.gold;
+            if(score >= thresholds.bronze)
+                return thresholds.silver;
+            return thresholds.bronze;
+        }
+
+        private MedalType CalculateTargetMedalType()
+        {
+            if(score >= thresholds.silver)
+                return MedalType.Gold;
+            if(score >= thresholds.bronze)
+                return MedalType.Silver;
+            return MedalType.Bronze;
+        }
+
         public void CreateNewGate()
         {
             if (!IsRunning) return;
@@ -123,14 +182,16 @@ namespace MicrogameCourse.Microgames
 
         public void ShowFeedback(string message, Color? colour = null)
         {
-            feedbackText.color = colour ?? Color.white;
-            feedbackText.text = message;
+            //feedbackText.color = colour ?? Color.white;
+            //feedbackText.text = message;
         }
 
         public void UpdateProgress()
         {
             progressText.gameObject.SetActive(true);
-            progressText.text = $"Gates Success: {score} / {gameConfig.medalThresholds.gold}";
+            int medal = CalculateTargetMedal();
+            MedalType medalTarget = CalculateTargetMedalType();
+            progressText.text = $"Progress\nNext Medal Target: {medalTarget}\n{score} / {medal}";
         }
 
     }

@@ -7,11 +7,6 @@ namespace MicrogameCourse.Framework
 {
     public sealed class MoveGates : MicrogameBehaviour
     {
-
-        [SerializeField] float gateSpeedIncrease = 1.1f;
-        [SerializeField] float fastGateSpeedIncrease = 1.2f;
-
-        //private float moveSpeed = 1f;
         private MicrogameSession session;
         private SlalomGame game;
 
@@ -27,7 +22,10 @@ namespace MicrogameCourse.Framework
         private void Update()
         {
             if (!session.isTimerStarted) return;
-            transform.position += Mathf.Clamp(game.gateMoveSpeed,game.gateMinMoveSpeed, game.gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
+
+            Debug.Log($"MoveGates speed = {game.gateMoveSpeed}");
+            transform.position += game.gateMoveSpeed * Time.deltaTime * Vector3.up;
+            //transform.position += Mathf.Clamp(game.gateMoveSpeed,game.gateMinMoveSpeed, game.gateMaxMoveSpeed) * Time.deltaTime * Vector3.up;
         }
 
 
@@ -42,13 +40,11 @@ namespace MicrogameCourse.Framework
                 case "SGate_Start(Clone)":                                        
                 case "SGate_Standard(Clone)":
                     SetGateColour(Color.green);
-                    game.gateMoveSpeed *= gateSpeedIncrease; 
-                    game.GatePassed();
+                    //game.GatePassed();
                     break;
 
                 case "SGate_Fast(Clone)":                                      
                     SetGateColour(Color.green);
-                    game.gateMoveSpeed *= fastGateSpeedIncrease; 
                     game.ShowFeedback("Fast Gate Passed !", Color.green);
                     game.score ++;
                     game.UpdateProgress();
