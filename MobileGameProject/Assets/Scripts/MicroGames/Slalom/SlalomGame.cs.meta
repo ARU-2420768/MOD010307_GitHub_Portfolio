@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 48db28f8ae141364d82c8ef95b98f47c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - thresholds: {fileID: 11400000, guid: f9c13414ad2dc424e94b7b3b8864228b, type: 2}
+  - playArea: {instanceID: 0}
+  - target: {instanceID: 0}
+  - targetImage: {instanceID: 0}
+  - progressText: {instanceID: 0}
+  - feedbackText: {instanceID: 0}
+  - playArea3D: {instanceID: 0}
+  - startGatesPrefab: {fileID: 1787718849970169396, guid: 2fe9e8ea51e0b5b42a550d96a9ea0fa3, type: 3}
+  - gatesPrefab: {fileID: 318863479658321324, guid: 74696cec7fdd71e4389b9db5ca758482, type: 3}
+  - fastGatesPrefab: {fileID: 8485023169877269221, guid: 7a398c4c7a053cf4ea7c84691cfbadf6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
