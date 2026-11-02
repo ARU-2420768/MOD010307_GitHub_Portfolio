@@ -11,9 +11,11 @@ namespace MicrogameCourse.Microgames
     public sealed class ShootingGame : MicrogameBehaviour
     {
 
-        [Header("Medal Success Levels - Thresholds")]
+
+        [Header("Game Configuration")]
         [SerializeField] private string gameName = "Shooting";
-        [SerializeField] private MedalThresholdsData thresholds;
+        [SerializeField] private GameConfigurationData gameConfig;
+        
 
         [Header("Scene References")]
         [SerializeField] private RectTransform playArea;
@@ -26,10 +28,12 @@ namespace MicrogameCourse.Microgames
 
         private Camera mainCamera;
         public int score = 0;
+        private MedalThresholdsData thresholds;
 
         private void Awake()
         {
             mainCamera = Camera.main;
+            thresholds = gameConfig.medalThresholds;
             score = 5;
         }
 
@@ -50,10 +54,11 @@ namespace MicrogameCourse.Microgames
 
         public void ShotFired()
         {
-            //Debug.Log("Gate Passed");
+            Debug.Log("Shot Fired");
             ShowFeedback("Shots Completed", Color.green);
             UpdateProgress();
             CheckForCompletion();
+            score++;
         }
 
         private MedalType CalculateMedal()
@@ -67,16 +72,17 @@ namespace MicrogameCourse.Microgames
             return MedalType.Unranked;
         }
 
+
         private void CheckForCompletion()
         {
-            if(MedalManager.Instance == null)
-                Debug.Log($"Medal Manager is created from the main menu - start from there first");
-
-            MedalType medal = CalculateMedal();
-
-            MedalManager.Instance.AwardMedal(gameName, medal);
-            Win();
+            if (score > gameConfig.medalThresholds.gold) 
+            {
+                MedalType medal = CalculateMedal();
+                MedalManager.Instance.AwardMedal(gameName, medal);
+                Win();
+            }
         }
+
 
         public void ShowFeedback(string message, Color? colour = null)
         {

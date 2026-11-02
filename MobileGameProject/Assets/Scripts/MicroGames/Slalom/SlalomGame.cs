@@ -14,7 +14,7 @@ namespace MicrogameCourse.Microgames
     public sealed class SlalomGame : MicrogameBehaviour
     {
 
-        [Header("Medal Success Levels - Thresholds")]
+        [Header("Game Configuration")]
         [SerializeField] private string gameName = "Slalom";
         [SerializeField] private GameConfigurationData gameConfig;
 

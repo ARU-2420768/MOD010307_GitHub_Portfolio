@@ -25,6 +25,10 @@ Last updated: 20 / 10 / 2026 (DD/MM/YYYY)
 ## Art / Visuals
 - “Tiny Ski Asset Pack” by Kenney, Source: https://kenney.nl/assets/tiny-ski, Licence: Creative Commons CC0 1.0 Universal (Public Domain) https://creativecommons.org/publicdomain/zero/1.0/, Modified: None, Notes: ____________________
 
+- “Crosshair Pack” by Kenney, Source: https://kenney.nl/assets/crosshair-pack, Licence: Creative Commons CC0 1.0 Universal (Public Domain) https://creativecommons.org/publicdomain/zero/1.0/, Modified: None, Notes: ____________________
+
+“Mobile Controls” by Kenney, Source: https://kenney.nl/assets/mobile-controls, Licence: Creative Commons CC0 1.0 Universal (Public Domain) https://creativecommons.org/publicdomain/zero/1.0/, Modified: None, Notes: ____________________
+
 - 
 - “______________________” by ______________________, Source: [link], Licence: __________________ [link], Notes: __________________
 
