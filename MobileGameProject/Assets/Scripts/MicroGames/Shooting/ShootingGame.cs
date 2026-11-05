@@ -52,6 +52,22 @@ namespace MicrogameCourse.Microgames
             ShotFired();
         }
 
+
+        public override void OnDrag(Vector2 delta)
+        {
+            Debug.Log("ShootingGame.OnDrag called")
+        }
+
+        public override void OnDirectionalInput(Vector2 direction)
+        {
+            Debug.Log("ShootingGame.OnDirectionalInput called")
+        }
+
+        public override void OnButtonTap()
+        {
+            Debug.Log("ShootingGame.OnButtonTap called")
+        }
+
         public void ShotFired()
         {
             Debug.Log("Shot Fired");

@@ -14,6 +14,18 @@ namespace MicrogameCourse.Framework
         {
         }
 
+        public virtual void OnDrag(Vector2 delta)
+        {
+        }
+
+        public virtual void OnDirectionalInput(Vector2 direction)
+        {
+        }
+
+        public virtual void OnButtonTap()
+        {
+        }
+
         public virtual void Begin(MicrogameSession session)
         {
             Session = session;

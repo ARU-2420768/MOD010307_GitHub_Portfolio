@@ -20,6 +20,8 @@ namespace MicrogameCourse.Framework
         private float currentSpeed;
 
         private Vector3 originalPosition;
+        private Vector3 currentDirection;
+        
 
         private void Awake()
         {   
@@ -42,6 +44,7 @@ namespace MicrogameCourse.Framework
             HandleDragAndRelease();
             HandleTwoFingerTap();
             HandleTwoFingerDrag();
+
         }
 
         private void HandleMovement()
@@ -104,6 +107,33 @@ namespace MicrogameCourse.Framework
         {
             if(!Supports(InputMode.TwoFingerDrag)) return;
         }
+
+        public void StopMovement()
+        {
+            currentDirection = Vector2.zero;
+            
+        }
+
+        public void HandleDirectionalButtonClick(Vector2 direction)
+        {
+            if(!Supports(InputMode.DirectionalButtons)) return;
+            currentDirection = direction;
+            game?.OnPointerPressed();
+            Debug.Log(direction);
+        }
+        
+        public void HandleActionButtonClick()
+        {
+            Debug.Log("Button Pressed");
+            if(!Supports(InputMode.ButtonTap)) return;
+        }
+
+        public void HandleSelectButtonClick()
+        {
+            if(!Supports(InputMode.ButtonTap)) return;
+        }
+
+
         private bool Supports(InputMode inputMode)
         {
             return gameConfigData != null && gameConfigData.inputProfile != null && gameConfigData.inputProfile.supportedInputs.HasFlag(inputMode);

@@ -7,5 +7,7 @@ public enum InputMode
     Drag = 4, 
     DragRelease = 8, 
     TwoFingerDrag = 16, 
-    TwoFingerTap = 32
+    TwoFingerTap = 32,
+    DirectionalButtons = 64,
+    ButtonTap = 128
 }
