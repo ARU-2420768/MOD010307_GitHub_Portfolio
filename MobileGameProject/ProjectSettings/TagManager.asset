@@ -8,6 +8,9 @@ TagManager:
   - GateFailure
   - OffPiste
   - Piste
+  - Gate
+  - Turret
+  - TargetDirection
   layers:
   - Default
   - TransparentFX

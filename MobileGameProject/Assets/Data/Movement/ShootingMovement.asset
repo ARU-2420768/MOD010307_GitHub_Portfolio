@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d076b339f6b20c4f83af85171274a02, type: 3}
   m_Name: ShootingMovement
   m_EditorClassIdentifier: Assembly-CSharp::MovementProfileData
-  maxSpeed: 5
-  acceleration: 7
+  maxSpeed: 8
+  acceleration: 0.5
   deceleration: 7
   useSmoothing: 1
   minX: -2.3
   maxX: 2.3
   minY: -4
   maxY: 4
+  rotateWithMovement: 0
+  maxRotationAngle: 0
+  rotationSpeed: 0

@@ -25,16 +25,16 @@ public class InputButtonController : MonoBehaviour, IPointerDownHandler, IPointe
         switch(buttonType)
         {
             case ButtonType.Up:
-                playerController.HandleDirectionalButtonClick(Vector2.up);
+                playerController.HandleDirectionalButtonClick(Vector2.up,this.gameObject);
                 break;
             case ButtonType.Down:
-                playerController.HandleDirectionalButtonClick(Vector2.down);
+                playerController.HandleDirectionalButtonClick(Vector2.down,this.gameObject);
                 break;
             case ButtonType.Left:
-                playerController.HandleDirectionalButtonClick(Vector2.left);
+                playerController.HandleDirectionalButtonClick(Vector2.left,this.gameObject);
                 break;
             case ButtonType.Right:
-                playerController.HandleDirectionalButtonClick(Vector2.right);
+                playerController.HandleDirectionalButtonClick(Vector2.right,this.gameObject);
                 break;
             case ButtonType.Action:
                 playerController.HandleActionButtonClick();

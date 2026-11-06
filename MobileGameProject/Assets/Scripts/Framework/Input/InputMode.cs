@@ -9,5 +9,6 @@ public enum InputMode
     TwoFingerDrag = 16, 
     TwoFingerTap = 32,
     DirectionalButtons = 64,
-    ButtonTap = 128
+    ButtonTap = 128,
+    PointerMovement = 256
 }

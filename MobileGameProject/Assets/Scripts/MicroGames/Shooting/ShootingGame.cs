@@ -3,7 +3,8 @@ using UnityEngine.UI;
 using TMPro;
 using MicrogameCourse.Framework;
 using MicrogameCourse.ProgressionFramework;
-using System;
+using UnityEngine.InputSystem;
+
 
 namespace MicrogameCourse.Microgames
 {
@@ -55,17 +56,41 @@ namespace MicrogameCourse.Microgames
 
         public override void OnDrag(Vector2 delta)
         {
-            Debug.Log("ShootingGame.OnDrag called")
+            Debug.Log("ShootingGame.OnDrag called");
         }
 
-        public override void OnDirectionalInput(Vector2 direction)
+        public override void OnDirectionalInput(Vector2 direction, GameObject button)
         {
-            Debug.Log("ShootingGame.OnDirectionalInput called")
+            Debug.Log(direction.ToString());
+            switch(button.tag)
+            {
+                case "Turret":
+                    MoveWindDirectionTargetAdjustment(direction, button);
+                    break;
+                case "TargetDirection":
+                    MoveTarget(direction, button);
+                    break;
+            }
         }
+
+        public void MoveTarget(Vector2 direction, GameObject button)
+        {
+            Debug.Log($"Move Player: {direction}");
+        }
+
+
+
+
+        public void MoveWindDirectionTargetAdjustment(Vector2 direction, GameObject button)
+        {
+            Debug.Log("Move Turret: ");
+        }
+
 
         public override void OnButtonTap()
         {
-            Debug.Log("ShootingGame.OnButtonTap called")
+            //switch()
+            Debug.Log("ShootingGame.OnButtonTap called");
         }
 
         public void ShotFired()

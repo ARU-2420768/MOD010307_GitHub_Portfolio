@@ -18,7 +18,7 @@ namespace MicrogameCourse.Framework
         {
         }
 
-        public virtual void OnDirectionalInput(Vector2 direction)
+        public virtual void OnDirectionalInput(Vector2 direction, GameObject button)
         {
         }
 

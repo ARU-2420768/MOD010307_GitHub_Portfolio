@@ -21,6 +21,7 @@ namespace MicrogameCourse.Framework
 
         private Vector3 originalPosition;
         private Vector3 currentDirection;
+        private Vector3 currentWindDirection;
         
 
         private void Awake()
@@ -28,6 +29,8 @@ namespace MicrogameCourse.Framework
             session = FindFirstObjectByType<MicrogameSession>();
             mainCamera = Camera.main;
             originalPosition = transform.position;
+            currentDirection = Vector3.zero;
+            currentWindDirection = Vector3.zero;
 
         }
 
@@ -35,21 +38,24 @@ namespace MicrogameCourse.Framework
         {
             if(session == null || !session.isTimerStarted) return;
 
+            // this method deals with button clicks so doesn't need the pointer values
+            HandleMovement();
+
+
             if(Pointer.current == null) return;
 
-            HandleMovement();
             HandleClick();
             HandleDoubleClick();
             HandleDrag();
             HandleDragAndRelease();
             HandleTwoFingerTap();
             HandleTwoFingerDrag();
-
+            HandlePointerMovement();
         }
 
-        private void HandleMovement()
+        private void HandlePointerMovement()
         {
-
+            if(!Supports(InputMode.PointerMovement)) return;
             
             MovementProfileData movement = gameConfigData.movementProfile;
 
@@ -68,9 +74,10 @@ namespace MicrogameCourse.Framework
             position.y = Mathf.Clamp(position.y, originalPosition.y + movement.minY, originalPosition.y + movement.maxY);
 
             transform.position = position;
-
-
         }
+
+
+
 
         private void HandleClick()
         {
@@ -111,21 +118,63 @@ namespace MicrogameCourse.Framework
         public void StopMovement()
         {
             currentDirection = Vector2.zero;
+            currentWindDirection = Vector2.zero;
             
         }
 
-        public void HandleDirectionalButtonClick(Vector2 direction)
+        private void HandleMovement()
+        {
+            if (currentDirection == Vector3.zero)
+            {
+                currentSpeed = 0;
+                return;
+            }
+
+            MovementProfileData movement = gameConfigData.movementProfile;
+
+
+            // Accelerate up to max speed
+            currentSpeed += movement.acceleration * Time.deltaTime;
+            currentSpeed = Mathf.Clamp(currentSpeed, 0, movement.maxSpeed);
+
+            Vector3 position = transform.position;
+
+            position += (Vector3)currentDirection * currentSpeed * Time.deltaTime;
+
+            position.x = Mathf.Clamp(
+                position.x,
+                originalPosition.x + movement.minX,
+                originalPosition.x + movement.maxX);
+
+            position.y = Mathf.Clamp(
+                position.y,
+                originalPosition.y + movement.minY,
+                originalPosition.y + movement.maxY);
+
+            transform.position = position;
+        }
+
+        public void HandleDirectionalButtonClick(Vector2 direction, GameObject button)
         {
             if(!Supports(InputMode.DirectionalButtons)) return;
-            currentDirection = direction;
-            game?.OnPointerPressed();
-            Debug.Log(direction);
+            switch(button.tag)
+            {
+                case "TargetDirection":
+                    currentDirection = direction;
+                    break;
+                case "Turret":
+                    currentWindDirection = direction;
+                    break;
+            }
+            //currentDirection = direction;
+            //game?.OnDirectionalInput(direction, button);
         }
         
         public void HandleActionButtonClick()
         {
             Debug.Log("Button Pressed");
             if(!Supports(InputMode.ButtonTap)) return;
+            //game?.OnButtonTap();
         }
 
         public void HandleSelectButtonClick()

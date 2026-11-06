@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4ffc8c1cdb17c479a71c672f4e3334, type: 3}
   m_Name: SlalomInput
   m_EditorClassIdentifier: Assembly-CSharp::InputProfileData
-  supportedInputs: 4
+  supportedInputs: 260
