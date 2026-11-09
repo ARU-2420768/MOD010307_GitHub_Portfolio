@@ -16,7 +16,7 @@ namespace MicrogameCourse.Microgames
         [Header("Game Configuration")]
         [SerializeField] private string gameName = "Shooting";
         [SerializeField] private GameConfigurationData gameConfig;
-        
+        [SerializeField] private WindManager windManager;
 
         [Header("Scene References")]
         [SerializeField] private RectTransform playArea;
@@ -78,7 +78,6 @@ namespace MicrogameCourse.Microgames
 
         public override void OnDirectionalInput(Vector2 direction, GameObject button)
         {
-            Debug.Log(direction.ToString());
             switch(button.tag)
             {
                 case "Turret":
@@ -92,14 +91,18 @@ namespace MicrogameCourse.Microgames
 
         public void MoveTarget(Vector2 direction, GameObject button)
         {
-            Debug.Log($"Move Player: {direction}");
+            Debug.Log($"Target Direction Move Player: {direction}");
         }
 
 
-
+        public override void OnStopMovement()
+        {
+            windManager.StopMovement();
+        }
 
         public void MoveWindDirectionTargetAdjustment(Vector2 direction, GameObject button)
         {
+            windManager.StartMovement(direction);
             Debug.Log("Move Turret: ");
         }
 

@@ -118,7 +118,7 @@ namespace MicrogameCourse.Framework
         public void StopMovement()
         {
             currentDirection = Vector2.zero;
-            currentWindDirection = Vector2.zero;
+            game?.OnStopMovement();
         }
 
         private void HandleMovement()
@@ -163,8 +163,8 @@ namespace MicrogameCourse.Framework
                     break;
                 case "Turret":
                     currentWindDirection = direction;
-                    //game?.OnDirectionalInput(direction, button);
-                    FindFirstObjectByType<WindManager>().MoveWindIndicator(direction);
+                    game?.OnDirectionalInput(direction, button);
+                    //FindFirstObjectByType<WindManager>().MoveWindIndicator(direction);
                     break;
             }
             //currentDirection = direction;

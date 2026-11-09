@@ -57,6 +57,15 @@ public class WindManager : MonoBehaviour
 
     }
 
+    public void StopMovement()
+    {
+        currentDirection = Vector3.zero;
+    }
+
+    public void StartMovement(Vector3 direction)
+    {
+        currentDirection = direction;
+    }
 
     private void HandleMovement()
     {
@@ -75,8 +84,6 @@ public class WindManager : MonoBehaviour
         Vector3 position = WindIndicatorAdjusted.transform.position;
 
         Bounds bounds = displayRenderer.bounds;
-
-        Debug.Log($"Bounds: {bounds}");
     
         position += (Vector3)currentDirection * currentSpeed * Time.deltaTime;
 

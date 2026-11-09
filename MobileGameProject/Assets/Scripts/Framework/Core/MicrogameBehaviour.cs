@@ -26,6 +26,10 @@ namespace MicrogameCourse.Framework
         {
         }
 
+        public virtual void OnStopMovement()
+        {            
+        }
+
         public virtual void Begin(MicrogameSession session)
         {
             Session = session;

@@ -1774,6 +1774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MicrogameCourse.Microgames.ShootingGame
   gameName: Shooting
   gameConfig: {fileID: 11400000, guid: f1b5b3a3fe805c14c8f2122653cfe0db, type: 2}
+  windManager: {fileID: 1155980579}
   playArea: {fileID: 1914787618}
   target: {fileID: 0}
   targetImage: {fileID: 0}
