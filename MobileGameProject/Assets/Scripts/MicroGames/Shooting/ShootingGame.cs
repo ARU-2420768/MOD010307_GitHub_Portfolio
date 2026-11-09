@@ -29,6 +29,7 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private GameObject HitIndicatorPlate;
         [SerializeField] private GameObject CrossHair;
         [SerializeField] private Camera TargetZoomCamera;
+        [SerializeField] private Material greenMaterial;
 
 
         private Camera mainCamera;
@@ -60,7 +61,7 @@ namespace MicrogameCourse.Microgames
             if (score > 0)
             {
                 //TargetZoomCamera.transform.localPosition = TargetZoomCameraOriginalPosition + Random.insideUnitSphere * 5f;
-                TargetZoomCamera.GetComponent<ZoomCameraManager>().Shake(0.1f, score);
+                //TargetZoomCamera.GetComponent<ZoomCameraManager>().Shake(0.1f, score);
             }
         }
 
@@ -144,15 +145,15 @@ namespace MicrogameCourse.Microgames
         {
             Ray ray = new Ray(TargetZoomCamera.transform.position, TargetZoomCamera.transform.forward);
             RaycastHit hit;
-Debug.Log(score);   
+
             if (Physics.Raycast(ray, out hit, 1000f))
             {
                 if (hit.collider.CompareTag("Target"))
                 {
                     Debug.Log("Hit Target - now cover target with green HitIndicatorPlate");
-                    GameObject shot = Instantiate(HitIndicatorPlate, hit.collider.transform);
+                    hit.collider.transform.localScale = hit.collider.transform.localScale * 1.1f;
+                    hit.collider.GetComponent<Renderer>().material = greenMaterial;
                     score++;
-                    Debug.Log(score);
                 }
             }
         }
