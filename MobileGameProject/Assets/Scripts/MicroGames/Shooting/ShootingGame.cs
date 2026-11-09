@@ -103,7 +103,6 @@ namespace MicrogameCourse.Microgames
         public void MoveWindDirectionTargetAdjustment(Vector2 direction, GameObject button)
         {
             windManager.StartMovement(direction);
-            Debug.Log("Move Turret: ");
         }
 
 

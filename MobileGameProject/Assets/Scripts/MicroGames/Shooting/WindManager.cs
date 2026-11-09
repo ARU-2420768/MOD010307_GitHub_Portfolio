@@ -8,16 +8,11 @@ public class WindManager : MonoBehaviour
     [SerializeField] private GameObject WindIndicatorActual;
     [SerializeField] private GameConfigurationData gameConfigData;
 
+
     private Vector3 currentDirection;
-    private Vector3 originalPosition;
 
-    private float currentSpeed = 5f;
-
-
-    private void Awake()
-    {
-       originalPosition = WindIndicatorAdjusted.transform.position; 
-    }
+    private float currentSpeed;
+    private bool isScopeCalibrated = false;
 
     private void Start()
     {
@@ -33,6 +28,9 @@ public class WindManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if(isScopeCalibrated)
+            return;
+
         HandleMovement();
     }
 
@@ -91,6 +89,17 @@ public class WindManager : MonoBehaviour
         position.y = Mathf.Clamp(position.y, bounds.min.y, bounds.max.y);
 
         WindIndicatorAdjusted.transform.position = position;
+
+        CheckForCalibration();
+
+    }
+
+    private void CheckForCalibration()
+    {
+        float distance = Vector2.Distance(WindIndicatorAdjusted.transform.localPosition, WindIndicatorActual.transform.localPosition);
+        if(distance <= 0.005f)
+            isScopeCalibrated = true;
+
     }
 
 
