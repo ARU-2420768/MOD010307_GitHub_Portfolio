@@ -163,6 +163,8 @@ namespace MicrogameCourse.Framework
                     break;
                 case "Turret":
                     currentWindDirection = direction;
+                    //game?.OnDirectionalInput(direction, button);
+                    FindFirstObjectByType<WindManager>().MoveWindIndicator(direction);
                     break;
             }
             //currentDirection = direction;
