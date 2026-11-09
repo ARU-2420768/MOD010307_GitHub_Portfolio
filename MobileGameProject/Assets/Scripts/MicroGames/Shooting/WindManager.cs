@@ -4,8 +4,8 @@ public class WindManager : MonoBehaviour
 {
 
     [SerializeField] private Renderer displayRenderer;
-    [SerializeField] private GameObject WindIndicatorAdjusted;
-    [SerializeField] private GameObject WindIndicatorActual;
+    [SerializeField] private GameObject windIndicatorAdjusted;
+    [SerializeField] private GameObject windIndicatorActual;
     [SerializeField] private GameConfigurationData gameConfigData;
 
 
@@ -13,15 +13,19 @@ public class WindManager : MonoBehaviour
 
     private float currentSpeed;
     private bool isScopeCalibrated = false;
+    public bool IsScopeCalibrated => isScopeCalibrated;
+    public GameObject WindIndicatorAdjusted => windIndicatorAdjusted;
+    public GameObject WindIndicatorActual => windIndicatorActual;
+
 
     private void Start()
     {
-        Vector3 position = WindIndicatorActual.transform.localPosition;
+        Vector3 position = windIndicatorActual.transform.localPosition;
 
         position.x = Random.Range(-0.5f, 0.5f);
         position.y = Random.Range(-0.5f, 0.5f);
 
-        WindIndicatorActual.transform.localPosition = position;
+        windIndicatorActual.transform.localPosition = position;
 
     }
 
@@ -39,13 +43,13 @@ public class WindManager : MonoBehaviour
 
         Debug.Log($"MoveWindIndicator:  {direction}");
 
-        Vector3 position = WindIndicatorAdjusted.transform.localPosition;
+        Vector3 position = windIndicatorAdjusted.transform.localPosition;
         position += (Vector3)direction * currentSpeed * Time.deltaTime;
 
         // clamp sphere within it's parents boundaries
         position.x = Mathf.Clamp(position.x, -0.45f, 0.45f);
         position.y = Mathf.Clamp(position.y, -0.45f, 0.45f);
-        WindIndicatorAdjusted.transform.localPosition = position;
+        windIndicatorAdjusted.transform.localPosition = position;
     }
 
     public void MoveWindIndicator(Vector2 direction)
@@ -79,7 +83,7 @@ public class WindManager : MonoBehaviour
         currentSpeed += movement.acceleration * Time.deltaTime;
         currentSpeed = Mathf.Clamp(currentSpeed, 0, movement.maxSpeed);
 
-        Vector3 position = WindIndicatorAdjusted.transform.position;
+        Vector3 position = windIndicatorAdjusted.transform.position;
 
         Bounds bounds = displayRenderer.bounds;
     
@@ -88,7 +92,7 @@ public class WindManager : MonoBehaviour
         position.x = Mathf.Clamp(position.x, bounds.min.x, bounds.max.x);
         position.y = Mathf.Clamp(position.y, bounds.min.y, bounds.max.y);
 
-        WindIndicatorAdjusted.transform.position = position;
+        windIndicatorAdjusted.transform.position = position;
 
         CheckForCalibration();
 
@@ -96,7 +100,7 @@ public class WindManager : MonoBehaviour
 
     private void CheckForCalibration()
     {
-        float distance = Vector2.Distance(WindIndicatorAdjusted.transform.localPosition, WindIndicatorActual.transform.localPosition);
+        float distance = Vector2.Distance(windIndicatorAdjusted.transform.localPosition, windIndicatorActual.transform.localPosition);
         if(distance <= 0.005f)
             isScopeCalibrated = true;
 

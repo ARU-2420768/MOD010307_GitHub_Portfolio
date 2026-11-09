@@ -122,8 +122,35 @@ namespace MicrogameCourse.Microgames
 
         public void ShotFiredInitiated(GameObject button)
         {
+            Vector2 offset = Vector2.zero;
             GameObject shot = Instantiate(bulletHole, playArea3D.transform);
             shot.transform.position = CrossHair.transform.position + new Vector3(0, 0, shot.transform.position.z);
+            // Add shot offset if scope isn't calibrated
+            if(!windManager.IsScopeCalibrated)
+            {
+                offset = (Vector2)windManager.WindIndicatorActual.transform.localPosition - (Vector2)windManager.WindIndicatorAdjusted.transform.localPosition;
+                shot.transform.position = CrossHair.transform.position + new Vector3(0, 0, shot.transform.position.z) + (Vector3)offset;
+            }
+
+            Vector3 rayDirection =
+                TargetZoomCamera.transform.forward +
+                TargetZoomCamera.transform.right * offset.x +
+                TargetZoomCamera.transform.up * offset.y;
+
+            Ray ray = new Ray(TargetZoomCamera.transform.position, rayDirection.normalized);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 1000f))
+            {
+                if (hit.collider.CompareTag("Target"))
+                {
+                    Debug.Log("Hit Target - now cover target with green HitIndicatorPlate");
+                    hit.collider.transform.localScale = hit.collider.transform.localScale * 1.1f;
+                    hit.collider.GetComponent<Renderer>().material = greenMaterial;
+                    score++;
+                }
+            }
+
             shotsFired++;
             ShotFired();
         }
@@ -138,7 +165,7 @@ namespace MicrogameCourse.Microgames
         {
             Debug.Log($"Shots Fired: {shotsFired} / {maxShotsAllowed}");
             ShowFeedback($"Shots Fired: {shotsFired} / {maxShotsAllowed}", Color.green);
-            ShotHitTarget();
+            //ShotHitTarget();
             UpdateProgress();
             CheckForCompletion();
         }

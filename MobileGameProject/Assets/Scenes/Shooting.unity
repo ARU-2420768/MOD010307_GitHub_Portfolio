@@ -2455,7 +2455,7 @@ Transform:
   m_GameObject: {fileID: 801191055}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.049999997}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3327,8 +3327,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: MicrogameCourse::WindManager
   displayRenderer: {fileID: 1812707239}
-  WindIndicatorAdjusted: {fileID: 801191055}
-  WindIndicatorActual: {fileID: 1737384510}
+  windIndicatorAdjusted: {fileID: 801191055}
+  windIndicatorActual: {fileID: 1737384510}
   gameConfigData: {fileID: 11400000, guid: f1b5b3a3fe805c14c8f2122653cfe0db, type: 2}
 --- !u!1 &1168905551
 GameObject:
@@ -5909,7 +5909,7 @@ Transform:
   m_GameObject: {fileID: 1737384510}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.049999997}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6453,8 +6453,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1754733164}
-  - {fileID: 801191056}
   - {fileID: 1737384511}
+  - {fileID: 801191056}
   m_Father: {fileID: 1410770707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1812707238
