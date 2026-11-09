@@ -21,7 +21,6 @@ public class InputButtonController : MonoBehaviour, IPointerDownHandler, IPointe
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log($"{buttonType} pressed");
         switch(buttonType)
         {
             case ButtonType.Up:
@@ -37,7 +36,8 @@ public class InputButtonController : MonoBehaviour, IPointerDownHandler, IPointe
                 playerController.HandleDirectionalButtonClick(Vector2.right,this.gameObject);
                 break;
             case ButtonType.Action:
-                playerController.HandleActionButtonClick();
+                playerController.HandleActionButtonClick(this.gameObject);
+
                 break;
             case ButtonType.Select:
                 playerController.HandleSelectButtonClick();

@@ -22,7 +22,7 @@ namespace MicrogameCourse.Framework
         {
         }
 
-        public virtual void OnButtonTap()
+        public virtual void OnButtonTap(GameObject button)
         {
         }
 

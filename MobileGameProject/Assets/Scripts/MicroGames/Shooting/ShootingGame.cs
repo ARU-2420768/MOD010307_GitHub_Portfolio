@@ -25,9 +25,16 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private TextMeshProUGUI progressText;
         [SerializeField] private TextMeshProUGUI feedbackText;
         [SerializeField] private GameObject playArea3D;
+        [SerializeField] private GameObject bulletHole;
+        [SerializeField] private GameObject HitIndicatorPlate;
+        [SerializeField] private GameObject CrossHair;
+        [SerializeField] private Camera TargetZoomCamera;
 
 
         private Camera mainCamera;
+        private Vector3 TargetZoomCameraOriginalPosition;
+        public int shotsFired = 0;
+        public int maxShotsAllowed = 5;
         public int score = 0;
         private MedalThresholdsData thresholds;
 
@@ -35,7 +42,11 @@ namespace MicrogameCourse.Microgames
         {
             mainCamera = Camera.main;
             thresholds = gameConfig.medalThresholds;
-            score = 5;
+        }
+
+        private void Start()
+        {
+            TargetZoomCameraOriginalPosition = TargetZoomCamera.transform.localPosition;
         }
 
         public override void Begin(MicrogameSession session)
@@ -46,11 +57,16 @@ namespace MicrogameCourse.Microgames
         private void Update()
         {
             if (!IsRunning) return;
+            if (score > 0)
+            {
+                //TargetZoomCamera.transform.localPosition = TargetZoomCameraOriginalPosition + Random.insideUnitSphere * 5f;
+                TargetZoomCamera.GetComponent<ZoomCameraManager>().Shake(0.1f, score);
+            }
         }
 
         public override void OnPointerPressed()
         {
-            ShotFired();
+            //ShotFired();
         }
 
 
@@ -87,20 +103,60 @@ namespace MicrogameCourse.Microgames
         }
 
 
-        public override void OnButtonTap()
+        public override void OnButtonTap(GameObject button)
         {
-            //switch()
-            Debug.Log("ShootingGame.OnButtonTap called");
+            switch(button.tag)
+            {
+                case "Shoot":
+                    ShotFiredInitiated(button);
+                    break;
+                case "Action":
+                    ActionButtonInitiated(button);
+                    break;
+            }
+        }
+
+
+        public void ShotFiredInitiated(GameObject button)
+        {
+            GameObject shot = Instantiate(bulletHole, playArea3D.transform);
+            shot.transform.position = CrossHair.transform.position + new Vector3(0, 0, shot.transform.position.z);
+            shotsFired++;
+            ShotFired();
+        }
+
+        public void ActionButtonInitiated(GameObject button)
+        {
+            Debug.Log("ShootingGame.OnButtonTap called - ActionButtonInitiated");
+
         }
 
         public void ShotFired()
         {
-            Debug.Log("Shot Fired");
-            ShowFeedback("Shots Completed", Color.green);
+            Debug.Log($"Shots Fired: {shotsFired} / {maxShotsAllowed}");
+            ShowFeedback($"Shots Fired: {shotsFired} / {maxShotsAllowed}", Color.green);
+            ShotHitTarget();
             UpdateProgress();
             CheckForCompletion();
-            score++;
         }
+
+        public void ShotHitTarget()
+        {
+            Ray ray = new Ray(TargetZoomCamera.transform.position, TargetZoomCamera.transform.forward);
+            RaycastHit hit;
+Debug.Log(score);   
+            if (Physics.Raycast(ray, out hit, 1000f))
+            {
+                if (hit.collider.CompareTag("Target"))
+                {
+                    Debug.Log("Hit Target - now cover target with green HitIndicatorPlate");
+                    GameObject shot = Instantiate(HitIndicatorPlate, hit.collider.transform);
+                    score++;
+                    Debug.Log(score);
+                }
+            }
+        }
+
 
         private MedalType CalculateMedal()
         {
@@ -116,9 +172,10 @@ namespace MicrogameCourse.Microgames
 
         private void CheckForCompletion()
         {
-            if (score > gameConfig.medalThresholds.gold) 
+            if (shotsFired >= maxShotsAllowed) 
             {
                 MedalType medal = CalculateMedal();
+                Debug.Log($"Medal: {medal}");
                 MedalManager.Instance.AwardMedal(gameName, medal);
                 Win();
             }

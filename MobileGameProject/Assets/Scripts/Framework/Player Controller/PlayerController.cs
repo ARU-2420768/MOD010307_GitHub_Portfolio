@@ -119,7 +119,6 @@ namespace MicrogameCourse.Framework
         {
             currentDirection = Vector2.zero;
             currentWindDirection = Vector2.zero;
-            
         }
 
         private void HandleMovement()
@@ -170,11 +169,10 @@ namespace MicrogameCourse.Framework
             //game?.OnDirectionalInput(direction, button);
         }
         
-        public void HandleActionButtonClick()
+        public void HandleActionButtonClick(GameObject button)
         {
-            Debug.Log("Button Pressed");
             if(!Supports(InputMode.ButtonTap)) return;
-            //game?.OnButtonTap();
+            game?.OnButtonTap(button);
         }
 
         public void HandleSelectButtonClick()

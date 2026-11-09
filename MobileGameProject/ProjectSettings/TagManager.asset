@@ -11,6 +11,8 @@ TagManager:
   - Gate
   - Turret
   - TargetDirection
+  - Shoot
+  - Target
   layers:
   - Default
   - TransparentFX
