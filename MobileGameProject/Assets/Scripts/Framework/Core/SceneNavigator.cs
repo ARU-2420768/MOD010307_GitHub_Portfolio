@@ -22,7 +22,6 @@ namespace MicrogameCourse.Framework
 
         public void OpenIceSkatingGame()
         {
-            Debug.Log($"Attempting to load: {IceSkatingScene}");
             SceneManager.LoadScene(IceSkatingScene);                
         }
         public void OpenSlalomGame()

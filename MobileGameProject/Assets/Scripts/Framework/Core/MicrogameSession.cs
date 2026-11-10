@@ -51,6 +51,7 @@ namespace MicrogameCourse.Framework
             playArea.SetActive(true);
             if(playArea3D!=null)
                 playArea3D.SetActive(true);
+
             resultPanel.SetActive(false);
             
             StartTimer();
