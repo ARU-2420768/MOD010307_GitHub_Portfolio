@@ -16,16 +16,7 @@ namespace MicrogameCourse.Microgames
             Debug.Log("Stone Manager Awake");
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
-        }
 
-        private void OnMouseDown()
-        {
-            Debug.Log("Stone clicked");
-        }
 
         public void Launch(Vector2 force)
         {
