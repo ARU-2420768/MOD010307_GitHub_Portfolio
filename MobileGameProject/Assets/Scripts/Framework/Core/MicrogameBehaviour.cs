@@ -14,7 +14,19 @@ namespace MicrogameCourse.Framework
         {
         }
 
-        public virtual void OnDrag(Vector2 delta)
+        public virtual void OnTwoFingerDrag(Vector2 position)
+        {
+        }
+
+        public virtual void OnTwoFingerDragRelease(Vector2 position)
+        {
+        }
+
+
+        public virtual void OnDrag(Vector2 position)
+        {
+        }
+        public virtual void OnDragRelease(Vector2 position)
         {
         }
 

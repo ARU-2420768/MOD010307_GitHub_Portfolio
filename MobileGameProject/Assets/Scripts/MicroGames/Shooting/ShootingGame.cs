@@ -70,12 +70,6 @@ namespace MicrogameCourse.Microgames
             //ShotFired();
         }
 
-
-        public override void OnDrag(Vector2 delta)
-        {
-            Debug.Log("ShootingGame.OnDrag called");
-        }
-
         public override void OnDirectionalInput(Vector2 direction, GameObject button)
         {
             switch(button.tag)

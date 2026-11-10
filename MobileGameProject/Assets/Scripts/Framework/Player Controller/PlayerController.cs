@@ -41,7 +41,6 @@ namespace MicrogameCourse.Framework
             // this method deals with button clicks so doesn't need the pointer values
             HandleMovement();
 
-
             if(Pointer.current == null) return;
 
             HandleClick();
@@ -78,9 +77,9 @@ namespace MicrogameCourse.Framework
 
 
 
-
         private void HandleClick()
         {
+
             if(!Supports(InputMode.Click)) return;
 
             if (Pointer.current.press.wasPressedThisFrame)
@@ -98,11 +97,21 @@ namespace MicrogameCourse.Framework
         private void HandleDrag()
         {
             if(!Supports(InputMode.Drag)) return;
+
+            Vector2 screenPosition = Pointer.current.position.ReadValue();
+            game?.OnDrag(screenPosition);
         }
+
 
         private void HandleDragAndRelease()
         {
             if(!Supports(InputMode.DragRelease)) return;
+
+            if(Pointer.current.press.wasReleasedThisFrame)
+            {
+                Vector2 screenPosition = Pointer.current.position.ReadValue();
+                game?.OnDragRelease(screenPosition);
+            }
         }
 
         private void HandleTwoFingerTap()
@@ -113,6 +122,8 @@ namespace MicrogameCourse.Framework
         private void HandleTwoFingerDrag()
         {
             if(!Supports(InputMode.TwoFingerDrag)) return;
+            Vector2 screenPosition = Pointer.current.position.ReadValue();
+            game?.OnTwoFingerDrag(screenPosition);
         }
 
         public void StopMovement()

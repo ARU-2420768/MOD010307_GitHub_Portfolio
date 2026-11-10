@@ -48,7 +48,8 @@ namespace MicrogameCourse.Framework
             }
             remainingSeconds = durationSeconds;
             readyPanel.SetActive(false);
-            playArea.SetActive(true);
+            if(playArea!=null)
+                playArea.SetActive(true);
             if(playArea3D!=null)
                 playArea3D.SetActive(true);
 

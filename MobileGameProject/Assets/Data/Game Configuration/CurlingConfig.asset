@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameConfigurationData
   gameName: Curling
   description: Double Drag to aim and release
-  inputProfile: {fileID: 11400000, guid: 9d8d9b6636c3c99418c57960fffa02cd, type: 2}
-  movementProfile: {fileID: 11400000, guid: e995bd724dcd4954ab3601256177720f, type: 2}
-  medalThresholds: {fileID: 11400000, guid: f9c13414ad2dc424e94b7b3b8864228b, type: 2}
+  inputProfile: {fileID: 11400000, guid: 060534ab0b633af40a1f587cfea22d53, type: 2}
+  movementProfile: {fileID: 11400000, guid: 5233c74bb01f4ec4797223a4d29ce7fa, type: 2}
+  medalThresholds: {fileID: 11400000, guid: 9d3e1560d5956a844b8e82113bae3545, type: 2}
   gameFeedbackData: {fileID: 11400000, guid: c9a1bb2f1a7f69246b6f2602ad5b087c, type: 2}
