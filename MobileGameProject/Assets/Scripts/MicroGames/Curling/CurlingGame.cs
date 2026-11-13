@@ -121,7 +121,7 @@ public void StartSimulation()
                     new Vector3(0, 4, 0));
 
             Debug.Log($"Predicted = {predicted}");
-            stone.Launch(new Vector2(0, 4));
+            stone.Launch(new Vector2(0, 10));
         }
 
         // Update is called once per frame
