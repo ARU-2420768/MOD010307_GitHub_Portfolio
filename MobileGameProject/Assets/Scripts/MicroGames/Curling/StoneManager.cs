@@ -6,14 +6,13 @@ namespace MicrogameCourse.Microgames
 
     public class StoneManager : MonoBehaviour
     {
-
         public Rigidbody rb;
-
-        public bool IsMoving => rb.linearVelocity.magnitude > 0.05f;
+        public bool IsMoving => rb.linearVelocity.magnitude > 0.3f;
         public bool IsAbleToPlay = true;
         public event Action OnStoneStopped;
 
-        private bool wasMoving = false;
+        private bool hasBeenLaunched = false;
+        private bool hasStartedMoving = false;
 
         private void Awake()
         {
@@ -22,25 +21,39 @@ namespace MicrogameCourse.Microgames
 
         private void Update()
         {
-            bool isCurrentlyMoving = IsMoving;
-            if(wasMoving && !isCurrentlyMoving)
+            if (!hasBeenLaunched)
+                return;
+
+            if (!hasStartedMoving)
             {
-                Debug.Log("Stone Stopped");
+                // Wait until the stone actually starts moving
+                if (IsMoving)
+                {
+                    hasStartedMoving = true;
+                }
+                return;
+            }
+
+            // Now we know it has moved — wait for it to stop
+            if (!IsMoving)
+            {
+                hasBeenLaunched = false;
+                hasStartedMoving = false;
+                Debug.Log($"{name} Stopped");
                 OnStoneStopped?.Invoke();
             }
-            wasMoving = isCurrentlyMoving;
         }
 
         public void Launch(Vector2 force)
         {
-            rb.linearVelocity = Vector2.zero;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.WakeUp();
 
-            rb.AddForce(
-                force,
-                ForceMode.Impulse);
+            rb.AddForce(force, ForceMode.Impulse);
 
-            wasMoving = true;
+            hasBeenLaunched = true;
+            hasStartedMoving = false;   // reset the flag
         }
-
     }
 }
