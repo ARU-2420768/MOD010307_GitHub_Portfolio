@@ -8,6 +8,7 @@ namespace MicrogameCourse.Microgames
     {
         public Rigidbody rb;
         [SerializeField] private float stopThreshold = 0.3f;
+        public int teamId;
 
         public bool IsMoving => rb.linearVelocity.magnitude > stopThreshold;
         public bool IsAbleToPlay = true;
@@ -64,9 +65,9 @@ namespace MicrogameCourse.Microgames
 
         public void Launch(Vector2 force)
         {
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            rb.WakeUp();
+            //rb.linearVelocity = Vector3.zero;
+            //rb.angularVelocity = Vector3.zero;
+            //rb.WakeUp();
 
             rb.AddForce(force, ForceMode.Impulse);
 

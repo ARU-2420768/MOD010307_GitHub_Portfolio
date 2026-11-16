@@ -4,6 +4,7 @@ using MicrogameCourse.Framework;
 using MicrogameCourse.ProgressionFramework;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using System;
 
 namespace MicrogameCourse.Microgames
 {
@@ -26,6 +27,10 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private LineRenderer aimLine;
         [SerializeField] private Rigidbody ghostStonePrefab;
         [SerializeField] private GameObject predictionMarker;
+        [SerializeField] private CalculateScore calculateScore;
+        [SerializeField] private TextMeshProUGUI score;
+        [SerializeField] private TextMeshProUGUI player;
+
 
         [SerializeField] private float predictionMaxTime = 20f;
         [SerializeField] private float predictionStopVelocity = 0.05f;
@@ -33,9 +38,11 @@ namespace MicrogameCourse.Microgames
 
         [SerializeField] Vector3 stoneStartPosition;
 
-        private readonly List<StoneManager> stones = new();
+        [SerializeField] private List<StoneManager> stones = new();
 
-        private Rigidbody ghost;
+
+        private int playerTurn;
+
         private SimulationMode previousMode;
 
         private bool isDragging;
@@ -55,6 +62,8 @@ namespace MicrogameCourse.Microgames
             thresholds = gameConfig.medalThresholds;
             // centerTarget is set to world position of white target
             centerTarget = whiteCircle.transform.position;
+            if (calculateScore == null)
+                calculateScore = GetComponent<CalculateScore>();
         }
 
         public override void Begin(MicrogameSession session)
@@ -75,27 +84,51 @@ namespace MicrogameCourse.Microgames
             stone.OnStoneStopped += HandleStoneStopped;
             ghostStone.OnStoneStopped += HandleStoneStopped;
 
-
+            playerTurn = UnityEngine.Random.Range(1, 3);
+            UpdatePlayerTurn();
 
         }
+
 
         private void HandleStoneStopped()
         {
             Debug.Log($"Ghost Stone Final Location: {ghostStone.transform.localPosition}");
             Debug.Log($"Main Stone Final Location: {stone.transform.localPosition}");
             stone.IsAbleToPlay = false;
+            UpdateScoresAndTurn();
+        }
+
+        public void UpdatePlayerTurn()
+        {
+            player.text = $"Turn: Player {playerTurn}";
+        }
+
+        public void UpdateScoresAndTurn()
+        {
+            score.text = $"Score Player {playerTurn} - {CalculateScore()}";
+            playerTurn = (playerTurn % 2) + 1;
+            UpdatePlayerTurn();
+        }
+
+        public int CalculateScore()
+        {
+            List<StoneManager> sortedStones = calculateScore.SortStones(stones);
+
+            Debug.Log($"Winning Team ID: {calculateScore.WinningTeam(sortedStones[0])}");
+            Debug.Log($"Score: {calculateScore.Calculate(sortedStones)}");
+            return calculateScore.Calculate(sortedStones);
 
         }
 
         public void StartSimulation()
         {
             //ghostStone.transform.localPosition = stoneStartPosition;
-            Vector3 vectorForce = new Vector3(0f, 3f, 0f);
+            Vector3 vectorForce = new Vector3(0f, 4f, 0f);
             
             Vector3 predictedEnd = PredictEndPosition(vectorForce);
             Debug.Log($"Predicted End Local Pos: {predictedEnd}");
 
-            stone.Launch(vectorForce);
+            //stone.Launch(vectorForce);
             //ghostStone.Launch(vectorForce);
 
         }
@@ -107,7 +140,7 @@ namespace MicrogameCourse.Microgames
             previousMode = Physics.simulationMode;
             Physics.simulationMode = SimulationMode.Script;
 
-            // save isKenematic of main stone to true - store old value
+            // save isKinematic of main stone to true - store old value
             // this is to stop the stone moving while we are simulating physics
             bool wasKinematic = stone.rb.isKinematic;
             stone.rb.isKinematic = true;
@@ -166,13 +199,13 @@ namespace MicrogameCourse.Microgames
             if(!hasGameStarted)
                 return;
 
-            Debug.Log("OnPointerPressed");
+            //Debug.Log("OnPointerPressed");
             if(stone.IsMoving)
                 return;
-            Debug.Log("stone.IsMoving");
+            //Debug.Log("stone.IsMoving");
             if(stone.IsAbleToPlay)
                 return;
-            Debug.Log("stone.IsAbleToPlay");
+            //Debug.Log("stone.IsAbleToPlay");
 
 
 
@@ -201,10 +234,10 @@ namespace MicrogameCourse.Microgames
 
             Vector3 start = stone.transform.position;
 
-            //Vector3 predictedEnd = PredictEndPosition(start,impulse);
+            //Vector3 predictedEnd = PredictEndPosition(impulse);
 
             //predictionMarker.SetActive(true);
-            //predictionMarker.transform.position = predictedEnd;
+            //predictionMarker.transform.localPosition = predictedEnd;
 
             //aimLine.positionCount = 2;
             //aimLine.SetPosition(0, start);
@@ -222,10 +255,20 @@ namespace MicrogameCourse.Microgames
 
             Vector2 dragVector = dragStartPosition - dragFinishPosition;
 
+            float maxDrag = 5f;
+            float currentMagnitude = dragVector.magnitude;
+            if (currentMagnitude > 0f)
+                {
+                    float effectiveMagnitude = maxDrag * (1f - Mathf.Exp(-currentMagnitude / maxDrag));
+
+                    // Apply the smoothed magnitude back to the original drag direction
+                    //dragVector = dragVector.normalized * effectiveMagnitude;
+                }
+
             // Must match OnDrag
             Vector2 launchForce2D = dragVector * 0.05f;
             //stone.Launch(new Vector2(0, 4));
-            //stone.Launch(launchForce2D);
+            stone.Launch(launchForce2D);
         }
 
         public override void OnTwoFingerDrag(Vector2 position)

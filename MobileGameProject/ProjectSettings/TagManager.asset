@@ -13,6 +13,7 @@ TagManager:
   - TargetDirection
   - Shoot
   - Target
+  - Stone
   layers:
   - Default
   - TransparentFX
