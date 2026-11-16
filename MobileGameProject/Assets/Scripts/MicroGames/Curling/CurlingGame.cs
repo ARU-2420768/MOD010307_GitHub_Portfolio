@@ -21,6 +21,7 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private TextMeshProUGUI progressText;
         [SerializeField] private TextMeshProUGUI feedbackText;
         [SerializeField] private StoneManager stone;
+        [SerializeField] private StoneManager ghostStone;
         [SerializeField] private GameObject whiteCircle;
         [SerializeField] private LineRenderer aimLine;
         [SerializeField] private Rigidbody ghostStonePrefab;
@@ -29,6 +30,8 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private float predictionMaxTime = 20f;
         [SerializeField] private float predictionStopVelocity = 0.05f;
         [SerializeField] private int predictionMaxSteps = 2000;
+
+        [SerializeField] Vector3 stoneStartPosition;
 
         private readonly List<StoneManager> stones = new();
 
@@ -52,7 +55,6 @@ namespace MicrogameCourse.Microgames
             thresholds = gameConfig.medalThresholds;
             // centerTarget is set to world position of white target
             centerTarget = whiteCircle.transform.position;
-
         }
 
         public override void Begin(MicrogameSession session)
@@ -71,58 +73,84 @@ namespace MicrogameCourse.Microgames
             stones.Add(stone);
 
             stone.OnStoneStopped += HandleStoneStopped;
+            ghostStone.OnStoneStopped += HandleStoneStopped;
 
 
 
         }
 
-public void StartSimulation()
-{
-    // Reset real stone
-    stone.rb.linearVelocity = Vector3.zero;
-    stone.rb.angularVelocity = Vector3.zero;
-    stone.rb.Sleep();
-
-    // Create ghost only once
-    if (ghost == null)
-    {
-        ghost = Instantiate(ghostStonePrefab, playArea3D.transform);
-        ghost.gameObject.name = "PredictionGhost";
-        // Optional but recommended: remove StoneManager from ghost at runtime
-        var sm = ghost.GetComponent<StoneManager>();
-        if (sm != null) Destroy(sm);
-    }
-
-    ghost.gameObject.SetActive(true);
-
-    Vector3 predicted = PredictEndPosition(
-        stone.transform.position,
-        new Vector3(0f, 3f, 0f)
-    );
-
-    Debug.Log($"Predicted = {predicted}");
-
-    // Launch the real stone so we can compare
-    stone.Launch(new Vector2(0f, 3f));
-}
-
-        public void StartSimulation1()
+        private void HandleStoneStopped()
         {
-            stone.rb.linearVelocity = Vector3.zero;
-            stone.rb.angularVelocity = Vector3.zero;
-            stone.rb.Sleep(); // puts it into sleep mode if supported by physics settings
+            Debug.Log($"Ghost Stone Final Location: {ghostStone.transform.localPosition}");
+            Debug.Log($"Main Stone Final Location: {stone.transform.localPosition}");
+            stone.IsAbleToPlay = false;
 
-            ghost = Instantiate(ghostStonePrefab, playArea3D.transform);
-            ghost.gameObject.SetActive(false);
-
-            Vector3 predicted =
-                PredictEndPosition(
-                    stone.transform.position,
-                    new Vector3(0, 4, 0));
-
-            Debug.Log($"Predicted = {predicted}");
-            stone.Launch(new Vector2(0, 10));
         }
+
+        public void StartSimulation()
+        {
+            //ghostStone.transform.localPosition = stoneStartPosition;
+            Vector3 vectorForce = new Vector3(0f, 3f, 0f);
+            
+            Vector3 predictedEnd = PredictEndPosition(vectorForce);
+            Debug.Log($"Predicted End Local Pos: {predictedEnd}");
+
+            stone.Launch(vectorForce);
+            //ghostStone.Launch(vectorForce);
+
+        }
+
+
+        private Vector3 PredictEndPosition(Vector3 impulse)
+        {
+            // Control unity physics
+            previousMode = Physics.simulationMode;
+            Physics.simulationMode = SimulationMode.Script;
+
+            // save isKenematic of main stone to true - store old value
+            // this is to stop the stone moving while we are simulating physics
+            bool wasKinematic = stone.rb.isKinematic;
+            stone.rb.isKinematic = true;
+
+            // move ghost stone to start position
+            ghostStone.rb.isKinematic = false;
+            ghostStone.rb.linearVelocity = Vector3.zero;
+            ghostStone.rb.angularVelocity = Vector3.zero;
+            ghostStone.transform.localPosition = stoneStartPosition;
+            Physics.SyncTransforms();
+
+            // Apply impulse and step once so linearVelocity is > 0 before entering the while loop
+            ghostStone.rb.AddForce(impulse, ForceMode.Impulse);
+            Physics.Simulate(Time.fixedDeltaTime);
+
+            float t = 0f;
+            int steps = 0;
+            float stopThreshold = 0.3f;
+
+
+            //  loop through physics simulation until max time, max steps and the stopthreshold has been reached
+            while(t < predictionMaxTime && steps < predictionMaxSteps && ghostStone.rb.linearVelocity.magnitude > stopThreshold)
+            {
+                Physics.Simulate(Time.fixedDeltaTime);
+                t += Time.fixedDeltaTime;
+                steps ++;
+            }
+
+            Vector3 end = ghostStone.transform.localPosition;
+            Debug.Log($"Ghost Position final rest: {end} (after {steps} steps)");
+
+            ghostStone.rb.linearVelocity = Vector3.zero;
+            ghostStone.rb.angularVelocity = Vector3.zero;
+            ghostStone.rb.isKinematic = true;
+
+            stone.rb.isKinematic = wasKinematic;
+
+            // return physics control to unity
+            Physics.simulationMode = previousMode;
+            return end;
+        }
+
+
 
         // Update is called once per frame
         void Update()
@@ -131,11 +159,7 @@ public void StartSimulation()
             
         }
 
-        private void HandleStoneStopped()
-        {
-            Debug.Log($"Actual = {stone.transform.position}");
-            stone.IsAbleToPlay = false;
-        }
+
 
         public override void OnPointerPressed()
         {
@@ -202,75 +226,6 @@ public void StartSimulation()
             Vector2 launchForce2D = dragVector * 0.05f;
             //stone.Launch(new Vector2(0, 4));
             //stone.Launch(launchForce2D);
-        }
-
-        private Vector3 PredictEndPosition(Vector3 startPosition, Vector3 impulse)
-        {
-            previousMode = Physics.simulationMode;
-            Physics.simulationMode = SimulationMode.Script;
-
-            // Freeze real stone during prediction
-            bool wasKinematic = stone.rb.isKinematic;
-            stone.rb.isKinematic = true;
-
-            // Prepare ghost
-            ghost.isKinematic = true;
-            ghost.position = startPosition;
-            ghost.rotation = stone.transform.rotation;
-            Physics.SyncTransforms();
-
-            ghost.isKinematic = false;
-            ghost.linearVelocity = Vector3.zero;
-            ghost.angularVelocity = Vector3.zero;
-            ghost.WakeUp();
-
-            // mass is 1 → setting velocity = Impulse
-            ghost.linearVelocity = impulse;
-
-            Debug.Log($"Ghost velocity after setup: {ghost.linearVelocity}");
-
-            float t = 0f;
-            int steps = 0;
-            const float stopThreshold = 0.3f; // same as StoneManager
-
-            while (t < predictionMaxTime &&
-                steps < predictionMaxSteps &&
-                ghost.linearVelocity.magnitude > stopThreshold)
-            {
-                Physics.Simulate(Time.fixedDeltaTime);
-                t += Time.fixedDeltaTime;
-                steps++;
-            }
-
-            Vector3 end = ghost.position;
-            Debug.Log($"Steps: {steps} | Final velocity: {ghost.linearVelocity.magnitude:F3} | Predicted: {end}");
-
-            // Restore
-            stone.rb.isKinematic = wasKinematic;
-            Physics.simulationMode = previousMode;
-
-            return end;
-        }
-
-        private Vector3 PredictEndPosition_close(Vector3 startPosition, Vector3 impulse)
-        {
-            Vector3 pos = startPosition;
-            Vector3 vel = impulse;               // mass == 1
-            float dt = Time.fixedDeltaTime;
-            float damping = ghost.linearDamping; // 0.1
-            float stopThreshold = 0.3f;
-            float maxTime = 20f;
-            float t = 0f;
-
-            while (t < maxTime && vel.magnitude > stopThreshold)
-            {
-                // Simple Euler integration with linear damping
-                vel *= Mathf.Clamp01(1f - damping * dt);
-                pos += vel * dt;
-                t += dt;
-            }
-
-            return pos;
         }
 
         public override void OnTwoFingerDrag(Vector2 position)

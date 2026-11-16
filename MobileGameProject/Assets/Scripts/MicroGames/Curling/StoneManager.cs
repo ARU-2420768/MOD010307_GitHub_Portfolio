@@ -7,7 +7,9 @@ namespace MicrogameCourse.Microgames
     public class StoneManager : MonoBehaviour
     {
         public Rigidbody rb;
-        public bool IsMoving => rb.linearVelocity.magnitude > 0.3f;
+        [SerializeField] private float stopThreshold = 0.3f;
+
+        public bool IsMoving => rb.linearVelocity.magnitude > stopThreshold;
         public bool IsAbleToPlay = true;
         public event Action OnStoneStopped;
 
@@ -21,12 +23,17 @@ namespace MicrogameCourse.Microgames
 
         private void Update()
         {
+    
+        }
+
+        private void FixedUpdate()
+        {
             if (!hasBeenLaunched)
                 return;
 
             if (!hasStartedMoving)
             {
-                // Wait until the stone actually starts moving
+                // Wait until the physics step applies the impulse
                 if (IsMoving)
                 {
                     hasStartedMoving = true;
@@ -34,15 +41,26 @@ namespace MicrogameCourse.Microgames
                 return;
             }
 
-            // Now we know it has moved — wait for it to stop
+            // Once speed drops to or below threshold, bring the stone to a full stop
             if (!IsMoving)
             {
-                hasBeenLaunched = false;
-                hasStartedMoving = false;
-                Debug.Log($"{name} Stopped");
-                OnStoneStopped?.Invoke();
+                StopStone();
             }
         }
+
+        public void StopStone()
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.Sleep();
+
+            hasBeenLaunched = false;
+            hasStartedMoving = false;
+
+            Debug.Log($"{name} Stopped");
+            OnStoneStopped?.Invoke();
+        }
+
 
         public void Launch(Vector2 force)
         {
