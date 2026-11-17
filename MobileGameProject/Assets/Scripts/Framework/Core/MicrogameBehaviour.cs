@@ -55,8 +55,11 @@ namespace MicrogameCourse.Framework
 
         protected void Win()
         {
+                Debug.Log("Win Called");
+
             if(IsRunning)
             {
+                Debug.Log("Finish Session");
                 Session.Finish(true);
             }
         }

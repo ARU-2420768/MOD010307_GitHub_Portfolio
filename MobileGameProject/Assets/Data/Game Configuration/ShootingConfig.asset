@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: ShootingConfig
   m_EditorClassIdentifier: Assembly-CSharp::GameConfigurationData
   gameName: Shooting
-  description: Shoot the targets
+  description: 'Calibrate the sights using the sight turret buttons.\nThen shoot
+    all the targets. '
   inputProfile: {fileID: 11400000, guid: 9c0e0cc7d48635a49914f93010780651, type: 2}
   movementProfile: {fileID: 11400000, guid: 15849e9eab690fd419bdfb4471f195a1, type: 2}
   medalThresholds: {fileID: 11400000, guid: eb8dc67a96380eb44be4a4c68203a876, type: 2}

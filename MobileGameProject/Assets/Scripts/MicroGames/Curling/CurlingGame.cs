@@ -14,6 +14,7 @@ namespace MicrogameCourse.Microgames
 
 
         [Header("Game Configuration")]
+        [SerializeField] private string gameName = "Curling";
         [SerializeField] private GameConfigurationData gameConfig;
 
         [Header("Scene References")]
@@ -24,8 +25,6 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private StoneManager stone;
         [SerializeField] private StoneManager ghostStone;
         [SerializeField] private GameObject whiteCircle;
-        [SerializeField] private Rigidbody ghostStonePrefab;
-        [SerializeField] private GameObject predictionMarker;
         [SerializeField] private CalculateScore calculateScore;
         [SerializeField] private TextMeshProUGUI score;
         [SerializeField] private TextMeshProUGUI player;
@@ -38,10 +37,11 @@ namespace MicrogameCourse.Microgames
 
 
         [SerializeField] private float predictionMaxTime = 20f;
-        [SerializeField] private float predictionStopVelocity = 0.05f;
         [SerializeField] private int predictionMaxSteps = 2000;
 
         [SerializeField] Vector3 stoneStartPosition;
+        [SerializeField] private int totalShots = 16;
+
 
         [SerializeField] private List<StoneManager> stones = new();
 
@@ -93,20 +93,19 @@ namespace MicrogameCourse.Microgames
             playerTurn = UnityEngine.Random.Range(1, 3);
             UpdatePlayerTurn();
             StartNewStone();
-            arrowHead.transform.localPosition = aimLine.transform.localPosition + aimLine.GetPosition(1) + new Vector3(0,0,-1);
+            //arrowHead.transform.localPosition = aimLine.transform.localPosition + aimLine.GetPosition(1) + new Vector3(0,0,-1);
 
         }
 
         public void StartNewStone()
         {
-            Debug.Log("StartNewStone");
             stone = Instantiate(stonePrefab, playArea3D.transform);
-            Debug.Log("Stone Instatiated");
-            Debug.Log($"Stone Name: {stone.name}");
             stone.GetComponent<Renderer>().material = playerTurn % 2 == 1 ? stone1 : stone2;
             stone.OnStoneStopped += HandleStoneStopped;
             stone.teamId = playerTurn;
             stones.Add(stone);
+            directionArrow.gameObject.SetActive(true);
+            progressText.text = $"Player {playerTurn}: Shot {MathF.Ceiling((float)stones.Count/2)} / {MathF.Ceiling((float)totalShots/2)}";
         }
 
 
@@ -117,7 +116,7 @@ namespace MicrogameCourse.Microgames
             //Debug.Log($"Main Stone Final Location: {stone.transform.localPosition}");
             stone.IsAbleToPlay = false;
             UpdateScoresAndTurn();
-            if(stones.Count < 16)
+            if(stones.Count < totalShots)
             {
                 StartNewStone();
             }
@@ -129,7 +128,26 @@ namespace MicrogameCourse.Microgames
 
         private void EndGame()
         {
+            List<StoneManager> sortedStones = calculateScore.SortStones(stones);
+            int teamID = calculateScore.WinningTeam(sortedStones[0]);
+            progressText.text = $"Game Over - Player {teamID} Won!";
+            MedalType medal = CalculateMedal();
+            MedalManager.Instance.AwardMedal(gameName, medal);
             Debug.Log("End Game");
+            Win();
+            //base.IsRunning = false;
+        }
+
+        private MedalType CalculateMedal()
+        {
+            int score = CalculateScore();
+            if(score >= thresholds.gold)
+                return MedalType.Gold;
+            if(score >= thresholds.silver)
+                return MedalType.Silver;
+            if(score >= thresholds.bronze)
+                return MedalType.Bronze;
+            return MedalType.Unranked;
         }
 
         public void UpdatePlayerTurn()
@@ -330,6 +348,7 @@ namespace MicrogameCourse.Microgames
             // Must match OnDrag
             Vector2 launchForce2D = dragVector * 0.05f;
             //stone.Launch(new Vector2(0, 4));
+            directionArrow.gameObject.SetActive(false);
             stone.Launch(launchForce2D);
         }
 
@@ -359,6 +378,16 @@ namespace MicrogameCourse.Microgames
 
         #endregion
 
+        #region Inspector Validation
+
+        private void OnValidate()
+        {
+            if (totalShots % 2 != 0)
+            {
+                totalShots++;
+            }
+        }
+        #endregion
 
     }
 }

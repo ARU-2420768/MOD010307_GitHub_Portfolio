@@ -66,8 +66,9 @@ namespace MicrogameCourse.Framework
             if(countdownText == null)
             {
                 Debug.Log("No countdown text set in scene");
+                currentPhase = Phase.Playing;
                 return;    
-            } 
+            }
             StartCoroutine(CountdownCoroutine());
         }
 

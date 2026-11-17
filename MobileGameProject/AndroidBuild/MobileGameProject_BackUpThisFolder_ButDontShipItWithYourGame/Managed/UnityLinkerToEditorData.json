@@ -280,6 +280,14 @@
             "icon": null
           },
           {
+            "name": "LineRenderer",
+            "scenes": [
+              "Assets/Scenes/Curling.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "LowerResBlitTexture",
             "scenes": [],
             "dependencyType": 0,
@@ -304,8 +312,7 @@
             "scenes": [
               "Assets/Scenes/Curling.unity",
               "Assets/Scenes/IceSkating.unity",
-              "Assets/Scenes/Shooting.unity",
-              "Assets/Scenes/Slalom.unity"
+              "Assets/Scenes/Shooting.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -315,8 +322,7 @@
             "scenes": [
               "Assets/Scenes/Curling.unity",
               "Assets/Scenes/IceSkating.unity",
-              "Assets/Scenes/Shooting.unity",
-              "Assets/Scenes/Slalom.unity"
+              "Assets/Scenes/Shooting.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -326,8 +332,7 @@
             "scenes": [
               "Assets/Scenes/Curling.unity",
               "Assets/Scenes/IceSkating.unity",
-              "Assets/Scenes/Shooting.unity",
-              "Assets/Scenes/Slalom.unity"
+              "Assets/Scenes/Shooting.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1102,8 +1107,7 @@
             "scenes": [
               "Assets/Scenes/Curling.unity",
               "Assets/Scenes/IceSkating.unity",
-              "Assets/Scenes/Shooting.unity",
-              "Assets/Scenes/Slalom.unity"
+              "Assets/Scenes/Shooting.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1126,6 +1130,7 @@
           {
             "name": "MeshCollider",
             "scenes": [
+              "Assets/Scenes/Curling.unity",
               "Assets/Scenes/Shooting.unity"
             ],
             "dependencyType": 0,
@@ -1138,8 +1143,25 @@
             "icon": null
           },
           {
+            "name": "PhysicsMaterial",
+            "scenes": [
+              "Assets/Scenes/Curling.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Rigidbody",
+            "scenes": [
+              "Assets/Scenes/Curling.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "SphereCollider",
             "scenes": [
+              "Assets/Scenes/Curling.unity",
               "Assets/Scenes/IceSkating.unity",
               "Assets/Scenes/Shooting.unity"
             ],
