@@ -32,6 +32,10 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private Transform directionArrow;
         [SerializeField] private LineRenderer aimLine;
         [SerializeField] private Transform arrowHead;
+        [SerializeField] private StoneManager stonePrefab;
+        [SerializeField] private Material stone1;
+        [SerializeField] private Material stone2;
+
 
         [SerializeField] private float predictionMaxTime = 20f;
         [SerializeField] private float predictionStopVelocity = 0.05f;
@@ -81,25 +85,51 @@ namespace MicrogameCourse.Microgames
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         private void Start()
         {
-            stones.Add(stone);
+            //stones.Add(stone);
 
-            stone.OnStoneStopped += HandleStoneStopped;
-            ghostStone.OnStoneStopped += HandleStoneStopped;
+            //stone.OnStoneStopped += HandleStoneStopped;
+            //ghostStone.OnStoneStopped += HandleStoneStopped;
 
             playerTurn = UnityEngine.Random.Range(1, 3);
             UpdatePlayerTurn();
-            //directionArrow.transform.localPosition = stoneStartPosition;
+            StartNewStone();
             arrowHead.transform.localPosition = aimLine.transform.localPosition + aimLine.GetPosition(1) + new Vector3(0,0,-1);
 
+        }
+
+        public void StartNewStone()
+        {
+            Debug.Log("StartNewStone");
+            stone = Instantiate(stonePrefab, playArea3D.transform);
+            Debug.Log("Stone Instatiated");
+            Debug.Log($"Stone Name: {stone.name}");
+            stone.GetComponent<Renderer>().material = playerTurn % 2 == 1 ? stone1 : stone2;
+            stone.OnStoneStopped += HandleStoneStopped;
+            stone.teamId = playerTurn;
+            stones.Add(stone);
         }
 
 
         private void HandleStoneStopped()
         {
-            Debug.Log($"Ghost Stone Final Location: {ghostStone.transform.localPosition}");
-            Debug.Log($"Main Stone Final Location: {stone.transform.localPosition}");
+
+            Debug.Log($"Stone Stopped");
+            //Debug.Log($"Main Stone Final Location: {stone.transform.localPosition}");
             stone.IsAbleToPlay = false;
             UpdateScoresAndTurn();
+            if(stones.Count < 16)
+            {
+                StartNewStone();
+            }
+            else
+            {
+                EndGame();
+            }
+        }
+
+        private void EndGame()
+        {
+            Debug.Log("End Game");
         }
 
         public void UpdatePlayerTurn()
@@ -109,7 +139,16 @@ namespace MicrogameCourse.Microgames
 
         public void UpdateScoresAndTurn()
         {
-            score.text = $"Score Player {playerTurn} - {CalculateScore()}";
+            List<StoneManager> sortedStones = calculateScore.SortStones(stones);
+            int teamID = calculateScore.WinningTeam(sortedStones[0]);
+            if(CalculateScore() == 0)
+            {
+                score.text = "No Score";    
+            }
+            else
+            {
+                score.text = $"Score: Player {teamID} - {CalculateScore()}";
+            }
             playerTurn = (playerTurn % 2) + 1;
             UpdatePlayerTurn();
         }
@@ -201,6 +240,8 @@ namespace MicrogameCourse.Microgames
         public override void OnPointerPressed()
         {
             if(!hasGameStarted)
+                return;
+            if(stone == null)
                 return;
 
             //Debug.Log("OnPointerPressed");

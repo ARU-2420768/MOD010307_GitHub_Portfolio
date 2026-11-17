@@ -7,7 +7,7 @@ namespace MicrogameCourse.Microgames
     public class StoneManager : MonoBehaviour
     {
         public Rigidbody rb;
-        [SerializeField] private float stopThreshold = 0.3f;
+        [SerializeField] private float stopThreshold = 1f;
         public int teamId;
 
         public bool IsMoving => rb.linearVelocity.magnitude > stopThreshold;
@@ -24,7 +24,8 @@ namespace MicrogameCourse.Microgames
 
         private void Update()
         {
-    
+
+            //
         }
 
         private void FixedUpdate()
@@ -42,11 +43,11 @@ namespace MicrogameCourse.Microgames
                 return;
             }
 
-            // Once speed drops to or below threshold, bring the stone to a full stop
             if (!IsMoving)
             {
                 StopStone();
             }
+
         }
 
         public void StopStone()

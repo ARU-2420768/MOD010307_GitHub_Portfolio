@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 805537049639969867}
   m_Layer: 0
   m_Name: Stone
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: MicrogameCourse::MicrogameCourse.Microgames.StoneManager
   rb: {fileID: 0}
+  stopThreshold: 1
+  teamId: 1
   IsAbleToPlay: 0
 --- !u!54 &805537049639969867
 Rigidbody:
@@ -137,7 +139,7 @@ Rigidbody:
   m_GameObject: {fileID: 7735009762043461222}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 0.1
+  m_LinearDamping: 0.125
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}

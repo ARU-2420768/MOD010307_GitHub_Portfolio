@@ -80,6 +80,8 @@ namespace MicrogameCourse.Microgames
 
         public List<StoneManager> SortStones(List<StoneManager> allStones)
         {
+            if(allStones.Count == 1)
+                return allStones;
             allStones.Sort((a, b) =>
             {
                 float distA = (a.transform.position - centrePosition).sqrMagnitude;
