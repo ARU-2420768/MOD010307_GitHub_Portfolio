@@ -128,8 +128,8 @@ namespace MicrogameCourse.Microgames
             Vector3 predictedEnd = PredictEndPosition(vectorForce);
             Debug.Log($"Predicted End Local Pos: {predictedEnd}");
 
-            //stone.Launch(vectorForce);
-            //ghostStone.Launch(vectorForce);
+            stone.Launch(vectorForce);
+            ghostStone.Launch(vectorForce);
 
         }
 
