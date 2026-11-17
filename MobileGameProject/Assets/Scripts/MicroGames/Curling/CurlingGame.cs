@@ -24,13 +24,14 @@ namespace MicrogameCourse.Microgames
         [SerializeField] private StoneManager stone;
         [SerializeField] private StoneManager ghostStone;
         [SerializeField] private GameObject whiteCircle;
-        [SerializeField] private LineRenderer aimLine;
         [SerializeField] private Rigidbody ghostStonePrefab;
         [SerializeField] private GameObject predictionMarker;
         [SerializeField] private CalculateScore calculateScore;
         [SerializeField] private TextMeshProUGUI score;
         [SerializeField] private TextMeshProUGUI player;
-
+        [SerializeField] private Transform directionArrow;
+        [SerializeField] private LineRenderer aimLine;
+        [SerializeField] private Transform arrowHead;
 
         [SerializeField] private float predictionMaxTime = 20f;
         [SerializeField] private float predictionStopVelocity = 0.05f;
@@ -64,6 +65,7 @@ namespace MicrogameCourse.Microgames
             centerTarget = whiteCircle.transform.position;
             if (calculateScore == null)
                 calculateScore = GetComponent<CalculateScore>();
+            
         }
 
         public override void Begin(MicrogameSession session)
@@ -86,6 +88,8 @@ namespace MicrogameCourse.Microgames
 
             playerTurn = UnityEngine.Random.Range(1, 3);
             UpdatePlayerTurn();
+            //directionArrow.transform.localPosition = stoneStartPosition;
+            arrowHead.transform.localPosition = aimLine.transform.localPosition + aimLine.GetPosition(1) + new Vector3(0,0,-1);
 
         }
 
@@ -226,6 +230,14 @@ namespace MicrogameCourse.Microgames
 
             Vector2 dragVector = dragStartPosition - dragCurrentPosition;
 
+            Color c = (dragVector.magnitude <= 160f)? Color.green: Color.red;
+
+            aimLine.startColor = c;
+            aimLine.endColor = c;
+
+            // Stop the stone being aimed down the screen - 
+            dragVector.y = Mathf.Max(0f, dragVector.y);
+
             // Match your real launch:
             Vector2 launchForce2D = dragVector * 0.05f;
 
@@ -233,6 +245,13 @@ namespace MicrogameCourse.Microgames
             Vector3 impulse = new Vector3(launchForce2D.x, launchForce2D.y, 0f);
 
             Vector3 start = stone.transform.position;
+
+            aimLine.SetPosition(1, impulse);
+            arrowHead.transform.localPosition = aimLine.transform.localPosition + aimLine.GetPosition(1) + new Vector3(0,0,-1);
+
+            // make the arrowHead point in the same direction as the aimline
+            Vector3 direction = (aimLine.GetPosition(1) - aimLine.GetPosition(0)).normalized;
+            arrowHead.transform.up = direction;
 
             //Vector3 predictedEnd = PredictEndPosition(impulse);
 
@@ -264,6 +283,8 @@ namespace MicrogameCourse.Microgames
                     // Apply the smoothed magnitude back to the original drag direction
                     //dragVector = dragVector.normalized * effectiveMagnitude;
                 }
+
+
 
             // Must match OnDrag
             Vector2 launchForce2D = dragVector * 0.05f;
