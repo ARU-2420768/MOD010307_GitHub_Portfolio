@@ -128,8 +128,8 @@ namespace MicrogameCourse.Microgames
             Vector3 predictedEnd = PredictEndPosition(vectorForce);
             Debug.Log($"Predicted End Local Pos: {predictedEnd}");
 
-            stone.Launch(vectorForce);
-            ghostStone.Launch(vectorForce);
+            //stone.Launch(vectorForce);
+            //ghostStone.Launch(vectorForce);
 
         }
 
@@ -234,14 +234,14 @@ namespace MicrogameCourse.Microgames
 
             Vector3 start = stone.transform.position;
 
-            //Vector3 predictedEnd = PredictEndPosition(impulse);
+            Vector3 predictedEnd = PredictEndPosition(impulse);
 
-            //predictionMarker.SetActive(true);
-            //predictionMarker.transform.localPosition = predictedEnd;
+            predictionMarker.SetActive(true);
+            predictionMarker.transform.localPosition = predictedEnd;
 
-            //aimLine.positionCount = 2;
-            //aimLine.SetPosition(0, start);
-            //aimLine.SetPosition(1, predictedEnd);
+            aimLine.positionCount = 2;
+            aimLine.SetPosition(0, start);
+            aimLine.SetPosition(1, predictedEnd);
         }
         public override void OnDragRelease(Vector2 position)
         {
