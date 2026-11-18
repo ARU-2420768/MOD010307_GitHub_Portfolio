@@ -58,8 +58,18 @@ namespace MicrogameCourse.Framework
             
             MovementProfileData movement = gameConfigData.movementProfile;
 
+            if (Pointer.current == null)
+                return;
+
             Vector2 screenPosition = Pointer.current.position.ReadValue();
 
+            if (!float.IsFinite(screenPosition.x) ||
+                !float.IsFinite(screenPosition.y))
+            {
+                Debug.LogWarning($"Invalid pointer position: {screenPosition}");
+                return;
+            }
+            
             Vector3 worldPosition = mainCamera.ScreenToWorldPoint(new Vector3(screenPosition.x,screenPosition.y, Mathf.Abs(mainCamera.transform.position.z)));
 
             Vector3 position = transform.position;
