@@ -42,10 +42,11 @@ extern void U3CU3Ec_U3CToJsonU3Eb__10_1_mC63D16576EA803D011161A5A17FE15E7BFFDC14
 extern void SerializableProjectConfiguration_get_Empty_m12BD1FCCEBF166B16137D60C5EB6C5CF9E74FF04 (void);
 extern void StreamingAssetsConfigurationLoader__ctor_m7BAC58A597B47791AFDFC910BAE173CC594A997D (void);
 extern void StreamingAssetsConfigurationLoader_GetConfigAsync_m4670747CC5108D64D96AFC3A7A4C48F47C86B11F (void);
+extern void U3CGetConfigAsyncU3Ed__2__ctor_m85CDD5F77FF25389E0CC6784035FAF103F3672B6 (void);
 extern void U3CGetConfigAsyncU3Ed__2_MoveNext_m9E58D12C49A5A91D6977494C811C89A2CF85522D (void);
 extern void U3CGetConfigAsyncU3Ed__2_SetStateMachine_m97223D4789B45241E85C9AA48042B683730089B7 (void);
 extern void StreamingAssetsUtils_GetFileTextFromStreamingAssetsAsync_m9E49560DF4218CAED97B714AC3EF6691A2288C28 (void);
-static Il2CppMethodPointer s_methodPointers[39] = 
+static Il2CppMethodPointer s_methodPointers[40] = 
 {
 	CloudProjectId_GetCloudProjectId_m869FB68DB9939F1F1DAA6AFCE8935CDC6EE755D6,
 	CloudProjectId__ctor_m04C6207EF478495335469EA975A65E82B79BACF7,
@@ -83,67 +84,62 @@ static Il2CppMethodPointer s_methodPointers[39] =
 	SerializableProjectConfiguration_get_Empty_m12BD1FCCEBF166B16137D60C5EB6C5CF9E74FF04,
 	StreamingAssetsConfigurationLoader__ctor_m7BAC58A597B47791AFDFC910BAE173CC594A997D,
 	StreamingAssetsConfigurationLoader_GetConfigAsync_m4670747CC5108D64D96AFC3A7A4C48F47C86B11F,
+	U3CGetConfigAsyncU3Ed__2__ctor_m85CDD5F77FF25389E0CC6784035FAF103F3672B6,
 	U3CGetConfigAsyncU3Ed__2_MoveNext_m9E58D12C49A5A91D6977494C811C89A2CF85522D,
 	U3CGetConfigAsyncU3Ed__2_SetStateMachine_m97223D4789B45241E85C9AA48042B683730089B7,
 	StreamingAssetsUtils_GetFileTextFromStreamingAssetsAsync_m9E49560DF4218CAED97B714AC3EF6691A2288C28,
 };
-extern void U3CGetConfigAsyncU3Ed__2_MoveNext_m9E58D12C49A5A91D6977494C811C89A2CF85522D_AdjustorThunk (void);
-extern void U3CGetConfigAsyncU3Ed__2_SetStateMachine_m97223D4789B45241E85C9AA48042B683730089B7_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
+static const int32_t s_InvokerIndices[40] = 
 {
-	{ 0x06000025, U3CGetConfigAsyncU3Ed__2_MoveNext_m9E58D12C49A5A91D6977494C811C89A2CF85522D_AdjustorThunk },
-	{ 0x06000026, U3CGetConfigAsyncU3Ed__2_SetStateMachine_m97223D4789B45241E85C9AA48042B683730089B7_AdjustorThunk },
-};
-static const int32_t s_InvokerIndices[39] = 
-{
-	16373,
-	16628,
-	24352,
-	24346,
-	21706,
-	16373,
-	16159,
-	16628,
-	6338,
-	8887,
-	27022,
-	27022,
-	28863,
-	28762,
-	27536,
-	28863,
-	28863,
-	16373,
-	12604,
-	12604,
-	16628,
+	18069,
+	18325,
+	26617,
+	26611,
+	23964,
+	18069,
+	17855,
+	18325,
+	6707,
+	9478,
+	29736,
+	29736,
+	32016,
+	31915,
+	30250,
+	32016,
+	32016,
+	18069,
+	13635,
+	13635,
+	18325,
 	-1,
-	16373,
-	6369,
-	3945,
-	4454,
-	4882,
-	4819,
-	16373,
-	28863,
-	16628,
-	10751,
-	10751,
-	28814,
-	12604,
-	16373,
-	16628,
-	12604,
-	27022,
+	18069,
+	6738,
+	4192,
+	4818,
+	5246,
+	5183,
+	18069,
+	32016,
+	18325,
+	11350,
+	11350,
+	31967,
+	13635,
+	18069,
+	18325,
+	18325,
+	13635,
+	29736,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_Services_Core_Configuration_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_Services_Core_Configuration_CodeGenModule = 
 {
 	"Unity.Services.Core.Configuration.dll",
-	39,
+	40,
 	s_methodPointers,
-	2,
-	s_adjustorThunks,
+	0,
+	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
