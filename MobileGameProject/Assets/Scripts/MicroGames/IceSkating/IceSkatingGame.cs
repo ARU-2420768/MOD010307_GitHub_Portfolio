@@ -13,24 +13,22 @@ namespace MicrogameCourse.Microgames
 
         [Header("Medal Success Levels - Thresholds")]
         [SerializeField] private string gameName = "Ice Skating";
-        [SerializeField] private MedalThresholdsData thresholds;
+        [SerializeField] private GameConfigurationData gameConfig;
 
         [Header("Scene References")]
         [SerializeField] private RectTransform playArea;
-        [SerializeField] private RectTransform target;
-        [SerializeField] private Image targetImage;
         [SerializeField] private TextMeshProUGUI progressText;
         [SerializeField] private TextMeshProUGUI feedbackText;
         [SerializeField] private GameObject playArea3D;
 
-
+        private MedalThresholdsData thresholds;
         private Camera mainCamera;
         public int score = 0;
 
         private void Awake()
         {
             mainCamera = Camera.main;
-            score = 5;
+            thresholds = gameConfig.medalThresholds;
         }
 
         void Start()

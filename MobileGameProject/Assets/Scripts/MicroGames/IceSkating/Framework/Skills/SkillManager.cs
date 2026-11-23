@@ -47,7 +47,9 @@ public class SkillManager : MonoBehaviour
             float y = (skillsSelection.rect.height * 0.5f) - (cellHeight * 0.5f) - (row * cellHeight);
 
             rect.anchoredPosition = new Vector2(x, y);
-            
+            skill.GetComponent<SkillDisplay>().Initialise(skills[i], SkillDisplayMode.Select);
+
+            /*
             skill.GetComponent<Image>().color = DifficultyColours.Colours[skills[i].skillDifficulty];
 
             Transform backGround = skill.transform.Find("Background");
@@ -76,6 +78,7 @@ public class SkillManager : MonoBehaviour
 
             Transform name = skill.transform.Find("SkillName");
             name.GetComponent<TextMeshProUGUI>().text = skills[i].skillName;
+            */
 
         }
     }
