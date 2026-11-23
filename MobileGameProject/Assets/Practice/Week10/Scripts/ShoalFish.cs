@@ -1,5 +1,6 @@
 using UnityEngine;
 using Unity.Profiling;
+using System.Collections.Generic;
 
 // One fish: swims around the reef, keeps its distance from the others,
 // blows the odd bubble and swims off (is removed) after a few seconds.
@@ -10,6 +11,8 @@ public class ShoalFish : MonoBehaviour
     [SerializeField] private float lifetime = 4f;
     [SerializeField] private float bubblesPerSecond = 0.5f;
 
+    public static readonly List<ShoalFish> All = new List<ShoalFish>();
+
     public ShoalSpawner Spawner { get; set; }
 
     // Labels that show up in the Profiler, so you can see what each part of Update costs.
@@ -18,6 +21,16 @@ public class ShoalFish : MonoBehaviour
 
     private Vector2 velocity;
     private float age;
+
+    private void OnEnable()
+    {
+        All.Add(this);
+    }
+
+    private void OnDisable()
+    {
+        All.Remove(this);
+    }
 
     private void Start()
     {
@@ -45,8 +58,7 @@ public class ShoalFish : MonoBehaviour
     // Steer away from every fish that is too close.
     private void AvoidNeighbours()
     {
-        ShoalFish[] everyFish = FindObjectsByType<ShoalFish>(FindObjectsSortMode.None);
-        foreach (ShoalFish other in everyFish)
+        foreach (ShoalFish other in All)
         {
             if (other == this) continue;
             float distance = Vector2.Distance(transform.position, other.transform.position);
