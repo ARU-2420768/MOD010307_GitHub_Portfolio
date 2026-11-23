@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Pool;
 
 // Keeps the reef full: whenever there are fewer than fishCount fish, it adds more.
 // Fish ask it for bubbles too.
@@ -10,6 +11,26 @@ public class ShoalSpawner : MonoBehaviour
     [SerializeField] private int fishCount = 400;
     [SerializeField] private int spawnPerFrame = 20;
 
+    private ObjectPool<ShoalFish> fishPool;
+    private ObjectPool<ShoalBubble> bubblePool;
+
+    private void Awake()
+    {
+        fishPool = new ObjectPool<ShoalFish>(
+            () => Instantiate(fishPrefab, transform),   // create: only when the pool is empty
+            fish => fish.gameObject.SetActive(true),     // get: wake a sleeping fish
+            fish => fish.gameObject.SetActive(false),    // release: put it back to sleep
+            fish => Destroy(fish.gameObject),            // destroy: only if the pool is full
+            true, fishCount, fishCount * 2);
+        bubblePool = new ObjectPool<ShoalBubble>(
+            () => Instantiate(bubblePrefab, transform),
+            bubble => bubble.gameObject.SetActive(true),
+            bubble => bubble.gameObject.SetActive(false),
+            bubble => Destroy(bubble.gameObject),
+            true, 200, 1000);
+    }
+
+
     private void Update()
     {
         int alive = FindObjectsByType<ShoalFish>(FindObjectsSortMode.None).Length;
@@ -19,14 +40,26 @@ public class ShoalSpawner : MonoBehaviour
 
     private void SpawnFish()
     {
-        Vector2 position = new Vector2(Random.Range(-4f, 4f), Random.Range(-7.5f, 7.5f));
-        ShoalFish fish = Instantiate(fishPrefab, position, Quaternion.identity);
+        ShoalFish fish = fishPool.Get();
+        fish.transform.position = new Vector2(Random.Range(-4f, 4f), Random.Range(-7.5f, 7.5f));
         fish.GetComponent<SpriteRenderer>().sprite = fishSprites[Random.Range(0, fishSprites.Length)];
         fish.Spawner = this;
     }
 
+    public void ReleaseFish(ShoalFish fish)
+    {
+        fishPool.Release(fish);
+    }
+
     public void SpawnBubble(Vector3 position)
     {
-        Instantiate(bubblePrefab, position, Quaternion.identity);
+        ShoalBubble bubble = bubblePool.Get();
+        bubble.transform.position = position;
+        bubble.Spawner = this;
+    }
+
+    public void ReleaseBubble(ShoalBubble bubble)
+    {
+        bubblePool.Release(bubble);
     }
 }

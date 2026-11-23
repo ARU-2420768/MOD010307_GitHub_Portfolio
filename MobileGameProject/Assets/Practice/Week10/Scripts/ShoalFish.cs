@@ -11,6 +11,7 @@ public class ShoalFish : MonoBehaviour
     [SerializeField] private float lifetime = 4f;
     [SerializeField] private float bubblesPerSecond = 0.5f;
     [SerializeField] private float checkEvery = 0.25f;
+    
 
     public static readonly List<ShoalFish> All = new List<ShoalFish>();
 
@@ -33,6 +34,8 @@ public class ShoalFish : MonoBehaviour
     private void OnEnable()
     {
         All.Add(this);
+        age = 0f;
+        velocity = Random.insideUnitCircle.normalized * speed;
     }
 
     private void OnDisable()
@@ -66,7 +69,7 @@ public class ShoalFish : MonoBehaviour
         if (Random.value < bubblesPerSecond * Time.deltaTime) Spawner.SpawnBubble(transform.position);
 
         age += Time.deltaTime;
-        if (age > lifetime) Destroy(gameObject);
+        if (age > lifetime) Spawner.ReleaseFish(this);
     }
 
     // Steer away from every fish that is too close.
