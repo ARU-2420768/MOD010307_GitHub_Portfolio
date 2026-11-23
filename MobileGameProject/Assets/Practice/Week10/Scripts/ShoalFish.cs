@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Profiling;
 
 // One fish: swims around the reef, keeps its distance from the others,
 // blows the odd bubble and swims off (is removed) after a few seconds.
@@ -10,6 +11,10 @@ public class ShoalFish : MonoBehaviour
     [SerializeField] private float bubblesPerSecond = 0.5f;
 
     public ShoalSpawner Spawner { get; set; }
+
+    // Labels that show up in the Profiler, so you can see what each part of Update costs.
+    private static readonly ProfilerMarker AvoidMarker = new ProfilerMarker("ShoalFish.AvoidNeighbours");
+    private static readonly ProfilerMarker SwimMarker = new ProfilerMarker("ShoalFish.Swim");
 
     private Vector2 velocity;
     private float age;
@@ -23,8 +28,13 @@ public class ShoalFish : MonoBehaviour
 
     private void Update()
     {
+        AvoidMarker.Begin();
         AvoidNeighbours();
+        AvoidMarker.End();
+
+        SwimMarker.Begin();
         Swim();
+        SwimMarker.End();
 
         if (Random.value < bubblesPerSecond * Time.deltaTime) Spawner.SpawnBubble(transform.position);
 
