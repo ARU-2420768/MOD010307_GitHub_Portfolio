@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting.YamlDotNet.Core;
 using UnityEngine;
+using System.Linq;
 
 public class RoutineManager : MonoBehaviour
 {
@@ -43,6 +43,17 @@ public class RoutineManager : MonoBehaviour
 
     public void AddSkill(SkatingSkill skill)
     {
+        // max skills to fit into UI 3 columns, 2 rows
+        if (selectedSkills.Count >= 6)
+            return;
+
+        // Use LINQ for skills count 
+        if (selectedSkills.Count(s => s == skill) >= 2)
+        {
+            Debug.Log($"{skill.skillName} already selected twice");
+            return;
+        }
+
         Debug.Log($"Adding {skill.skillName}");
         if(!CanAddSkill(skill))
             return;
@@ -51,6 +62,19 @@ public class RoutineManager : MonoBehaviour
         CurrentDuration += skill.duration;
         UpdateSkillTimer();
         CreateSkillChoice(skill);
+    }
+
+    private int GetSkillCount(SkatingSkill skill)
+    {
+        int count = 0;
+
+        foreach (var selectedSkill in selectedSkills)
+        {
+            if (selectedSkill == skill)
+                count++;
+        }
+
+        return count;
     }
 
     public void RemoveSkill(SkatingSkill skill)
@@ -68,7 +92,7 @@ public class RoutineManager : MonoBehaviour
     private void CreateSkillChoice(SkatingSkill skill)
     {
         GameObject choice = Instantiate(gradingFramePrefab, skillChoices);
-
+        choice.transform.localScale = Vector3.one * 0.75f;
         choice.GetComponent<SkillDisplay>().Initialise(skill, SkillDisplayMode.Remove);
     }
 
