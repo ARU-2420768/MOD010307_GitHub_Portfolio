@@ -14,6 +14,9 @@ namespace MicrogameCourse.Framework
         {
         }
 
+        public virtual void OnTwoFingerTap()
+        {
+        }
         public virtual void OnTwoFingerDrag(Vector2 position)
         {
         }

@@ -10,6 +10,8 @@ public class SkatingSkill : ScriptableObject
     public float twistSkill;
     public float artisticSkill;
 
+    public SkillAction[] requiredActions;
+
     [Header("Gameplay")]
     [Range(1f, 6f)]
     public float duration;

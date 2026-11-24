@@ -47,16 +47,24 @@ namespace MicrogameCourse.Microgames
         }
 
         public override void OnPointerPressed()
-        {
-            ShotFired();
+        {    
+            Debug.Log("IceSkatingGame OnPointerPressed");
+            RoutineManager.Instance.RegisterAction(SkillAction.Tap);
         }
 
-        public void ShotFired()
+        public override void OnDrag(Vector2 screenPosition)
         {
-            //Debug.Log("Gate Passed");
-            ShowFeedback("Shots Completed", Color.green);
-            UpdateProgress();
-            CheckForCompletion();
+            RoutineManager.Instance.RegisterAction(SkillAction.Swipe);
+        }
+
+        public override void OnTwoFingerTap()
+        {
+            RoutineManager.Instance.RegisterAction(SkillAction.TwoFingerTap);
+        }
+
+        public override void OnTwoFingerDrag(Vector2 screenPosition)
+        {
+            RoutineManager.Instance.RegisterAction(SkillAction.TwoFingerDrag);
         }
 
         private MedalType CalculateMedal()

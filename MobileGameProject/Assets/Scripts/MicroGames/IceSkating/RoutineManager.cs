@@ -2,6 +2,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
+using System.Collections;
+using System;
 
 public class RoutineManager : MonoBehaviour
 {
@@ -15,25 +18,56 @@ public class RoutineManager : MonoBehaviour
 
     [SerializeField] private Transform skillChoices;
     [SerializeField] private GameObject gradingFramePrefab;
+    [SerializeField] private Button skillsStartButton;
+
+    [SerializeField] private Transform skillsSelectionArea;
+    [SerializeField] private Transform skillMovesArea;
+
+    [SerializeField] private TextMeshProUGUI skillNameText;
+    [SerializeField] private TextMeshProUGUI actionText;
+    [SerializeField] private TextMeshProUGUI progressText;
+    [SerializeField] private TextMeshProUGUI feedbackText;
+
+    [SerializeField] private float actionWindow = 1f;
+
 
     private List<SkatingSkill> selectedSkills = new();
+    public int SelectedSkillCount => selectedSkills.Count;
     
+    private Coroutine currentTimer;
     private float CurrentDuration = 0;
     public float currentDuration => CurrentDuration;
+
+    private SkatingState currentState;
+    private int currentSkillIndex;
+    private int currentActionIndex;
+
+    private SkatingSkill currentSkill;  
+    private SkillAction currentAction;
+
+    private int successfulActions;
+    private int failedActions;
 
     private void Awake()
     {
         routineManager = this;
+        currentState = SkatingState.BuildingRoutine;
     }
 
     private void Start()
     {
         UpdateSkillTimer();
+        UpdateStartButton();
     }
 
     private void UpdateSkillTimer()
     {
         skillTimerCount.text = $"{currentDuration:F0} / {maxDuration:F0} seconds";
+    }
+
+    private void UpdateStartButton()
+    {
+        skillsStartButton.interactable = SelectedSkillCount  > 0;
     }
 
     public bool CanAddSkill(SkatingSkill skill)
@@ -61,6 +95,7 @@ public class RoutineManager : MonoBehaviour
         selectedSkills.Add(skill);
         CurrentDuration += skill.duration;
         UpdateSkillTimer();
+        UpdateStartButton();
         CreateSkillChoice(skill);
     }
 
@@ -87,6 +122,7 @@ public class RoutineManager : MonoBehaviour
         CurrentDuration -= skill.duration;
 
         UpdateSkillTimer();
+        UpdateStartButton();
     }
 
     private void CreateSkillChoice(SkatingSkill skill)
@@ -99,6 +135,168 @@ public class RoutineManager : MonoBehaviour
     public IReadOnlyList<SkatingSkill> GetRoutine()
     {
         return selectedSkills;
+    }
+
+    public void StartRoutine()
+    {
+        if(selectedSkills.Count == 0)
+            return;
+
+        Debug.Log("Starting Routine");
+
+        skillsSelectionArea.gameObject.SetActive(false);
+        skillMovesArea.gameObject.SetActive(true);
+        skillsStartButton.gameObject.SetActive(false);
+        skillNameText.gameObject.SetActive(true);
+        actionText.gameObject.SetActive(true);
+        progressText.gameObject.SetActive(true);
+        feedbackText.gameObject.SetActive(true);
+        skillTimerCount.gameObject.SetActive(false);
+
+
+
+        currentSkillIndex = 0;
+        currentActionIndex = 0;
+
+        successfulActions = 0;
+        failedActions = 0;
+
+        currentState = SkatingState.Countdown;
+
+        StartCoroutine(BeginRoutine());
+    }
+
+    private IEnumerator BeginRoutine()
+    {
+        Debug.Log("3");
+        yield return new WaitForSeconds(1);
+
+        Debug.Log("2");
+        yield return new WaitForSeconds(1);
+
+        Debug.Log("1");
+        yield return new WaitForSeconds(1);
+
+        StartNextSkill();
+    }
+
+    private void StartNextSkill()
+    {
+
+        Debug.Log("StartNextSkill");
+
+        if(currentSkillIndex >= selectedSkills.Count)
+        {
+            currentState = SkatingState.Results;
+            ShowResults();
+            return;
+        }
+
+        currentActionIndex = 0;
+
+        currentSkill = selectedSkills[currentSkillIndex];
+        skillNameText.text = currentSkill.skillName;
+
+
+        Debug.Log($"Starting {currentSkill.skillName}");
+
+        StartNextAction();
+    }
+
+
+    private void StartNextAction()
+    {
+        if(currentActionIndex >= currentSkill.requiredActions.Length)
+        {
+            currentState = SkatingState.NextSkill;
+
+            currentSkillIndex++;
+
+            StartNextSkill();
+
+            return;
+        }
+
+        actionText.text = $"Action: {currentSkill.requiredActions[currentActionIndex].ToString()}";
+        progressText.text = $"{currentActionIndex + 1} / {currentSkill.requiredActions.Length}";
+
+        currentAction = currentSkill.requiredActions[currentActionIndex];
+
+        Debug.Log($"Perform: {currentAction}");
+
+        currentState = SkatingState.WaitingForAction;
+
+        if(currentTimer != null)
+        {
+            StopCoroutine(currentTimer);
+        }
+
+        currentTimer =
+            StartCoroutine(ActionTimeout());
+    }
+
+    private IEnumerator ActionTimeout()
+    {
+        yield return new WaitForSeconds(actionWindow);
+
+        if(currentState != SkatingState.WaitingForAction)
+            yield break;
+
+        Debug.Log("Timed Out");
+
+        failedActions++;
+
+        currentActionIndex++;
+
+        StartNextAction();
+    }
+
+    public void RegisterAction(SkillAction action)
+    {
+
+        if (currentState != SkatingState.WaitingForAction)
+            return;
+
+        Debug.Log($"Expected: {currentAction}");
+        Debug.Log($"Received: {action}");
+        
+        if(currentTimer != null)
+        {
+            StopCoroutine(currentTimer);
+        }
+
+        currentState = SkatingState.EvaluatingAction;
+
+        bool success = action == currentAction;
+
+        if (success)
+        {
+            successfulActions++;
+
+            Debug.Log("Correct Action");
+        }
+        else
+        {
+            failedActions++;
+
+            Debug.Log("Incorrect Action");
+        }
+
+        currentActionIndex++;
+
+        StartNextAction();
+    }
+
+    private void ShowResults()
+    {
+        currentState = SkatingState.Results;
+
+        float accuracy = (float)successfulActions / (successfulActions + failedActions);
+
+        Debug.Log("Routine Complete");
+
+        Debug.Log($"Successes: {successfulActions}");
+        Debug.Log($"Failures: {failedActions}");
     }
 
 

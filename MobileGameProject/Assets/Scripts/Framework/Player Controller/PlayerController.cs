@@ -13,6 +13,9 @@ namespace MicrogameCourse.Framework
 
         [Header("Game Reference")]
         [SerializeField] private MicrogameBehaviour game;
+        [SerializeField] private float swipeThreshold = 100f;
+
+
 
         private MicrogameSession session;
         private Camera mainCamera;
@@ -22,7 +25,9 @@ namespace MicrogameCourse.Framework
         private Vector3 originalPosition;
         private Vector3 currentDirection;
         private Vector3 currentWindDirection;
-        
+        private Vector2 dragStartPosition;
+        private bool twoFingerDragTriggered;
+
 
         private void Awake()
         {   
@@ -38,6 +43,11 @@ namespace MicrogameCourse.Framework
         {
             if(session == null || !session.isTimerStarted) return;
 
+
+            #if UNITY_EDITOR
+                HandleEditorInput();
+            #endif
+
             // this method deals with button clicks so doesn't need the pointer values
             HandleMovement();
 
@@ -51,6 +61,42 @@ namespace MicrogameCourse.Framework
             HandleTwoFingerDrag();
             HandlePointerMovement();
         }
+
+    private void HandleEditorInput()
+    {
+        if (Keyboard.current == null)
+            return;
+
+        // Tap
+        if (Keyboard.current.digit1Key.wasPressedThisFrame)
+        {
+            Debug.Log($"1 Key Pressed This Frame");
+            Debug.Log($"Game Reference: {game}");
+            game?.OnPointerPressed();
+        }
+
+        // Swipe
+        if (Keyboard.current.digit2Key.wasPressedThisFrame)
+        {
+            Debug.Log($"2 Key Pressed This Frame");
+            game?.OnDrag(Vector2.zero);
+        }
+
+        // Two Finger Tap
+        if (Keyboard.current.digit3Key.wasPressedThisFrame)
+        {
+            Debug.Log($"3 Key Pressed This Frame");
+            game?.OnTwoFingerTap();
+        }
+
+        // Two Finger Swipe
+        if (Keyboard.current.digit4Key.wasPressedThisFrame)
+        {
+            Debug.Log($"4 Key Pressed This Frame");
+            game?.OnTwoFingerDrag(Vector2.zero);
+        }
+    }
+
 
         private void HandlePointerMovement()
         {
@@ -106,35 +152,89 @@ namespace MicrogameCourse.Framework
 
         private void HandleDrag()
         {
-            if(!Supports(InputMode.Drag)) return;
+            if (!Supports(InputMode.Drag))
+                return;
 
-            Vector2 screenPosition = Pointer.current.position.ReadValue();
-            game?.OnDrag(screenPosition);
+            if (Pointer.current.press.wasPressedThisFrame)
+            {
+                dragStartPosition = Pointer.current.position.ReadValue();
+            }
         }
-
 
         private void HandleDragAndRelease()
         {
-            if(!Supports(InputMode.DragRelease)) return;
+            if (!Supports(InputMode.DragRelease))
+                return;
 
-            if(Pointer.current.press.wasReleasedThisFrame)
+            if (Pointer.current.press.wasReleasedThisFrame)
             {
-                Vector2 screenPosition = Pointer.current.position.ReadValue();
-                game?.OnDragRelease(screenPosition);
+                Vector2 releasePosition = Pointer.current.position.ReadValue();
+
+                float distance = Vector2.Distance(dragStartPosition, releasePosition);
+
+                if (distance >= swipeThreshold)
+                {
+                    Debug.Log("Swipe Detected");
+
+                    game?.OnDrag(releasePosition);
+                }
             }
         }
+
 
         private void HandleTwoFingerTap()
         {
             if(!Supports(InputMode.TwoFingerTap)) return;
+
+            if (Touchscreen.current == null)
+                return;
+
+            var touch1 = Touchscreen.current.touches[0];
+            var touch2 = Touchscreen.current.touches[1];
+
+            bool touch1Pressed = touch1.press.wasPressedThisFrame;
+
+            bool touch2Pressed = touch2.press.wasPressedThisFrame;
+
+            if (touch1Pressed && touch2Pressed)
+            {
+                Debug.Log("Two Finger Tap");
+
+                game?.OnTwoFingerTap();
+            }
         }
 
         private void HandleTwoFingerDrag()
         {
-            if(!Supports(InputMode.TwoFingerDrag)) return;
-            Vector2 screenPosition = Pointer.current.position.ReadValue();
-            game?.OnTwoFingerDrag(screenPosition);
+            if (!Supports(InputMode.TwoFingerDrag))
+                return;
+
+            if (Touchscreen.current == null)
+                return;
+
+            var touch1 = Touchscreen.current.touches[0];
+            var touch2 = Touchscreen.current.touches[1];
+
+            if (!touch1.press.isPressed ||
+                !touch2.press.isPressed)
+            {
+                twoFingerDragTriggered = false;
+                return;
+            }
+
+            Vector2 delta =
+                touch1.delta.ReadValue() +
+                touch2.delta.ReadValue();
+
+            if (delta.magnitude > 20f &&
+                !twoFingerDragTriggered)
+            {
+                twoFingerDragTriggered = true;
+
+                game?.OnTwoFingerDrag(delta);
+            }
         }
+
 
         public void StopMovement()
         {
