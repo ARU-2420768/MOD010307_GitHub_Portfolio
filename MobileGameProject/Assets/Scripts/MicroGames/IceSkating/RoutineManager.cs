@@ -28,6 +28,10 @@ public class RoutineManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI progressText;
     [SerializeField] private TextMeshProUGUI feedbackText;
 
+    [SerializeField] private Transform actionTimerFillObject;
+
+    [SerializeField] private Image actionTimerFill;
+    
     [SerializeField] private float actionWindow = 1f;
 
 
@@ -44,6 +48,9 @@ public class RoutineManager : MonoBehaviour
 
     private SkatingSkill currentSkill;  
     private SkillAction currentAction;
+
+    private Coroutine currentTimerCoroutine;
+    private float currentActionTime;
 
     private int successfulActions;
     private int failedActions;
@@ -145,13 +152,14 @@ public class RoutineManager : MonoBehaviour
         Debug.Log("Starting Routine");
 
         skillsSelectionArea.gameObject.SetActive(false);
-        skillMovesArea.gameObject.SetActive(true);
+        //skillMovesArea.gameObject.SetActive(true);
         skillsStartButton.gameObject.SetActive(false);
         skillNameText.gameObject.SetActive(true);
         actionText.gameObject.SetActive(true);
         progressText.gameObject.SetActive(true);
         feedbackText.gameObject.SetActive(true);
         skillTimerCount.gameObject.SetActive(false);
+        actionTimerFillObject.gameObject.SetActive(true);
 
 
 
@@ -226,18 +234,47 @@ public class RoutineManager : MonoBehaviour
 
         currentState = SkatingState.WaitingForAction;
 
-        if(currentTimer != null)
+        if(currentTimerCoroutine != null)
         {
-            StopCoroutine(currentTimer);
+            StopCoroutine(currentTimerCoroutine);
         }
 
-        currentTimer =
-            StartCoroutine(ActionTimeout());
+        currentTimerCoroutine = StartCoroutine(ActionTimeout());
+
     }
 
     private IEnumerator ActionTimeout()
     {
-        yield return new WaitForSeconds(actionWindow);
+        currentActionTime = GetActionWindow();
+
+        float remainingTime = currentActionTime;
+
+        actionTimerFill.fillAmount = 1f;
+
+        while(remainingTime > 0f)
+        {
+            remainingTime -= Time.deltaTime;
+
+            float percentRemaining = remainingTime / currentActionTime;
+            actionTimerFill.fillAmount = percentRemaining;
+
+            if(percentRemaining > 0.6f)
+            {
+                actionTimerFill.color = Color.green;
+            }
+            else if(percentRemaining > 0.3f)
+            {
+                actionTimerFill.color = Color.yellow;
+            }
+            else
+            {
+                actionTimerFill.color = Color.red;
+            }
+
+            yield return null;
+        }
+
+        actionTimerFill.fillAmount = 0f;
 
         if(currentState != SkatingState.WaitingForAction)
             yield break;
@@ -245,6 +282,9 @@ public class RoutineManager : MonoBehaviour
         Debug.Log("Timed Out");
 
         failedActions++;
+
+        feedbackText.color = Color.red;
+        feedbackText.text = "TOO SLOW";
 
         currentActionIndex++;
 
@@ -257,9 +297,16 @@ public class RoutineManager : MonoBehaviour
         if (currentState != SkatingState.WaitingForAction)
             return;
 
+        if(currentTimerCoroutine != null)
+        {
+            StopCoroutine(currentTimerCoroutine);
+        }
+
+        actionTimerFill.fillAmount = 0f;
+
         Debug.Log($"Expected: {currentAction}");
         Debug.Log($"Received: {action}");
-        
+
         if(currentTimer != null)
         {
             StopCoroutine(currentTimer);
@@ -299,5 +346,27 @@ public class RoutineManager : MonoBehaviour
         Debug.Log($"Failures: {failedActions}");
     }
 
+
+    private float GetActionWindow()
+    {
+        return 2f;
+        switch(currentSkill.skillDifficulty)
+        {
+            case Difficulty.Easy:
+                return 1.5f;
+
+            case Difficulty.Intermediate:
+                return 1.25f;
+
+            case Difficulty.Advanced:
+                return 1f;
+
+            case Difficulty.Expert:
+                return 0.75f;
+
+            default:
+                return 1f;
+        }
+    }
 
 }
