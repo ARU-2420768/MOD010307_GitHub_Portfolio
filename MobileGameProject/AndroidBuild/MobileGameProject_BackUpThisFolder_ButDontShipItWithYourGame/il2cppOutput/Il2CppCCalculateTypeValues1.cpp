@@ -2023,10 +2023,10 @@ struct U3CModuleU3E_t9E1BA9BE437C08823B6FBBCBEA8E4E4913134DBD
 struct U3CModuleU3E_t73FFAC4DB1D9355A56BBA6FBE2580B62E7B48921 
 {
 };
-struct U3CModuleU3E_t450C0387524E0B54394611B9F7F1BF0E91FC56D3 
+struct U3CModuleU3E_t7C5D71B9800D53F6CCBEDD89DAAAA2BA48835865 
 {
 };
-struct U3CModuleU3E_t7C5D71B9800D53F6CCBEDD89DAAAA2BA48835865 
+struct U3CModuleU3E_tB500DDB8D220627F9BFAF448763790F027856F11 
 {
 };
 struct U3CModuleU3E_tCCE5947EACBB46966D34E517FB03602C848AA9A0 
@@ -4973,9 +4973,6 @@ struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tDEC6A64C8275560542A387CAA
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t94757956A3902DAB8AD81798C94448808389B760  : public RuntimeObject
 {
 };
-struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t007A43516D9ADD6A5D9CC32F1A0B81511236E54C  : public RuntimeObject
-{
-};
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tDF32BA2AA355479EB2F529FFA37873A49376C427  : public RuntimeObject
 {
 };
@@ -5823,6 +5820,9 @@ struct U3CRangeIteratorU3Ed__115_tDB1D987AE1C673965E7ABCDA1D189AD36358F14D  : pu
 	int32_t ___count;
 	int32_t ___U3CU3E3__count;
 	int32_t ___U3CiU3E5__2;
+};
+struct BindingsMarshaller_t2B56DBF6A943ABE7E90ADBECDE101C4D3ACBCF14  : public RuntimeObject
+{
 };
 struct ArraySubsetEnumerator_t7E2FD843DFC56595250BBB327B0E72E89DDF0DBA  : public RuntimeObject
 {
@@ -17943,30 +17943,6 @@ struct MonoScriptData_tD1323384D598EA599822B1740DA713F0D50A1E2D_marshaled_com
 	int32_t ___TotalFiles;
 	int32_t ___IsEditorOnly;
 };
-struct MonoScriptData_tAF172A0AA032CF71D726B5F99CDB62E8C767E813 
-{
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___FilePathsData;
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	bool ___IsEditorOnly;
-};
-struct MonoScriptData_tAF172A0AA032CF71D726B5F99CDB62E8C767E813_marshaled_pinvoke
-{
-	Il2CppSafeArray* ___FilePathsData;
-	Il2CppSafeArray* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	int32_t ___IsEditorOnly;
-};
-struct MonoScriptData_tAF172A0AA032CF71D726B5F99CDB62E8C767E813_marshaled_com
-{
-	Il2CppSafeArray* ___FilePathsData;
-	Il2CppSafeArray* ___TypesData;
-	int32_t ___TotalTypes;
-	int32_t ___TotalFiles;
-	int32_t ___IsEditorOnly;
-};
 struct MonoScriptData_t7C1EFF89409588A65507FDF01648DD5646A1DA3E 
 {
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___FilePathsData;
@@ -18816,11 +18792,6 @@ struct AABB_tE57BAC64D9F8465BBFCC4A9C66AF4E884166982A
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___center;
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___extents;
-};
-struct AABB_t8158D1B64F8BF75E983E1D5C99D3274E09F05248  : public RuntimeObject
-{
-	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___Min;
-	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___Max;
 };
 struct ATGMeshInfo_t92E7F6713ADB43FC6EB49CEEC1DF4FAFC5C78A9E 
 {
@@ -20184,6 +20155,18 @@ struct EnterTryFaultInstruction_t22BD3FC4E57CC6CF1ED1D6289B02BA3287F0DE36  : pub
 {
 	TryFaultHandler_t600645BC04EBB0AF2E3FB58B10C70D6F120AAA2D* ____tryHandler;
 };
+struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB  : public RuntimeObject
+{
+	intptr_t ___m_Ptr;
+};
+struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
 struct EventHandle_t9C4AEF917738D8067DBF62365062124D1481C46C 
 {
 	int32_t ___value__;
@@ -20193,6 +20176,10 @@ struct EventModifiers_t48244B043FBB42CDD555C6AC43279EC7158777AC
 	int32_t ___value__;
 };
 struct EventTriggerType_t2AE8CECAD1ABCAD206C826163940BE16C6EAABBA 
+{
+	int32_t ___value__;
+};
+struct EventType_tC62F0D77DB08D7326B58B2D8CF43BD45CFD3203E 
 {
 	int32_t ___value__;
 };
@@ -56362,6 +56349,12 @@ struct EnterFinallyInstruction_tEFCB44E83BC16AF13FBD73A740B816145292D815_StaticF
 {
 	EnterFinallyInstructionU5BU5D_t9B92171D2AA5778F1732D4F91F2E7B88D4DFF6FE* ___s_cache;
 };
+struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_StaticFields
+{
+	bool ___s_AllowOutsideOnGUI;
+	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___s_Current;
+	Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* ___s_MasterEvent;
+};
 struct Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8_StaticFields
 {
 	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___zero;
@@ -68634,13 +68627,13 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize10794 = { sizeof(__StaticArr
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize10795;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize10795 = { sizeof(U3CPrivateImplementationDetailsU3E_t55FC1D237A87005A39D205736AE27F4711007813), -1, sizeof(U3CPrivateImplementationDetailsU3E_t55FC1D237A87005A39D205736AE27F4711007813_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize10796;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize10796 = { sizeof(U3CModuleU3E_t450C0387524E0B54394611B9F7F1BF0E91FC56D3), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize10796 = { sizeof(U3CModuleU3E_tB500DDB8D220627F9BFAF448763790F027856F11), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize10797;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize10797 = { sizeof(MonoScriptData_tAF172A0AA032CF71D726B5F99CDB62E8C767E813)+ sizeof(RuntimeObject), sizeof(MonoScriptData_tAF172A0AA032CF71D726B5F99CDB62E8C767E813_marshaled_pinvoke), 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize10797 = { sizeof(BindingsMarshaller_t2B56DBF6A943ABE7E90ADBECDE101C4D3ACBCF14), -1, 0, 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize10798;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize10798 = { sizeof(UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t007A43516D9ADD6A5D9CC32F1A0B81511236E54C), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize10798 = { sizeof(Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB), sizeof(Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_marshaled_pinvoke), sizeof(Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB_StaticFields), 0 };
 IL2CPP_EXTERN_C_CONST Il2CppTypeDefinitionSizes g_typeDefinitionSize10799;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize10799 = { sizeof(AABB_t8158D1B64F8BF75E983E1D5C99D3274E09F05248), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize10799 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

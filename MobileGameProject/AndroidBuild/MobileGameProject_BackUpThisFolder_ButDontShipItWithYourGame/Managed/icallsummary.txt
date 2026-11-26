@@ -95,6 +95,7 @@ Unity.Jobs.LowLevel.Unsafe.JobsUtility::ScheduleParallelForTransform_Injected
 Unity.Jobs.LowLevel.Unsafe.JobsUtility::ScheduleParallelFor_Injected
 Unity.Jobs.LowLevel.Unsafe.JobsUtility::Schedule_Injected
 Unity.Jobs.LowLevel.Unsafe.JobsUtility::set_JobCompilerEnabled
+Unity.Profiling.LowLevel.Unsafe.ProfilerRecorderHandle::GetByName_Unsafe_Injected
 Unity.Profiling.LowLevel.Unsafe.ProfilerRecorderHandle::GetByName__Unmanaged_Injected
 Unity.Profiling.LowLevel.Unsafe.ProfilerRecorderHandle::GetDescriptionInternal_Injected
 Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::CreateMarker_Injected
@@ -686,11 +687,13 @@ UnityEngine.GUIClip::Internal_Pop
 UnityEngine.GUIClip::Internal_PopParentClip
 UnityEngine.GUIClip::Internal_PushParentClip_Injected
 UnityEngine.GUIClip::SetMatrix_Injected
+UnityEngine.GUIClip::UnclipToWindow_Vector2_Injected
 UnityEngine.GUIClip::Unclip_Vector2_Injected
 UnityEngine.GUIClip::get_topmostRect_Injected
 UnityEngine.GUIClip::get_visibleRect_Injected
 UnityEngine.GUILayoutUtility::Internal_GetWindowRect_Injected
 UnityEngine.GUILayoutUtility::Internal_MoveWindow_Injected
+UnityEngine.GUISettings::Internal_GetCursorFlashSpeed
 UnityEngine.GUIStyle::IsTooltipActive_Injected
 UnityEngine.GUIStyle::get_richText_Injected
 UnityEngine.GUIStyle::get_stretchHeight_Injected
@@ -703,6 +706,7 @@ UnityEngine.GUIStyle::GetStyleStatePtr_Injected
 UnityEngine.GUIStyle::Internal_Create
 UnityEngine.GUIStyle::get_font_Injected
 UnityEngine.GUIStyle::Internal_CalcHeight_Injected
+UnityEngine.GUIStyle::Internal_GetCursorFlashOffset
 UnityEngine.GUIStyle::get_fixedHeight_Injected
 UnityEngine.GUIStyle::get_fixedWidth_Injected
 UnityEngine.GUIStyle::Internal_CalcMinMaxWidth_Injected
@@ -710,13 +714,18 @@ UnityEngine.GUIStyle::Internal_CalcSizeWithConstraints_Injected
 UnityEngine.GUIStyle::Internal_Destroy
 UnityEngine.GUIStyle::Internal_DestroyTextGenerator
 UnityEngine.GUIStyle::Internal_Draw2_Injected
+UnityEngine.GUIStyle::Internal_DrawCursor_Injected
+UnityEngine.GUIStyle::Internal_DrawWithTextSelection_Injected
 UnityEngine.GUIStyle::Internal_Draw_Injected
 UnityEngine.GUIStyle::Internal_GetTextRectOffset_Injected
 UnityEngine.GUIStyle::SetDefaultFont_Injected
 UnityEngine.GUIStyle::SetMouseTooltip_Injected
 UnityEngine.GUIStyle::get_Internal_clipOffset_Injected
+UnityEngine.GUIStyle::get_contentOffset_Injected
 UnityEngine.GUIStyle::get_rawName_Injected
+UnityEngine.GUIStyle::set_Internal_clipOffset_Injected
 UnityEngine.GUIStyle::set_alignment_Injected
+UnityEngine.GUIStyle::set_contentOffset_Injected
 UnityEngine.GUIStyle::set_rawName_Injected
 UnityEngine.GUIStyle::set_stretchHeight_Injected
 UnityEngine.GUIStyle::get_fontStyle_Injected
@@ -751,6 +760,7 @@ UnityEngine.GUIUtility::set_compositionCursorPos_Injected
 UnityEngine.GUIUtility::set_imeCompositionMode
 UnityEngine.GUIUtility::set_pixelsPerPoint
 UnityEngine.GUIUtility::set_systemCopyBuffer_Injected
+UnityEngine.GUIUtility::set_textFieldInput
 UnityEngine.Handheld::Vibrate
 UnityEngine.Hash128::ComputeFromPtr
 UnityEngine.Hash128::Hash128ToStringImpl_Injected
@@ -1601,6 +1611,7 @@ UnityEngine.SpriteRenderer::get_flipY_Injected
 UnityEngine.SpriteRenderer::get_sprite_Injected
 UnityEngine.SpriteRenderer::get_size_Injected
 UnityEngine.SpriteRenderer::set_color_Injected
+UnityEngine.SpriteRenderer::set_flipX_Injected
 UnityEngine.SpriteRenderer::set_hasSpriteChangeEvents_Injected
 UnityEngine.SpriteRenderer::set_sprite_Injected
 UnityEngine.SpriteRenderer::get_drawMode_Injected

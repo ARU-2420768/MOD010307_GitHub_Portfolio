@@ -32,8 +32,6 @@ public class RoutineManager : MonoBehaviour
 
     [SerializeField] private Image actionTimerFill;
     
-    [SerializeField] private float actionWindow = 1f;
-
 
     private List<SkatingSkill> selectedSkills = new();
     public int SelectedSkillCount => selectedSkills.Count;
@@ -225,6 +223,8 @@ public class RoutineManager : MonoBehaviour
             return;
         }
 
+
+
         actionText.text = $"Action: {currentSkill.requiredActions[currentActionIndex].ToString()}";
         progressText.text = $"{currentActionIndex + 1} / {currentSkill.requiredActions.Length}";
 
@@ -314,6 +314,7 @@ public class RoutineManager : MonoBehaviour
 
         currentState = SkatingState.EvaluatingAction;
 
+        // check this is in the correct location
         bool success = action == currentAction;
 
         if (success)
@@ -349,20 +350,23 @@ public class RoutineManager : MonoBehaviour
 
     private float GetActionWindow()
     {
-        return 2f;
         switch(currentSkill.skillDifficulty)
         {
             case Difficulty.Easy:
-                return 1.5f;
+                return 3f;
+//                return 1.5f;
 
             case Difficulty.Intermediate:
-                return 1.25f;
+                return 2.5f;
+//                return 1.25f;
 
             case Difficulty.Advanced:
-                return 1f;
+                return 2f;
+//                return 1f;
 
             case Difficulty.Expert:
-                return 0.75f;
+                return 1.5f;
+//                return 0.75f;
 
             default:
                 return 1f;
