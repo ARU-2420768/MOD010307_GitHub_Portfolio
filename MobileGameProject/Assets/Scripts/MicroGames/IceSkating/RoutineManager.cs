@@ -1,10 +1,10 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
-using System.Linq;
 using UnityEngine.UI;
-using System.Collections;
-using System;
+using UnityEngine.InputSystem;
 
 public class RoutineManager : MonoBehaviour
 {
@@ -27,10 +27,21 @@ public class RoutineManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI actionText;
     [SerializeField] private TextMeshProUGUI progressText;
     [SerializeField] private TextMeshProUGUI feedbackText;
+    [SerializeField] private TextMeshProUGUI JudgesScore;
 
     [SerializeField] private Transform actionTimerFillObject;
 
     [SerializeField] private Image actionTimerFill;
+
+    [SerializeField] private RectTransform skillMovesPlayArea;
+    [SerializeField] private GameObject tapPrefab;
+    [SerializeField] private GameObject swipePrefab;
+    [SerializeField] private GameObject twoFingerTapPrefab;
+    [SerializeField] private GameObject twoFingerDragPrefab;
+
+
+    private RectTransform currentTapTarget;
+    private SwipeAction currentSwipeAction;
     
 
     private List<SkatingSkill> selectedSkills = new();
@@ -175,14 +186,19 @@ public class RoutineManager : MonoBehaviour
     private IEnumerator BeginRoutine()
     {
         Debug.Log("3");
+        skillsStartButton.gameObject.SetActive(true);
+        skillsStartButton.GetComponent<TextMeshProUGUI>().text = "3";
         yield return new WaitForSeconds(1);
 
         Debug.Log("2");
+        skillsStartButton.GetComponent<TextMeshProUGUI>().text = "2";
         yield return new WaitForSeconds(1);
 
         Debug.Log("1");
+        skillsStartButton.GetComponent<TextMeshProUGUI>().text = "1";
         yield return new WaitForSeconds(1);
 
+        skillsStartButton.gameObject.SetActive(false);
         StartNextSkill();
     }
 
@@ -231,6 +247,20 @@ public class RoutineManager : MonoBehaviour
         currentAction = currentSkill.requiredActions[currentActionIndex];
 
         Debug.Log($"Perform: {currentAction}");
+
+        ClearExistingTargets();
+
+        switch (currentAction)
+        {
+            case SkillAction.Tap:
+                SpawnTapTarget();
+                break;
+            case SkillAction.Swipe:
+                SpawnSwipeTarget();
+                break;
+           default:
+                break;
+        }
 
         currentState = SkatingState.WaitingForAction;
 
@@ -291,6 +321,77 @@ public class RoutineManager : MonoBehaviour
         StartNextAction();
     }
 
+    private void SpawnTapTarget()
+    {
+        Debug.Log("SpawnTapTarget");
+        GameObject target = Instantiate(tapPrefab, skillMovesPlayArea);
+
+        currentTapTarget =  target.GetComponent<RectTransform>();
+    }
+
+    private void SpawnSwipeTarget()
+    {
+        Debug.Log("SpawnSwipeTraget");
+        GameObject swipeObject  = Instantiate(swipePrefab, skillMovesPlayArea);
+
+        currentSwipeAction =  swipeObject.GetComponent<SwipeAction>();
+
+        PositionSwipeMarkers();
+        
+    }
+    private void PositionSwipeMarkers()
+    {
+        RectTransform startRect = currentSwipeAction.StartMarker;
+
+        RectTransform endRect = currentSwipeAction.EndMarker;
+
+        Rect areaRect = skillMovesPlayArea.rect;
+
+        float startHalfWidth = startRect.rect.width * 0.5f;
+
+        float startHalfHeight = startRect.rect.height * 0.5f;
+
+        Vector2 startPosition = new Vector2(UnityEngine.Random.Range(areaRect.xMin + startHalfWidth, areaRect.xMax - startHalfWidth),
+                                    UnityEngine.Random.Range(areaRect.yMin + startHalfHeight, areaRect.yMax - startHalfHeight));
+
+        Vector2 direction = UnityEngine.Random.insideUnitCircle.normalized;
+
+        float swipeDistance = 150;
+
+        Vector2 endPosition = startPosition + direction * swipeDistance;
+
+        float endHalfWidth = endRect.rect.width * 0.5f;
+
+        float endHalfHeight = endRect.rect.height * 0.5f;
+
+        endPosition.x = Mathf.Clamp(endPosition.x, areaRect.xMin + endHalfWidth, areaRect.xMax - endHalfWidth);
+        endPosition.y = Mathf.Clamp(endPosition.y, areaRect.yMin + endHalfHeight, areaRect.yMax - endHalfHeight);
+
+        startRect.anchoredPosition = startPosition;
+
+        endRect.anchoredPosition = endPosition;
+    }
+
+    public void ValidateTapAction()
+    {
+        Debug.Log("ValidateTapAction");
+        if(currentAction != SkillAction.Tap)
+            return;
+
+        Vector2 pointerPosition = Pointer.current.position.ReadValue();           
+
+        bool insideTarget =
+            RectTransformUtility.RectangleContainsScreenPoint(
+                currentTapTarget,
+                pointerPosition);
+
+        if(insideTarget)
+        {
+            RegisterAction(SkillAction.Tap);
+        }
+
+    }
+
     public void RegisterAction(SkillAction action)
     {
 
@@ -319,12 +420,15 @@ public class RoutineManager : MonoBehaviour
 
         if (success)
         {
+            feedbackText.text = "Action Correct";
             successfulActions++;
 
             Debug.Log("Correct Action");
         }
         else
         {
+            feedbackText.text = "Action Wrong";
+ 
             failedActions++;
 
             Debug.Log("Incorrect Action");
@@ -341,15 +445,196 @@ public class RoutineManager : MonoBehaviour
 
         float accuracy = (float)successfulActions / (successfulActions + failedActions);
 
+        feedbackText.text = "Routine Complete";
+
+
         Debug.Log("Routine Complete");
 
         Debug.Log($"Successes: {successfulActions}");
         Debug.Log($"Failures: {failedActions}");
+
+        Dictionary<JudgeData, float> scores =  CalculateJudgesScores(selectedSkills, accuracy);
+
+        DisplayResults(scores);
     }
+
+
+    public void DisplayResults(Dictionary<JudgeData, float> scores)
+    {
+        ClearExistingTargets();
+        JudgesScore.text = "Judges Scores:";
+        float finalScore = 0f;
+        foreach(KeyValuePair<JudgeData, float> score in scores)
+        {
+            finalScore += score.Value;
+            JudgesScore.text += $"\n {score.Key.judgeName} :{score.Value:F1}";
+        }
+        JudgesScore.text += $"\nFinal Score: {finalScore:F1}";
+
+    }
+
+    public Dictionary<JudgeData,float>  CalculateJudgesScores(IReadOnlyList<SkatingSkill> routine, float accuracy)
+    {
+        Dictionary<JudgeData,float> scores = new();
+
+        foreach(var judge in JudgeManager.Instance.judges)
+        {
+            scores.Add(judge, CalculateJudgeScore(judge, routine, accuracy));
+        }
+
+        return scores;
+    }
+
+
+    public float CalculateJudgeScore(
+        JudgeData judge,
+        IReadOnlyList<SkatingSkill> routine,
+        float accuracy)
+    {
+        float executionScore =
+            accuracy * 10f;
+
+        float difficultyScore =
+            CalculateDifficultyScore(
+                judge,
+                routine);
+
+        float baseScore =
+            (
+                executionScore * 0.625f
+            )
+            +
+            (
+                difficultyScore * 0.375f
+            );
+
+        float routineLengthModifier =
+            CurrentDuration / maxDuration;
+
+        float finalScore =
+            baseScore *
+            routineLengthModifier;
+
+        finalScore *=
+            Mathf.Lerp(
+                1.2f,
+                0.8f,
+                judge.strictness);
+
+        return Mathf.Clamp(
+            finalScore,
+            0f,
+            10f);
+    }
+
+
+   private float CalculateDifficultyScore(JudgeData judge, IReadOnlyList<SkatingSkill> routine)
+    {
+
+        float difficultyPoints = 0f;
+        float maximumDifficultyPoints = 0f;
+
+        foreach(var skill in routine)
+        {
+            float contribution = skill.difficultyScore * skill.duration;
+
+            foreach(var value in skill.skillValues)
+            {
+                if(value.category == judge.favouriteCategory)
+                {
+                    contribution *= judge.favouriteCategoryMultiplier;
+                    break;
+                }
+            }
+
+            difficultyPoints += contribution;
+
+            maximumDifficultyPoints += 4f * skill.duration;
+        }
+
+        if(maximumDifficultyPoints <= 0f)
+            return 0f;
+
+        return Mathf.Clamp((difficultyPoints / maximumDifficultyPoints) * 10f, 0f, 10f);
+    }
+
+
+    private float CalculateDifficultyScore2(JudgeData judge,    IReadOnlyList<SkatingSkill> routine)
+    {
+        float score = 0f;
+
+        float maxScore = 0f;
+
+        foreach(var skill in routine)
+        {
+            float skillScore = skill.difficultyScore;
+
+            foreach(var value in skill.skillValues)
+            {
+                if(value.category ==
+                judge.favouriteCategory)
+                {
+                    skillScore *= judge.favouriteCategoryMultiplier;
+
+                    break;
+                }
+            }
+            score += skillScore;
+            float maxDifficulty = 4f;
+            maxScore += maxDifficulty * judge.favouriteCategoryMultiplier;
+        }
+
+        if(maxScore <= 0)
+            return 0f;
+
+        return
+            (score / maxScore) * 10f;
+    }
+
+    public float CalculateJudgeScore1(JudgeData judge, IReadOnlyList<SkatingSkill> routine, float accuracy)
+    {
+        float score = 0f;
+
+        float executionScore = accuracy * 10f;
+
+        float difficultyScore = CalculateDifficultyScore(judge, routine);
+
+        float baseScore =
+            (
+                executionScore * 0.625f
+            )
+            +
+            (
+                difficultyScore * 0.375f
+            );
+
+        foreach(var skill in routine)
+        {
+            foreach(var value in skill.skillValues)
+            {
+                float contribution = value.value;
+
+                if(value.category == judge.favouriteCategory)
+                {
+                    contribution *= judge.favouriteCategoryMultiplier;
+                }
+                score += contribution;
+            }
+        }
+
+        score *= accuracy;
+
+        score *= Mathf.Lerp(1.2f, 0.8f, judge.strictness);
+
+        return score;
+    }
+
+
 
 
     private float GetActionWindow()
     {
+        return 3f;
         switch(currentSkill.skillDifficulty)
         {
             case Difficulty.Easy:
@@ -370,6 +655,14 @@ public class RoutineManager : MonoBehaviour
 
             default:
                 return 1f;
+        }
+    }
+
+    private void ClearExistingTargets()
+    {
+        foreach(Transform child in skillMovesPlayArea)
+        {
+            Destroy(child.gameObject);
         }
     }
 

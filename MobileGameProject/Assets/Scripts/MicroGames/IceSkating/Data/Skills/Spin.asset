@@ -18,6 +18,15 @@ MonoBehaviour:
   spinSkill: 0.7
   twistSkill: 0
   artisticSkill: 0.2
+  skillValues:
+  - category: 0
+    value: 0.1
+  - category: 1
+    value: 0.7
+  - category: 2
+    value: 0
+  - category: 3
+    value: 0.2
   requiredActions: 0100000001000000
   duration: 2
   baseScore: 4

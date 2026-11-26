@@ -81,6 +81,7 @@ extern void CanvasRenderer_Clear_Injected_mA71BA1EF24EDA109E5F961CE0BDD455EF7B65
 extern void RectTransformUtility_PixelAdjustPoint_mF772BC0CDB4D0B6BDB06DADEFB59B8CEEF920558 (void);
 extern void RectTransformUtility_PixelAdjustRect_mCE31ACDDCB3E4DA1B3BC5A095C31B0A520A019E6 (void);
 extern void RectTransformUtility_PointInRectangle_m1F51E20D39ABB84471007410F37EDE02C23E3D40 (void);
+extern void RectTransformUtility_RectangleContainsScreenPoint_mCEE05BFF3488FEB20BA21B5A4779116397B776B0 (void);
 extern void RectTransformUtility_RectangleContainsScreenPoint_mBA6600E46C416EF032491AED969AA00BE2249630 (void);
 extern void RectTransformUtility_RectangleContainsScreenPoint_m92072CBF5F04078C1549F971F97235E99F06E5C3 (void);
 extern void RectTransformUtility_ScreenPointToWorldPointInRectangle_mA09F3D77E4731EF789E23E19D5CBA5EE5D1CF745 (void);
@@ -164,7 +165,7 @@ extern void UISystemProfilerApi_BeginSample_m6AF893A85204DA2129D9D3D75D8A6EDD329
 extern void UISystemProfilerApi_EndSample_mAFBCEDF8073F3FB0E1644482D909F108DBE11F3D (void);
 extern void UISystemProfilerApi_AddMarker_mB0E292213D18AE3770165011E265A57B17FCF90B (void);
 extern void UISystemProfilerApi_AddMarker_Injected_m283D922C84E040D412F5DC712DE6C81FD05AC87E (void);
-static Il2CppMethodPointer s_methodPointers[158] = 
+static Il2CppMethodPointer s_methodPointers[159] = 
 {
 	NULL,
 	CanvasGroup_get_alpha_mBFEA193D2886B27CC53B31F90F7A1659B67ED6DF,
@@ -241,6 +242,7 @@ static Il2CppMethodPointer s_methodPointers[158] =
 	RectTransformUtility_PixelAdjustPoint_mF772BC0CDB4D0B6BDB06DADEFB59B8CEEF920558,
 	RectTransformUtility_PixelAdjustRect_mCE31ACDDCB3E4DA1B3BC5A095C31B0A520A019E6,
 	RectTransformUtility_PointInRectangle_m1F51E20D39ABB84471007410F37EDE02C23E3D40,
+	RectTransformUtility_RectangleContainsScreenPoint_mCEE05BFF3488FEB20BA21B5A4779116397B776B0,
 	RectTransformUtility_RectangleContainsScreenPoint_mBA6600E46C416EF032491AED969AA00BE2249630,
 	RectTransformUtility_RectangleContainsScreenPoint_m92072CBF5F04078C1549F971F97235E99F06E5C3,
 	RectTransformUtility_ScreenPointToWorldPointInRectangle_mA09F3D77E4731EF789E23E19D5CBA5EE5D1CF745,
@@ -325,7 +327,7 @@ static Il2CppMethodPointer s_methodPointers[158] =
 	UISystemProfilerApi_AddMarker_mB0E292213D18AE3770165011E265A57B17FCF90B,
 	UISystemProfilerApi_AddMarker_Injected_m283D922C84E040D412F5DC712DE6C81FD05AC87E,
 };
-static const int32_t s_InvokerIndices[158] = 
+static const int32_t s_InvokerIndices[159] = 
 {
 	-1,
 	18194,
@@ -402,6 +404,7 @@ static const int32_t s_InvokerIndices[158] =
 	23084,
 	25694,
 	20977,
+	25094,
 	22601,
 	20966,
 	20965,
@@ -490,7 +493,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule = 
 {
 	"UnityEngine.UIModule.dll",
-	158,
+	159,
 	s_methodPointers,
 	0,
 	NULL,

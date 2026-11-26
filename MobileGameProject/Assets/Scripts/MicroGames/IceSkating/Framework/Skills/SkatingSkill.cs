@@ -1,14 +1,19 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Framework/IceDancing/SkatingSkill")]
+[CreateAssetMenu(menuName = "Framework/Ice Skating/SkatingSkill")]
 public class SkatingSkill : ScriptableObject
 {
     public string skillName;
     public Difficulty skillDifficulty;
+    [Header("Scoring")]
+    [Range(1f, 4f)]
+    public float difficultyScore;
     public float jumpSkill;
     public float spinSkill;
     public float twistSkill;
     public float artisticSkill;
+
+    public SkillCategoryValue[] skillValues;
 
     public SkillAction[] requiredActions;
 

@@ -29,6 +29,8 @@ Last updated: 20 / 10 / 2026 (DD/MM/YYYY)
 
 “Mobile Controls” by Kenney, Source: https://kenney.nl/assets/mobile-controls, Licence: Creative Commons CC0 1.0 Universal (Public Domain) https://creativecommons.org/publicdomain/zero/1.0/, Modified: None, Notes: ____________________
 
+Modular Characters” by Kenney, Source: https://kenney.nl/assets/modular-characters, Licence: Creative Commons CC0 1.0 Universal (Public Domain) https://creativecommons.org/publicdomain/zero/1.0/, Modified: None, Notes: ____________________
+
 - 
 - “______________________” by ______________________, Source: [link], Licence: __________________ [link], Notes: __________________
 

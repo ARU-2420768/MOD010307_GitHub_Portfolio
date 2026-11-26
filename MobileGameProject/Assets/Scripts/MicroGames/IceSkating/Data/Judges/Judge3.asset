@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f4277acd0f84048ba8afb59d370025, type: 3}
+  m_Name: Judge3
+  m_EditorClassIdentifier: MicrogameCourse::JudgeData
+  judgeName: Sally
+  strictness: 0.3
+  favouriteCategory: 1
+  favouriteCategoryMultiplier: 1.25
+  Face: {fileID: 1370651029454536402, guid: 6508b13728644444bbd2158026036c88, type: 3}
+  LeftEye: {fileID: 5394896202020765773, guid: 4288aeda3fb26d548a6fb9a1fe5da236, type: 3}
+  LeftEyeBrow: {fileID: 5778326371490632523, guid: a053f3a548c258c42b31831b07def3f2, type: 3}
+  RightEye: {fileID: 5394896202020765773, guid: 4288aeda3fb26d548a6fb9a1fe5da236, type: 3}
+  RightEyeBrow: {fileID: 5778326371490632523, guid: a053f3a548c258c42b31831b07def3f2, type: 3}
+  Nose: {fileID: -717742124196130881, guid: 325ee60cd32e55246b6bde293fa10f83, type: 3}
+  Mouth: {fileID: -2375349685599399214, guid: 5b73add07f0462542a4601cc4a4efdcf, type: 3}
+  Hair: {fileID: 3607102773216367207, guid: 2d68384f2bf607f4e9675916acccced7, type: 3}
+  Neck: {fileID: -3642614251967463714, guid: b0e1f50c895f1f647ba8aa52412903ab, type: 3}
+  Trousers: {fileID: -2099947151900275968, guid: 306a3380118e6404fbc81371e999b275, type: 3}
+  Shirt: {fileID: 5842610017649327021, guid: 854e35629831a784c922ad05d8f4be8d, type: 3}
+  LeftArm: {fileID: 1208725620619558515, guid: 76dd76a8da3e39241b88f5a4d52f2e4f, type: 3}
+  LeftHand: {fileID: 3650216882250480844, guid: 6f76f622817481d449d9e18deefccfe2, type: 3}
+  RightArm: {fileID: 1208725620619558515, guid: 76dd76a8da3e39241b88f5a4d52f2e4f, type: 3}
+  RightHand: {fileID: 3650216882250480844, guid: 6f76f622817481d449d9e18deefccfe2, type: 3}
