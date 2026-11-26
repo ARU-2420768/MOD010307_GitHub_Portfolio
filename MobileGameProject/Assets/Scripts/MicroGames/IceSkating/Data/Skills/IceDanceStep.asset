@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: MicrogameCourse::SkatingSkill
   skillName: Ice Dance Step
   skillDifficulty: 3
+  difficultyScore: 3
   jumpSkill: 0.1
   spinSkill: 0.2
   twistSkill: 0.1

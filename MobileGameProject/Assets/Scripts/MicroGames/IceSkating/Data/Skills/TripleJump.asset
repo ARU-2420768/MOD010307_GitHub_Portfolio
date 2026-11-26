@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: MicrogameCourse::SkatingSkill
   skillName: Triple Jump
   skillDifficulty: 3
+  difficultyScore: 3
   jumpSkill: 0.85
   spinSkill: 0
   twistSkill: 0.5
