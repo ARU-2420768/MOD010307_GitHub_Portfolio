@@ -257,6 +257,7 @@ namespace MicrogameCourse.Microgames
 
         public override void OnPointerPressed()
         {
+            Debug.Log("Curling OnPointerPressed");
             if(!hasGameStarted)
                 return;
             if(stone == null)
@@ -280,14 +281,21 @@ namespace MicrogameCourse.Microgames
 
         public override void OnDrag(Vector2 position)
         {
+
+            Debug.Log("Curling Game OnDrag");
             if(!hasGameStarted)
                 return;
             if (!isDragging)
                 return;
 
+
+
+
             dragCurrentPosition = position;
 
+
             Vector2 dragVector = dragStartPosition - dragCurrentPosition;
+
 
             Color c = (dragVector.magnitude <= 160f)? Color.green: Color.red;
 
@@ -323,6 +331,8 @@ namespace MicrogameCourse.Microgames
         }
         public override void OnDragRelease(Vector2 position)
         {
+            Debug.Log("Curling Game OnDrag Release");
+
             if(!hasGameStarted)
                 return;
             if (!isDragging)

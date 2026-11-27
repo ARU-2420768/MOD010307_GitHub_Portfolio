@@ -4,12 +4,17 @@ using TMPro;
 using MicrogameCourse.Framework;
 using MicrogameCourse.ProgressionFramework;
 using System;
+using UnityEngine.InputSystem;
+
 
 namespace MicrogameCourse.Microgames
 {
 
     public sealed class IceSkatingGame : MicrogameBehaviour
     {
+
+        private static IceSkatingGame iceSkatingGame;
+        public static IceSkatingGame Instance => iceSkatingGame;
 
         [Header("Medal Success Levels - Thresholds")]
         [SerializeField] private string gameName = "Ice Skating";
@@ -29,6 +34,7 @@ namespace MicrogameCourse.Microgames
         {
             mainCamera = Camera.main;
             thresholds = gameConfig.medalThresholds;
+            iceSkatingGame = this;
         }
 
         void Start()
@@ -46,24 +52,40 @@ namespace MicrogameCourse.Microgames
             if (!IsRunning) return;
         }
 
+        private void LogSkatingInput(string source, SkillAction action, Vector2? pos = null)
+        {
+            var rm = RoutineManager.Instance;
+            string posText = pos.HasValue ? pos.Value.ToString() : "N/A";
+            Debug.Log($"[InputDebug][IceSkatingGame] {source} -> {action} | pos={posText} | IsRunning={IsRunning} | rmExists={rm != null}");
+        }
+
         public override void OnPointerPressed()
         {    
-            Debug.Log("IceSkatingGame OnPointerPressed");
+            LogSkatingInput("OnPointerPressed", SkillAction.Tap, Pointer.current?.position.ReadValue());
             RoutineManager.Instance.RegisterAction(SkillAction.Tap);
         }
 
         public override void OnDrag(Vector2 screenPosition)
         {
-            RoutineManager.Instance.RegisterAction(SkillAction.Swipe);
+            LogSkatingInput("OnDrag", SkillAction.Swipe, screenPosition);
+            //RoutineManager.Instance.RegisterAction(SkillAction.Swipe);
+        }
+
+        public override void OnDragRelease(Vector2 screenPosition)
+        {
+            LogSkatingInput("OnDragRelease", SkillAction.Swipe, screenPosition);
+            RoutineManager.Instance?.RegisterAction(SkillAction.Swipe);
         }
 
         public override void OnTwoFingerTap()
         {
+            LogSkatingInput("OnTwoFingerTap", SkillAction.TwoFingerTap);
             RoutineManager.Instance.RegisterAction(SkillAction.TwoFingerTap);
         }
 
         public override void OnTwoFingerDrag(Vector2 screenPosition)
         {
+            LogSkatingInput("OnTwoFingerDrag", SkillAction.TwoFingerDrag, screenPosition);
             RoutineManager.Instance.RegisterAction(SkillAction.TwoFingerDrag);
         }
 
@@ -78,7 +100,7 @@ namespace MicrogameCourse.Microgames
             return MedalType.Unranked;
         }
 
-        private void CheckForCompletion()
+        public void CheckForCompletion()
         {
             if(MedalManager.Instance == null)
                 Debug.Log($"Medal Manager is created from the main menu - start from there first");
@@ -89,17 +111,7 @@ namespace MicrogameCourse.Microgames
             Win();
         }
 
-        public void ShowFeedback(string message, Color? colour = null)
-        {
-            feedbackText.color = colour ?? Color.white;
-            feedbackText.text = message;
-        }
 
-        public void UpdateProgress()
-        {
-            progressText.gameObject.SetActive(true);
-            progressText.text = $"Shots Success: {score} / Bronze 2 / Silver 4 / Gold 5";
-        }
 
 
     }

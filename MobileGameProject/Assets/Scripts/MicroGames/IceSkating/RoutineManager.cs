@@ -5,6 +5,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using MicrogameCourse.Microgames;
+
+
 
 public class RoutineManager : MonoBehaviour
 {
@@ -42,6 +45,7 @@ public class RoutineManager : MonoBehaviour
 
     private RectTransform currentTapTarget;
     private SwipeAction currentSwipeAction;
+    private TwoFingerTapAction currentTwoFingerTapAction;
     
 
     private List<SkatingSkill> selectedSkills = new();
@@ -155,10 +159,14 @@ public class RoutineManager : MonoBehaviour
 
     public void StartRoutine()
     {
-        if(selectedSkills.Count == 0)
-            return;
 
-        Debug.Log("Starting Routine");
+        Debug.Log($"[RoutineManager] StartRoutine called | State={currentState} | SelectedCount={selectedSkills.Count} | Duration={currentDuration}/{maxDuration}");
+
+        if(selectedSkills.Count == 0)
+        {
+            Debug.LogWarning("[RoutineManager] StartRoutine aborted: selectedSkills is empty.");
+            return;
+        }
 
         skillsSelectionArea.gameObject.SetActive(false);
         //skillMovesArea.gameObject.SetActive(true);
@@ -179,12 +187,13 @@ public class RoutineManager : MonoBehaviour
         failedActions = 0;
 
         currentState = SkatingState.Countdown;
-
+        Debug.Log("[RoutineManager] Starting BeginRoutine coroutine...");
         StartCoroutine(BeginRoutine());
     }
 
     private IEnumerator BeginRoutine()
     {
+        
         Debug.Log("3");
         skillsStartButton.gameObject.SetActive(true);
         skillsStartButton.GetComponent<TextMeshProUGUI>().text = "3";
@@ -257,6 +266,9 @@ public class RoutineManager : MonoBehaviour
                 break;
             case SkillAction.Swipe:
                 SpawnSwipeTarget();
+                break;
+            case SkillAction.TwoFingerTap:
+                SpawnTwoFingerTapTarget();
                 break;
            default:
                 break;
@@ -339,6 +351,36 @@ public class RoutineManager : MonoBehaviour
         PositionSwipeMarkers();
         
     }
+
+
+    private void SpawnTwoFingerTapTarget()
+    {
+        Debug.Log("SpawnTwoFingerTapTarget");
+        GameObject twoFingerTapObject =  Instantiate(twoFingerTapPrefab, skillMovesPlayArea);
+        currentTwoFingerTapAction = twoFingerTapObject.GetComponent<TwoFingerTapAction>();
+
+        PositionTwoFingerTapMarkers();
+    }
+
+    private void PositionTwoFingerTapMarkers()
+    {
+        RectTransform leftRect = currentTwoFingerTapAction.BoxClick1;
+
+        RectTransform rightRect = currentTwoFingerTapAction.BoxClick2;
+
+        Rect areaRect = skillMovesPlayArea.rect;
+
+        float halfWidth = leftRect.rect.width * 0.5f;
+
+        float halfHeight = leftRect.rect.height * 0.5f;
+
+        Vector2 centrePosition =  new Vector2(Random.Range(areaRect.xMin + 150f, areaRect.xMax - 150f), Random.Range(areaRect.yMin + halfHeight, areaRect.yMax - halfHeight));
+
+        leftRect.anchoredPosition = centrePosition + Vector2.left * 80f;
+
+        rightRect.anchoredPosition = centrePosition + Vector2.right * 80f;
+    }
+
     private void PositionSwipeMarkers()
     {
         RectTransform startRect = currentSwipeAction.StartMarker;
@@ -356,7 +398,7 @@ public class RoutineManager : MonoBehaviour
 
         Vector2 direction = UnityEngine.Random.insideUnitCircle.normalized;
 
-        float swipeDistance = 150;
+        float swipeDistance = 250;
 
         Vector2 endPosition = startPosition + direction * swipeDistance;
 
@@ -470,6 +512,7 @@ public class RoutineManager : MonoBehaviour
             JudgesScore.text += $"\n {score.Key.judgeName} :{score.Value:F1}";
         }
         JudgesScore.text += $"\nFinal Score: {finalScore:F1}";
+        StartCoroutine(EndGame());
 
     }
 
@@ -558,80 +601,6 @@ public class RoutineManager : MonoBehaviour
         return Mathf.Clamp((difficultyPoints / maximumDifficultyPoints) * 10f, 0f, 10f);
     }
 
-
-    private float CalculateDifficultyScore2(JudgeData judge,    IReadOnlyList<SkatingSkill> routine)
-    {
-        float score = 0f;
-
-        float maxScore = 0f;
-
-        foreach(var skill in routine)
-        {
-            float skillScore = skill.difficultyScore;
-
-            foreach(var value in skill.skillValues)
-            {
-                if(value.category ==
-                judge.favouriteCategory)
-                {
-                    skillScore *= judge.favouriteCategoryMultiplier;
-
-                    break;
-                }
-            }
-            score += skillScore;
-            float maxDifficulty = 4f;
-            maxScore += maxDifficulty * judge.favouriteCategoryMultiplier;
-        }
-
-        if(maxScore <= 0)
-            return 0f;
-
-        return
-            (score / maxScore) * 10f;
-    }
-
-    public float CalculateJudgeScore1(JudgeData judge, IReadOnlyList<SkatingSkill> routine, float accuracy)
-    {
-        float score = 0f;
-
-        float executionScore = accuracy * 10f;
-
-        float difficultyScore = CalculateDifficultyScore(judge, routine);
-
-        float baseScore =
-            (
-                executionScore * 0.625f
-            )
-            +
-            (
-                difficultyScore * 0.375f
-            );
-
-        foreach(var skill in routine)
-        {
-            foreach(var value in skill.skillValues)
-            {
-                float contribution = value.value;
-
-                if(value.category == judge.favouriteCategory)
-                {
-                    contribution *= judge.favouriteCategoryMultiplier;
-                }
-                score += contribution;
-            }
-        }
-
-        score *= accuracy;
-
-        score *= Mathf.Lerp(1.2f, 0.8f, judge.strictness);
-
-        return score;
-    }
-
-
-
-
     private float GetActionWindow()
     {
         return 3f;
@@ -665,5 +634,23 @@ public class RoutineManager : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
+
+    private IEnumerator EndGame()
+    {
+        Debug.Log("End Game in 3");
+        yield return new WaitForSeconds(1);
+
+        Debug.Log("End Game in 2");
+        yield return new WaitForSeconds(1);
+
+        Debug.Log("End Game in 1");
+        yield return new WaitForSeconds(1);
+
+        skillsStartButton.gameObject.SetActive(false);
+        IceSkatingGame.Instance.CheckForCompletion();
+    }
+
+
+
 
 }

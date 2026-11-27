@@ -13276,7 +13276,7 @@ IL2CPP_EXTERN_C  void ArrayBuilder_1_EnsureCapacity_m6BA8EE4C3649B8CFBFA4E193BE6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 96081
+// Method Definition Index: 96110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArrayDebugView_1__ctor_mB791939A3E027CD9186BDACBC216D40470083605_gshared (ArrayDebugView_1_t13F4C9BD7109600E7AC626A1F6F4D85073054D02* __this, Array_1_t6B7799491F8633D7A2A3353B59A01AAC47D82A01 ___0_array, const RuntimeMethod* method) 
 {
 	{
@@ -13289,7 +13289,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArrayDebugView_1__ctor_mB791939A3E027CD9
 		return;
 	}
 }
-// Method Definition Index: 96082
+// Method Definition Index: 96111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR __Il2CppFullySharedGenericStructTypeU5BU5D_tF3B929B6E80D0A8C109178E11CE8FF9957B014C1* ArrayDebugView_1_get_Items_m17A8E3652B013ADD9AD0D8893221A54C2FDCEFBE_gshared (ArrayDebugView_1_t13F4C9BD7109600E7AC626A1F6F4D85073054D02* __this, const RuntimeMethod* method) 
 {
 	__Il2CppFullySharedGenericStructTypeU5BU5D_tF3B929B6E80D0A8C109178E11CE8FF9957B014C1* V_0 = NULL;

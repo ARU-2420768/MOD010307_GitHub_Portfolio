@@ -19,7 +19,7 @@ namespace MicrogameCourse.Framework
 
         private MicrogameSession session;
         private Camera mainCamera;
-
+        private bool isDraggingPointer;
         private float currentSpeed;
 
         private Vector3 originalPosition;
@@ -28,6 +28,7 @@ namespace MicrogameCourse.Framework
         private Vector2 dragStartPosition;
         private bool twoFingerDragTriggered;
 
+        private bool hasMovedPastThreshold;
 
         private void Awake()
         {   
@@ -79,7 +80,7 @@ namespace MicrogameCourse.Framework
         if (Keyboard.current.digit2Key.wasPressedThisFrame)
         {
             Debug.Log($"2 Key Pressed This Frame");
-            game?.OnDrag(Vector2.zero);
+            game?.OnDragRelease(Vector2.zero);
         }
 
         // Two Finger Tap
@@ -131,15 +132,53 @@ namespace MicrogameCourse.Framework
             transform.position = position;
         }
 
-
+private bool trackingTapCandidate;
+private bool tapCandidateExceededThreshold;
 
         private void HandleClick()
+        {
+            if (!Supports(InputMode.Click)) return;
+
+            if (Supports(InputMode.DragRelease))
+            {
+                if (Pointer.current.press.wasPressedThisFrame)
+                {
+                    trackingTapCandidate = true;
+                    tapCandidateExceededThreshold = false;
+                }
+                else if (trackingTapCandidate && Pointer.current.press.isPressed)
+                {
+                    if (Vector2.Distance(dragStartPosition, Pointer.current.position.ReadValue()) >= swipeThreshold)
+                    {
+                        tapCandidateExceededThreshold = true;
+                    }
+                }
+                else if (trackingTapCandidate && Pointer.current.press.wasReleasedThisFrame)
+                {
+                    if (!tapCandidateExceededThreshold)
+                    {
+                        game?.OnPointerPressed();
+                    }
+                    trackingTapCandidate = false;
+                }
+                return;
+            }
+
+            if (Pointer.current.press.wasPressedThisFrame)
+            {
+                game?.OnPointerPressed();
+            }
+        }
+
+
+        private void HandleClick1()
         {
 
             if(!Supports(InputMode.Click)) return;
 
             if (Pointer.current.press.wasPressedThisFrame)
             {
+                Debug.Log($"[MobileInput][PC] PressDown pos={Pointer.current.position.ReadValue()} | hasDrag={Supports(InputMode.Drag)} | hasDragRelease={Supports(InputMode.DragRelease)}");
                 game?.OnPointerPressed();
             }
         }
@@ -158,7 +197,47 @@ namespace MicrogameCourse.Framework
             if (Pointer.current.press.wasPressedThisFrame)
             {
                 dragStartPosition = Pointer.current.position.ReadValue();
+                isDraggingPointer = true;
+                hasMovedPastThreshold = false;
+                Debug.Log($"[MobileInput][PC] DragStart pos={dragStartPosition}");
             }
+
+            if (isDraggingPointer && Pointer.current.press.isPressed)
+                {
+                    Vector2 currentPos = Pointer.current.position.ReadValue();
+                    if (Vector2.Distance(dragStartPosition, currentPos) >= swipeThreshold)
+                    {
+                        hasMovedPastThreshold = true;
+                    }
+                    if (hasMovedPastThreshold)
+                    {
+                        game?.OnDrag(currentPos);
+                    }
+                    float dist = Vector2.Distance(dragStartPosition, currentPos);
+                    Debug.Log($"[MobileInput][PC] DragHold cur={currentPos} | dist={dist:F1}/{swipeThreshold}");
+                    //game?.OnDrag(curPos);
+                }
+
+            if (Pointer.current.press.wasReleasedThisFrame)
+            {
+                isDraggingPointer = false;
+                hasMovedPastThreshold = false;
+                Debug.Log($"[MobileInput][PC] PressUp pos={Pointer.current.position.ReadValue()}");
+            }
+        }
+
+        private void HandleDrag1()
+        {
+            if (!Supports(InputMode.Drag))
+                return;
+
+            if (Pointer.current.press.wasPressedThisFrame)
+            {
+                dragStartPosition = Pointer.current.position.ReadValue();
+            }
+
+            game?.OnDrag(Pointer.current.position.ReadValue());
+
         }
 
         private void HandleDragAndRelease()
@@ -172,11 +251,13 @@ namespace MicrogameCourse.Framework
 
                 float distance = Vector2.Distance(dragStartPosition, releasePosition);
 
+                Debug.Log($"[MobileInput][PC] DragRelease start={dragStartPosition} end={releasePosition} dist={distance:F1}/{swipeThreshold} fired={distance >= swipeThreshold}");
+
                 if (distance >= swipeThreshold)
                 {
                     Debug.Log("Swipe Detected");
-
-                    game?.OnDrag(releasePosition);
+                    game?.OnDragRelease(releasePosition);
+//                    game?.OnDrag(releasePosition);
                 }
             }
         }
